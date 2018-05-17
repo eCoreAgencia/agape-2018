@@ -1,0 +1,138 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header{
+	width: 100%;
+	position: fixed;
+	z-index: 99999999;
+
+	section{
+		display: block;
+		overflow: hidden;
+	}
+
+	.top-box{
+		@extend .transition;
+		display: none;
+		overflow: visible;
+		border-bottom: 1px solid #d1d1d1;
+
+		@include mq($screen-md){
+			display: block;
+		}
+
+		.container{
+			display: flex;
+			overflow: hidden;
+			margin-top: -1px;
+		}
+	}
+	
+	.TipBar{
+		@extend .txt-sz-14, .col-md-8;
+		padding: 0;
+	    flex-wrap: wrap;
+	    align-items: center;
+		display: inline-flex;
+		li{
+			padding: 0 25px;
+			&:first-of-type{
+				padding-left: 0;
+			}
+		}
+	}
+	.mid-box{
+		@extend .transition;
+		padding: 25px 0;
+		
+		.container{
+			display: flex;
+			align-items: center;
+		}
+	}
+	.logo{
+		img{
+			width: 100%;
+			display: block;
+			max-width: 283px;
+		}
+	}
+	.options{
+		align-items: center;
+		display: inline-flex;
+		justify-content: flex-end;
+
+		& > a, button{
+			@extend .txt-gray, .txt-dc-none, .txt-sz-18;
+			border: 0;
+			text-align: left;
+			align-items: center;
+			display: inline-flex;
+
+			&:not(.search-toggle){
+				background: none;
+				svg{
+					margin: 5px;
+				}
+			}
+
+			&.btn-account, &.btn-myFavorites{
+				display: none;
+				@include mq($screen-md){
+					display: inline-flex;
+				}
+
+			}
+			.portal-totalizers-ref{
+				display: none;
+				@include mq($screen-md){
+					display: block;
+				}
+			}
+			i{
+				display: inline-flex;
+			}
+			span, .portal-totalizers-ref{
+				margin: 5px;
+			}
+			strong{
+				width: 100%;
+				display: inline-block;
+			}
+
+			&:hover{
+				#hover-blue{
+					fill: #18318f !important;
+				}
+			}
+		}
+	}
+	.ambientes{
+		padding: 0;
+		text-align: right;
+		display: inline-block;
+
+		.ambiente{
+			@extend .txt-center, .txt-darkerGray, .txt-underline, .txt-lo, .transition;
+			min-width: 150px;
+			padding: 10px 20px;
+			font-weight: bold;
+			display: inline-block;
+			border: 1px solid transparent;
+
+			&.active, &:hover{
+				@extend .bg-white, .txt-gray, .txt-dc-none;
+				font-weight: normal;
+				border: 1px solid #d1d1d1;
+				border-bottom-color: #fff;
+			}
+		}
+	}
+}
+
+body.login {
+	header {
+		z-index: 1;
+	}
+}

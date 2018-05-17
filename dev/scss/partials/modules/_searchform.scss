@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Searchform
+   ========================================================================== */
+
+.js-open-mobile-search{
+	border: none;
+	display: flex;
+	background-color: transparent;
+}
+.pager{
+	.top {
+    display: none;
+	}
+}
+span.resultado-busca-termo {
+    display: none;
+}
+span.resultado-busca-tempo {
+    display: none;
+}
+span.resultado-busca-numero {
+    display: none;
+}
+.btn-buscar, .search-toggle{
+    border: 0;
+    outline: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #18318f;
+    svg{
+    	width: 23px;
+    	height: auto;
+    }
+}
+.search-box{
+	@extend .transition;
+	top: 100%;
+    z-index: 1;
+	width: 100%;
+	display: block;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: right;
+	position: absolute;
+	transform: translateX(-100%);
+	@include mq($screen-sm) {
+		transform: none;
+		padding-left: 7px;
+		padding-right: 7px;
+		position: relative;
+	}
+
+	&.active{
+	    width: 100%;
+	    transform: translateX(0);
+	}
+
+	.busca{
+		position: relative;
+
+		legend,
+		label,
+		select{
+			display: none;
+		}
+
+		input{
+			&.fulltext-search-box{
+				@extend .transition;
+				@include font-size(1.4);
+				outline: 0;
+				width: 100%;
+				border: none;
+				height: 30px;
+				padding: 20px;
+				color: #bebebe;
+				padding-right: 40px;
+				border: 1px solid #bebebe;
+				background-color: #fff;
+				@include mq($screen-md){
+					border-radius: 5px;
+				}
+				&:focus{
+					@extend .txt-gray;
+				}
+			}
+
+			&.btn-buscar{
+		        top: 1px;
+			    right: 1px;		 
+			    position: absolute;
+			    background-size: 60%;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-image: url(/arquivos/search.png);
+			}
+		}
+	}
+}

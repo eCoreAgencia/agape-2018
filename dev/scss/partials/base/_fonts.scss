@@ -1,0 +1,93 @@
+/* Font Families */
+
+.ff-signikaNegative{font-family: 'Signika Negative', sans-serif;}
+
+/* Weights */
+
+.thin{font-weight: 100}
+.x-light{font-weight: 200}
+.light{font-weight: 300}
+.regular{font-weight: 400}
+.medium{font-weight: 500}
+.semi-bold{font-weight: 600}
+.bold{font-weight: 700}
+.x-bold{font-weight: 800}
+
+/* Decorations */
+
+.txt-dc-none{text-decoration: none}
+.txt-underline{text-decoration: underline}
+.txt-ln-through{text-decoration: line-through}
+
+
+/* Colors */
+
+.txt-white{color: #ffffff}
+
+.txt-black{color: #201e1e}
+
+.txt-gray{color: #666666}
+.txt-lightGray{color: #e8e8e8}
+.txt-lighterGray{color: #cccccc}
+.txt-darkerGray{color: #333333}
+
+.txt-orange{color: #f68026}
+
+.txt-darkBlue{color: #18318f}
+
+
+/* Sizes */
+.txt-sz-10{
+	@include font-size(1.0);
+	line-height: 14px;
+}
+.txt-sz-12{
+	@include font-size(1.2);
+	line-height: 16px;
+}
+
+.txt-sz-14{
+	@include font-size(1.4);
+	line-height: 18px;
+}
+.txt-sz-16{
+	@include font-size(1.6);
+	line-height: 20px;
+}
+.txt-sz-18{
+	@include font-size(1.8);
+	line-height: 22px;
+}
+.txt-sz-20{
+	@include font-size(2.0);
+	line-height: 24px;
+}
+.txt-sz-22{
+	@include font-size(2.2);
+	line-height: 26px;
+}
+.txt-sz-24{
+	@include font-size(2.4);
+	line-height: 28px;
+}
+
+.txt-sz-28{
+	@include font-size(2.8);
+	line-height: 32px;
+}
+
+.txt-sz-30{
+	@include font-size(3.0);
+	line-height: 34px;
+}
+
+/* Alignment */
+.txt-left{text-align: left}
+.txt-right{text-align: right}
+.txt-center{text-align: center}
+.txt-justify{text-align: justify}
+
+.txt-up{text-transform: uppercase}
+.txt-lo{text-transform: lowercase}
+.txt-cap{text-transform: capitalize}
+

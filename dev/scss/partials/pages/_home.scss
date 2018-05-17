@@ -1,0 +1,237 @@
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+body.home{
+	main{
+
+		.box-banner{
+			cursor: pointer;
+		}
+
+		.banners-orange{
+    		width: 100%;
+		    float: left;
+		    padding: 10px 7px;
+		    margin-bottom: 20px;
+
+			.box-banner{
+				@extend .col-md-3;
+				cursor: pointer;
+			}
+		}
+
+		.slick-slider {		
+			.slick-arrow {
+				@include font-size(1.7);
+				top: 150px;
+				padding: 0;
+				z-index: 9;
+				width: 31px;
+				right: -5px;
+				height: 71px;
+				border-radius: 5px;
+				background-color: #ccc;
+				display: block !important;
+				opacity: 0.3;
+
+				svg {
+					display: none;
+				}
+
+				&.slick-next {
+					&:after {
+						content: '>';
+						color: #a9a9a9;
+						display: block;
+						font-weight: bold;
+					}
+				}
+
+				&.slick-prev {
+					transform: rotate(0deg);
+
+					&:after {
+						content: '<';
+						color: #a9a9a9;
+						display: block;
+						font-weight: bold;
+					}
+				}
+			}
+
+			&:hover{
+				.slick-arrow{
+					opacity: 1;
+				}
+			}
+		}
+
+		.bottom-banners {
+			width: 100%;
+			float: left;
+			margin-top: -40px;
+			margin-bottom: 20px;
+		}
+
+		.destaque{
+			clear: both;
+			margin: 20px 0;
+
+			.banner-destaque,
+			.slider-dois{
+				display: block;
+				width: 100%;
+				padding: 0 7px;
+
+				@include mq($screen-md) {
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+
+			.banner-destaque{
+				@include mq($screen-md) {
+					width: 45%;
+				}
+			}
+
+			.slider-dois{
+				@include mq($screen-md) {
+					width: 55%;
+				}
+			}
+		}
+		.mais-vendidos{
+			z-index: 3;
+			border-bottom: 1px solid #888;
+		}
+		.em-promocao{
+			z-index: 2;
+			padding-top: 40px;
+		}
+		.mais-vendidos, .em-promocao{
+			float: left;
+			width: 100%;
+			position: relative;
+			.container{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+			}
+		}
+		.shelf-title{
+			flex-wrap: wrap;
+			align-items: center;
+			display: inline-flex;
+			justify-content: center;
+			svg{
+				width: 40px;
+				height: auto;
+				display: inline-block;
+				@include mq($screen-md){
+					width: 75px;
+				}
+			}
+			h2{
+				@extend .regular, .txt-darkerGray, .col-md-12,.txt-sz-30;
+				padding: 15px 20px;
+				display: inline-block;
+				@include mq($screen-md){
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+		.escolha-por-santos {
+			width: 100%;
+			float: left;
+			margin-bottom: 40px;
+			background: url(/arquivos/bg-escolha-santo.jpg) no-repeat center center;
+
+			h2,
+			li,
+			img,
+			nav {
+				margin: 0 85px 0 0;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			h2 {
+				@include font-size(3.4);
+				color: #505050;
+				font-weight: normal;
+				text-transform: uppercase;
+
+				span {
+					@include font-size(3.2);
+					display: block;
+					font-weight: bold;
+				}
+			}
+
+			nav {
+				max-width: 55%;
+				padding: 0 0 0;
+				margin-right: 0;
+
+				ul {
+					li {
+						width: 100%;
+						max-width: 275px;
+						display: inline-table;
+						margin: 0 70px 40px 0;
+
+						&:nth-child(2),
+						&:nth-child(4),
+						&:nth-child(6) {
+							margin-right: 0;
+						}
+
+						&:nth-child(5),
+						&:nth-child(6) {
+							margin-bottom: 0;
+						}
+
+						a {
+							@extend .transition;
+							color: #505050;
+							display: block;
+							line-height: 20px;
+							font-weight: bold;
+							padding: 15px 10px;
+							text-align: center;
+							border-radius: 5px;
+							text-decoration: none;
+							background-color: #fff;
+							text-transform: uppercase;
+
+							&:after {
+								@extend .transition;
+								content: '';
+								background: url(/arquivos/right-arrow-santo.png) no-repeat scroll 0 0 transparent;
+								margin-left: 5px;
+								display: inline-block;
+								vertical-align: middle;
+								width: 16px;
+								height: 16px;
+							}
+
+							&:hover {
+								@extend .transition;
+								color: #fff;
+								background-color: #f68026;
+
+								&:after {
+									@extend .transition;
+									background: url(/arquivos/right-arrow-santo-branco.png) no-repeat scroll 0 0 transparent;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

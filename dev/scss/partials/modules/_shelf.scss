@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Shelf
+   ========================================================================== */
+
+.prateleira {
+	margin:0 auto;
+	h2 {display: none;}
+	ul, .slick-track{
+		display: flex;
+    	align-items: stretch;
+		list-style-type: none;
+    	justify-content: flex-start;
+    	&:not(.slick-slider){
+    		flex-wrap: wrap;
+    	}
+	}
+
+	.clusterHighLight {
+		.flag {
+			display: none !important;
+			
+			&.lancamentos,
+			&.produtos-em-oferta {
+				display: block !important;
+			}
+		}
+	}
+
+	li {
+		height: 100%;
+		padding: 4px;
+		a {text-decoration: none}
+	}
+	// .slick-list{
+	// 	padding-bottom: 50px;
+	// }
+	.slick-slide{
+		// padding: 0;
+	}
+	.slick-slider{
+		@include mq($screen-md){
+			min-height: 450px;
+			overflow-y: visible;
+		}
+	}
+	.slick-list{
+		@include mq($screen-md){
+			overflow: visible;
+			overflow-x: hidden;
+		}
+	}
+}
+.slider{
+	.prateleira{
+		@include mq($screen-md){
+			height: 425px;
+		}
+	}
+}

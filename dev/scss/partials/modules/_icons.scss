@@ -1,0 +1,110 @@
+/*-------------------------------------------------------------------------*/
+/*                                    icons                                */
+/*-------------------------------------------------------------------------*/
+
+i.icon-visa {
+    background: url('sprite-icons.png') -685px -94px;
+
+    display: inline-block!important;
+    width: 39px;
+    height: 27px;
+    /*background-position-x: -685px;
+    background-position-y: -94px;*/
+}
+
+i.icon-master {
+    background: url('sprite-icons.png') -738px -93px;
+
+    display: inline-block!important;
+    width: 39px;
+    height: 27px;
+    /*background-position-x: -738px;
+    background-position-y: -93px;*/
+}
+
+i.icon-amex {
+    background: url('sprite-icons.png') -789px -93px;
+
+    display: inline-block!important;
+    width: 39px;
+    height: 27px;
+    /*background-position-x: -789px;
+    background-position-y: -93px;*/
+}
+
+i.icon-hipercard {
+    background: url('sprite-icons.png') -685px -131px;
+
+    display: inline-block!important;
+    width: 39px;
+    height: 27px;
+    /*background-position-x: -685px;
+    background-position-y: -131px;*/
+}
+
+i.icon-elo {
+    background: url('sprite-icons.png') -738px -131px;
+
+    display: inline-block!important;
+    width: 39px;
+    height: 27px;
+    /*background-position-x: -738px;
+    background-position-y: -131px;*/
+}
+
+i.icon-boleto {
+    background: url('sprite-icons.png') -790px -131px;
+
+    display: inline-block!important;
+    width: 39px;
+    height: 27px;
+    /*background-position-x: -790px;
+    background-position-y: -131px;*/
+}
+
+/*
+i.icon-discover {
+    background: url('/arquivos/Discover-EMV.jpg');
+
+    display: inline-block!important;
+    width: 39px;
+    height: 24px;
+    background-size: 100%;
+    top: -3px;
+    position: relative;
+}
+
+i.icon-diners {
+    background: url('/arquivos/DINERS-LOGO.jpg');
+
+    display: inline-block!important;
+    width: 40px;
+    height: 25px;
+    background-size: 100%;
+    top: -3px;
+    position: relative;
+}
+*/
+
+i.icon-discover {
+    background: url('/arquivos/Discover-EMV.jpg');
+    background-size: cover !important;
+    display: inline-block!important;
+    width: 39px;
+    height: 27px;
+    background-size: 100%;
+    position: relative;
+}
+
+i.icon-diners {
+    background: url('/arquivos/DINERS-LOGO.jpg');
+    background-size: cover !important;
+    display: inline-block!important;
+    width: 40px;
+    height: 27px;
+    position: relative;
+}
+
+/*-------------------------------------------------------------------------*/
+/*                                   /icons                                */
+/*-------------------------------------------------------------------------*/

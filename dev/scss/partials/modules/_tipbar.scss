@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Tipbar
+   ========================================================================== */
+
+.top-box{
+	.container{
+		overflow: visible !important;
+	}
+}
+
+.TipBar{
+	display: inline-block;
+
+	li{
+		@extend .txt-up;
+		@extend .transition;
+		@include font-size(1.1);
+		color: #333;
+		font-weight: bold;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+
+		svg{
+			vertical-align: middle;
+			margin: 2px 9px 5px 5px;
+		}
+
+		.tooltip{
+			@extend .transition;
+			display: none;
+			position: absolute;
+			top: 26px;
+			left: 0;
+			background-color: #18318f;
+			padding: 10px;
+			z-index: 9999999999999999999999999999999999;
+			overflow: visible;
+			height: 128px;
+			width: 310px;
+
+			h3, p{
+				color: #fff;
+				font-weight: bold;
+			}
+
+			p{
+				text-transform: none;
+				font-weight: normal;
+			}
+
+			&:before{
+				content: "";
+				display: block;
+				margin-right: 10px;
+				width: 0; 
+				height: 0;
+				position: absolute;
+				top: -5px;
+				left: 20%;
+
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-bottom: 5px solid #18318f;
+			}
+		}
+
+		&:hover{
+			.tooltip{
+				display: block;
+			}
+		}
+	}
+}

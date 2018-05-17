@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Base Classes
+   ========================================================================== */
+
+@import "fonts";
+
+body{@extend .ff-signikaNegative }
+.clearfix {
+	*zoom: 1;
+
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after { clear: both; }
+}
+
+.transition {
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+#ajaxBusy {
+
+	p {
+		display: none;
+	}
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+aside, main{
+	clear: both;
+	box-sizing: border-box;
+}
+main{
+	z-index: 1;
+	padding-top: 190px;
+	position: relative;
+}
+input, textarea, select, button{
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.bg-lightBlue{background-color: #0099cc;}
+
+body{
+	overflow-x: hidden; 
+}

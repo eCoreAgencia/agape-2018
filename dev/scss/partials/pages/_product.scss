@@ -1,0 +1,700 @@
+body.produto .bread-crumb {
+    margin: 0;
+    color: #999;
+    padding: 15px 0
+}
+
+body.produto main {
+    overflow: hidden;
+}
+
+body.produto main .economia-de,
+body.produto main .plugin-preco .descricao-preco em.price-best-price {
+    display: none !important;
+}
+
+body.produto main em.valor-de {
+    text-decoration: line-through;
+    display: inline-block;
+}
+
+body.produto main .skuListPrice {
+    font-weight: normal;
+}
+
+body.produto main .sizebay-embedded-recommendation-button {
+    width: 370px;
+    border-radius: 0;
+    margin: 25px 16px 0 0;
+    border: 1px solid #d2d2d2;
+    background-color: #1F358A!important
+}
+
+body.produto main .sizebay-embedded-recommendation-button.state-profile-empty .sizebay_content>.sizebay-state-profile-empty,
+body.produto main .sizebay-embedded-recommendation-button.state-recommended-size .sizebay_content>.sizebay-state-profile-empty {
+    overflow: hidden;
+    padding-top: 7px
+}
+
+body.produto main .sizebay-embedded-recommendation-button>.sizebay_content {
+    height: 40px;
+    border: none;
+    border-radius: 0
+}
+
+body.produto main .sizebay-embedded-recommendation-button.state-profile-empty .sizebay_box {
+    border-right: 1px solid #d2d2d2;
+    background-color: #1F358A!important
+}
+
+body.produto main .sizebay-state-profile-empty {
+    font-size: 0
+}
+
+body.produto main .sizebay-state-profile-empty:after {
+    font-size: 12px;
+    color: #666;
+    display: block;
+    content: "Não tem certeza de qual tamanho comprar? Descubra com o nosso provador virtual."
+}
+
+body.produto main img {
+    max-width: 100000px!important
+}
+
+body.produto main li {
+    list-style: none
+}
+
+body.produto main .title-section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d1d1d1
+}
+
+body.produto main .title-section h2.Nome {
+    font-size: 22px;
+    line-height: 24px
+}
+
+body.produto main .ProductInfo .skuReference,
+body.produto main .ProductInfo span {
+    color: #bcbcbc;
+    display: inline-block;
+    vertical-align: middle
+}
+
+body.produto main .ProductInfo span {
+    margin-right: 10px
+}
+
+body.produto main .plugin-preco {
+    margin: 10px 0
+}
+
+body.produto main .plugin-preco .descricao-preco {
+    line-height: 0;
+    margin-top: 10px;
+    display: block;
+}
+
+body.produto main .plugin-preco .descricao-preco em {
+    font-style: normal;
+    margin-right: 10px;
+    vertical-align: text-top;
+    display: inline-block!important
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-dividido {
+    display: inline-block!important
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-por {
+    font-weight: 400;
+    display: inline-block;
+}
+
+body.produto main .plugin-preco .descricao-preco .valor-por:before {
+    color: #000;
+    content: '|';
+    margin-left: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-dividido {
+    font-size: 26px;
+    color: #f68026;
+    margin-right: 0
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-dividido span {
+    font-size: 0;
+    margin-right: 0
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-dividido label {
+    font-size: 26px;
+    color: #f68026;
+    font-weight: 700
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-dividido label.skuBestInstallmentValue {
+    vertical-align: top;
+    display: inline-block
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-dividido label.skuBestInstallmentNumber:before {
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    margin-right: 5px;
+    vertical-align: top;
+    display: inline-block;
+    content: 'Por apenas:';
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-dividido label.skuBestInstallmentNumber span {
+    color: #f68026
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-dividido label span {
+    font-size: 26px;
+    vertical-align: top;
+    display: inline-block
+}
+
+body.produto main .plugin-preco .descricao-preco em.valor-dividido strong {
+    margin-left: 5px;
+    font-weight: 400
+}
+
+body.produto main .plugin-preco .descricao-preco em:last-of-type {
+    margin-right: 0
+}
+
+body.produto main .plugin-preco .preco-a-vista {
+    color: #666;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 0;
+}
+
+body.produto main .plugin-preco .preco-a-vista strong {
+    font-weight: 400; 
+    font-size: 15px; 
+}
+
+body.produto main .plugin-preco .preco-a-vista strong:before {
+    content: "ou ";
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+body.produto main .plugin-preco .preco-a-vista strong:after {
+    content: "à vista ";
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+body.produto main .ProductImage {
+    padding: 0;
+    position: relative
+}
+
+body.produto main .ProductImage .thumbs {
+    float: left
+}
+
+body.produto main .ProductImage .apresentacao #include,
+body.produto main .buy-box .buy-area {
+    float: right
+}
+
+body.produto main .ProductImage .thumbs li img {
+    width: 170px
+}
+
+body.produto main .ProductImage .apresentacao #include a {
+    display: block
+}
+
+body.produto main .ProductImage .apresentacao #include .sku-rich-image-main {
+    width: 100%;
+    display: block;
+    margin: 0 auto
+}
+
+body.produto main .ProductImage .apresentacao .zoomPad {
+    overflow: hidden;
+    position: relative;
+    text-align: center
+}
+
+body.produto main .ProductImage .apresentacao .zoomPad .zoomWindow,
+body.produto main .ProductImage .apresentacao .zoomPad .zoomWindow .zoomWrapperImage {
+    display: none
+}
+
+body.produto main .productName {
+    color: #666;
+    padding-bottom: 10px;
+    text-transform: uppercase
+}
+
+body.produto main .Cor .specification,
+body.produto main .Tamanho .specification {
+    font-size: 18px;
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase
+}
+
+body.produto main .Tamanho .specification{
+    font-size: 0;
+
+    &:after{
+        font-size: 18px;
+        content: "TAMANHOS";
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+
+body.produto main .Cor {
+    padding-left: 0
+}
+
+body.produto main .sku-area {
+    margin-bottom: 20px
+}
+
+body.produto main .sku-area button.btn-tabelaMedidas {
+    font-size: 12px;
+    border: none;
+    color: #18318f;
+    background: 0 0;
+    cursor: pointer;
+    line-height: 25px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: underline
+}
+
+body.produto main .sku-selector-container {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #d1d1d1
+}
+
+body.produto main .sku-selector-container .medidas {
+    top: 0;
+    left: 80px;
+    right: auto;
+    position: absolute;
+}
+
+body.produto main .sku-selector-container .medidas #szb_size_chart {
+    right: 0;
+    top: -5px;
+    opacity: 0;
+    width: 110px;
+    cursor: pointer;
+    display: inline;
+    margin-top: 10px;
+    position: absolute
+}
+
+body.produto main .skuList input {
+    display: none
+}
+
+body.produto main .skuList label {
+    width: 37px;
+    color: #666;
+    height: 37px;
+    padding: 8px;
+    cursor: pointer;
+    line-height: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid #bebebe;
+    background-color: #ededed
+}
+
+body.produto main .skuList label.sku-picked,
+body.produto main .skuList label:hover {
+    color: #fff;
+    border: 1px solid #f68026;
+    background-color: #f68026
+}
+
+body.produto main .skuList label.item_unavailable {
+    color: #ccc;
+    position: relative
+}
+
+body.produto main .skuList label.item_unavailable:after {
+    font-size: 16px;
+    top: -10px;
+    right: -4px;
+    content: 'X';
+    display: block;
+    color: #900;
+    font-weight: 700;
+    position: absolute
+}
+
+body.produto main .skuList label.item_unavailable:after:hover {
+    color: #fff
+}
+
+body.produto main .skuList label:last-of-type {
+    margin-right: 0
+}
+
+body.produto main .sku-section {
+    margin-right: 0;
+    padding-bottom: 20px
+}
+
+body.produto main .buy-box {
+    padding-top: 25px;
+    border-top: 1px solid #d1d1d1
+}
+
+body.produto main .buy-box button {
+    vertical-align: top;
+    display: inline-block
+}
+
+body.produto main .buy-box button.bg-blue {
+    border: none;
+    height: 60px;
+    padding: 0 10px;
+    background-color: #18318f
+}
+
+body.produto main .buy-box button.add-to-cart {
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    height: 60px;
+    cursor: pointer;
+    padding: 0 28px;
+    line-height: 30px;
+    background-color: #00bb4f
+}
+
+body.produto main .buy-box .buy-area .buy-button {
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    height: 60px;
+    cursor: pointer;
+    padding: 0 28px;
+    line-height: 55px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: lowercase;
+    background-color: #b81154
+}
+
+body.produto main .selecao-sku .quantidade {
+    margin: 0;
+    max-width: 30%;
+    text-align: center
+}
+
+body.produto main .selecao-sku .quantidade h2 {
+    padding: 0 0 12px;
+    background-color: #fff;
+    text-align: left;
+    margin-top: 20px;
+}
+
+body.produto main .selecao-sku .quantidade i,
+body.produto main .selecao-sku .quantidade input {
+    padding: 0;
+    color: #999;
+    line-height: 40px;
+    vertical-align: top;
+    display: inline-block;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    border-left: none;
+    border-right: none
+}
+
+body.produto main .selecao-sku .quantidade i {
+    font-size: 36px;
+    width: 25%;
+    cursor: pointer;
+    font-style: normal;
+    background-color: #ededed
+}
+
+body.produto main .selecao-sku .quantidade i.less {
+    float: left;
+    border: 1px solid #d1d1d1;
+    border-right: none
+}
+
+body.produto main .selecao-sku .quantidade i.more {
+    float: right;
+    border: 1px solid #d1d1d1;
+    border-left: none
+}
+
+body.produto main .selecao-sku .quantidade input {
+    font-size: 22px;
+    width: 50%;
+    text-align: center;
+    background-color: #fff
+}
+
+body.produto main #popupCalculoFreteWrapper {
+    display: none
+}
+
+body.produto main .freight-values {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px
+}
+
+body.produto main .freight-values tr {
+    display: block;
+    padding-bottom: 10px
+}
+
+body.produto main #calculoFrete .content .quantity,
+body.produto main #calculoFrete .footer,
+body.produto main #calculoFrete .header,
+body.produto main .freight-values thead {
+    display: none
+}
+
+body.produto main .freight-values td {
+    padding-right: 10px
+}
+
+body.produto main #calculoFrete {
+    margin-top: 20px
+}
+
+body.produto main #calculoFrete .content label.prefixo:before {
+    width: 28px;
+    height: 20px;
+    display: inline-block;
+    background: url(/arquivos/cep-icon.png) no-repeat
+}
+
+body.produto main #calculoFrete .content label.prefixo {
+    font-size: 16px;
+    color: #18318f;
+    line-height: 22px;
+    padding-left: 35px;
+    text-transform: uppercase;
+    background: url(/arquivos/cep-icon.png) no-repeat
+}
+
+body.produto main #calculoFrete .content label.prefixo input {
+    font-size: 18px;
+    padding: 5px;
+    max-width: 158px;
+    margin-right: 18px
+}
+
+body.produto main #calculoFrete .content fieldset {
+    position: relative
+}
+
+body.produto main #calculoFrete .content fieldset .lnkExterno {
+    font-size: 12px;
+    right: 0;
+    bottom: 1px;
+    color: #18318f;
+    position: absolute
+}
+
+body.produto main #calculoFrete .content .freight-btn {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: -2px;
+    padding: 7px 10px;
+    background-color: #18318f
+}
+
+body.produto main #prod-info {
+    overflow: hidden;
+    padding: 30px 0;
+    margin: 0 auto 30px;
+    border-bottom: 1px solid #d1d1d1
+}
+
+body.produto main .produtos-similares {
+    width: 100%;
+    float: left;
+    clear: both
+}
+
+body.produto main .produtos-similares ul {
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+body.produto main .produtos-similares h2.txt-orange,
+body.produto main .produtos-similares header .menu-header .submenu h2.menu-item.txt-orange,
+header .menu-header .submenu body.produto main .produtos-similares h2.menu-item.txt-orange {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase
+}
+
+body.produto main .descricao h2,
+body.produto main .especificacoes h4 {
+    font-size: 26px;
+    margin-bottom: 15px
+}
+
+body.produto main .troca {
+    margin: 30px 0;
+    padding: 20px 40px;
+    background-color: #ededed
+}
+
+body.produto main .troca h2 {
+    padding-left: 45px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background: url(/arquivos/troca-icon.png) no-repeat
+}
+
+body.produto main .troca h2 strong {
+    font-weight: 700
+}
+
+body.produto main .troca p {
+    color: #727272;
+    line-height: 26px;
+    padding-left: 45px
+}
+
+body.produto main .troca p a {
+    color: #727272;
+    text-decoration: none
+}
+
+body.produto main .troca p a:hover {
+    text-decoration: underline
+}
+
+body.produto main .descricao .productDescription {
+    color: #666;
+    line-height: 22px
+}
+
+body.produto main .especificacoes #caracteristicas table tr td,
+body.produto main .especificacoes #caracteristicas table tr th {
+    color: #666;
+    text-align: left;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+body.produto main .especificacoes h3{
+    font-size: 26px;
+}
+
+body.produto main .especificacoes #caracteristicas .Caracteristicas{
+    display: none;
+}
+
+body.produto main .especificacoes #caracteristicas table tr th {
+    padding-right: 20px
+}
+
+body.produto main .especificacoes #caracteristicas table tr th:after {
+    content: ':';
+    display: inline-block
+}
+
+body.produto .evaluation-product #yv-review-quickreview .yv-bootstrap i {
+    color: #f68026!important
+}
+
+body.produto .evaluation-product #yv-review-quickreview strong {
+    display: none!important
+}
+
+body.produto .box-yourviews-container {
+    clear: both;
+    overflow: hidden;
+    padding-top: 40px;
+    border-top: 1px solid #d1d1d1
+}
+
+body.produto .box-yourviews-container #yv-show-reviews .yv-title {
+    font-size: 0!important;
+    color: #f68026!important
+}
+
+body.produto .box-yourviews-container #yv-show-reviews .yv-title:after {
+    font-size: 32px;
+    width: 100%;
+    display: block;
+    margin: 0 0 30px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    content: 'Veja o que quem comprou achou de nossos produtos'
+}
+
+body.produto .box-yourviews-container #yv-show-reviews .yv-bootstrap .yv-star-color,
+body.produto .box-yourviews-container #yv-show-reviews .yv-bootstrap .yv-starcolor-inactive {
+    color: gold!important
+}
+
+body.produto .box-yourviews-container #yv-show-reviews .bootstrap .btn-label {
+    color: #bcbcbc!important
+}
+
+body.produto .yv-box-qa .yv-title {
+    font-size: 32px;
+    width: 100%;
+    display: block;
+    margin: 0 0 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #f68026!important;
+    font-family: 'Signika Negative', sans-serif!important
+}
+
+body.produto #yv-writereview,
+body.produto .yv-btn-info {
+    font-family: 'Signika Negative', sans-serif
+}
+
+body.produto .Cor .skuList label {
+    width: 37px;
+    height: 37px;
+    text-indent: -15000px
+}
+
+body.produto .Cor .skuList label.skuespec_Branco {
+    background-color: #fff
+}
+
+body.produto .Cor .skuList label.skuespec_Preto {
+    background-color: #000
+}

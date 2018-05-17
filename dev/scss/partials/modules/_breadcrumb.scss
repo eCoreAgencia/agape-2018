@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Breadcrumb
+   ========================================================================== */
+.bread-crumb {
+	overflow: hidden;
+	padding: 10px 7px;
+
+	strong {
+		@extend .regular;
+	}
+
+	ul {
+		li {
+			font-weight: 500;
+			margin-right: 2px;
+			line-height: 20px;
+			list-style-type: none;
+			display: inline-block;
+			vertical-align: middle;
+
+			&:after {
+				@include font-size(1.4);
+				content: '>';
+				color: #999999;
+				padding-left: 5px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			a {
+				@extend .txt-dc-none, .txt-lo;
+				@include font-size(1.4);
+				color: #999999;
+				&:hover {
+					@extend .txt-underline;
+				}
+			}
+
+			&:first-of-type{
+				a{
+					font-size: 0;
+					background: url('/arquivos/home-icon-silhouette.png') no-repeat scroll 0 0 transparent;
+					width: 16px;
+					height: 16px;
+					display: inline-block;
+				}
+			}
+
+			&:last-child {
+				&:after {
+					content: '';
+				}
+			}
+		}
+	}
+}
+
+.bread-crumb-box {
+	background: #0180B7;
+	min-height: 130px;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+	.text1{
+		@include font-size(1.8);
+		color: #023A6D;
+		font-weight: 300;
+		margin: 10px 20px;
+	}
+	.text2 {
+		@include font-size(2.4);
+		color: #fff;
+		margin: 0px 20px;
+		text-transform: uppercase;
+	}
+
+}

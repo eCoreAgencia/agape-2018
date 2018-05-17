@@ -1,0 +1,269 @@
+<header>
+	<section class="top-box bg-lightGray txt-gray">
+		<div class="container">
+			<vtex.cmc:tibBar/>
+			<nav class="ambientes col-md-4">
+				<a class="ambiente" target="_blank" href="http://revenda.agapemoda.com.br/">Portal do Revendedor</a>
+				<a class="ambiente active" href="#">Loja virtual</a>
+			</nav>
+		</div>
+	</section>
+	<section class="mid-box bg-white txt-gray">
+		<div class="container">
+			<button class="js-open-mobile-menu hidden-md hidden-lg"><i class="menu-toggle"><span></span><span></span><span></span></i></button>
+			<div class="logo col-xs-7 col-sm-4 col-md-3"><a href="/"><vtex.cmc:logoVinteAnos/></a></div>
+			<div class="search-box col-xs-12 col-sm-5 col-md-4"><vtex.cmc:fullTextSearchBox/></div>
+			<div class="options col-xs-5 col-sm-2 col-md-5">
+				<button class="search-toggle hidden-sm hidden-md hidden-lg">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 475.084 475.084"><path d="M464.524 412.846l-97.929-97.925c23.6-34.068 35.406-72.047 35.406-113.917 0-27.218-5.284-53.249-15.852-78.087-10.561-24.842-24.838-46.254-42.825-64.241-17.987-17.987-39.396-32.264-64.233-42.826C254.246 5.285 228.217.003 200.999.003c-27.216 0-53.247 5.282-78.085 15.847C98.072 26.412 76.66 40.689 58.673 58.676c-17.989 17.987-32.264 39.403-42.827 64.241C5.282 147.758 0 173.786 0 201.004c0 27.216 5.282 53.238 15.846 78.083 10.562 24.838 24.838 46.247 42.827 64.234 17.987 17.993 39.403 32.264 64.241 42.832 24.841 10.563 50.869 15.844 78.085 15.844 41.879 0 79.852-11.807 113.922-35.405l97.929 97.641c6.852 7.231 15.406 10.849 25.693 10.849 9.897 0 18.467-3.617 25.694-10.849 7.23-7.23 10.848-15.796 10.848-25.693.003-10.082-3.518-18.651-10.561-25.694zM291.363 291.358c-25.029 25.033-55.148 37.549-90.364 37.549-35.21 0-65.329-12.519-90.36-37.549-25.031-25.029-37.546-55.144-37.546-90.36 0-35.21 12.518-65.334 37.546-90.36 25.026-25.032 55.15-37.546 90.36-37.546 35.212 0 65.331 12.519 90.364 37.546 25.033 25.026 37.548 55.15 37.548 90.36 0 35.216-12.519 65.331-37.548 90.36z" fill="#FFF"/></svg>
+				</button>
+				<a class="btn-account" rel="nofollow" href="/account">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 510 510"><path id="hover-blue" d="M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm0 76.5c43.35 0 76.5 33.15 76.5 76.5s-33.15 76.5-76.5 76.5-76.5-33.15-76.5-76.5 33.15-76.5 76.5-76.5zm0 362.1c-63.75 0-119.85-33.149-153-81.6 0-51 102-79.05 153-79.05S408 306 408 357c-33.15 48.45-89.25 81.6-153 81.6z" fill="#f68026"/></svg>
+					<span>Minha <strong>Conta</strong></span>
+				</a>
+				<a class="btn-myFavorites" rel="nofollow" href="/account/favorites">
+					<svg xmlns="http://www.w3.org/2000/svg" style="transform:scaleX(-1)" viewBox="0 0 612.008 612.008" width="45" height="45"><path id="hover-blue" d="M609.383 170.157c-11.479-66.076-59.969-117.694-125.18-130.505-67.537-13.263-134.697 16.207-169.347 74.289-2.642 4.412-8.735 14.841-8.851 14.683-.117.158-6.21-10.272-8.851-14.683-34.65-58.082-101.81-87.552-169.347-74.289C62.601 52.463 14.105 104.082 2.625 170.157c-9.009 51.831 5.846 100.829 34.177 143.981 22.506 34.294 47.612 67.558 75.764 97.309 57.794 61.101 125.613 110.929 193.431 164.05 67.825-53.121 135.644-102.949 193.431-164.05 28.152-29.751 53.259-63.022 75.764-97.309 28.338-43.152 43.2-92.142 34.191-143.981zm-474.085-53.203c-14.931.192-29.641 7.074-40.38 18.876-11.253 12.378-16.714 28.228-15.363 44.634.714 8.714-5.77 16.351-14.471 17.064-.446.034-.878.055-1.311.055-8.151 0-15.075-6.264-15.754-14.533-2.038-24.88 6.525-49.848 23.494-68.512 16.605-18.265 39.707-28.921 63.372-29.23 8.659-.199 15.905 6.875 16.028 15.61.105 8.742-6.873 15.919-15.615 16.036z" fill="#f68026"/></svg>
+					<span>Meus <strong>Favoritos</strong></span>
+				</a>
+				<button id="mini-cart" class="btn-miniCartButton">
+					<i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.511 30.511" width="45" height="45"><path id="hover-blue" d="M26.818 19.037l3.607-10.796c.181-.519.044-.831-.102-1.037-.374-.527-1.143-.532-1.292-.532L8.646 6.668l-.544-2.581c-.147-.609-.581-1.19-1.456-1.19H.917c-.594 0-.917.278-.917.833v1.49c0 .537.322.677.938.677h4.837l3.702 15.717c-.588.623-.908 1.531-.908 2.378 0 1.864 1.484 3.582 3.38 3.582 1.79 0 3.132-1.677 3.35-2.677h7.21c.218 1 1.305 2.717 3.349 2.717 1.863 0 3.378-1.614 3.378-3.475 0-1.851-1.125-3.492-3.359-3.492-.929 0-2.031.5-2.543 1.25h-8.859c-.643-1-1.521-1.31-2.409-1.345l-.123-.655h13.479c1.016 0 1.216-.37 1.396-.86zm-.935 3.791a1.27 1.27 0 1 1-.001 2.541 1.27 1.27 0 0 1 .001-2.541zm-12.678 1.27c0 .709-.576 1.286-1.283 1.286-.709-.002-1.286-.577-1.286-1.286s.577-1.286 1.286-1.286c.707 0 1.283.577 1.283 1.286z" fill="#f68026"/></svg></i>
+			        <vtex.cmc:AmountItemsInCart/>
+			    </button>
+			</div>
+		</div>
+	</section>
+	<nav class="menu-header bg-orange txt-sz-23 txt-white">
+		<ul class="container">
+			<li class="menuClose js-open-mobile-menu bg-yellow txt-dark-blue hidden-md hidden-lg">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.1 491.1" width="28" height="27"><path d="M111.85 208.25l192.8-192.8c20.6-20.6 54-20.6 74.6 0s20.6 54 0 74.6l-155.5 155.5 155.5 155.5c20.6 20.6 20.6 54 0 74.6s-54 20.6-74.6 0l-192.8-192.8c-20.6-20.6-20.6-54 0-74.6z" fill="#147eb8"/></svg>
+	    		<span class="storeName txt-center">Ágape Moda</span>
+			</li>
+			<!-- <li class="bg-lighter-gray hidden-md hidden-lg">
+				<a href="/account" class="txt-dark-gray txt-dc-none">
+					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 510 510"><path d="M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm0 76.5c43.35 0 76.5 33.15 76.5 76.5s-33.15 76.5-76.5 76.5-76.5-33.15-76.5-76.5 33.15-76.5 76.5-76.5zm0 362.1c-63.75 0-119.85-33.149-153-81.6 0-51 102-79.05 153-79.05S408 306 408 357c-33.15 48.45-89.25 81.6-153 81.6z" fill="#f68026"/></svg>
+					<span>minha conta</span>
+				</a>
+			</li> -->
+			<li class="menu-item has-sub">
+				<a href="/feminino" class="first-menu">Feminino</a>
+				<div class="submenu">
+		            <ul class="section-box col-md-2">
+		            	<h3>destaque</h3>
+		            	<li class="menu-item">
+		            		<a href="/busca/?fq=C:15&amp;fq=H:149">lançamentos</a>
+		            	</li>
+		            	<li class="menu-item txt-orange">
+		            		<a href="/busca/?fq=C:15&amp;fq=H:150">promoções</a>
+		            	</li>
+		           	</ul>
+		           	<ul class="section-box col-md-3">
+		            	<h3>Categorias</h3>
+		            	<li class="menu-item">
+		            		<a href="/feminino/bordados-manuais">bordados manuais</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/feminino/bordados-industrais">bordados industriais</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/feminino/imagens-basicas">imagens básicas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/feminino/mensagens">mensagens</a>
+		            	</li>
+		           	</ul>
+		           	<ul class="section-box col-md-3">
+		            	<h3>Produto</h3>
+		            	<li class="menu-item">
+		            		<a href="">baby look</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">batas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">blusas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">camisetas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">vestidos</a>
+		            	</li>
+		           	</ul>
+		           	<figure class="section-box col-md-4">
+		           		<vtex.cmc:headerColecaoFeminino />
+		           	</figure>
+				</div>
+			</li>
+			<li class="menu-item has-sub">
+				<a href="/masculino" class="first-menu">Masculino</a>
+				<div class="submenu">
+		            <ul class="section-box col-md-2">
+		            	<h3>destaque</h3>
+		            	<li class="menu-item">
+		            		<a href="/busca/?fq=C:16&amp;fq=H:149">lançamentos</a>
+		            	</li>
+		            	<li class="menu-item txt-orange">
+		            		<a href="/busca/?fq=C:16&amp;fq=H:150">promoções</a>
+		            	</li>
+		           	</ul>
+		           	<ul class="section-box col-md-3">
+		            	<h3>Categorias</h3>
+		            	<li class="menu-item">
+		            		<a href="/masculino/bordados">bordados</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/masculino/imagens-basicas">imagens básicas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/masculino/mensagens">mensagens</a>
+		            	</li>
+		           	</ul>
+		           	<ul class="section-box col-md-3">
+		            	<h3>Produto</h3>
+		            	<li class="menu-item">
+		            		<a href="">camisetas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">pólos</a>
+		            	</li>
+		           	</ul>
+		           	<figure class="section-box col-md-4">
+		           		<vtex.cmc:headerColecaoMasculino />
+		           	</figure>
+				</div>
+			</li>
+			<li class="menu-item has-sub">
+				<a href="/busca" class="first-menu">Infantil</a>
+				<div class="submenu">
+		            <ul class="section-box col-md-2">
+		            	<h3>destaque</h3>
+		            	<li class="menu-item">
+		            		<a href="/busca/?fq=C:16&amp;fq=H:149">lançamentos</a>
+		            	</li>
+		            	<li class="menu-item txt-orange">
+		            		<a href="/busca/?fq=C:16&amp;fq=H:150">promoções</a>
+		            	</li>
+		           	</ul>
+		           	<ul class="section-box col-md-3">
+		            	<h3>Categorias</h3>
+		            	<li class="menu-item">
+		            		<a href="">bordados manuais</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">bordados industriais</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">imagens básicas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">mensagens</a>
+		            	</li>
+		           	</ul>
+		           	<ul class="section-box col-md-3">
+		            	<h3>Produto</h3>
+		            	<li class="menu-item">
+		            		<a href="">batas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">blusas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">camisetas</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="">vestidos</a>
+		            	</li>
+		           	</ul>
+		           	<figure class="section-box col-md-4">
+		           		<vtex.cmc:headerColecaoInfantil />
+		           	</figure>
+				</div>
+			</li>
+			<li class="menu-item has-sub menu-santos">
+				<a href="/busca" class="first-menu">Imagens &amp; Santos</a>
+				<div class="submenu">
+					<ul class="section-box col-md-3">
+						<li class="menu-item">
+		            		<a href="/aparecida">Nossa Senhora Aparecida</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/gracas">Nossa Senhora das Graças</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/fatima">Nossa Senhora de Fátima</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/guadalupe">Nossa Senhora de Guadalupe</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/lourdes">Nossa Senhora de Lourdes</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/socorro">Nossa Senhora do Perpétuo Socorro</a>
+		            	</li>
+					</ul>
+					<ul class="section-box col-md-3">
+		            	<li class="menu-item">
+		            		<a href="/arcanjo">São Miguel Arcanjo</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/jorge">São Jorge</a>
+		            	</li>
+						<li class="menu-item">
+							<a href="/francisco">Saão Francisco de Assis</a>
+						</li>
+						<li class="menu-item">
+							<a href="/cassia">Santa Rita de Cássia</a>
+						</li>
+						<li class="menu-item">
+							<a href="/rainha%20da%20paz">Rainha da Paz</a>
+						</li>
+						<li class="menu-item">
+							<a href="/carmo">Nossa Senhora do Carmo</a>
+						</li>
+					</ul>
+					<ul class="section-box col-md-3">
+						<li class="menu-item">
+							<a href="/rosario">Nossa Senhora do Rosário</a>
+						</li>
+						<li class="menu-item">
+							<a href="/conceicao">Nossa Senhora da Conceição</a>
+						</li>
+						<li class="menu-item">
+							<a href="/mistica">Nossa Senhora da Rosa Mística</a>
+						</li>
+						<li class="menu-item">
+							<a href="/sagrado%20coracao">Sagrado Coração de Jesus</a>
+						</li>
+						<li class="menu-item">
+							<a href="/imaculado">Imaculado Coração de Maria</a>
+						</li>
+					</ul>
+					<ul class="section-box col-md-3">
+						<li class="menu-item">
+							<a href="/bento">São Bento</a>
+						</li>
+						<li class="menu-item">
+							<a href="/sagrada%20familia">Sagrada Família</a>
+						</li>
+						<li class="menu-item">
+							<a href="/espirito%20santo">Espírito Santo</a>
+						</li>
+						<li class="menu-item">
+							<a href="/jesus">Jesus Cristo</a>
+						</li>
+						<li class="menu-item">
+							<a href="/nazare">Nossa Senhora de Nazaré</a>
+						</li>
+					</ul>
+					<!-- <figure class="section-box col-md-4">
+						<vtex.cmc:headerColecaoImgSantos />
+		           	</figure> -->
+				</div>
+			</li>
+			<li class="menu-item">
+				<a href="/busca" class="first-menu">Promoções</a>
+			</li>
+		</ul>
+	</nav>
+</header>
