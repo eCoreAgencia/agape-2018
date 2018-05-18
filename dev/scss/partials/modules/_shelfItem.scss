@@ -37,14 +37,18 @@
 			display: flex;
 		}
 	}
+	
 	.buy-button{
 		@extend .btn-add-buy-button-asynchronous;
 		flex: 1;
 	}
+	
 	.shelfProductName, .skus-selection{
 		width: 100%;
+		height: 44px;
 		padding: 5px 0;
 	}
+
 	.shelfBestPrice, .shelfInstallment, .shelfOldPrice{
 		margin-top: 2px;
 		margin-bottom: 2px;
@@ -250,6 +254,35 @@
 					margin-top: 0;
 				}
 			}
+		}
+	}
+}
+
+body.home {
+	.shelfItem {
+		max-height: 477px;
+	}
+}
+
+body.dep-cat-bus {
+	.shelfItem {
+		height: 435px;
+
+		&:hover {
+			height: 355px;
+		}
+	}
+}
+
+body.produto {
+	.shelfItem {
+
+		&:hover {
+			max-height: 415px;
+		}
+
+		.shelfProductName {
+			height: 50px;
 		}
 	}
 }

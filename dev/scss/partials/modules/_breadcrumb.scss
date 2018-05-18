@@ -38,11 +38,12 @@
 
 			&:first-of-type{
 				a{
-					font-size: 0;
-					background: url('/arquivos/home-icon-silhouette.png') no-repeat scroll 0 0 transparent;
 					width: 16px;
 					height: 16px;
+					font-size: 0;
 					display: inline-block;
+					vertical-align: middle;
+					background: url('/arquivos/home-icon-silhouette.png') no-repeat scroll 0 0 transparent;
 				}
 			}
 

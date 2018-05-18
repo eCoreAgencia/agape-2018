@@ -4,6 +4,63 @@ body.produto .bread-crumb {
     padding: 15px 0
 }
 
+body.produto {
+
+    .sku-area {
+        button.btn-tabelaMedidas {
+            @include font-size(1.2);
+            top: 19px;
+            left: 91px;
+            border: none;
+            color: #18318f;
+            background: 0 0;
+            cursor: pointer;
+            font-weight: 600;
+            line-height: 25px;
+            position: absolute;
+            display: inline-block;
+            text-decoration: underline;
+        }
+    }
+
+    .valor-dividido {
+        &:before {
+            color: #000;
+            content: '|';
+            margin-right: 5px;
+            vertical-align: top;
+            display: inline-block;
+        }
+    }
+
+    .sizebay-plugin {
+        background: white;
+        z-index: 999999999;
+    }
+
+    .sizebay-plugin-overlay {
+        z-index: 99999999;
+    }
+
+    #szb_size_chart {
+        display: none !important;
+    }
+
+    .thumbnails {
+        margin-right: 10px;
+        vertical-align: top;
+        display: inline-block;
+
+        li {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 body.produto main {
     overflow: hidden;
 }
@@ -25,7 +82,7 @@ body.produto main .skuListPrice {
 body.produto main .sizebay-embedded-recommendation-button {
     width: 370px;
     border-radius: 0;
-    margin: 25px 16px 0 0;
+    margin: 25px 16px 0 0 !important;
     border: 1px solid #d2d2d2;
     background-color: #1F358A!important
 }
@@ -67,12 +124,12 @@ body.produto main li {
 }
 
 body.produto main .title-section {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #d1d1d1
 }
 
-body.produto main .title-section h2.Nome {
+body.produto main .title-section h1.Nome {
     font-size: 22px;
     line-height: 24px
 }
@@ -204,38 +261,8 @@ body.produto main .ProductImage {
     position: relative
 }
 
-body.produto main .ProductImage .thumbs {
-    float: left
-}
-
-body.produto main .ProductImage .apresentacao #include,
 body.produto main .buy-box .buy-area {
     float: right
-}
-
-body.produto main .ProductImage .thumbs li img {
-    width: 170px
-}
-
-body.produto main .ProductImage .apresentacao #include a {
-    display: block
-}
-
-body.produto main .ProductImage .apresentacao #include .sku-rich-image-main {
-    width: 100%;
-    display: block;
-    margin: 0 auto
-}
-
-body.produto main .ProductImage .apresentacao .zoomPad {
-    overflow: hidden;
-    position: relative;
-    text-align: center
-}
-
-body.produto main .ProductImage .apresentacao .zoomPad .zoomWindow,
-body.produto main .ProductImage .apresentacao .zoomPad .zoomWindow .zoomWrapperImage {
-    display: none
 }
 
 body.produto main .productName {
@@ -272,18 +299,6 @@ body.produto main .sku-area {
     margin-bottom: 20px
 }
 
-body.produto main .sku-area button.btn-tabelaMedidas {
-    font-size: 12px;
-    border: none;
-    color: #18318f;
-    background: 0 0;
-    cursor: pointer;
-    line-height: 25px;
-    font-weight: 600;
-    display: inline-block;
-    text-decoration: underline
-}
-
 body.produto main .sku-selector-container {
     position: relative;
     margin-bottom: 20px;
@@ -296,17 +311,6 @@ body.produto main .sku-selector-container .medidas {
     left: 80px;
     right: auto;
     position: absolute;
-}
-
-body.produto main .sku-selector-container .medidas #szb_size_chart {
-    right: 0;
-    top: -5px;
-    opacity: 0;
-    width: 110px;
-    cursor: pointer;
-    display: inline;
-    margin-top: 10px;
-    position: absolute
 }
 
 body.produto main .skuList input {
@@ -382,6 +386,14 @@ body.produto main .buy-box button.bg-blue {
     background-color: #18318f
 }
 
+body.produto main .buy-box button.bg-blue:hover {
+    background-color: #b81154;
+}
+
+body.produto main .buy-box button.add-to-cart:hover {
+    background-color: #b81154;
+}
+
 body.produto main .buy-box button.add-to-cart {
     font-size: 24px;
     color: #fff;
@@ -390,6 +402,10 @@ body.produto main .buy-box button.add-to-cart {
     cursor: pointer;
     padding: 0 28px;
     line-height: 30px;
+    background-color: #00bb4f
+}
+
+body.produto main .buy-box .buy-area .buy-button:hover {
     background-color: #00bb4f
 }
 
@@ -407,6 +423,21 @@ body.produto main .buy-box .buy-area .buy-button {
     background-color: #b81154
 }
 
+body.produto main #popupCalculoFreteWrapper {
+    display: none
+}
+
+body.produto main .freight-values {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px
+}
+
+body.produto main .freight-values tr {
+    display: block;
+    padding-bottom: 10px
+}
+
 body.produto main .selecao-sku .quantidade {
     margin: 0;
     max-width: 30%;
@@ -417,7 +448,6 @@ body.produto main .selecao-sku .quantidade h2 {
     padding: 0 0 12px;
     background-color: #fff;
     text-align: left;
-    margin-top: 20px;
 }
 
 body.produto main .selecao-sku .quantidade i,
@@ -458,21 +488,6 @@ body.produto main .selecao-sku .quantidade input {
     width: 50%;
     text-align: center;
     background-color: #fff
-}
-
-body.produto main #popupCalculoFreteWrapper {
-    display: none
-}
-
-body.produto main .freight-values {
-    font-size: 12px;
-    color: #666;
-    margin-top: 20px
-}
-
-body.produto main .freight-values tr {
-    display: block;
-    padding-bottom: 10px
 }
 
 body.produto main #calculoFrete .content .quantity,
@@ -574,8 +589,10 @@ body.produto main .troca {
 }
 
 body.produto main .troca h2 {
-    padding-left: 45px;
+    height: 40px;
     font-weight: 400;
+    line-height: 40px;
+    padding-left: 45px;
     margin-bottom: 15px;
     background: url(/arquivos/troca-icon.png) no-repeat
 }

@@ -22,14 +22,16 @@
         	<section class="product-box">
             	<div class="container">
             		<div class="ProductImage col-xs-12 col-md-7">
-	                    <vtex.cmc:ProductImage zoom="on" />
+                        <!-- Mounting With API -->
+                        <ul class="thumbnails"></ul>
+                        <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails"></div>
 	                </div><!-- product-box END -->
 
 	                <div class="ProductInfo col-xs-12 col-md-5">
 		                <div class="title-section col-xs-12">
-		                	<h2 class="Nome txt-sz-28 txt-dark-gray regular">
+		                	<h1 class="Nome txt-sz-28 txt-dark-gray regular">
 		                		<vtex.cmc:productName />
-		                	</h2>
+		                	</h1>
 	                    	<div class="codigo-produto txt-sz-12 txt-gray-nine">
 	        					<span>SKU: </span><vtex.cmc:skuReference/>
 	        				</div>
@@ -37,7 +39,7 @@
 				                <!-- Inicio Yourviews -->
 				                    <!-- Âncora para o bloco de Reviews (De preferência manter sempre próximo ao nome do produto)  -->
 				                    <div id="yv-review-quickreview"></div>
-				                <!-- Final Yourviews -->	        					
+				                <!-- Final Yourviews -->
 	        				</div>
 	                		<vtex.cmc:skuPrice/>
 	                	</div>
@@ -54,7 +56,7 @@
 
 		                	<div class="quantidade col-xs-12">
 								<div class="selecao-sku">
-									<div class="quantidade col-xs-6">
+									<div class="quantidade col-md-6 col-xs-6">
 										<h2 class="txt-gray txt-up regular">Quantidade</h2>
 										<i class="less">-</i>
 											<input class="prodQtd" type="text" value="1" disabled="disabled" />
@@ -125,22 +127,7 @@
 		</main>
 
 	    <vtex:template id="AGAPE-V3-FOOTER" />
+	    <script type="text/javascript" src="/arquivos/easyzoom.js"></script>
 	    <vtex:template id="AGAPE-V3-COMMONSCRIPTS" />
-
-	    <script type="text/javascript">
-			$(window).load(function(){
-				ShippingValue();
-				$('.buy-box button[name="favorite"]').favoriteCurrentButton();
-			});
-			$(window).on('skuSelected.vtex', function(){
-			    ($('.plugin-preco .skuBestPrice').length)? $('.buy-box').removeClass('sku-unavailable'): $('.buy-box').addClass('sku-unavailable');
-			});
-        </script>
-
-        <!-- script src="/arquivos/removeCorProduto.js"></script>
-        <script src="/arquivos/jquery.elevatezoom.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
-        <script type="text/javascript" src="/arquivos/__element.js"></script>
-        <script type="text/javascript" src="/arquivos/produto-quaresma-v1.js"></script -->
    </body>
 </html>
