@@ -6,6 +6,47 @@ body.produto .bread-crumb {
 
 body.produto {
 
+    .portal-notify-me-ref {
+        padding: 10px 0;
+
+        h3 {
+            @include font-size(1.8);
+            margin-bottom: 20px;
+        }
+
+        form {
+            p {
+                margin-bottom: 20px;
+            }
+
+            input {
+                width: 100%;
+                clear: both;
+                padding: 10px;
+                display: block;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                border: 1px solid #666;
+
+                &.btn-ok {
+                    @include font-size(1.6);
+                    @extend .transition;
+                    color: #fff;
+                    cursor: pointer;
+                    max-width: 90px;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                    background-color: #00338E;
+                
+                    &:hover {
+                        @extend .transition;
+                        background-color: #666;
+                    }
+                }
+            }
+        }
+    }
+
     .sku-area {
         button.btn-tabelaMedidas {
             @include font-size(1.2);
@@ -23,11 +64,12 @@ body.produto {
         }
     }
 
-    .valor-dividido {
-        &:before {
+    .valor-de {
+        &:after {
+            @include font-size(2.2);
             color: #000;
             content: '|';
-            margin-right: 5px;
+            margin-left: 10px;
             vertical-align: top;
             display: inline-block;
         }
@@ -633,7 +675,7 @@ body.produto main .especificacoes h3{
     font-size: 26px;
 }
 
-body.produto main .especificacoes #caracteristicas .Caracteristicas{
+body.produto main .especificacoes #caracteristicas h4{
     display: none;
 }
 

@@ -298,7 +298,6 @@ footer .compra-segura h3,
 .sta-cart-items .sta-cart-pdt-info h4,
 .Newsletter .form-newsletter legend,
 header .menu-header .menu-item a,
-#professionalList .professional .infoWrapper .title,
 body.institucional main a {
 	font-weight: 600;
 }
@@ -654,10 +653,17 @@ header.ha-hidding,
 header .menu-header,
 header .menu-header .submenu,
 header .menu-header .submenu .menu-item,
+body.modal-active .modal-box,
+.modal-box,
+.modal-box .close-modal,
+.modal-box .close-modal:hover,
+.modal-box .modal-container,
 body.home main .escolha-por-santos nav ul li a,
 body.home main .escolha-por-santos nav ul li a:after,
 body.home main .escolha-por-santos nav ul li a:hover,
 body.home main .escolha-por-santos nav ul li a:hover:after,
+body.produto .portal-notify-me-ref form input.btn-ok,
+body.produto .portal-notify-me-ref form input.btn-ok:hover,
 body.dep-cat-bus .sidebar,
 body.dep-cat-bus .sidebar .customRefinar,
 body.dep-cat-bus .sidebar li a,
@@ -771,12 +777,10 @@ body {
 .col-lg-1,
 .col-xs-2,
 .col-sm-2,
-#professionalList .professional .infoWrapper .title,
 .col-md-2,
 .col-lg-2,
 .col-xs-3,
 .col-sm-3,
-#professionalList .professional .profilePicWrapper,
 .col-md-3,
 footer .poweredBy,
 body.home main .banners-orange .box-banner,
@@ -811,13 +815,11 @@ header .TipBar,
 .col-lg-8,
 .col-xs-9,
 .col-sm-9,
-#professionalList .professional .infoWrapper,
 .col-md-9,
 footer .metodos-pagamento,
 .col-lg-9,
 .col-xs-10,
 .col-sm-10,
-#professionalList .professional .infoWrapper .value,
 .col-md-10,
 .col-lg-10,
 .col-xs-11,
@@ -830,11 +832,6 @@ footer .poweredBy,
 .Newsletter .Newsletter-image,
 .Newsletter .form-newsletter,
 .Newsletter .form-newsletter fieldset,
-#professionalList .professional .profilePicWrapper,
-#professionalList .professional .infoWrapper,
-#professionalList .professional .infoWrapper div,
-#professionalList .professional .infoWrapper .title,
-#professionalList .professional .infoWrapper .value,
 .col-sm-12,
 .col-md-12,
 body.home main .shelf-title h2,
@@ -863,12 +860,7 @@ footer .metodos-pagamento,
 footer .poweredBy,
 .Newsletter .Newsletter-image,
 .Newsletter .form-newsletter,
-.Newsletter .form-newsletter fieldset,
-#professionalList .professional .profilePicWrapper,
-#professionalList .professional .infoWrapper,
-#professionalList .professional .infoWrapper div,
-#professionalList .professional .infoWrapper .title,
-#professionalList .professional .infoWrapper .value {
+.Newsletter .form-newsletter fieldset {
 	float: left;
 }
 
@@ -923,12 +915,7 @@ footer .metodos-pagamento,
 footer .poweredBy,
 .Newsletter .Newsletter-image,
 .Newsletter .form-newsletter,
-.Newsletter .form-newsletter fieldset,
-#professionalList .professional .profilePicWrapper,
-#professionalList .professional .infoWrapper,
-#professionalList .professional .infoWrapper div,
-#professionalList .professional .infoWrapper .title,
-#professionalList .professional .infoWrapper .value {
+.Newsletter .form-newsletter fieldset {
 	width: 100%;
 }
 
@@ -1145,7 +1132,6 @@ footer .compra-segura h3,
 .sta-cart-items .sta-cart-pdt-info h4,
 .Newsletter .form-newsletter legend,
 header .menu-header .menu-item a,
-#professionalList .professional .infoWrapper .title,
 body.institucional main a {
 	font-weight: 600;
 }
@@ -2462,7 +2448,7 @@ body.home footer .textoLegal {
 }
 
 body.home .shelfItem {
-	max-height: 477px;
+	max-height: 489px;
 }
 
 body.dep-cat-bus .shelfItem {
@@ -4103,71 +4089,105 @@ header .menu-header .submenu li a {
 	display: block;
 }
 
-.modal-wrapper {
+body {
+	position: relative;
+}
+
+body.modal-active .modal-box {
 	top: 0;
+}
+
+body.modal-active .modal-box .close-modal,
+body.modal-active .modal-box .modal-container {
+	position: fixed;
+}
+
+.modal-box {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 15px;
-	position: fixed;
+	top: -10000px;
+	min-height: 4500px;
+	position: absolute;
+}
+
+.modal-box .close-modal {
+	top: 26%;
+	left: 50%;
+	color: #fff;
+	width: 70px;
+	height: 30px;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 10px;
+	margin-left: 77px;
+	z-index: 2147483647;
+	text-align: center;
+	background-color: #666;
+	border: 1px solid #fff;
+}
+
+.modal-box .close-modal:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+.modal-box .opacity-modal {
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
 	z-index: 999999999;
-	-ms-flex-align: center;
-	    align-items: center;
-	-ms-flex-pack: center;
-	    justify-content: center;
-	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	background-color: #000;
 }
 
-#professionalList .professional {
-	list-style: none;
+.modal-box .modal-container {
+	top: 30%;
+	left: 50%;
+	width: 295px;
+	height: 170px;
+	overflow: auto;
+	margin-left: -148px;
+	z-index: 2147483647;
+	background-color: #fff;
+	box-shadow: 0px 0px 11px -2px rgba(191, 191, 191, 0.75);
 }
 
-#professionalList .professional .profilePicWrapper {
-	padding-top: 7px;
-	padding-bottom: 7px;
+.new-modal-content {
+	padding: 50px;
+	text-align: center;
 }
 
-#professionalList .professional .profilePicWrapper figure {
-	width: 100%;
-	width: 150px;
-	height: 150px;
-	display: -ms-flexbox;
-	display: flex;
-	margin: 0 auto;
-	overflow: hidden;
-	-ms-flex-align: center;
-	    align-items: center;
-	-ms-flex-pack: center;
-	    justify-content: center;
+.new-modal-content.news-element h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
 }
 
-#professionalList .professional .profilePicWrapper img {
-	width: 100%;
-	height: auto;
+.new-modal-content.news-element p {
+	font-size: 11px;
+	line-height: 25px;
 }
 
-#professionalList .professional .infoWrapper {
-	padding-top: 7px;
-	padding-bottom: 7px;
+body.newsletter-active .modal-container {
+	height: 168px;
 }
 
-#professionalList .professional .infoWrapper div {
-	display: block;
-	padding: 5px 0;
+body.product-popup .modal-container {
+	height: 80px;
 }
 
-#professionalList .professional .infoWrapper .title {
-	padding: 5px 7px;
+body.product-popup .modal-container .news-element.error-add {
+	padding: 20px;
 }
 
-#professionalList .professional .infoWrapper .value {
-	padding: 5px 7px;
-}
-
-#professionalList .professional .infoWrapper .contacts .value {
-	padding-top: 0;
-	line-height: 175%;
-	padding-bottom: 0;
+body.product-popup .modal-container .news-element.error-add h3 {
+	font-size: 13px;
+	margin-bottom: 0;
+	line-height: 20px;
 }
 
 /* ==========================================================================
@@ -4395,6 +4415,43 @@ body.produto .bread-crumb {
 	padding: 15px 0;
 }
 
+body.produto .portal-notify-me-ref {
+	padding: 10px 0;
+}
+
+body.produto .portal-notify-me-ref h3 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+body.produto .portal-notify-me-ref form p {
+	margin-bottom: 20px;
+}
+
+body.produto .portal-notify-me-ref form input {
+	width: 100%;
+	clear: both;
+	padding: 10px;
+	display: block;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #666;
+}
+
+body.produto .portal-notify-me-ref form input.btn-ok {
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	max-width: 90px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	background-color: #00338E;
+}
+
+body.produto .portal-notify-me-ref form input.btn-ok:hover {
+	background-color: #666;
+}
+
 body.produto .sku-area button.btn-tabelaMedidas {
 	font-size: 12px;
 	top: 19px;
@@ -4410,10 +4467,11 @@ body.produto .sku-area button.btn-tabelaMedidas {
 	text-decoration: underline;
 }
 
-body.produto .valor-dividido:before {
+body.produto .valor-de:after {
+	font-size: 22px;
 	color: #000;
 	content: '|';
-	margin-right: 5px;
+	margin-left: 10px;
 	vertical-align: top;
 	display: inline-block;
 }
@@ -5019,7 +5077,7 @@ body.produto main .especificacoes h3 {
 	font-size: 26px;
 }
 
-body.produto main .especificacoes #caracteristicas .Caracteristicas {
+body.produto main .especificacoes #caracteristicas h4 {
 	display: none;
 }
 
@@ -6316,17 +6374,7 @@ footer .slider .poweredBy,
 .slider .Newsletter .form-newsletter,
 .Newsletter .slider .form-newsletter,
 .slider .Newsletter .form-newsletter fieldset,
-.Newsletter .form-newsletter .slider fieldset,
-.slider #professionalList .professional .profilePicWrapper,
-#professionalList .professional .slider .profilePicWrapper,
-.slider #professionalList .professional .infoWrapper,
-#professionalList .professional .slider .infoWrapper,
-.slider #professionalList .professional .infoWrapper div,
-#professionalList .professional .infoWrapper .slider div,
-.slider #professionalList .professional .infoWrapper .title,
-#professionalList .professional .infoWrapper .slider .title,
-.slider #professionalList .professional .infoWrapper .value,
-#professionalList .professional .infoWrapper .slider .value {
+.Newsletter .form-newsletter .slider fieldset {
 	padding-right: 0;
 }
 
@@ -6661,18 +6709,14 @@ td.visible-sm {
 
 .col-sm-1,
 .col-sm-2,
-#professionalList .professional .infoWrapper .title,
 .col-sm-3,
-#professionalList .professional .profilePicWrapper,
 .col-sm-4,
 .col-sm-5,
 .col-sm-6,
 .col-sm-7,
 .col-sm-8,
 .col-sm-9,
-#professionalList .professional .infoWrapper,
 .col-sm-10,
-#professionalList .professional .infoWrapper .value,
 .col-sm-11,
 .col-sm-12 {
 	float: left;
@@ -6682,13 +6726,11 @@ td.visible-sm {
 	width: 8.3333333333%;
 }
 
-.col-sm-2,
-#professionalList .professional .infoWrapper .title {
+.col-sm-2 {
 	width: 16.6666666667%;
 }
 
-.col-sm-3,
-#professionalList .professional .profilePicWrapper {
+.col-sm-3 {
 	width: 25%;
 }
 
@@ -6712,13 +6754,11 @@ td.visible-sm {
 	width: 66.6666666667%;
 }
 
-.col-sm-9,
-#professionalList .professional .infoWrapper {
+.col-sm-9 {
 	width: 75%;
 }
 
-.col-sm-10,
-#professionalList .professional .infoWrapper .value {
+.col-sm-10 {
 	width: 83.3333333333%;
 }
 
@@ -6928,6 +6968,12 @@ header.menu-persistente {
 	position: fixed;
 }
 
+.modal-box .modal-container {
+	width: 600px;
+	margin-left: -262px;
+	height: 330px;
+}
+
 body.dep-cat-bus #nav-dep .right {
 	float: none !important;
 }
@@ -6963,17 +7009,7 @@ footer .slider .poweredBy,
 .slider .Newsletter .form-newsletter,
 .Newsletter .slider .form-newsletter,
 .slider .Newsletter .form-newsletter fieldset,
-.Newsletter .form-newsletter .slider fieldset,
-.slider #professionalList .professional .profilePicWrapper,
-#professionalList .professional .slider .profilePicWrapper,
-.slider #professionalList .professional .infoWrapper,
-#professionalList .professional .slider .infoWrapper,
-.slider #professionalList .professional .infoWrapper div,
-#professionalList .professional .infoWrapper .slider div,
-.slider #professionalList .professional .infoWrapper .title,
-#professionalList .professional .infoWrapper .slider .title,
-.slider #professionalList .professional .infoWrapper .value,
-#professionalList .professional .infoWrapper .slider .value {
+.Newsletter .form-newsletter .slider fieldset {
 	padding-right: 7px;
 }
 
@@ -7595,12 +7631,8 @@ header .menu-header .submenu li {
 	border: 0;
 }
 
-#professionalList .professional .infoWrapper .title {
-	padding: 0 7px;
-}
-
-#professionalList .professional .infoWrapper .value {
-	padding: 0 7px;
+.modal-box .close-modal {
+	margin-left: 268px;
 }
 
 body.home main .destaque .banner-destaque,

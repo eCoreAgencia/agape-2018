@@ -209,6 +209,28 @@ var body = $('body'),
 
 $(function() {
 
+
+    // Scripts Modal //
+        // Close Modal //
+        $('.close-modal, .opacity-modal').click(function(event) {
+            $('body').removeClass('modal-active');
+            $('body').removeClass('newsletter-active');
+            $('body').removeClass('sku-unavaiable');
+        });
+
+        $(document).keyup(function(ev) {
+            if (ev.keyCode == 27)
+            $('body').removeClass('modal-active');
+            $('body').removeClass('newsletter-active');
+            $('body').removeClass('product-popup');
+            $('.new-modal-content').remove();
+            $('#parcelamentoModal').removeClass('active');
+        });
+    	// Close Modal //
+
+	// Scripts Modal //
+
+
 	// Ajuste Meus Pedidos //
 		if (orderList.length > 0) {
 			orderList.find('link').remove();
