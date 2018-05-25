@@ -1,0 +1,39 @@
+.arrowLeft{
+	&:before{
+		content: '';
+		width: 0;
+		height: 0;
+		font-size: 0;
+		margin-right: 15px;
+		display: inline-block;
+		vertical-align: middle;
+		border-left: 15px solid #0097d8;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+	}
+}
+
+.bt-dashed{
+	border-bottom-width: 1px;
+    border-bottom-style: dashed;
+}
+
+.bt-solid{
+	border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.i-dropBtn{
+	&:after{
+	    @extend .bold;
+	    top: 50%;
+	    right: 15px;
+	    content: '^';
+	    color: #939393;
+	    line-height: 0;
+	    display: block;
+	    position: absolute;
+	    -ms-transform: translateY(-50%) rotate(180deg);
+	    transform: translateY(-50%) scaleY(-1) scaleX(1.8);
+	}
+}

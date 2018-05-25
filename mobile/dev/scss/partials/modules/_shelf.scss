@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Shelf
+   ========================================================================== */
+
+.prateleira {
+	margin:0 auto;
+	h2 {display: none;}
+
+	ul,
+	.slick-track{
+		display: flex;
+    	align-items: stretch;
+		list-style-type: none;
+    	justify-content: flex-start;
+
+    	&:not(.slick-slider){
+    		flex-wrap: wrap;
+    	}
+	}
+
+	.clusterHighLight {
+		.flag {
+			display: none !important;
+		}
+	}
+
+	li {
+		padding: 4px;
+		height: 370px;
+		
+		a {
+			text-decoration: none;
+		}
+
+		.shelfBestPrice {
+			display: block;
+		}
+
+		.shelfProductName {
+			@include font-size(1.5);
+			height: 45px;
+			display: block;
+			overflow: hidden;
+			font-weight: lighter;
+			text-overflow: ellipsis;
+		}
+
+		.price {
+			height: 75px;
+			display: block;
+
+			.shelfOldPrice {
+				@include font-size(1.1);
+				width: 100%;
+				display: block;
+				text-decoration: line-through;
+			}
+
+			.shelfInstallment {
+				@include font-size(1.4);
+			}
+		}
+	}
+}

@@ -1,0 +1,291 @@
+  /* ==========================================================================
+   Minha Conta
+   ========================================================================== */
+
+body.account {
+
+	header.menu-persistente{
+		position: relative;
+	}
+	.modal-backdrop{
+		display: none;
+	}
+
+	#box-bread-brumb {
+		display: none;
+	}
+
+    #form-submit,
+    #profile-submit {
+        @include font-size(1.4);
+        float: right;
+        height: 30px;
+        margin-top: 1px;
+        line-height: 10px;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #000 !important;
+    }
+
+    #profile-submit {
+    	color: #fff !important;
+    	background-color: #ff9933;
+    }
+
+	main{
+	    overflow: hidden;
+	    background-color: #fff;
+
+		.container{
+			display: flex;
+			padding: 0 10px;
+			flex-wrap: wrap;
+			align-items: stretch;
+
+			.row {
+				width: 100%;
+				margin: 0;
+			}
+
+			h3{
+				width: 100%;
+				margin: 20px 0;
+				padding: 22px 0;
+				border-color: #9e9ea6;
+			}
+		}
+	}
+
+	.profile-detail-display,
+	.address-display-block{
+		@include font-size(1.3);
+		width: 100%;
+		margin-top: 20px;
+		padding: 20px 40px;
+		border: 1px solid #9e9ea6;
+
+		h5{
+			display: none;
+		}
+
+		h4 {
+			@include font-size(3);
+			clear: both;
+			color: #f68026;
+			margin: 20px 0;
+			min-width: 225px;
+			padding: 10px 40px;
+			display: inline-block;
+			transform: translateX(-40px);
+		}
+
+		.profile-detail-display-email {
+			padding: 5px 0;
+		}
+
+
+		.new-address-link{
+			margin-top: 0;
+		}
+	}
+
+	.profile-detail-display-info{
+		br{display: none}
+		& > span{
+			width: 100%;
+			padding: 5px 0;
+			display: block;
+		}
+	}
+	.profile-detail-display-info,
+	.address-display-unit-info { 
+		line-height: 1.5;
+		& > span{
+		}
+	}
+	.edit-profile-link,
+	.new-address-link,
+	.edit-address-link{
+		margin: 15px 0;
+		overflow: hidden;
+	}
+	#edit-data-link, .new-address-link a{
+		@include font-size(1.8);
+		color: #fff;
+		line-height: 30px;
+		padding: 4px 20px;
+		text-align: center;
+		background: #18318F;
+		border: 0 !important;
+		display: inline-block;
+		text-decoration: none;
+		background-image: none;
+		text-transform: lowercase;
+		&:hover{
+			color: #18318F;
+			border: 0 !important;
+			background: #e6e6e6 !important;
+		}
+	}
+	.edit-address-link{
+		a{
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.data { font-weight: 300; }
+
+	.modal {
+		@include font-size(1.2);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+		display: none;
+		position: fixed;
+		background: rgba(#000, .6);
+
+		form {
+			top: 80px;
+			left: 50%;
+			width: 100%;
+			height: 523px;
+			position: fixed;
+			max-width: 300px;
+			overflow-y: scroll;
+			margin-left: -150px;
+		}
+
+		&-header {
+			flex-direction: row-reverse;
+			align-items: center;
+			height: 58px;
+			padding: 0 15px;
+			background-color: #fff;
+
+			h3 {
+				color: #000;
+				flex: 1;
+				margin: 0;
+				padding-top: 20px;
+				display: block;
+				font: {
+					size: 1.6em;
+				}
+			}
+
+			.close {
+				@include font-size(4);
+				border: 0;
+				padding: 0;
+				color: #000;
+				width: 28px;
+				float: right;
+				height: 35px;
+				margin-top: 3px;
+				cursor: pointer;
+
+				background: {
+					color: transparent;
+					repeat: no-repeat;
+					position: center;
+				}
+			}
+		}
+
+		&-body {
+			padding: 15px;
+			overflow: auto;
+			background-color: #e6e6e6;
+			-webkit-overflow-scrolling: touch;
+
+			.dropdown-icon{
+				display: none;
+			}
+
+			.profile-detail-form-personal-data h5 { margin-top: 10px; }
+
+			h5 {
+				display: none;
+			}
+
+			.control-group {
+				@include font-size(1.3);
+				margin-bottom: 1em;
+
+				label { display: inline-block; }
+
+				select{
+					margin-top: 5px;
+				}
+
+				input {
+					&:not([type="radio"]) {
+						@include font-size(1.2);
+						display: block;
+						width: 100%;
+						height: 30px;
+						padding: 0 10px;
+						border: none;
+						border-radius: 0;
+						margin-top: 5px;
+						transition-duration: .2s;
+						transition-timing-function: ease;
+						transition-property: padding, border-color;
+						appearance: none;
+
+						&:focus { border-color: #000; }
+					}
+				}
+			}
+
+			.form-personal-data-gender .controls label {
+				position: relative;
+				margin-top: .5em;
+				padding-right: 20px;
+			}
+
+			#business-toggle {
+				display: none;
+			}
+		}
+
+		&-footer {
+			flex-direction: row-reverse;
+			height: 58px;
+			padding: 15px;
+			border: 0;
+			color: #000;
+			background-color: #fff;
+
+			.btn {
+				@include font-size(1.3);
+				color: #000;
+				border: none;
+				cursor: pointer;
+				appearance: none;
+				padding: 8px 30px;
+				text-align: center;
+				text-transform: lowercase;
+				background-color: #e6e6e6;
+			}
+
+			.btn-link {
+				@include font-size(1.3);
+				color: #000;
+				cursor: pointer;
+				appearance: none;
+				padding: 7px 20px;
+				margin: 0 15px 0 0;
+				display: inline-block;
+				background: transparent;
+				border: 1px solid #e6e6e6;
+				text-transform: lowercase;
+			}
+		}
+	}
+}

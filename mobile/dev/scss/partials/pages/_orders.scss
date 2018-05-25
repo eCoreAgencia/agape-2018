@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Meus Pedidos
+   ========================================================================== */
+
+// Reset bootstrap
+
+body.orders, .vtex-bootstrap{
+    .container{
+        width: 100% !important;
+    }
+    header, footer{
+        line-height: 18px;
+        font-size: 14px !important;
+        font-family:'Open Sans', sans-serif !important;
+        a{
+            font-size: inherit;
+        }
+        .menu-header{
+            font-size: inherit;
+        }
+        select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
+            margin: 0;
+            height: auto;
+            border-radius: 0;
+            line-height: initial;
+        }
+        h1, h2, h3, h4, h5, h6{
+            margin: 0;
+            line-height: initial;
+        }
+        ul, ol, form, figure{
+            margin: 0;
+        }
+    }
+
+    // Reset bootstrap
+
+    .nav-pills,
+    #locale-select{
+        display: none;
+    }
+
+    header{
+
+        h1.logo{
+            margin: 0;
+        }
+    }
+
+    main{
+	    padding: 90px 20px 10px;
+        h1.title, .page-header{
+           display: none;
+        }
+       	h2.page-title{
+       	}
+    }
+    footer{
+        h3{
+            @extend .txt-sz-24;
+        }
+        h4{
+            margin-bottom: 10px;
+        }
+        .form-newsletter{
+            input{
+                margin: 2px 0;
+            }
+        }
+    }
+}
+
+body.orders {
+    h2 {
+        &.page-title {
+            @include font-size(3);
+            color: #F68026;
+            text-align: left;
+            min-width: 1000px;
+            display: inline-block;
+            background: none !important;
+        }
+    }
+}

@@ -1,0 +1,188 @@
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+body.home{
+	main{
+
+		.box-banner{
+			cursor: pointer;
+		}
+
+		.slider-dois {
+			.slick-list {
+				height: 499px !important;
+				
+			}
+		}
+
+		.banners-orange{
+    		width: 100%;
+		    float: left;
+		    padding: 10px 7px;
+		    margin-bottom: 20px;
+
+			.box-banner{
+				@extend .col-md-3;
+				cursor: pointer;
+			}
+		}
+
+		.bottom-banners {
+			width: 100%;
+			float: left;
+			margin-top: -30px;
+			margin-bottom: 20px;
+		}
+
+		.destaque{
+			clear: both;
+			height: 608px;
+			margin: 20px 0;
+			overflow: hidden;
+
+			.banner-destaque,
+			.slider-dois{
+				display: block;
+				width: 100%;
+				padding: 0 7px;
+			}
+
+			.banner-destaque{
+				margin-bottom: 10px;
+			}
+		}
+
+		.mais-vendidos{
+			z-index: 3;
+			border-bottom: 1px solid #888;
+
+			ul.slick-dots {
+				bottom: -4px;
+			}
+		}
+
+		.em-promocao{
+			z-index: 2;
+			padding-top: 10px;
+			margin-bottom: 30px;
+
+			ul.slick-dots {
+				bottom: -30px;
+			}
+		}
+
+		.mais-vendidos,
+		.em-promocao{
+			float: left;
+			width: 100%;
+			position: relative;
+			padding-bottom: 20px;
+
+			.container{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+			}
+		}
+
+		.shelf-title{
+			flex-wrap: wrap;
+			align-items: center;
+			display: inline-flex;
+			justify-content: center;
+
+			svg{
+				width: 40px;
+				height: auto;
+				display: inline-block;
+			}
+
+			h2{
+				@extend .regular, .txt-darkerGray, .col-md-12,.txt-sz-30;
+				padding: 15px 20px;
+				display: inline-block;
+			}
+		}
+
+		.slider-escolha-por-santos {
+			width: 100%;
+			float: left;
+			position: relative;
+			background: url(/arquivos/bg-escolha-santo.jpg) no-repeat 0 0 transparent;
+
+			.slick-dots {
+				bottom: -70px;
+				margin-left: -55px;
+			}
+
+			h2,
+			li,
+			img,
+			nav {
+				margin: 0;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			img {
+				max-width: 140px;
+			}
+
+			h2 {
+				@include font-size(2);
+				top: 60px;
+				right: 33px;
+				color: #505050;
+				max-width: 310px;
+				font-weight: 400;
+				position: absolute;
+				text-transform: uppercase;
+
+				span {
+					@include font-size(2);
+					font-weight: bold;
+				}
+			}
+
+			nav {
+				max-width: 55%;
+				padding: 0 0 0;
+				margin-right: 0;
+				margin-top: 50px;
+
+				ul {
+					li {
+						margin-right: 5px;
+
+						a {
+							@include font-size(1.1);
+							@extend .transition;
+							color: #fff;
+							display: block;
+							line-height: 20px;
+							font-weight: bold;
+							padding: 15px 10px;
+							text-align: center;
+							border-radius: 5px;
+							text-decoration: none;
+							background-color: #f68026;
+							text-transform: uppercase;
+
+							&:after {
+								@extend .transition;
+								content: '';
+								width: 16px;
+								height: 16px;
+								margin-left: 5px;
+								display: inline-block;
+								vertical-align: middle;
+								background: url(/arquivos/right-arrow-santo-branco.png) no-repeat scroll 0 0 transparent;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

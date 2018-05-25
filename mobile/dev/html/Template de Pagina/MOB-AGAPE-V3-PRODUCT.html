@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-BR">
+   <head>
+      	<vtex:metaTags />
+      	<vtex:template id="MOB-AGAPE-V3-COMMONSTYLES" />
+        <meta property="og:image" content="/arquivos/logo-agape.png" />
+        <meta property="og:image:type" content="image/png"/>
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
+        <link rel="stylesheet" type="text/css" href="/arquivos/produto-quaresma.css" />
+        <style>.zoomWrapperImage{width:60%!important}</style>
+   </head>
+   <body>
+      	<vtex:template id="MOB-AGAPE-V3-HEADER" />
+		<main>
+			<section class="row breadcrumbs">
+        		<div class="container">
+        			<vtex.cmc:breadCrumb />
+        		</div>
+        	</section><!-- breadcrumbs END -->
+
+        	<section class="product-box">
+            	<div class="container">
+            		<div class="ProductImage col-xs-12">
+                        <!-- Mounting With API -->
+                        <div class="slider col-xs-12">
+                        	<ul></ul>
+                        </div>
+	                </div><!-- product-box END -->
+
+	                <div class="ProductInfo">
+		                <div class="title-section">
+		                	<h1 class="Nome txt-sz-28 txt-dark-gray regular">
+		                		<vtex.cmc:productName />
+		                	</h1>
+	                    	<div class="codigo-produto txt-sz-12 txt-gray-nine">
+	        					<span>SKU: </span><vtex.cmc:skuReference/>
+	        				</div>
+	        				<div class="evaluation-product">
+				                <!-- Inicio Yourviews -->
+				                    <!-- Âncora para o bloco de Reviews (De preferência manter sempre próximo ao nome do produto)  -->
+				                    <div id="yv-review-quickreview"></div>
+				                <!-- Final Yourviews -->
+	        				</div>
+	                		<vtex.cmc:skuPrice/>
+	                	</div>
+
+	                	<div class="sku-section col-xs-12">
+	                		<div class="sku-area">
+	                			<vtex.cmc:skuRichSelection changeImage="1" />
+	                		</div>
+
+							<div class="medidas">
+                				<button class="btn-tabelaMedidas">tabela de medidas</button>
+                				<vtex.cmc:partTabelaMedidas/>
+							</div>
+
+		                	<div class="quantidade col-xs-12">
+								<div class="selecao-sku">
+									<div class="quantidade col-xs-6">
+										<h2 class="txt-gray txt-up regular">Quantidade</h2>
+										<i class="less">-</i>
+											<input class="prodQtd" type="text" value="1" disabled="disabled" />
+										<i class="more">+</i>
+									</div>
+								</div><!-- selecao-sku END -->
+		                	</div>
+	                	</div>
+
+	                	<div class="buy-box col-xs-12">
+                			<button class="col-xs-12 add-to-cart">
+                				adicionar ao carrinho
+                			</button>
+                			<div class="col-xs-12 buy-area">
+	                			<vtex.cmc:BuyButton/>
+                			</div>
+                		</div>
+                		<div class="col-xs-12">
+                			<vtex.cmc:shippingValue/>
+                		</div>
+	                </div>
+            	</div>
+            </section>
+
+            <section class="troca col-xs-12">
+            	<div class="container">
+                    <h2 class="section-title troca-title txt-sz-20 txt-darkerGray">Não serviu? <strong>A Ágape troca de graça!</strong></h2>
+					<span class="mobile-info-troca txt-gray"><vtex:contentPlaceHolder id="texto-troca" /></span>	
+	            </div>
+            </section>
+
+            <div id="prod-info" class="container">
+            	<section class="descricao col-xs-12 col-md-7">
+            		<h2 class="section-title txt-darkBlue">Descrição</h2>
+                    <vtex.cmc:ProductDescription/>
+               	</section>
+            	<section class="especificacoes col-xs-12 col-md-5">
+            		<h3 class="section-title txt-darkBlue">Características</h3>
+            		<vtex.cmc:productSpecification/>
+            	</section>
+            </div>
+
+            <section class="row produtos-similares">
+				<div class="container">
+					<h2 class="section-title txt-orange bold txt-sz-20">
+						<vtex:contentPlaceHolder id="tituloPrateleira"/>
+					</h2>
+					<vtex:contentPlaceHolder id="ColecaoQVVT" />
+				</div>
+			</section>
+
+			<!-- Inicio Yourviews -->
+			<article class="box-yourviews-container">
+				<div class="yv-box yv-box-review" style="display: none;">
+					<div id="yv-reviews"></div>
+				</div>
+				<div class="yv-box yv-box-qa" style="display: none;">
+					<div class="yv-qa"></div>
+				</div>
+			</article>
+			<!-- Final Yourviews -->
+
+		</main>
+
+	    <vtex:template id="MOB-AGAPE-V3-FOOTER" />
+	    <vtex:template id="MOB-AGAPE-V3-COMMONSCRIPTS" />
+   </body>
+</html>

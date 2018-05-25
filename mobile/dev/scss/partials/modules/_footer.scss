@@ -1,0 +1,269 @@
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer{
+  	clear: both;
+	display: block;
+	margin-top: 20px;
+  	flex-direction: column;
+
+  	.footer-middle{
+  		width: 100%;
+  		float: left;
+  		display: block;
+  		text-align: center;
+
+  		ul {
+  			display: none;
+  			background-color: #f6f4f4;
+
+  			li {
+  				padding: 10px 0;
+  				border-bottom: 1px solid #ccc;
+
+  				&:last-child {
+  					border-bottom: none;
+  				}
+  			}
+
+  			&.active {
+  				display: block;
+  			}
+  		}
+  	}
+
+	input[type="radio"]{
+		& + .checkbox{
+			@extend .bg-white;
+			padding: 5px;
+			user-select: none;
+			margin-right: 10px;
+			border-radius: 5px;
+			display: inline-block;
+			border: 1px solid #c0c0c0;
+
+			&:before{
+				@extend .transition;
+				content: '';
+				width: 10px;
+				height: 10px;
+				display: block;
+				pointer-events: none;
+				background-color: transparent;
+			}
+		}
+		&:checked + .checkbox{
+			&:before{
+				@extend .bg-darkBlue;
+			}
+		}
+	}
+
+  	.footer-bottom{
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		background-color: transparent;
+
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+	
+	.institucional, .dados, .atendimento, .compra-segura{
+		padding: 12px 0 0;
+		border-bottom: 1px solid #ccc;
+
+		h3{
+			@extend .txt-darkerGray, .txt-sz-24, .semi-bold, .txt-left;
+			@include font-size(2.2);
+			margin-left: 10px;
+			position: relative;
+			font-weight: normal;
+
+			&:after {
+				@extend .transition;
+				top: 0;
+				right: 10px;
+				color: #333;
+				content: '>';
+				display: block;
+				position: absolute;
+			}
+
+			&.active {
+				&:after {
+					@extend .transition;
+					content: 'v';
+					color: #ff9933;
+					display: block;
+				}
+			}
+
+			svg{
+				width: 30px;
+				margin: 5px;
+				height: auto;
+				vertical-align: middle;
+			}
+
+			span{
+				padding: 5px;
+				vertical-align: middle;
+			}
+		}
+
+		ul{
+			li{
+				@extend .txt-gray, .regular, .txt-dc-none, .txt-cap, .txt-left, .transition;
+				list-style: none;
+				padding-left: 45px;
+
+				a {
+					@include font-size(1.8);
+					color: inherit;
+					weight: inherit;
+					text-decoration: inherit;
+				}
+			}
+		}
+	}
+	.selos-seguranca {
+	    width: 200px;
+		display: none;
+	    column-count: 2;
+	    margin-left: 42px;
+
+	    &.active {
+	    	display: block;
+	    }
+
+		a {
+			display: inline-block;
+
+			&:nth-of-type(4){
+				margin-top: 3px;
+			}
+			img{
+				width: 90px;
+				height: auto;
+			}
+		}
+	}
+
+	.logo-social{
+		text-aling: center;
+		padding: 40px 7px 20px;
+
+		a{
+			display: inline-block;
+		}
+	}
+
+	.socialLinks{
+		width: 100%;
+		padding: 10px 7px;
+		text-align: center;
+		display: inline-block;
+
+		li{
+			margin: 7px;
+			padding: 10px;
+			list-style: none;
+			border-radius: 100%;
+			display: inline-block;
+			border: 1px solid #18318e;
+
+			a{
+				display: block;
+			}
+
+			svg{
+				width: 20px;
+				height: auto;
+				display: block;
+			} 
+
+			&:hover {
+				@extend .transition;
+				border: 1px solid #f68026;
+
+				#hover-social-blue{
+					fill: #f68026 !important;
+				}	
+			}
+
+		}
+	}
+
+	.textoLegal{
+		@extend .txt-gray, .txt-sz-14;
+		width: 100%;
+		float: left;
+		padding: 20px 7px;
+		border: 1px solid #cccccc;
+		border-left: 0;
+		border-right: 0;
+		display: none;
+	}
+
+	.metodos-pagamento{
+		@extend .bg-lightGray, .col-xs-12, .col-md-9;
+		padding: 10px 7px;
+		display: inline-flex;
+		justify-content: center;
+
+		h3{
+			@extend .txt-gray, .regular;
+			@include font-size(1.2);
+			display: none;
+			padding: 0 10px;
+			line-height: 16px;
+		}
+
+		.icones-pagamento{
+			text-align: center;
+			display: inline-block;
+			i{
+				margin: 5px;
+			}
+		}
+	}
+	.poweredBy{
+		@extend .col-xs-12, .col-md-3;
+		padding: 10px 7px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+
+		li{
+			display: inline-block;
+		}
+
+		.lg-vtex{
+			svg{
+				width: 100px;
+			}
+		}
+	}
+
+  	.copyright-notice{
+  		@extend .txt-gray, .txt-center, .txt-sz-10;
+  		float: left;
+  		width: 100%;
+  		padding: 10px;
+  		display: block;
+  	}
+}
+
+body.home{
+	footer{
+		.textoLegal{
+			display: block;
+		}
+	}
+}

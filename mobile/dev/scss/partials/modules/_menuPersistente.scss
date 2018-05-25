@@ -1,0 +1,82 @@
+/* ========================================================================
+	Menu Persistente
+	======================================================================= */
+
+header {
+	&.menu-persistente {
+		@extend .transition;
+		top: 0;
+		left: 0;
+		width: 100%;
+		position:static;
+		@include mq($screen-sm-min){
+			position: fixed;
+		}
+		min-height: 77px;
+		z-index: 999999999;
+		background-color: #fff;
+
+		.top-box {
+			@extend .transition;
+			opacity: 0;
+		}
+		
+		.mid-box {
+			margin-top: -40px;
+			padding: 5px 0;
+		}
+
+		.logo{
+			img{
+				@include mq($screen-md){
+					transform: translateY(0);
+				}
+			}
+		}
+		.menu-header{
+			@include mq($screen-md){
+				svg{ display: none;}
+			}
+		}
+		.container {
+			.row {
+				@extend .transition;
+				padding: 20px 0;
+				overflow: hidden;
+				margin-left: 0 !important;
+				position: inherit !important;
+			}
+		}
+
+		.search-box{
+			width: 100%;
+		}
+
+		.btn-myFavorites{
+			display: none;
+		}
+	}
+
+	&.ha-hidding{
+		@extend .transition;
+		top: 0;
+		position: fixed;
+		background: #fff;
+		z-index: 9999999999999;
+
+		.top-box {
+			display: none;
+		}
+	}
+
+	&.ha-hide{
+		top: -100%;
+	}
+}
+
+
+.top-height-active{
+	.ui-autocomplete {
+		top: 53px !important;
+	}
+}

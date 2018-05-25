@@ -1,0 +1,47 @@
+{{#if isInStock}}
+<div class="box-item shelfItem" data-prodId="{{productId}}">
+{{else}}
+<div class="box-item shelfItem product-off" data-prodId="{{productId}}">
+{{/if}}
+	<input type="hidden" class="shelf-prod-id" id="shelf-pord-id-$product.Id" value="{{productId}}"/>
+    <a class="product-image" title="{{productName}}" href="{{link}}">{{{productImage}}}</a>
+    <a class="shelfProductName txt-sz-18 txt-gray txt-up" title="{{linkText}}" href="{{link}}">{{productName}}</a>
+   	{{#if isInStock}}
+    	<div class="skus-selection"></div>
+    	<div class="drop">
+	    	<span class="price">
+	    		<a title="$escapedName" href="$uri">
+	    			{{#xif "hasBestPrice  &&  numberOfInstallments > '1' " }}
+					<span class="shelfOldPrice txt-orange txt-sz-16 ln-through"> De:
+					{{else}}
+					<span class="shelfOldPrice txt-orange txt-sz-22">
+					{{/xif}}
+	                    {{listPrice}}
+	                </span>                                      
+	                {{#xif " numberOfInstallments > '1' " }}
+	                    <span class="shelfInstallment txt-sz-20 txt-black">
+	        				Por apenas: <strong>{{numberOfInstallments}}x {{installmentValue}}</strong>
+	            		</span>
+	                {{/xif}}
+	               	{{#if hasBestPrice}}
+		               {{#if "numberOfInstallments > '1' "}}
+		                <span class="shelfBestPrice txt-sz-16 txt-gray"> ou {{listPrice}} à vista</span>
+		                {{else}}
+		                <span class="shelfBestPrice txt-sz-22 txt-gray">Por: {{bestPrice}}</span>  
+						{{/if}}
+	                {{/if}}
+	            </a>
+	    	</span>
+	        <div class="buttons">
+	        	<button class="btn-favorite bg-darkBlue">
+	        		<svg xmlns="http://www.w3.org/2000/svg" style="transform:scaleX(-1)" viewBox="0 0 612.008 612.008" width="40" height="40"><path d="M609.383 170.157c-11.479-66.076-59.969-117.694-125.18-130.505-67.537-13.263-134.697 16.207-169.347 74.289-2.642 4.412-8.735 14.841-8.851 14.683-.117.158-6.21-10.272-8.851-14.683-34.65-58.082-101.81-87.552-169.347-74.289C62.601 52.463 14.105 104.082 2.625 170.157c-9.009 51.831 5.846 100.829 34.177 143.981 22.506 34.294 47.612 67.558 75.764 97.309 57.794 61.101 125.613 110.929 193.431 164.05 67.825-53.121 135.644-102.949 193.431-164.05 28.152-29.751 53.259-63.022 75.764-97.309 28.338-43.152 43.2-92.142 34.191-143.981zm-474.085-53.203c-14.931.192-29.641 7.074-40.38 18.876-11.253 12.378-16.714 28.228-15.363 44.634.714 8.714-5.77 16.351-14.471 17.064-.446.034-.878.055-1.311.055-8.151 0-15.075-6.264-15.754-14.533-2.038-24.88 6.525-49.848 23.494-68.512 16.605-18.265 39.707-28.921 63.372-29.23 8.659-.199 15.905 6.875 16.028 15.61.105 8.742-6.873 15.919-15.615 16.036z" fill="#ffffff"/></svg>
+	        	</button>
+	        	<a class="buy-button" href="javascript:alert('Por favor, selecione o modelo desejado.');" style="display:block">adicionar ao carrinho</a>
+	        </div>
+      	</div>
+      	<div class="discountHighLight">{{{discountHighLight}}}</div>
+      	<div class="clusterHighLight">{{{productHighlight}}}</div>	
+	{{else}}
+		<span class="out-of-stock">Produto Esgotado</span> 
+	{{/if}}
+</div>
