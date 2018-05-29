@@ -7,6 +7,7 @@ footer{
   	clear: both;
 	display: block;
   	flex-direction: column;
+
   	.footer-middle{
   		width: 100%;
   		float: left;
@@ -14,6 +15,7 @@ footer{
   		display: block;
   		text-align: center;
   	}
+
 	input[type="radio"]{
 		& + .checkbox{
 			@extend .bg-white;

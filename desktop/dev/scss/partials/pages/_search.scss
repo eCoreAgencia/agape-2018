@@ -4,13 +4,21 @@ Página de Busca, Categorias e Departamentos
 
 body.dep-cat-bus{
 
+	.products-actions {
+		display: none;
+	}
+
 	#ajaxBusy {
 		@include font-size(2);
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
+		opacity: 0.8;
+		min-height: 365px;
 		position: absolute;
+		z-index: 9999999999;
+		background-color: #fff;
 
 		&:before {
 			top: 0;
@@ -27,13 +35,15 @@ body.dep-cat-bus{
 		}
 
 		p {
-			position: fixed;
-			display: block!important;
-			opacity: 1;
-			left: 50%;
-			width: 300px;
 			top: 35%;
+			left: 50%;
+			opacity: 1;
+			width: 300px;
+			position: fixed;
+			line-height: 35px;
+			text-align: center;
 			margin-left: -150px;
+			display: block!important;
 
 			&:before {
 				content: '';
@@ -364,6 +374,7 @@ body.dep-cat-bus{
 			padding: 6% 0;
 			display: block;
 			overflow: hidden;
+			margin-top: 30px;
 			ul{
 				li{
 					@extend .txt-sz-20, .txt-lo, .regular, .txt-gray;

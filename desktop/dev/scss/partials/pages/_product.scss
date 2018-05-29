@@ -461,6 +461,7 @@ body.produto main .buy-box button.add-to-cart:hover {
 body.produto .buy-box button.add-to-cart {
     @extend .transition;
     font-size: 24px;
+    width: 70%;
     color: #fff;
     border: none;
     height: 60px;
@@ -725,6 +726,7 @@ body.produto .box-yourviews-container {
     clear: both;
     overflow: hidden;
     padding-top: 40px;
+    margin-bottom: 40px;
     border-top: 1px solid #d1d1d1
 }
 

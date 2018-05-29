@@ -63,7 +63,8 @@ function ClientCreate(){
           $("#cl_nome").val("");
           $("#cl_email").val("");
           $("#cl_genero").val("");
-          
+
+          $('body').removeClass('error-news');          
           $('.modal-container').remove('.new-modal-content');
           $('<div class="new-modal-content news-element success-news"><h3>Seu e-mail foi cadastrado com sucesso.</h3><p>Ganhe descontos utilizando o cupom: "PRIMEIRACOMPRA"</p></div>').appendTo('.modal-container');
           $('body').addClass('modal-active newsletter-active');
@@ -72,7 +73,9 @@ function ClientCreate(){
           console.log(data);
           $('.modal-container').remove('.new-modal-content');
           $('<div class="new-modal-content news-element fail-news"><h3>Ocorreu algum erro ao cadastrar seu e-mail.</h3><p>Você pode fechar essa janela e tentar novamente mais tarde? Obrigado.</p></div>').appendTo('.modal-container');
-          $('body').addClass('modal-active newsletter-active');
+          $('body').addClass('modal-active newsletter-active error-news');
+          $('<span class="error">É preciso preencher com o seu nome</span>').insertAfter('fieldset.nome input');
+          $('<span class="error">É preciso preencher com o seu e-mail</span>').insertAfter('fieldset.email input');
         }
     });
 }

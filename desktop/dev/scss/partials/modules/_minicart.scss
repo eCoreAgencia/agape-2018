@@ -184,17 +184,21 @@
 	justify-content: center;
 }
 
-.sta-cart-title button { 
-	border: 0; 
-	outline: 0; 
-	float: left; 
+.sta-cart-title button {
+	@include font-size(3);
+	border: 0;
+	outline: 0;
+	float: left;
 	padding: 7px;
-	z-index: 99999; 
-	cursor: pointer; 
-	position: relative; 
-	display: inline-block; 
+	color: #f68026;
+	z-index: 99999;
+	cursor: pointer;
+	text-align: left;
+	margin-left: -20px;
+	margin-right: 30px;
+	position: relative;
+	display: inline-block;
 	background-color: transparent;
-	margin-top: 10px;
 }
 
 .sta-cart .sta-cart-close svg{
@@ -232,12 +236,17 @@
 		display: block;
 	}
 	h4{
-		@extend .txt-sz-14, .txt-gray, .semi-bold;
+		@extend .txt-sz-14, .semi-bold;
 		margin: 0;
 		line-height: 16px;
 		padding: 0 7px 10px;
     	height: 32px;
     	overflow: hidden;
+
+    	a {
+    		@extend .txt-gray;
+    		text-decoration: none;
+    	}
 	}
 	p{
 		@extend .txt-sz-16, .txt-gray, .regular;

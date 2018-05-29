@@ -381,7 +381,7 @@ footer .textoLegal,
 footer .metodos-pagamento h3,
 footer .copyright-notice,
 .search-box .busca input.fulltext-search-box:focus,
-.sta-cart-items .sta-cart-pdt-info h4,
+.sta-cart-items .sta-cart-pdt-info h4 a,
 .sta-cart-items .sta-cart-pdt-info p,
 header .menu-header.display .menu-item,
 header .menu-header .submenu .menu-item,
@@ -664,7 +664,6 @@ header .menu-header .submenu .menu-item,
 body.modal-active .modal-box,
 .modal-box,
 .modal-box .close-modal,
-.modal-box .close-modal:hover,
 .modal-box .modal-container,
 body.home main .escolha-por-santos nav ul li a,
 body.home main .escolha-por-santos nav ul li a:after,
@@ -1226,7 +1225,7 @@ footer .textoLegal,
 footer .metodos-pagamento h3,
 footer .copyright-notice,
 .search-box .busca input.fulltext-search-box:focus,
-.sta-cart-items .sta-cart-pdt-info h4,
+.sta-cart-items .sta-cart-pdt-info h4 a,
 .sta-cart-items .sta-cart-pdt-info p,
 header .menu-header.display .menu-item,
 header .menu-header .submenu .menu-item,
@@ -2217,25 +2216,6 @@ body.home footer .textoLegal {
 
 .prateleira .clusterHighLight .flag {
 	display: none !important;
-}
-
-.prateleira .clusterHighLight .flag.lancamentos,
-.prateleira .clusterHighLight .flag.produtos-em-oferta {
-	display: block !important;
-}
-
-.prateleira .clusterHighLight .flag.lancamentos {
-	width: 80px;
-	font-size: 0;
-}
-
-.prateleira .clusterHighLight .flag.lancamentos:after {
-	font-size: 22px;
-	display: block;
-	content: 'NOVO';
-	position: absolute;
-	top: 10px !important;
-	left: 13px !important;
 }
 
 .prateleira li {
@@ -3355,16 +3335,20 @@ span.resultado-busca-numero {
 }
 
 .sta-cart-title button {
+	font-size: 30px;
 	border: 0;
 	outline: 0;
 	float: left;
 	padding: 7px;
+	color: #f68026;
 	z-index: 99999;
 	cursor: pointer;
+	text-align: left;
+	margin-left: -20px;
+	margin-right: 30px;
 	position: relative;
 	display: inline-block;
 	background-color: transparent;
-	margin-top: 10px;
 }
 
 .sta-cart .sta-cart-close svg {
@@ -3463,6 +3447,10 @@ span.resultado-busca-numero {
 	padding: 0 7px 10px;
 	height: 32px;
 	overflow: hidden;
+}
+
+.sta-cart-items .sta-cart-pdt-info h4 a {
+	text-decoration: none;
 }
 
 .sta-cart-items .sta-cart-pdt-info p {
@@ -3627,6 +3615,13 @@ span.resultado-busca-numero {
 	display: inline-flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
+}
+
+.Newsletter .form-newsletter .error {
+	color: red;
+	display: block;
+	margin-top: 8px;
+	text-transform: uppercase;
 }
 
 .Newsletter .form-newsletter input {
@@ -4108,7 +4103,6 @@ body.modal-active .modal-box {
 	top: 0;
 }
 
-body.modal-active .modal-box .close-modal,
 body.modal-active .modal-box .modal-container {
 	position: fixed;
 }
@@ -4123,25 +4117,14 @@ body.modal-active .modal-box .modal-container {
 }
 
 .modal-box .close-modal {
-	top: 26%;
-	left: 50%;
-	color: #fff;
-	width: 70px;
-	height: 30px;
+	font-size: 35px;
+	float: right;
 	padding: 10px;
+	color: #f68026;
 	cursor: pointer;
-	font-size: 15px;
 	line-height: 10px;
-	margin-left: 77px;
-	z-index: 2147483647;
 	text-align: center;
-	background-color: #666;
-	border: 1px solid #fff;
-}
-
-.modal-box .close-modal:hover {
-	color: #fff;
-	background-color: #333;
+	z-index: 2147483647;
 }
 
 .modal-box .opacity-modal {
@@ -4162,6 +4145,7 @@ body.modal-active .modal-box .modal-container {
 	margin-left: -148px;
 	z-index: 2147483647;
 	background-color: #fff;
+	border-top: 3px solid #f68026;
 	box-shadow: 0px 0px 11px -2px rgba(191, 191, 191, 0.75);
 }
 
@@ -4868,6 +4852,7 @@ body.produto main .buy-box button.add-to-cart:hover {
 
 body.produto .buy-box button.add-to-cart {
 	font-size: 24px;
+	width: 70%;
 	color: #fff;
 	border: none;
 	height: 60px;
@@ -5133,6 +5118,7 @@ body.produto .box-yourviews-container {
 	clear: both;
 	overflow: hidden;
 	padding-top: 40px;
+	margin-bottom: 40px;
 	border-top: 1px solid #d1d1d1;
 }
 
@@ -5220,13 +5206,21 @@ body.produto .Cor .skuList label.skuespec_Preto {
 Página de Busca, Categorias e Departamentos
 ========================================================================== */
 
+body.dep-cat-bus .products-actions {
+	display: none;
+}
+
 body.dep-cat-bus #ajaxBusy {
 	font-size: 20px;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	opacity: 0.8;
+	min-height: 365px;
 	position: absolute;
+	z-index: 9999999999;
+	background-color: #fff;
 }
 
 body.dep-cat-bus #ajaxBusy:before {
@@ -5244,13 +5238,15 @@ body.dep-cat-bus #ajaxBusy:before {
 }
 
 body.dep-cat-bus #ajaxBusy p {
-	position: fixed;
-	display: block !important;
-	opacity: 1;
-	left: 50%;
-	width: 300px;
 	top: 35%;
+	left: 50%;
+	opacity: 1;
+	width: 300px;
+	position: fixed;
+	line-height: 35px;
+	text-align: center;
 	margin-left: -150px;
+	display: block !important;
 }
 
 body.dep-cat-bus #ajaxBusy p:before {
@@ -5559,6 +5555,7 @@ body.dep-cat-bus .mainShelf .pager {
 	padding: 6% 0;
 	display: block;
 	overflow: hidden;
+	margin-top: 30px;
 }
 
 body.dep-cat-bus .mainShelf .pager ul li {
@@ -7733,10 +7730,6 @@ header .menu-header .submenu figure {
 
 header .menu-header .submenu li {
 	border: 0;
-}
-
-.modal-box .close-modal {
-	margin-left: 268px;
 }
 
 body.home main .destaque .banner-destaque,

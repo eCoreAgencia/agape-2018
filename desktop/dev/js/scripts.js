@@ -135,14 +135,6 @@ var body = $('body'),
 
 $(function() {
 
-		$('.freight-btn').on('click', function(event){
-			// Mounting Loader //
-			$('<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>').insertBefore('.freight-values');		
-			// Mounting Loader //
-
-			$('.spinner').fadeOut('6000');
-		});
-
 	// Add to Cart Button //
 		body.on('click', '.add-to-cart', function(event){
 			var url = $('.buy-button').attr('href');
@@ -320,26 +312,7 @@ $(function() {
 			adaptiveHeight: true,
 	    });
 	// Slider
-	// Btn fechar menu
 
-	// Menu SidePanel //
-	/*
-		$('header .js-open-mobile-menu').click(function(){
-			$(this).toggleClass('active');
-			$('header .menu-header').toggleClass('slideActive');
-		});
-
-		$("header nav.menu .has-sub .js-open-sub").click(function() {
-		  $(this).toggleClass('active');
-		  $(this).next().toggleClass("slideActive");
-		});
-    $(".first-menu").click(function() {
-				$(this).parent().toggleClass('has-sub-active');
-		  	$(this).parent().find('.pointer').toggleClass('pointer-active');
-		  	$(this).next().toggleClass("slideActive");
-
-		});*/
-	// Menu SidePanel //
 	//
 	$('.js-open-mobile-menu').click(function(){
 		var self = $(this);
@@ -360,6 +333,7 @@ $(function() {
 		         .on('touchstart touchmove', function (e) {});
 		}
 	});
+
 	$('header').find('.menu-header.display').on('click', 'li.has-sub > a', function(e){
         e.preventDefault();
         $(this).siblings('.submenu').toggleClass('active');
@@ -476,6 +450,15 @@ $(function() {
 					if($('.selecao-sku label').length < 2){
 						$('.topic.Cor').remove();
 					};
+
+					$('.freight-btn').on('click', function(event){
+						// Mounting Loader //
+						$('<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>').insertBefore('.freight-values');		
+						// Mounting Loader //
+
+						$('.spinner').fadeOut('6000');
+					});
+
 				});
 			} catch(e) {}
 

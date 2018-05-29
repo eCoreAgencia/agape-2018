@@ -34,6 +34,14 @@
 			padding-left: 75px;
 			justify-content: flex-start;
 		}
+
+		.error {
+			color: red;
+			display: block;
+			margin-top: 8px;
+			text-transform: uppercase;
+		}
+
 		input{
 			@extend .txt-sz-16, .txt-lighterGray;
 			width: 100%;
