@@ -159,9 +159,21 @@ body.home{
 			li,
 			img,
 			nav {
-				margin: 0 85px 0 0;
 				display: inline-block;
 				vertical-align: middle;
+			}
+
+			.img-box {
+				margin: 0 85px 0 0;
+				display: inline-block;
+				
+				img {
+					display: none;
+					
+					&:first-of-type {
+						display: inline-block;
+					}
+				}
 			}
 
 			h2 {

@@ -1,0 +1,53 @@
+body.produto {
+    .item-dimension-Cor {
+        label {
+            &.skuespec_Preto {
+                background-color: #000;
+            }
+            
+            &.skuespec_Branco {
+                background-color: #fff
+            }
+
+            &.skuespec_Preto {
+                background-color: #000
+            }
+
+            &.skuespec_Verde {
+                background-color: #008DB7;
+            }
+            
+            &.skuespec_Bege {
+                background-color: #E9E0E3;
+            }
+            
+            &.skuespec_Perola {
+                background-color: #e9e0e3;
+            }
+            
+            &.skuespec__Estampado {
+                background-image: url('/arquivos/bg-estampado.png');
+            }
+            
+            .skuespec_Branco {
+                background-color: #fff;
+            }
+            
+            &.skuespec_Azul {
+                background-color: #004B79;
+            }
+            
+            &.skuespec_Marrom {
+                background-color: #B9957D;
+            }
+            
+            &.skuespec_Vermelho {
+                background-color: #B02238;
+            }
+            
+            &.skuespec_Rosa {
+                background-color: #E1C7D2;
+            }
+        }
+    }
+}

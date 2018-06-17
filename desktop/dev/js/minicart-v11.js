@@ -92,29 +92,7 @@
 							var freeFreight = '29999'; // Format Vtex JS Price Without Conversion
 
 							for(i = 0; i < items.length; i++){
-								$(cart).find('ul').append('<li> <div class="sta-cart-pdt-image"><a href="'+items[i].detailUrl+'"><img src="'+items[i].imageUrl+'" /></a><span class="sta-cart-pdt-qtd-item">' + items[i].quantity + '</span></div> <div class="sta-cart-pdt-info"> <h4><a href="'+items[i].detailUrl+'">'+items[i].name+'</a></h4> <button class="remove-item" data-index="'+i+'"><span>excluir</span></button> <div class="sta-cart-pdt-qtd"></div> <p>R$: ' + helper.toReal(items[i].sellingPrice) + '</p> </div> </li>');
-							}
-
-							if(convertCalc100 > freeFreight) {
-								$('<div class="progressbar 100"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
-							} else if (convertCalc10 < freeFreight) {
-								$('<div class="progressbar 10"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
-							} else if (convertCalc20 < freeFreight) {
-								$('<div class="progressbar 20"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
-							} else if (convertCalc30 < freeFreight) {
-								$('<div class="progressbar 30"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
-							} else if (convertCalc40 < freeFreight) {
-								$('<div class="progressbar 40"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
-							} else if (convertCalc50 < freeFreight) {
-								$('<div class="progressbar 50"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
-							} else if (convertCalc60 < freeFreight) {
-								$('<div class="progressbar 60"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
-							} else if (convertCalc70 < freeFreight) {
-								$('<div class="progressbar 70"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
-							} else if (convertCalc80 < freeFreight) {
-								$('<div class="progressbar 80"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
-							} else if (convertCalc90 < freeFreight) {
-								$('<div class="progressbar 90"><span class="progressbar__buttonEffect"></span></div>').insertBefore('.sta-cart-resume');
+								$(cart).find('ul').append('<li> <div class="sta-cart-pdt-image"><a href="'+items[i].detailUrl+'"><img src="'+items[i].imageUrl+'" /></a><span class="sta-cart-pdt-qtd-item">' + items[i].quantity + '</span></div> <div class="sta-cart-pdt-info"> <h4><a href="'+items[i].detailUrl+'">'+items[i].name+'</a></h4> <button class="remove-item" data-index="'+i+'"><span>excluir</span></button> <div class="sta-cart-pdt-qtd"></div> <p>R$ ' + helper.toReal(items[i].sellingPrice) + '</p> </div> </li>');
 							}
 
 						} else {
@@ -223,7 +201,7 @@
 		$.fn.vtexcart = function(parameters) {
 			var el = this;
 			settings = $.extend(settings, parameters);
-			var cartHtml = '<div class="sta-cart-overlay"></div><div class="sta-cart-container"> <div class="sta-cart-title"><button class="sta-cart-close">X</button> <span class="cart-ico"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 510 510"><path d="M153 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51zM0 0v51h51l91.8 193.8-35.7 61.2c-2.55 7.65-5.1 17.85-5.1 25.5 0 28.05 22.95 51 51 51h306v-51H163.2c-2.55 0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7c20.4 0 35.7-10.2 43.35-25.5L504.9 89.25c5.1-5.1 5.1-7.65 5.1-12.75 0-15.3-10.2-25.5-25.5-25.5H107.1L84.15 0H0zm408 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51z" fill="#f68026"/></svg></span><h3>Minhas <strong>Compra</strong><span class="qtd-cart"></span></h3> </div> <div class="sta-cart-items"> <ul></ul> </div> <div class="sta-cart-resume"> <span class="sta-cart-sub">Subtotal<strong>R$ 0,00</strong></span> <span class="sta-cart-freight">Frete<strong style="display:none">0</strong><button>Calcular</button><input type="text" /></span><span class="sta-cart-total">Total: <strong>R$ 0,00</strong></span> <a href="/checkout/#/cart"><span>Finalizar Pedido</span></a> </div> </div>';
+			var cartHtml = '<div class="sta-cart-overlay"></div><div class="sta-cart-container"> <div class="sta-cart-title"><button class="sta-cart-close"><img src="/arquivos/bt-fechar.png" /></button> <span class="cart-ico"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 510 510"><path d="M153 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51zM0 0v51h51l91.8 193.8-35.7 61.2c-2.55 7.65-5.1 17.85-5.1 25.5 0 28.05 22.95 51 51 51h306v-51H163.2c-2.55 0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7c20.4 0 35.7-10.2 43.35-25.5L504.9 89.25c5.1-5.1 5.1-7.65 5.1-12.75 0-15.3-10.2-25.5-25.5-25.5H107.1L84.15 0H0zm408 408c-28.05 0-51 22.95-51 51s22.95 51 51 51 51-22.95 51-51-22.95-51-51-51z" fill="#f68026"/></svg></span><h3>Minhas <strong>Compras</strong><span class="qtd-cart"></span></h3> </div> <div class="sta-cart-items"> <ul></ul> </div> <div class="sta-cart-resume"> <span class="sta-cart-sub">Subtotal<strong>R$ 0,00</strong></span> <span class="sta-cart-freight">Frete<strong style="display:none">0</strong><button>Calcular</button><input type="text" /></span><span class="sta-cart-total">Total: <strong>R$ 0,00</strong></span> <a href="/checkout/#/cart"><span>Finalizar Pedido</span></a> </div> </div>';
 			var miniCartHtml = '<a href="#" class="openCart link-cart"><span></span></a>';
 
 			$(el).append(cartHtml);
@@ -259,7 +237,12 @@
 			});
 
 			$('.sta-cart-container').on('click','.remove-item', function(){
+				var me = $(this);
+				$('<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>').insertBefore(me);		
+				
 				var index = $(this).data('index');
+				
+				$('.spinner').fadeOut('12000');
 				helper.removeItem(index);
 			});
 
@@ -293,7 +276,6 @@
 
 	$(function() {
 	    $("body").vtexcart({
-	        buyButton: $(".buy-button"),
 	        wrapper: $(".container"),
 	        effect: "overlay",
 	        cartButton: $(".sta-cart")
@@ -303,4 +285,5 @@
 	    	$('.sta-cart-container').animate({right: 0},300);
 	    });
 	});
+
 // Minicart 

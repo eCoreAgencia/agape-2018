@@ -1,0 +1,118 @@
+.clusterHighLight{
+    right: 0;
+    z-index: 1;
+    top: -2.5px;
+    position: absolute;
+    padding-right: 10px;
+
+    .flag{
+        @extend .txt-white, .txt-sz-20, .bold, .txt-up;
+        display: none;
+        padding: 20px 6px;
+        position: relative;
+        margin: 0 10px 0 5px;
+        
+        &.lancamentos {
+            top: -4px;
+            margin: 0;
+            padding: 0;
+            width: 86px;
+            height: 76px;
+            font-size: 0;
+            display: block;
+            background: url('bt-prod-novo.png') no-repeat scroll 0 0 transparent;
+
+            &:after,
+            &:before {
+                display: none;
+            }
+        }
+
+        &:before{
+            top: 0;
+            left: 0;
+            content: '';
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            background-color: #f68026;
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+            -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        }
+
+        &:after{
+            top: 0;
+            width: 0;
+            height: 0;
+            left: 100%;
+            content: '';
+            display: block;
+            position: absolute;
+            border-bottom: 10px solid #b85910;
+            border-right: 10px solid transparent;
+        }
+    }
+}
+
+.the-flags {
+    @include font-size(3);
+    @extend .txt-darkBlue, .bold, .txt-up;
+    left: 0;
+    top: 5.89px;
+    height: 105px;
+    color: #18318e;
+    position: absolute;
+    padding: 23px 20px 20px 10px;
+    clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+    background: url(/arquivos/bg-flag-discount.png) no-repeat scroll 0 0 transparent;
+
+    span {
+        @include font-size(2.5);
+        font-weight: lighter;
+    }
+}
+
+.discountHighLight{
+    left: 0;
+    top: 7px;
+    z-index: 999999;
+    position: absolute;
+
+    .flag{
+        @extend .txt-darkBlue, .txt-sz-20, .bold, .txt-up;
+        margin: 10px 0;
+        padding: 10px 5px;
+        position: relative;
+        display: table-caption;
+        &:before{
+            left: 0;
+            top: 50%;
+            height: 0;
+            content: '';
+            z-index: -1;
+            display: block;
+            position: absolute;
+            height: calc(100% + 8px);
+            transform: translateY(-50%);
+            border-right: 8px solid #c79c2e;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+        &:after{
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            content: '';
+            height: 100%;
+            display: block;
+            padding-left: 7px;
+            position: absolute;
+            background-color: #f0c451;
+            padding-right: calc(25% + 7px);
+            clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+        }
+    }
+}

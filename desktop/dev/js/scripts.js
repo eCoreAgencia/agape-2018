@@ -110,6 +110,17 @@ jQuery.fn.simulateClick = function() {
 	});
 }
 
+function setFlags() {
+    $('.the-flags').each(function() {
+        var qtdDesconto = $(this).text().replace('%', '');
+        qtdDesconto = parseInt(qtdDesconto);
+        if (qtdDesconto == 0) {
+            $(this).hide();
+        }
+        $(this).text(' ').html(qtdDesconto + "% </br> <span>OFF</span>");
+    });
+}
+
 var body = $('body'),
 	htmlBody = $('html, body'),
 	$document = $(document),
@@ -131,32 +142,91 @@ var body = $('body'),
 	depCatBus = $('.dep-cat-bus'),
 	pagProduto = $('.produto'),
 	pagInstitucional = $('.institucional'),
-	sidebar = $('.sidebar');
+	sidebar = $('.sidebar'),
+	santos = $('.escolha-por-santos li');
 
 $(function() {
 
+	setFlags();
+
+	$('.prateleira li').each(function(event){
+		var me = $(this);
+		var bestPrice = me.find('.shelfBestPrice');
+	
+		if($(bestPrice).length == 0){
+			me.find('.shelfOldPrice').removeClass('ln-through');		
+		}
+	});
+
+	$('.img-box img.element-1').addClass('active');
+	$('.escolha-por-santos li').each(function(){
+		$(this).on('hover', function(){
+			var wicth = $(this).attr('class');
+			$('.img-box img.'+wicth+'').prependTo('.img-box');
+			$(this).removeClass('active');
+			$('.img-box img').first().addClass('active');
+		});
+	});
+
+	// Color Sku not addClass Checked because is not the primary SKU element. Adding to work validation //
+		body.on('click', '.Cor .skuList label', function(event){
+			$('.Cor .skuList label').removeClass('checked');
+			$(this).addClass('checked');
+
+			window.currentColor = $(this).text();
+			console.log(currentColor);
+
+			var id = $('#___rc-p-id').attr("value");
+			var data = "/api/catalog_system/pub/products/search/?fq=productId:"+id+"";
+
+			$.getJSON(data, function(data) {
+				$.each(data, function(key, val) {
+					var elements = val.items;
+
+					$(elements).each(function(i, items, key, val){
+						var colors = elements[i].Cor == currentColor;
+
+						if($(colors).length == true){
+							console.log(this);
+						}
+					});
+				});
+			});
+		});
+	// Color Sku not addClass Checked because is not the primary SKU element. Adding to work validation //
+
 	// Add to Cart Button //
 		body.on('click', '.add-to-cart', function(event){
-			var url = $('.buy-button').attr('href');
-			$(this).attr('data-link', url);
+			var myBt = $('.buy-box .buy-button');
+			if($(myBt).attr('href') == "javascript:alert('Por favor, selecione o modelo desejado.');" ) {
+				
+				if($('ul.Tamanho label.checked').length == 0){
+					$('body.produto ul.Tamanho .skuList label').addClass('error');
+					$('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Tamanho li.specification');
+				}
 
-			if($('.add-to-cart').attr('data-link') == "javascript:alert('Por favor, selecione o modelo desejado.');" ) {
-				$('.modal-container').remove('.new-modal-content');
-				$('<div class="new-modal-content news-element success-news"><h3>É preciso escolher a variação do seu produto.</h3></div>').appendTo('.modal-container');
-				$('body').addClass('modal-active add-to-cart-active');
-
+				if($('ul.Cor label.checked').length == 0){
+					$('body.produto ul.Tamanho .skuList label').addClass('error');
+					$('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Cor li.specification');
+				}
+				
+				document.querySelector('#id3').scrollIntoView({ 
+					behavior: 'smooth' 
+				});
 			} else {
-				$('.sta-cart-items ul li.fake-insert').remove();
-				$.get(url, function(data, val) {
+				var myBtLink = $('.buy-box .buy-button').attr('href');
+				
+				$.get(myBtLink, function(data) {
 					vtexjs.checkout.getOrderForm().done(function(orderForm) {
 						console.log(orderForm);
-
+						
 						var elements = orderForm.items;
 						$(elements).each(function(orderForm, val){
 							var tempPrice = val.formattedPrice;
 							var tempImage = val.imageUrl;
 							var tempName = val.name;
-
+							
+							$('.sta-cart-items ul li.fake-insert').remove();
 							$('<li class="fake-insert"><div class="sta-cart-pdt-image"></div><div class="sta-cart-pdt-info"><button class="remove-item" data-index="0"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><polygon fill="#000" points="88.711,86.588 52.121,50 88.709,13.412 86.588,11.291 50,47.878 13.41,11.291 11.289,13.412   47.878,50 11.289,86.588 13.41,88.709 50,52.12 86.59,88.709 "></polygon></svg><span>remover</span></button><div class="sta-cart-pdt-qtd"></div></div></li>').appendTo('.sta-cart-items ul');
 							$('<img src='+tempImage+'/>').appendTo('li.fake-insert .sta-cart-pdt-image');
 							$('<h4>'+tempName+'</h4>').insertBefore('li.fake-insert .sta-cart-pdt-info button');
@@ -168,14 +238,40 @@ $(function() {
 							$('.amount-items-em').simulateClick('click');
 						});
 					});
-				});	
+				});
 			}
 		});
 
-		$('.skuList input').on('click', function(event){
-			var dataLink = $('.buy-button').attr('href');
-			$('.add-to-cart').attr('data-link', dataLink);
+		$('.skuList input.item_unavaliable').on('click', function(event){
+			$('.bt-comprar').next().show();
 		});
+
+		body.on('click', '.bt-comprar', function(event){
+			var myBt = $('.buy-box .buy-button');
+			if($(myBt).attr('href') == "javascript:alert('Por favor, selecione o modelo desejado.');" ) {
+				if($('ul.Tamanho label.checked').length == 0){
+					$('body.produto ul.Tamanho .skuList label').addClass('error');
+					$('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Tamanho li.specification');
+				}
+
+				if($('ul.Cor label.checked').length == 0){
+					$('body.produto ul.Tamanho .skuList label').addClass('error');
+					$('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Cor li.specification');
+				}
+				
+				document.querySelector('#id3').scrollIntoView({ 
+					behavior: 'smooth' 
+				});
+			} else {
+				$(myBt).simulateClick('click');
+			}
+		});
+
+		body.on('click', '.skuList label', function(event){
+			$('.error-picked').remove();
+			$('.skuList label').removeClass('error');
+		});
+
 	// Add to Cart Button //
 
     // Scripts Modal //
@@ -397,6 +493,10 @@ $(function() {
 	    if (pagProduto.length > 0) {
 			try {
 				$document.ready(function() {
+
+				$('label.prefixo input').insertAfter('label.prefixo');
+				$('label.prefixo').text('Calcule o frete');
+
 				// Script Quantidade de Produtos END. Pego a quantidade de produtos pelo val e jogo na URL do botao.
 					$('.selecao-sku .more').click(function(){
 						var $input = $(this).prev();
@@ -451,14 +551,18 @@ $(function() {
 						$('.topic.Cor').remove();
 					};
 
+					$('.freight-btn').val('Calcular');
+
 					$('.freight-btn').on('click', function(event){
 						// Mounting Loader //
-						$('<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>').insertBefore('.freight-values');		
+						$('<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>').insertBefore('.freight-values');
 						// Mounting Loader //
 
 						$('.spinner').fadeOut('6000');
 					});
 
+					$('label.prefixo input').insertAfter('label.prefixo');
+					$('label.prefixo').text('Calcule o frete');
 				});
 			} catch(e) {}
 

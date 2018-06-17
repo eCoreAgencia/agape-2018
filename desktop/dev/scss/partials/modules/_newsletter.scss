@@ -7,6 +7,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 	}
+
 	.Newsletter-image{
 		@extend .col-xs-12, .col-md-4;
 		padding-top: 20px;
@@ -35,7 +36,7 @@
 			justify-content: flex-start;
 		}
 
-		.error {
+		.error-msg {
 			color: red;
 			display: block;
 			margin-top: 8px;
@@ -66,6 +67,11 @@
 			display: inline-block;
 			&.genero{
 				@extend .col-xs-8, .col-md-6;
+
+				.error-msg {
+					margin-bottom: 10px;
+				}
+				
 				label{
 					align-items: center;
 					padding-right: 3.7%;

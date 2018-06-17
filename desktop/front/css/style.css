@@ -306,11 +306,12 @@ body.institucional main a {
 .i-dropBtn:after,
 .menuClose,
 .btn-plus-minus,
-.shelfItem .clusterHighLight .flag,
-.shelfItem .discountHighLight .flag,
 .shelfTitle .mark,
 #mini-cart .portal-totalizers-ref .cart-info .total-cart,
 .Newsletter .form-newsletter .submit,
+.clusterHighLight .flag,
+.the-flags,
+.discountHighLight .flag,
 body.dep-cat-bus #nav-dep .right .orderBy:after {
 	font-weight: 700;
 }
@@ -351,10 +352,10 @@ header .ambientes .ambiente,
 .btn-add-buy-button-asynchronous,
 .shelfItem .buy-button,
 .menuClose,
-.shelfItem .clusterHighLight .flag,
 .shelfTitle .mark,
 .sta-cart-resume a,
 .Newsletter .form-newsletter .submit,
+.clusterHighLight .flag,
 body.dep-cat-bus .mainShelf .filtrarProdutos {
 	color: #ffffff;
 }
@@ -422,8 +423,9 @@ body.dep-cat-bus .mainShelf .sub .orderBy label {
 }
 
 .txt-darkBlue,
-.shelfItem .discountHighLight .flag,
-header .menu-header .submenu h3 {
+header .menu-header .submenu h3,
+.the-flags,
+.discountHighLight .flag {
 	color: #18318f;
 }
 
@@ -479,10 +481,10 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
-.shelfItem .clusterHighLight .flag,
-.shelfItem .discountHighLight .flag,
 .shelfTitle .mark,
 .sta-cart-resume a,
+.clusterHighLight .flag,
+.discountHighLight .flag,
 body.dep-cat-bus .mainShelf .pager ul li,
 body.institucional main h3 {
 	font-size: 20px;
@@ -555,11 +557,12 @@ body.institucional main p {
 }
 
 .txt-up,
-.shelfItem .clusterHighLight .flag,
-.shelfItem .discountHighLight .flag,
 .Newsletter .form-newsletter .submit,
 .TipBar li,
-header .menu-header .menu-item a {
+header .menu-header .menu-item a,
+.clusterHighLight .flag,
+.the-flags,
+.discountHighLight .flag {
 	text-transform: uppercase;
 }
 
@@ -673,7 +676,7 @@ body.produto .portal-notify-me-ref form input.btn-ok,
 body.produto .portal-notify-me-ref form input.btn-ok:hover,
 body.produto .buy-box button.bg-blue,
 body.produto .buy-box button.add-to-cart,
-body.produto .buy-box .buy-area .buy-button,
+body.produto .buy-box .buy-area .bt-comprar,
 body.dep-cat-bus .sidebar,
 body.dep-cat-bus .sidebar .customRefinar,
 body.dep-cat-bus .sidebar li a,
@@ -1150,11 +1153,12 @@ body.institucional main a {
 .i-dropBtn:after,
 .menuClose,
 .btn-plus-minus,
-.shelfItem .clusterHighLight .flag,
-.shelfItem .discountHighLight .flag,
 .shelfTitle .mark,
 #mini-cart .portal-totalizers-ref .cart-info .total-cart,
 .Newsletter .form-newsletter .submit,
+.clusterHighLight .flag,
+.the-flags,
+.discountHighLight .flag,
 body.dep-cat-bus #nav-dep .right .orderBy:after {
 	font-weight: 700;
 }
@@ -1195,10 +1199,10 @@ header .ambientes .ambiente,
 .btn-add-buy-button-asynchronous,
 .shelfItem .buy-button,
 .menuClose,
-.shelfItem .clusterHighLight .flag,
 .shelfTitle .mark,
 .sta-cart-resume a,
 .Newsletter .form-newsletter .submit,
+.clusterHighLight .flag,
 body.dep-cat-bus .mainShelf .filtrarProdutos {
 	color: #ffffff;
 }
@@ -1266,8 +1270,9 @@ body.dep-cat-bus .mainShelf .sub .orderBy label {
 }
 
 .txt-darkBlue,
-.shelfItem .discountHighLight .flag,
-header .menu-header .submenu h3 {
+header .menu-header .submenu h3,
+.the-flags,
+.discountHighLight .flag {
 	color: #18318f;
 }
 
@@ -1323,10 +1328,10 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
-.shelfItem .clusterHighLight .flag,
-.shelfItem .discountHighLight .flag,
 .shelfTitle .mark,
 .sta-cart-resume a,
+.clusterHighLight .flag,
+.discountHighLight .flag,
 body.dep-cat-bus .mainShelf .pager ul li,
 body.institucional main h3 {
 	font-size: 20px;
@@ -1399,11 +1404,12 @@ body.institucional main p {
 }
 
 .txt-up,
-.shelfItem .clusterHighLight .flag,
-.shelfItem .discountHighLight .flag,
 .Newsletter .form-newsletter .submit,
 .TipBar li,
-header .menu-header .menu-item a {
+header .menu-header .menu-item a,
+.clusterHighLight .flag,
+.the-flags,
+.discountHighLight .flag {
 	text-transform: uppercase;
 }
 
@@ -2214,10 +2220,6 @@ body.home footer .textoLegal {
 	    flex-wrap: wrap;
 }
 
-.prateleira .clusterHighLight .flag {
-	display: none !important;
-}
-
 .prateleira li {
 	height: 100%;
 	padding: 4px;
@@ -2334,6 +2336,9 @@ body.home footer .textoLegal {
 
 .shelfItem .price .shelfOldPrice {
 	padding-right: 5px;
+}
+
+.shelfItem .price .shelfOldPrice.ln-through {
 	text-decoration: line-through;
 }
 
@@ -2374,93 +2379,6 @@ body.home footer .textoLegal {
 
 .shelfItem:hover .shelfBestPrice {
 	opacity: 1;
-}
-
-.shelfItem .clusterHighLight {
-	top: 0;
-	right: 0;
-	z-index: 1;
-	position: absolute;
-	padding-right: 10px;
-}
-
-.shelfItem .clusterHighLight .flag {
-	padding: 10px 5px;
-	position: relative;
-	margin: 0 10px 0 5px;
-	display: table-cell;
-}
-
-.shelfItem .clusterHighLight .flag:before {
-	top: 0;
-	left: 0;
-	content: '';
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-	background-color: #f68026;
-	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-}
-
-.shelfItem .clusterHighLight .flag:after {
-	top: 0;
-	width: 0;
-	height: 0;
-	left: 100%;
-	content: '';
-	display: block;
-	position: absolute;
-	border-bottom: 10px solid #b85910;
-	border-right: 10px solid transparent;
-}
-
-.shelfItem .discountHighLight {
-	left: 0;
-	top: 7px;
-	z-index: 999999;
-	position: absolute;
-}
-
-.shelfItem .discountHighLight .flag {
-	margin: 10px 0;
-	padding: 10px 5px;
-	position: relative;
-	display: table-caption;
-}
-
-.shelfItem .discountHighLight .flag:before {
-	left: 0;
-	top: 50%;
-	height: 0;
-	content: '';
-	z-index: -1;
-	display: block;
-	position: absolute;
-	height: calc(100% + 8px);
-	-ms-transform: translateY(-50%);
-	    transform: translateY(-50%);
-	border-right: 8px solid #c79c2e;
-	border-top: 5px solid transparent;
-	border-bottom: 5px solid transparent;
-}
-
-.shelfItem .discountHighLight .flag:after {
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	content: '';
-	height: 100%;
-	display: block;
-	padding-left: 7px;
-	position: absolute;
-	background-color: #f0c451;
-	padding-right: calc(25% + 7px);
-	-webkit-clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
-	        clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
 }
 
 body.home .shelfItem {
@@ -3617,7 +3535,7 @@ span.resultado-busca-numero {
 	    justify-content: space-between;
 }
 
-.Newsletter .form-newsletter .error {
+.Newsletter .form-newsletter .error-msg {
 	color: red;
 	display: block;
 	margin-top: 8px;
@@ -3639,6 +3557,10 @@ span.resultado-busca-numero {
 .Newsletter .form-newsletter fieldset {
 	padding: 15px 7px;
 	display: inline-block;
+}
+
+.Newsletter .form-newsletter fieldset.genero .error-msg {
+	margin-bottom: 10px;
 }
 
 .Newsletter .form-newsletter fieldset.genero label {
@@ -4185,6 +4107,175 @@ body.product-popup .modal-container .news-element.error-add h3 {
 	line-height: 20px;
 }
 
+.clusterHighLight {
+	right: 0;
+	z-index: 1;
+	top: -2.5px;
+	position: absolute;
+	padding-right: 10px;
+}
+
+.clusterHighLight .flag {
+	display: none;
+	padding: 20px 6px;
+	position: relative;
+	margin: 0 10px 0 5px;
+}
+
+.clusterHighLight .flag.lancamentos {
+	top: -4px;
+	margin: 0;
+	padding: 0;
+	width: 86px;
+	height: 76px;
+	font-size: 0;
+	display: block;
+	background: url("bt-prod-novo.png") no-repeat scroll 0 0 transparent;
+}
+
+.clusterHighLight .flag.lancamentos:after,
+.clusterHighLight .flag.lancamentos:before {
+	display: none;
+}
+
+.clusterHighLight .flag:before {
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	background-color: #f68026;
+	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.clusterHighLight .flag:after {
+	top: 0;
+	width: 0;
+	height: 0;
+	left: 100%;
+	content: '';
+	display: block;
+	position: absolute;
+	border-bottom: 10px solid #b85910;
+	border-right: 10px solid transparent;
+}
+
+.the-flags {
+	font-size: 30px;
+	left: 0;
+	top: 5.89px;
+	height: 105px;
+	color: #18318e;
+	position: absolute;
+	padding: 23px 20px 20px 10px;
+	-webkit-clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+	        clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+	background: url(/arquivos/bg-flag-discount.png) no-repeat scroll 0 0 transparent;
+}
+
+.the-flags span {
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+.discountHighLight {
+	left: 0;
+	top: 7px;
+	z-index: 999999;
+	position: absolute;
+}
+
+.discountHighLight .flag {
+	margin: 10px 0;
+	padding: 10px 5px;
+	position: relative;
+	display: table-caption;
+}
+
+.discountHighLight .flag:before {
+	left: 0;
+	top: 50%;
+	height: 0;
+	content: '';
+	z-index: -1;
+	display: block;
+	position: absolute;
+	height: calc(100% + 8px);
+	-ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	border-right: 8px solid #c79c2e;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.discountHighLight .flag:after {
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	content: '';
+	height: 100%;
+	display: block;
+	padding-left: 7px;
+	position: absolute;
+	background-color: #f0c451;
+	padding-right: calc(25% + 7px);
+	-webkit-clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+	        clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+}
+
+body.produto .item-dimension-Cor label.skuespec_Preto {
+	background-color: #000;
+}
+
+body.produto .item-dimension-Cor label.skuespec_Branco {
+	background-color: #fff;
+}
+
+body.produto .item-dimension-Cor label.skuespec_Preto {
+	background-color: #000;
+}
+
+body.produto .item-dimension-Cor label.skuespec_Verde {
+	background-color: #008DB7;
+}
+
+body.produto .item-dimension-Cor label.skuespec_Bege {
+	background-color: #E9E0E3;
+}
+
+body.produto .item-dimension-Cor label.skuespec_Perola {
+	background-color: #e9e0e3;
+}
+
+body.produto .item-dimension-Cor label.skuespec__Estampado {
+	background-image: url("/arquivos/bg-estampado.png");
+}
+
+body.produto .item-dimension-Cor label .skuespec_Branco {
+	background-color: #fff;
+}
+
+body.produto .item-dimension-Cor label.skuespec_Azul {
+	background-color: #004B79;
+}
+
+body.produto .item-dimension-Cor label.skuespec_Marrom {
+	background-color: #B9957D;
+}
+
+body.produto .item-dimension-Cor label.skuespec_Vermelho {
+	background-color: #B02238;
+}
+
+body.produto .item-dimension-Cor label.skuespec_Rosa {
+	background-color: #E1C7D2;
+}
+
 /* ==========================================================================
    Home
    ========================================================================== */
@@ -4330,9 +4421,21 @@ body.home main .escolha-por-santos h2,
 body.home main .escolha-por-santos li,
 body.home main .escolha-por-santos img,
 body.home main .escolha-por-santos nav {
-	margin: 0 85px 0 0;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+body.home main .escolha-por-santos .img-box {
+	margin: 0 85px 0 0;
+	display: inline-block;
+}
+
+body.home main .escolha-por-santos .img-box img {
+	display: none;
+}
+
+body.home main .escolha-por-santos .img-box img:first-of-type {
+	display: inline-block;
 }
 
 body.home main .escolha-por-santos h2 {
@@ -4427,15 +4530,22 @@ body.produto.add-to-cart-active .modal-container h3 {
 }
 
 body.produto .portal-notify-me-ref {
-	left: 0;
-	top: -7px;
+	left: -7px;
+	z-index: 1;
+	top: -122px;
 	position: absolute;
 	background-color: #fff;
 }
 
 body.produto .portal-notify-me-ref h3 {
 	font-size: 18px;
-	margin-bottom: 20px;
+}
+
+body.produto .portal-notify-me-ref .sku-notifyme-success {
+	color: #000;
+	line-height: 20px;
+	font-style: normal;
+	padding: 30px 30px 130px 0;
 }
 
 body.produto .portal-notify-me-ref form p {
@@ -4597,7 +4707,7 @@ body.produto main .ProductInfo span {
 	vertical-align: middle;
 }
 
-body.produto main .ProductInfo span {
+body.produto main .ProductInfo span.frete-calcular {
 	margin-right: 10px;
 }
 
@@ -4773,6 +4883,22 @@ body.produto .skuList input {
 	display: none;
 }
 
+body.produto .skuList label.error {
+	border: 1px solid red;
+}
+
+body.produto main span.error-picked {
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: red !important;
+	display: none !important;
+	text-transform: uppercase;
+}
+
+body.produto main span.error-picked:first-of-type {
+	display: block !important;
+}
+
 body.produto .skuList label {
 	width: 37px;
 	color: #666;
@@ -4793,7 +4919,6 @@ body.produto .skuList label.sku-picked,
 body.produto .skuList label:hover {
 	color: #fff;
 	border: 1px solid #f68026;
-	background-color: #f68026;
 }
 
 body.produto .skuList label.item_unavailable {
@@ -4862,11 +4987,15 @@ body.produto .buy-box button.add-to-cart {
 	background-color: #00bb4f;
 }
 
-body.produto .buy-box .buy-area .buy-button:hover {
+body.produto .buy-box .buy-area .bt-comprar:hover {
 	background-color: #f68026;
 }
 
 body.produto .buy-box .buy-area .buy-button {
+	display: none !important;
+}
+
+body.produto .buy-box .buy-area .bt-comprar {
 	font-size: 24px;
 	color: #fff;
 	border: none;
@@ -4978,11 +5107,11 @@ body.produto main #calculoFrete .content label.prefixo {
 	background: url(/arquivos/cep-icon.png) no-repeat;
 }
 
-body.produto main #calculoFrete .content label.prefixo input {
+body.produto main #calculoFrete .content input {
 	font-size: 18px;
 	padding: 5px;
-	max-width: 158px;
-	margin-right: 18px;
+	max-width: 177px;
+	margin-left: 9px;
 }
 
 body.produto main #calculoFrete .content fieldset {
@@ -4991,10 +5120,7 @@ body.produto main #calculoFrete .content fieldset {
 
 body.produto main #calculoFrete .content fieldset .lnkExterno {
 	font-size: 12px;
-	right: 0;
-	bottom: 1px;
 	color: #18318f;
-	position: absolute;
 }
 
 body.produto main #calculoFrete .content .freight-btn {
@@ -5169,19 +5295,13 @@ body.produto .Cor .skuList label {
 	text-indent: -15000px;
 }
 
-body.produto .Cor .skuList label.skuespec_Branco {
-	background-color: #fff;
-}
-
-body.produto .Cor .skuList label.skuespec_Preto {
-	background-color: #000;
-}
-
 .spinner {
-	position: absolute;
+	top: 0;
 	width: 100%;
+	height: 200px;
 	padding: 30px 0;
 	text-align: center;
+	position: absolute;
 	background-color: #fff;
 }
 
