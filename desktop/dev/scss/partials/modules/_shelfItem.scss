@@ -53,10 +53,19 @@
 		text-overflow: ellipsis;
 	}
 
+	.shelfOldPrice {
+		&:before {
+			color: #f68026;
+			content: 'De: ';
+			display: inline-block;
+			text-decoration: line-through;
+		}
+	}
+
 	.shelfBestPrice, .shelfInstallment, .shelfOldPrice{
+		display: block;
 		margin-top: 2px;
 		margin-bottom: 2px;
-		display: inline-block;
 	}
 
 	.shelfBestPrice {
@@ -222,11 +231,11 @@ body.produto {
 	.shelfItem {
 
 		&:hover {
-			max-height: 415px;
+			max-height: 395px;
 		}
 
 		.shelfProductName {
-			height: 50px;
+			height: 60px;
 		}
 	}
 }

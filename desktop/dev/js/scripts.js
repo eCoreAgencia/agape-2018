@@ -121,6 +121,25 @@ function setFlags() {
     });
 }
 
+function priceStatus() {
+	$('.prateleira .shelfItem').each(function(){
+		var me = $(this);
+
+		var myDrop = $(this).find('.drop');
+		var myOld = $(this).find('.shelfOldPrice').text();
+		var myNew = $('<span class="txt-sz-16 shelfBestPrice txt-gray">ou '+myOld+' à vista</span>');
+		var myBest = $(this).find('.shelfBestPrice');
+		var myInstallments = $(this).find('.shelfInstallment');
+
+		if($(myBest).length == 0){
+			myDrop.css('margin-top', '-4px');
+			myNew.insertAfter(myInstallments);
+			myInstallments.css('border', 'none');
+			myInstallments.css('padding-left', '0');
+		}
+	});
+}
+
 var body = $('body'),
 	htmlBody = $('html, body'),
 	$document = $(document),
@@ -146,7 +165,7 @@ var body = $('body'),
 	santos = $('.escolha-por-santos li');
 
 $(function() {
-
+	
 	setFlags();
 
 	$('.prateleira li').each(function(event){
@@ -309,17 +328,21 @@ $(function() {
 	$('.fulltext-search-box').val('O que você procura?');
 
 	// Menu Persistente Begin //
-		$(window).scroll(function() {
-			var scroll = $(window).scrollTop();
+		if($('body.account').length > 0){
 
-			if (scroll >= 350) {
-				$('header').addClass('menu-persistente');
-				$('body').addClass('top-height-active');
-			} else {
-				$('header').removeClass('menu-persistente');
-				$('body').removeClass('top-height-active');
-			}
-		});
+		} else {
+			$(window).scroll(function() {
+				var scroll = $(window).scrollTop();
+
+				if (scroll >= 350) {
+					$('header').addClass('menu-persistente');
+					$('body').addClass('top-height-active');
+				} else {
+					$('header').removeClass('menu-persistente');
+					$('body').removeClass('top-height-active');
+				}
+			});
+		}
     // Menu Persistente END //
 
 	// Remocao de Li HelperComplement Prateleira //
@@ -496,39 +519,14 @@ $(function() {
 
 				$('label.prefixo input').insertAfter('label.prefixo');
 				$('label.prefixo').text('Calcule o frete');
-
-				// Script Quantidade de Produtos END. Pego a quantidade de produtos pelo val e jogo na URL do botao.
-					$('.selecao-sku .more').click(function(){
-						var $input = $(this).prev();
-						$input.val( +$input.val() + 1 );
-						var opt_value = $input.val();
-						var link = $(this).next();
-						var currentURL = $('.buy-button').attr('href');
-						var nomedoproduto = currentURL.split(/\&/)[0];
-						$('.buy-button').removeAttr('href');
-						$('.buy-button').attr('href', nomedoproduto + '&qty=' + opt_value + '&seller=1&redirect=false&sc=1');
-					});
-
-					$('.selecao-sku .less').click(function(){
-						var $input = $(this).next();
-						$input.val( +$input.val() - 1 );
-						var opt_value = $input.val();
-						var encontraInput = $(this).next();
-						var currentURL = $('.buy-button').attr('href');
-						var nomedoproduto = currentURL.split(/\&/)[0];
-
-						$('.buy-button').removeAttr('href');
-						$('.buy-button').attr('href', nomedoproduto + '&qty=' + opt_value + '&seller=1&redirect=false&sc=1');
-					});
-		        // Script Quantidade de Produtos END
-
 		        
 		        // Frete Gratis //
 		        	$('.shipping-value').simulateClick('click');
 		        // Frete Gratis //
 
-				$('.Cor').addClass('col-md-6 col-xs-12');
-				$('.Cor').insertBefore('.selecao-sku .quantidade');
+				$('ul.Cor').addClass('col-md-6 col-xs-12');
+				$('ul.Cor').insertAfter('ul.Tamanho');
+				$('ul.Tamanho').addClass('col-md-6 col-xs-12');
 				$('.btn-tabelaMedidas').insertBefore('.sku-selector-container .Tamanho');
 
 		        // Script Mudando regulamento de lugar
@@ -546,10 +544,6 @@ $(function() {
 					$('.btn-tabelaMedidas').on('click', function(e){
 						$('#szb_size_chart').simulateClick();
 					});
-
-					if($('.selecao-sku label').length < 2){
-						$('.topic.Cor').remove();
-					};
 
 					$('.freight-btn').val('Calcular');
 
@@ -629,6 +623,10 @@ $(function() {
 				$(".main-category__orderBy li:nth-child(5) a").addClass("active");
 			}
 			// Adicionando classe nos elementos do Ordernar Por quando ativos
+
+			$('.resultado-busca-filtro .orderBy').first().insertBefore('.navigation-tabs');
+
+			priceStatus();
 		}
   	// Scripts Departamento //
 

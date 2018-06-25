@@ -4,18 +4,40 @@
 
 body.account {
 
-	header {
-		z-index: 1;
+	.menu-header {
+		.menu-item {
+			&:hover {
+				.submenu {
+					z-index: 2;
+				}
+			}
+		}
 	}
 
-	header.menu-persistente{
+	header {
+		z-index: 1;
 		position: relative;
 	}
-	.modal-backdrop{
+
+	.delete {
+		display: none !important;
+	}
+
+	.modal-backdrop {
 		display: none;
 	}
 
+	&.top-height-active {
+		.modal {
+			form {
+				@extend .transition;
+				top: 70px;
+			}
+		}
+	}
+
 	#box-bread-brumb {
+		width: 100%;
 		margin: 10px 0;
 
 		li {
@@ -42,18 +64,21 @@ body.account {
         margin-top: 5px;
         line-height: 10px;
         padding: 10px 20px;
-        background-color: #fff;
         color: #000 !important;
+		background-color: #eaeaea;
+		
+		&:hover {
+			@extend .transition;
+			color: #fff !important;
+			background-color: #f68026;
+		}
     }
 
 	main{
+		z-index: 0;
+	    padding-top: 0;
 	    overflow: hidden;
-	    padding: 5% 0 15%;
-	    background-color: #ffffff;
-
-		@include mq($screen-md) {
-			padding: 0;
-		}
+	    background-color: #fff;
 
 		.container{
 			display: flex;
@@ -61,16 +86,16 @@ body.account {
 			flex-wrap: wrap;
 			align-items: stretch;
 
-			.row {
-				width: 100%;
-				margin: 0;
-			}
-
 			h3{
 				width: 100%;
 				margin: 20px 0;
 				padding: 10px 0;
 				border-color: #9e9ea6;
+			}
+
+			h3#myModalLabel {
+				margin: 0;
+				padding: 10px 0;
 			}
 		}
 	}
@@ -123,18 +148,21 @@ body.account {
 			display: block;
 		}
 	}
+
 	.profile-detail-display-info,
 	.address-display-unit-info { 
 		line-height: 1.5;
 		& > span{
 		}
 	}
+
 	.edit-profile-link,
 	.new-address-link,
 	.edit-address-link{
 		margin: 15px 0;
 		overflow: hidden;
 	}
+
 	#edit-data-link, .new-address-link a{
 		@include font-size(1.8);
 		color: #fff;
@@ -153,6 +181,7 @@ body.account {
 			background: #e6e6e6 !important;
 		}
 	}
+
 	.edit-address-link{
 		a{
 			text-decoration: none;
@@ -176,30 +205,27 @@ body.account {
 		background: rgba(#000, .6);
 
 		form {
-			position: absolute;
-		    top: 0;
-		    left: 50%;
+			@extend .transition;
+			left: 50%;
+			top: 70px;
 		    width: 100%;
-		    max-width: 390px;
-		    margin-left: -160px;
-
-		    @media screen and (min-width:414px) {
-				margin-left: -195px;
-			}
+		    max-width: 600px;
+			position: absolute;
+		    margin-left: -300px;
 		}
 
 		&-header {
-			flex-direction: row-reverse;
-			align-items: center;
-			height: 58px;
+			height: 38px;
 			padding: 0 15px;
+			align-items: center;
 			background-color: #fff;
+			flex-direction: row-reverse;
 
 			h3 {
 				color: #000;
 				flex: 1;
 				margin: 0;
-				padding-top: 20px;
+				padding-top: 15px;
 				display: block;
 				font: {
 					size: 1.6em;
@@ -207,14 +233,15 @@ body.account {
 			}
 
 			.close {
-				color: #000;
-				float: right;
-				width: 28px;
-				height: 35px;
-				margin-top: 8px;
-				padding: 0;
+				@include font-size(4);
 				border: 0;
-				font-size: 40px;
+				padding: 0;
+				width: 28px;
+				float: right;
+				height: 35px;
+				color: #000;
+				line-height: 0;
+				margin-top: 0px;
 				cursor: pointer;
 				background: {
 					color: transparent;
@@ -245,10 +272,13 @@ body.account {
 			}
 
 			.control-group {
-				margin-bottom: 1em;
-				font-size: 13px;
+				@include font-size(1.3);
+				width: 49%;
+				margin-right: 5px;
+				margin-bottom: 8px;
+				display: inline-block;
 
-				label { display: inline-block; }
+				label { display: block; }
 
 				select{
 					margin-top: 5px;
@@ -322,5 +352,54 @@ body.account {
 				cursor: pointer;
 			}
 		}
+
+		#form-address {
+			top: 80px;
+
+			.address-form {
+				
+				.row {
+					width: 100%;
+	
+					div {
+						width: 49%;
+						display: inline-block;
+						vertical-align: middle;
+					}
+				}
+
+				div {
+					float: left;
+				}
+
+				.control-group {
+					width: 49%;
+					float: none;
+
+					&.address-form-number,
+					&.address-form-reference,
+					&.address-form-complement,
+					&.address-form-street-name,
+					&.address-form-neighborhood {
+						width: 98.5%;
+					}
+
+					select {
+						width: 100%;
+						height: 35px;
+						border: 1px solid #eaeaea;
+					}
+
+					label {
+						display: block;
+					}
+
+					.controls {
+						width: 100%;
+					}
+				}
+			}
+		}
+
 	}
 }

@@ -131,10 +131,6 @@ body.produto {
     }
 }
 
-body.produto main {
-    overflow: hidden;
-}
-
 body.produto main .economia-de,
 body.produto main .plugin-preco .descricao-preco em.price-best-price {
     display: none !important;
@@ -343,11 +339,16 @@ body.produto main .productName {
 
 body.produto .Cor .specification,
 body.produto .Tamanho .specification {
-    font-size: 18px;
+    @include font-size(1.8);
     color: #666;
+    margin-top: 20px;
     line-height: 24px;
     margin-bottom: 10px;
     text-transform: uppercase
+}
+
+body.produto .Cor.numopt-1 {
+    display: none !important;
 }
 
 body.produto .Tamanho .specification{
@@ -357,19 +358,20 @@ body.produto .Tamanho .specification{
         font-size: 18px;
         content: "TAMANHOS";
         display: inline-block;
-        margin-top: 20px;
     }
 }
 
 body.produto .Cor {
-    padding-left: 0
+    padding-left: 0;
 }
 
 body.produto .sku-area {
-    margin-bottom: 20px
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 body.produto .sku-selector-container {
+    overflow: hidden;
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 25px;
@@ -420,8 +422,9 @@ body.produto .skuList label {
 }
 
 body.produto .skuList label.sku-picked,
-body.produto .skuList label:hover {
-    color: #fff;
+body.produto .skuList label:hover,
+body.produto .skuList label.checked {
+    color: #f68026;
     border: 1px solid #f68026;
 }
 

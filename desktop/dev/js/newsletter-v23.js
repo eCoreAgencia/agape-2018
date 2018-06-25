@@ -1,12 +1,14 @@
 $(document).ready(function(){
     $('.form-newsletter #masculino').click(function(){
+        $('#cl_genero').next().remove();
         $('.form-newsletter #feminino').removeClass('active');
         $('.form-newsletter #masculino').addClass('active');
         var encontraGenero = $('.form-newsletter fieldset .genero ');
         encontraGenero.attr('value', 'Masculino');
     });
-
+    
     $('.form-newsletter #feminino').click(function(){
+        $('#cl_genero').next().remove();
         $('.form-newsletter #masculino').removeClass('active');
         $('.form-newsletter #feminino').addClass('active');
         var encontraGenero = $('.form-newsletter  fieldset .genero ');
@@ -33,18 +35,22 @@ function IsEmail(email) {
 }
 
 function Newsletter(){
+  $('.error-msg').remove();
   var isFormValidate = true;
 
   if($("#cl_nome").val() == ""){
+    $('.error-msg').remove();
     $('<span class="error-msg">Por favor, preencha o seu nome.</span>').insertAfter('#cl_nome');
     $("#cl_nome").focus();
   }
 
   if($("#cl_genero").val() == ""){
+    $('.error-msg').remove();
     $('<span class="error-msg">Por favor, preencha o seu gênero.</span>').insertAfter('#cl_genero');
   }
 
   if($("#cl_email").val() == ""){
+    $('.error-msg').remove();
     $('<span class="error-msg">Por favor, preencha o seu e-mail.</span>').insertAfter('#cl_email');
     $("#cl_email").focus();
   }

@@ -4,7 +4,8 @@
 
 body.institucional {
 
-	&.como-comprar {
+	&.como-comprar,
+	&.politica-de-troca {
 		
 		.title-page {
 			&:before{
@@ -96,6 +97,7 @@ body.institucional {
 
 			li {
 				line-height: 40px;
+				list-style-type: none;
 
 				a {
 					color: #585858;

@@ -311,8 +311,7 @@ body.institucional main a {
 .Newsletter .form-newsletter .submit,
 .clusterHighLight .flag,
 .the-flags,
-.discountHighLight .flag,
-body.dep-cat-bus #nav-dep .right .orderBy:after {
+.discountHighLight .flag {
 	font-weight: 700;
 }
 
@@ -417,8 +416,7 @@ body.home main .shelf-title h2 {
 .txt-orange,
 footer .xs-collapsable.active h3:after,
 .sta-cart-title h3,
-header .menu-header .submenu .menu-item.txt-orange,
-body.dep-cat-bus .mainShelf .sub .orderBy label {
+header .menu-header .submenu .menu-item.txt-orange {
 	color: #f68026;
 }
 
@@ -681,6 +679,10 @@ body.dep-cat-bus .sidebar,
 body.dep-cat-bus .sidebar .customRefinar,
 body.dep-cat-bus .sidebar li a,
 body.dep-cat-bus .sidebar .navigation-tabs,
+body.account.top-height-active .modal form,
+body.account #form-submit:hover,
+body.account #profile-submit:hover,
+body.account .modal form,
 body.institucional .main-institucional__content ul li a:hover,
 body.institucional main a {
 	transition-duration: .3s;
@@ -1158,8 +1160,7 @@ body.institucional main a {
 .Newsletter .form-newsletter .submit,
 .clusterHighLight .flag,
 .the-flags,
-.discountHighLight .flag,
-body.dep-cat-bus #nav-dep .right .orderBy:after {
+.discountHighLight .flag {
 	font-weight: 700;
 }
 
@@ -1264,8 +1265,7 @@ body.home main .shelf-title h2 {
 .txt-orange,
 footer .xs-collapsable.active h3:after,
 .sta-cart-title h3,
-header .menu-header .submenu .menu-item.txt-orange,
-body.dep-cat-bus .mainShelf .sub .orderBy label {
+header .menu-header .submenu .menu-item.txt-orange {
 	color: #f68026;
 }
 
@@ -1473,9 +1473,7 @@ header .menu-header .submenu footer .xs-collapsable.active h3.menu-item:after a:
 footer .xs-collapsable.active header .menu-header .submenu h3.menu-item:after a:before,
 header .menu-header .submenu .sta-cart-title h3.menu-item a:before,
 .sta-cart-title header .menu-header .submenu h3.menu-item a:before,
-header .menu-header .submenu .menu-item.txt-orange a:before,
-header .menu-header .submenu body.dep-cat-bus .mainShelf .sub .orderBy label.menu-item a:before,
-body.dep-cat-bus .mainShelf .sub .orderBy header .menu-header .submenu label.menu-item a:before {
+header .menu-header .submenu .menu-item.txt-orange a:before {
 	background-color: #f68026;
 }
 
@@ -2285,12 +2283,19 @@ body.home footer .textoLegal {
 	text-overflow: ellipsis;
 }
 
+.shelfItem .shelfOldPrice:before {
+	color: #f68026;
+	content: 'De: ';
+	display: inline-block;
+	text-decoration: line-through;
+}
+
 .shelfItem .shelfBestPrice,
 .shelfItem .shelfInstallment,
 .shelfItem .shelfOldPrice {
+	display: block;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	display: inline-block;
 }
 
 .shelfItem .shelfBestPrice {
@@ -2398,11 +2403,11 @@ body.dep-cat-bus .box-item:hover {
 }
 
 body.produto .shelfItem:hover {
-	max-height: 415px;
+	max-height: 395px;
 }
 
 body.produto .shelfItem .shelfProductName {
-	height: 50px;
+	height: 60px;
 }
 
 .no-title h2 {
@@ -4627,10 +4632,6 @@ body.produto .thumbnails li:last-child {
 	margin-bottom: 0;
 }
 
-body.produto main {
-	overflow: hidden;
-}
-
 body.produto main .economia-de,
 body.produto main .plugin-preco .descricao-preco em.price-best-price {
 	display: none !important;
@@ -4841,9 +4842,14 @@ body.produto .Cor .specification,
 body.produto .Tamanho .specification {
 	font-size: 18px;
 	color: #666;
+	margin-top: 20px;
 	line-height: 24px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+}
+
+body.produto .Cor.numopt-1 {
+	display: none !important;
 }
 
 body.produto .Tamanho .specification {
@@ -4854,7 +4860,6 @@ body.produto .Tamanho .specification:after {
 	font-size: 18px;
 	content: "TAMANHOS";
 	display: inline-block;
-	margin-top: 20px;
 }
 
 body.produto .Cor {
@@ -4862,10 +4867,12 @@ body.produto .Cor {
 }
 
 body.produto .sku-area {
+	overflow: hidden;
 	margin-bottom: 20px;
 }
 
 body.produto .sku-selector-container {
+	overflow: hidden;
 	position: relative;
 	margin-bottom: 20px;
 	padding-bottom: 25px;
@@ -4916,8 +4923,9 @@ body.produto .skuList label {
 }
 
 body.produto .skuList label.sku-picked,
-body.produto .skuList label:hover {
-	color: #fff;
+body.produto .skuList label:hover,
+body.produto .skuList label.checked {
+	color: #f68026;
 	border: 1px solid #f68026;
 }
 
@@ -5330,6 +5338,26 @@ body.dep-cat-bus .products-actions {
 	display: none;
 }
 
+body.dep-cat-bus .orderBy {
+	margin: 20px 0 10px;
+}
+
+body.dep-cat-bus .orderBy label {
+	color: #f68026;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body.dep-cat-bus .orderBy select {
+	font-size: 13px;
+	width: 100%;
+	height: 30px;
+	max-width: 150px;
+	background: none;
+	border: 1px solid #eaeaea;
+}
+
 body.dep-cat-bus #ajaxBusy {
 	font-size: 20px;
 	top: 0;
@@ -5379,6 +5407,10 @@ body.dep-cat-bus #ajaxBusy p:before {
 body.dep-cat-bus main {
 	overflow: hidden;
 	padding: 195px 0 0;
+}
+
+body.dep-cat-bus main .search-multiple-navigator {
+	visibility: visible !important;
 }
 
 body.dep-cat-bus main .search-multiple-navigator h3,
@@ -5435,6 +5467,10 @@ body.dep-cat-bus main .shelfItem .drop .price {
 
 body.dep-cat-bus main .mainShelf .shearchTitle {
 	display: none;
+}
+
+body.dep-cat-bus main .mainShelf .prateleira {
+	overflow: visible !important;
 }
 
 body.dep-cat-bus .title-category,
@@ -5550,50 +5586,6 @@ body.dep-cat-bus #nav-dep .right {
 	    justify-content: space-between;
 }
 
-body.dep-cat-bus #nav-dep .right .orderBy {
-	font-size: 12px;
-	float: right;
-	text-align: right;
-	position: relative;
-	white-space: nowrap;
-	border: 1px solid #e0e0e0;
-	text-transform: uppercase;
-}
-
-body.dep-cat-bus #nav-dep .right .orderBy label {
-	font-weight: 400;
-	vertical-align: middle;
-	padding: 10px 0px 10px 10px;
-}
-
-body.dep-cat-bus #nav-dep .right .orderBy select {
-	font-size: 12px;
-	border: 0;
-	outline: 0;
-	font-weight: 400;
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-	        appearance: none;
-	text-transform: uppercase;
-	padding: 10px 10px 10px 0;
-}
-
-body.dep-cat-bus #nav-dep .right .orderBy select option {
-	text-transform: uppercase;
-}
-
-body.dep-cat-bus #nav-dep .right .orderBy:after {
-	font-size: 16px;
-	top: 50%;
-	right: 20px;
-	content: '^';
-	color: #939393;
-	position: absolute;
-	pointer-events: none;
-	-ms-transform: translateY(-50%) scaleX(1.8) rotate(180deg);
-	    transform: translateY(-50%) scaleX(1.8) rotate(180deg);
-}
-
 body.dep-cat-bus #nav-dep .right .select2-container--default {
 	display: none;
 }
@@ -5628,38 +5620,6 @@ body.dep-cat-bus .mainShelf .sub .resultado-busca-filtro {
 	display: inline-flex;
 	-ms-flex-pack: end;
 	    justify-content: flex-end;
-}
-
-body.dep-cat-bus .mainShelf .sub .orderBy {
-	text-align: right;
-	position: relative;
-	display: inline-block;
-}
-
-body.dep-cat-bus .mainShelf .sub .orderBy label {
-	padding-right: 5px;
-}
-
-body.dep-cat-bus .mainShelf .sub .orderBy select {
-	width: 53%;
-	cursor: pointer;
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-	        appearance: none;
-	border-radius: 5px;
-	padding: 5px 20px 5px 5px;
-	border: 1px solid #cbcbcb;
-}
-
-body.dep-cat-bus .mainShelf .sub .orderBy:after {
-	top: 50%;
-	right: 10px;
-	content: '>';
-	color: #cbcbcb;
-	position: absolute;
-	pointer-events: none;
-	-ms-transform: scaleX(1.5) translateY(-50%) rotate(90deg);
-	    transform: scaleX(1.5) translateY(-50%) rotate(90deg);
 }
 
 body.dep-cat-bus .mainShelf .sub .compare,
@@ -5759,19 +5719,29 @@ body.buscavazia .mainShelf > span {
    Minha Conta
    ========================================================================== */
 
-body.account header {
-	z-index: 1;
+body.account .menu-header .menu-item:hover .submenu {
+	z-index: 2;
 }
 
-body.account header.menu-persistente {
+body.account header {
+	z-index: 1;
 	position: relative;
+}
+
+body.account .delete {
+	display: none !important;
 }
 
 body.account .modal-backdrop {
 	display: none;
 }
 
+body.account.top-height-active .modal form {
+	top: 70px;
+}
+
 body.account #box-bread-brumb {
+	width: 100%;
 	margin: 10px 0;
 }
 
@@ -5798,14 +5768,21 @@ body.account #profile-submit {
 	margin-top: 5px;
 	line-height: 10px;
 	padding: 10px 20px;
-	background-color: #fff;
 	color: #000 !important;
+	background-color: #eaeaea;
+}
+
+body.account #form-submit:hover,
+body.account #profile-submit:hover {
+	color: #fff !important;
+	background-color: #f68026;
 }
 
 body.account main {
+	z-index: 0;
+	padding-top: 0;
 	overflow: hidden;
-	padding: 5% 0 15%;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 body.account main .container {
@@ -5818,16 +5795,16 @@ body.account main .container {
 	    align-items: stretch;
 }
 
-body.account main .container .row {
-	width: 100%;
-	margin: 0;
-}
-
 body.account main .container h3 {
 	width: 100%;
 	margin: 20px 0;
 	padding: 10px 0;
 	border-color: #9e9ea6;
+}
+
+body.account main .container h3#myModalLabel {
+	margin: 0;
+	padding: 10px 0;
 }
 
 body.account .profile-detail-display,
@@ -5935,22 +5912,22 @@ body.account .modal {
 }
 
 body.account .modal form {
-	position: absolute;
-	top: 0;
 	left: 50%;
+	top: 70px;
 	width: 100%;
-	max-width: 390px;
-	margin-left: -160px;
+	max-width: 600px;
+	position: absolute;
+	margin-left: -300px;
 }
 
 body.account .modal-header {
-	-ms-flex-direction: row-reverse;
-	    flex-direction: row-reverse;
+	height: 38px;
+	padding: 0 15px;
 	-ms-flex-align: center;
 	    align-items: center;
-	height: 58px;
-	padding: 0 15px;
 	background-color: #fff;
+	-ms-flex-direction: row-reverse;
+	    flex-direction: row-reverse;
 }
 
 body.account .modal-header h3 {
@@ -5958,20 +5935,21 @@ body.account .modal-header h3 {
 	-ms-flex: 1;
 	    flex: 1;
 	margin: 0;
-	padding-top: 20px;
+	padding-top: 15px;
 	display: block;
 	font-size: 1.6em;
 }
 
 body.account .modal-header .close {
-	color: #000;
-	float: right;
-	width: 28px;
-	height: 35px;
-	margin-top: 8px;
-	padding: 0;
-	border: 0;
 	font-size: 40px;
+	border: 0;
+	padding: 0;
+	width: 28px;
+	float: right;
+	height: 35px;
+	color: #000;
+	line-height: 0;
+	margin-top: 0px;
 	cursor: pointer;
 	background-color: transparent;
 	background-repeat: no-repeat;
@@ -5998,12 +5976,15 @@ body.account .modal-body h5 {
 }
 
 body.account .modal-body .control-group {
-	margin-bottom: 1em;
 	font-size: 13px;
+	width: 49%;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	display: inline-block;
 }
 
 body.account .modal-body .control-group label {
-	display: inline-block;
+	display: block;
 }
 
 body.account .modal-body .control-group select {
@@ -6078,6 +6059,51 @@ body.account .modal-footer .btn-link {
 	   -moz-appearance: none;
 	        appearance: none;
 	cursor: pointer;
+}
+
+body.account .modal #form-address {
+	top: 80px;
+}
+
+body.account .modal #form-address .address-form .row {
+	width: 100%;
+}
+
+body.account .modal #form-address .address-form .row div {
+	width: 49%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body.account .modal #form-address .address-form div {
+	float: left;
+}
+
+body.account .modal #form-address .address-form .control-group {
+	width: 49%;
+	float: none;
+}
+
+body.account .modal #form-address .address-form .control-group.address-form-number,
+body.account .modal #form-address .address-form .control-group.address-form-reference,
+body.account .modal #form-address .address-form .control-group.address-form-complement,
+body.account .modal #form-address .address-form .control-group.address-form-street-name,
+body.account .modal #form-address .address-form .control-group.address-form-neighborhood {
+	width: 98.5%;
+}
+
+body.account .modal #form-address .address-form .control-group select {
+	width: 100%;
+	height: 35px;
+	border: 1px solid #eaeaea;
+}
+
+body.account .modal #form-address .address-form .control-group label {
+	display: block;
+}
+
+body.account .modal #form-address .address-form .control-group .controls {
+	width: 100%;
 }
 
 /* ==========================================================================
@@ -6247,7 +6273,7 @@ body.orders header h1.logo,
 
 body.orders main,
 .vtex-bootstrap main {
-	padding: 50px 0 100px;
+	padding: 210px 0 100px;
 }
 
 body.orders main h1.title,
@@ -6280,7 +6306,8 @@ body.orders h2.page-title {
    Institucional
    ========================================================================== */
 
-body.institucional.como-comprar .title-page:before {
+body.institucional.como-comprar .title-page:before,
+body.institucional.politica-de-troca .title-page:before {
 	font-size: 16px;
 	width: 30px;
 	color: #fff;
@@ -6296,45 +6323,55 @@ body.institucional.como-comprar .title-page:before {
 	background-color: #f68026;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul {
+body.institucional.como-comprar main .main-institucional__content ul,
+body.institucional.politica-de-troca main .main-institucional__content ul {
 	margin-top: 25px;
 	list-style-type: none;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li {
+body.institucional.como-comprar main .main-institucional__content ul li,
+body.institucional.politica-de-troca main .main-institucional__content ul li {
 	line-height: 40px;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details {
+body.institucional.como-comprar main .main-institucional__content ul li details,
+body.institucional.politica-de-troca main .main-institucional__content ul li details {
 	padding-left: 25px;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary {
+body.institucional.como-comprar main .main-institucional__content ul li details summary,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary {
 	color: #585858;
 	cursor: pointer;
 	font-weight: 600;
 }
 
 body.institucional.como-comprar main .main-institucional__content ul li details summary::-moz-details-marker,
-body.institucional.como-comprar main .main-institucional__content ul li details summary::-webkit-details-marker {
+body.institucional.como-comprar main .main-institucional__content ul li details summary::-webkit-details-marker,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary::-moz-details-marker,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary::-webkit-details-marker {
 	display: none;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary:hover {
+body.institucional.como-comprar main .main-institucional__content ul li details summary:hover,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary:hover {
 	color: #03378d;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary span {
+body.institucional.como-comprar main .main-institucional__content ul li details summary span,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary span {
 	font-size: 24px;
 	color: #808080;
 	display: inline !important;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary span:hover {
+body.institucional.como-comprar main .main-institucional__content ul li details summary span:hover,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary span:hover {
 	color: #f68026;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary p {
+body.institucional.como-comprar main .main-institucional__content ul li details summary p,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary p {
 	margin: 12px 0;
 	line-height: 25px;
 	padding-left: 30px;
@@ -6365,6 +6402,7 @@ body.institucional .main-institucional__content ul {
 
 body.institucional .main-institucional__content ul li {
 	line-height: 40px;
+	list-style-type: none;
 }
 
 body.institucional .main-institucional__content ul li a {
@@ -6873,14 +6911,6 @@ html {
 	box-sizing: inherit;
 }
 
-@media screen and (min-width: 414px) {
-
-body.account .modal form {
-	margin-left: -195px;
-}
-
-}
-
 @media (min-width: 479px) and (max-width: true) {
 
 body.account .modal-body {
@@ -7197,14 +7227,6 @@ header.menu-persistente {
 
 body.dep-cat-bus #nav-dep .right {
 	float: none !important;
-}
-
-body.dep-cat-bus .mainShelf .sub .orderBy label {
-	padding-right: 10px;
-}
-
-body.dep-cat-bus .mainShelf .sub .orderBy select {
-	width: 145px;
 }
 
 body.dep-cat-bus .mainShelf .pager ul li {
@@ -7913,12 +7935,6 @@ body.dep-cat-bus .mainShelf {
 	position: initial;
 }
 
-body.dep-cat-bus .mainShelf .sub .orderBy {
-	top: 75px;
-	left: 7px;
-	position: absolute;
-}
-
 body.buscavazia .mainShelf .main-tlt {
 	padding: 5px 0;
 }
@@ -7926,10 +7942,6 @@ body.buscavazia .mainShelf .main-tlt {
 body.buscavazia .mainShelf > span {
 	padding-left: 0;
 	padding-right: 0;
-}
-
-body.account main {
-	padding: 0;
 }
 
 body.account .profile-detail-display,
