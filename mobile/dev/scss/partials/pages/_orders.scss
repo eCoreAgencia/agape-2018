@@ -46,6 +46,7 @@ body.orders, .vtex-bootstrap{
             margin: 0;
         }
     }
+    
 
     main{
 	    padding: 90px 20px 10px;
@@ -71,14 +72,35 @@ body.orders, .vtex-bootstrap{
 }
 
 body.orders {
+
+    header {
+        margin-left: -15px;
+    }
+
+	.ico-vert {
+		margin-right: 5px;
+		display: inline-block;
+		vertical-align: text-bottom;
+	}
+
     h2 {
         &.page-title {
             @include font-size(3);
             color: #F68026;
             text-align: left;
-            min-width: 1000px;
             display: inline-block;
             background: none !important;
         }
     }
+
+    .back-account-bt {
+        @include font-size(1.2);
+        display: block;
+        line-height: 10px;
+        margin-bottom: 10px;
+    }
+
+	a.myo-collapsed-order {
+		text-decoration: none;
+	}
 }

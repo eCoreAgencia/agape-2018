@@ -2,6 +2,15 @@
    SidePanel
    ========================================================================== */
 
+body.active-menu {
+	overflow: hidden;
+
+	main {
+		@extend .transition;
+		opacity: 0.3;
+	}
+}
+
 header .menu-header{
 	@extend .transition;
 	left: 0;
@@ -22,8 +31,9 @@ header .menu-header{
 
 		.menu-item{
 			@extend .txt-gray;
+			overflow: hidden;
 			background: #f4f4f4;
-			border-bottom: 1px solid #e6e7e8;
+			border-bottom: 1px solid #ccc;
 
 			.submenu{
 				li{
@@ -51,7 +61,6 @@ header .menu-header{
 	    float: left;
 	    width: 100%;
 	    display: block;
-    	border: 1px 1px solid #c1c1c1;
 
 	    &.has-sub{
 	    	& > a:after{
@@ -95,14 +104,16 @@ header .menu-header{
 		transform: translateY(-100%);
 
 		&.active{
-			height: auto;
+			height: 360px;
 			display: block;
+			overflow-x: scroll;
 			transform: translateY(0);
 		}
 
 		h3{
-			@extend .txt-darkBlue, .txt-sz-24, .txt-lo, .regular;
-			margin-bottom: 5px;
+			@include font-size(1.8);
+			@extend .txt-darkBlue, .txt-lo, .regular;
+			margin: 10px 0 5px 40px;
 		}
 
 		.menu-item{

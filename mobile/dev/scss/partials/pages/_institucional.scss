@@ -4,7 +4,8 @@
 
 body.institucional {
 
-	&.como-comprar {
+	&.como-comprar,
+	&.politica-de-troca {
 		
 		.title-page {
 			&:before{
@@ -33,7 +34,7 @@ body.institucional {
 					line-height: 40px;
 
 					details {
-						padding-left: 25px;
+						padding-left: 10px;
 
 						summary {
 							color: #585858;
@@ -220,10 +221,11 @@ body.institucional {
 
 	main{
     	order: 1;
-        clear: initial;
-        overflow: hidden;
 		display: flex;
+        clear: initial;
 		flex-wrap: wrap;
+        overflow: hidden;
+		padding-top: 95px;
 
 		.title-page {
 			@include font-size(4);

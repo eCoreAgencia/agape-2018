@@ -30,19 +30,28 @@
 		align-items: center;
 		display: inline-flex;
 		justify-content: space-between;
-		@include mq($screen-md){
-			padding-left: 75px;
-			justify-content: flex-start;
+		
+		.error-msg {
+			@include font-size(1.2);
+			color: red;
+			display: block;
+			margin-top: 8px;
+			text-transform: uppercase;
 		}
+
+		fieldset.genero {
+			.error-msg {
+				margin-top: 0;
+				margin-bottom: 8px;
+			}
+		}
+
 		input{
 			@extend .txt-sz-16, .txt-lighterGray;
 			width: 100%;
 			border-radius: 5px; 
 			padding: 10px 15px;
 			border: 1px solid #b2b2b2;
-			@include mq($screen-md){
-				width: 335px;
-			}
 
 			&#cl_email{
 				@extend .txt-lo;	
@@ -57,11 +66,10 @@
 			padding: 15px 7px;
 			display: inline-block;
 			&.genero{
-				@extend .col-xs-8, .col-md-6;
 				label{
 					align-items: center;
 					padding-right: 3.7%;
-					display: inline-flex;
+					display: inline-block;
 				}
 			}
 		}
@@ -69,7 +77,8 @@
 			@extend .txt-white, .bold, .txt-sz-18, .txt-up, .transition;
 			border: 0;
 			outline: 0;
-			float: right;
+			float: none;
+			margin: 0 auto;
 			cursor: pointer;
 			padding: 20px 50px;
 			border-radius: 5px;
@@ -78,11 +87,6 @@
 
 			&:hover {
 				background-color: #4065b7;
-			}
-
-			@include mq($screen-md){
-				float: left;
-				margin: 7px;
 			}
 		}
 	}

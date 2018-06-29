@@ -1,10 +1,25 @@
-body.produto .bread-crumb {
-    margin: 0;
-    color: #999;
-    padding: 15px 0
-}
-
 body.produto {
+
+    .breadcrumbs {
+        clear: both;
+        overflow: hidden;
+        margin: 40px 0 10px;
+
+        ul {
+            li {
+                line-height: 23px;
+            }
+        }
+    }
+
+    .slick-dots {
+        left: auto;
+        width: 100%;
+        bottom: auto;
+        margin: 0 auto 0;
+        position: inherit;
+        transform: none !important;
+    }
 
     .buy-box {
         position: relative;
@@ -27,14 +42,6 @@ body.produto {
     .troca,
     .descricao {
         border-bottom: 1px solid #ccc;
-    }
-
-    .descricao {
-        padding-bottom: 10px;
-    }
-
-    .easyzoom {
-        margin-bottom: 10px;
     }
 
     .portal-notify-me-ref {
@@ -85,12 +92,13 @@ body.produto {
         button.btn-tabelaMedidas {
             @include font-size(1.2);
             top: 19px;
-            left: 91px;
+            left: 95px;
             border: none;
-            color: #18318f;
+            z-index: 9999;
             background: 0 0;
             cursor: pointer;
             font-weight: 600;
+            color: #18318f;
             line-height: 25px;
             position: absolute;
             display: inline-block;
@@ -138,8 +146,8 @@ body.produto {
 }
 
 body.produto main {
-    padding: 20px;
     overflow: hidden;
+    padding: 20px 5px;
 }
 
 body.produto main .economia-de,
@@ -157,10 +165,9 @@ body.produto main .skuListPrice {
 }
 
 body.produto main .sizebay-embedded-recommendation-button {
-    width: 300px;
+    width: 100%;
     border-radius: 0;
-    margin: 25px 16px 0 0 !important;
-    border: 1px solid #d2d2d2;
+    margin: 25px 0 0 !important;
     background-color: #1F358A!important
 }
 
@@ -367,18 +374,14 @@ body.produto .Tamanho .specification{
     }
 }
 
-body.produto .Cor {
-    padding-left: 0
-}
-
 body.produto .sku-area {
-    margin-bottom: 20px
+    overflow: hidden;
 }
 
 body.produto .sku-selector-container {
+    overflow: hidden;
     position: relative;
-    margin-bottom: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #d1d1d1
 }
 
@@ -387,6 +390,7 @@ body.produto .sku-selector-container .medidas {
     left: 80px;
     right: auto;
     position: absolute;
+    border-bottom: 1px solid #d1d1d1;
 }
 
 body.produto .skuList input {
@@ -403,6 +407,7 @@ body.produto .skuList label {
     margin-right: 10px;
     border-radius: 5px;
     text-align: center;
+    margin-bottom: 10px;
     vertical-align: top;
     display: inline-block;
     border: 1px solid #bebebe;
@@ -441,13 +446,12 @@ body.produto .skuList label:last-of-type {
 }
 
 body.produto .sku-section {
+    padding: 0;
     margin-right: 0;
-    padding-bottom: 20px
 }
 
 body.produto .buy-box {
     padding-top: 25px;
-    border-top: 1px solid #d1d1d1
 }
 
 body.produto .buy-box button {
@@ -463,44 +467,29 @@ body.produto .buy-box button.bg-blue {
     background-color: #18318f
 }
 
-body.produto .buy-box button.bg-blue:hover {
-    background-color: #f68026;
-}
-
-body.produto main .buy-box button.add-to-cart:hover {
-    background-color: #f68026;
-}
-
 body.produto .buy-box button.add-to-cart {
+    @include font-size(1.7);
     @extend .transition;
-    font-size: 24px;
     color: #fff;
     border: none;
     height: 60px;
     cursor: pointer;
-    padding: 0 28px;
-    line-height: 30px;
-    margin-bottom: 20px;
-    background-color: #00bb4f
-}
-
-body.produto .buy-box .buy-area .buy-button:hover {
-    background-color: #f68026;
+    line-height: 19px;
+    background-color: #b81154;
 }
 
 body.produto .buy-box .buy-area .buy-button {
+    @include font-size(2);
     @extend .transition;
-    font-size: 24px;
     color: #fff;
     border: none;
     height: 60px;
     cursor: pointer;
-    padding: 0 28px;
-    line-height: 55px;
+    line-height: 59px;
     display: inline-block;
     text-decoration: none;
     text-transform: lowercase;
-    background-color: #b81154
+    background-color: #00bb4f;
 }
 
 body.produto main #popupCalculoFreteWrapper {
@@ -591,11 +580,31 @@ body.produto main #calculoFrete .content label.prefixo:before {
     background: url(/arquivos/cep-icon.png) no-repeat
 }
 
+body.produto {
+    span.frete-calcular {
+        margin-right: 0 !important;
+        
+        span {
+            margin-right: 0 !important;
+        }
+    }
+}
+
+body.produto .freight-zip-box {
+    width: 103px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
 body.produto main #calculoFrete .content label.prefixo {
-    font-size: 16px;
+    @include font-size(1.3);
     color: #18318f;
     line-height: 22px;
+    margin-right: 5px;
     padding-left: 35px;
+    display: inline-block;
+    vertical-align: middle;
     text-transform: uppercase;
     background: url(/arquivos/cep-icon.png) no-repeat
 }
@@ -627,6 +636,14 @@ body.produto main #calculoFrete .content .freight-btn {
     background-color: #18318f
 }
 
+body.produto .Cor {
+    margin-top: 20px;
+}
+
+body.produto .Cor.numopt-1 {
+    display: none;
+}
+
 body.produto main #prod-info {
     overflow: hidden;
     padding: 10px 0;
@@ -648,26 +665,62 @@ body.produto main .produtos-similares ul {
 body.produto main .produtos-similares h2.txt-orange,
 body.produto main .produtos-similares header .menu-header .submenu h2.menu-item.txt-orange,
 header .menu-header .submenu body.produto main .produtos-similares h2.menu-item.txt-orange {
-    font-size: 40px;
+    @include font-size(2);
     text-align: center;
     margin-bottom: 25px;
     text-transform: uppercase
 }
 
+body.produto main .descricao h2 {
+    margin-bottom: 10px
+}
+
+body.produto main .troca h2,
 body.produto main .descricao h2,
-body.produto main .especificacoes h4 {
-    font-size: 26px;
-    margin-bottom: 15px
+body.produto main .especificacoes h3 {
+    @include font-size(1.5);
+    position: relative;
+    text-transform: uppercase;
+
+    &:after {
+        @include font-size(2);
+        @extend .transition;
+        top: 0;
+        right: 0;
+        color: #000;
+        content: '>';
+        font-weight: 500;
+        position: absolute;
+    }
+
+    &.active {
+        &:after {
+            @extend .transition;
+            content: 'v';
+            color: #f68026;
+        }
+    }
+}
+
+body.produto main .troca h2 {
+    &:after {
+        right: -10px;
+    }
+}
+
+body.produto main .descricao h2,
+body.produto main .especificacoes h3 {
+    @include font-size(1.8);
 }
 
 body.produto main .troca {
     margin: 30px 0 0;
-    padding: 20px 40px 0;
+    padding: 20px 20px 20px;
     background-color: #ededed
 }
 
 body.produto main .troca h2 {
-    @include font-size(1.3);
+    @include font-size(1.2);
     height: 40px;
     font-weight: 400;
     line-height: 40px;
@@ -680,9 +733,9 @@ body.produto main .troca h2 strong {
 }
 
 body.produto main .troca span {
+    @include font-size(1.2);
     color: #727272;
-    line-height: 26px;
-    padding-left: 45px
+    line-height: 20px;
 }
 
 body.produto main .troca span a {
@@ -699,39 +752,38 @@ body.produto main .descricao {
 }
 
 body.produto main .descricao .productDescription {
+    @include font-size(1.3);
     color: #666;
-    line-height: 22px
+    line-height: 20px;
+    padding-bottom: 10px;
 }
 
-body.produto main .especificacoes #caracteristicas table tr {
-    width: 100%;
-    display: block;
-    padding-bottom: 9px;
-}
+body.produto main .especificacoes #caracteristicas {
+    h4 {
+        display: none;
+    }
 
-body.produto main .especificacoes #caracteristicas table tr td,
-body.produto main .especificacoes #caracteristicas table tr th {
-    color: #666;
-    text-align: left;
-    line-height: 22px;
-    font-weight: 400;
-}
+    table {
+        @include font-size(1.2);
+        color: #000;
+        margin-top: 10px;
+        line-height: 17px;
+        border: 1px solid #eaeaea;
 
-body.produto main .especificacoes h3 {
-    font-size: 26px;
-    margin-bottom: 12px;
-}
+        tr {
+            border-bottom: 1px solid #eaeaea;
 
-body.produto main .especificacoes #caracteristicas h4{
-    display: none;
-}
+            &:last-of-type {
+                border: none;
+            }
+        }
 
-body.produto main .especificacoes #caracteristicas table tr th {
-    padding-right: 20px
-}
-
-body.produto main .especificacoes #caracteristicas table tr th:after {
-    content: ':';
+        th, td {
+            padding: 10px;
+            border-right: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+        }
+    }
 }
 
 body.produto .evaluation-product #yv-review-quickreview .yv-bootstrap i {
@@ -746,7 +798,6 @@ body.produto .box-yourviews-container {
     clear: both;
     overflow: hidden;
     padding-top: 40px;
-    border-top: 1px solid #d1d1d1
 }
 
 body.produto .box-yourviews-container #yv-show-reviews .yv-title {

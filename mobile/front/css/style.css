@@ -270,6 +270,7 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
+footer .portal-do-revendedor ul li,
 footer .metodos-pagamento h3,
 .btn-add-buy-button-asynchronous,
 .box-item .buy-button,
@@ -291,6 +292,7 @@ footer .institucional h3,
 footer .dados h3,
 footer .atendimento h3,
 footer .compra-segura h3,
+footer .portal-do-revendedor h3,
 .search-multiple-navigator h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
@@ -306,11 +308,12 @@ body.institucional main a {
 .i-dropBtn:after,
 .menuClose,
 .btn-plus-minus,
-.box-item .clusterHighLight .flag,
-.box-item .discountHighLight .flag,
 .shelfTitle .mark,
 #mini-cart .portal-totalizers-ref .cart-info .total-cart,
 .Newsletter .form-newsletter .submit,
+.clusterHighLight .flag,
+.the-flags,
+.discountHighLight .flag,
 body.dep-cat-bus #nav-dep .right .orderBy:after {
 	font-weight: 700;
 }
@@ -330,6 +333,7 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
+footer .portal-do-revendedor ul li,
 .bread-crumb ul li a,
 header .menu-header .menu-item a {
 	text-decoration: none;
@@ -351,10 +355,10 @@ header .ambientes .ambiente,
 .btn-add-buy-button-asynchronous,
 .box-item .buy-button,
 .menuClose,
-.box-item .clusterHighLight .flag,
 .shelfTitle .mark,
 .sta-cart-resume a,
 .Newsletter .form-newsletter .submit,
+.clusterHighLight .flag,
 body.dep-cat-bus .mainShelf .filtrarProdutos {
 	color: #ffffff;
 }
@@ -377,6 +381,7 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
+footer .portal-do-revendedor ul li,
 footer .textoLegal,
 footer .metodos-pagamento h3,
 footer .copyright-notice,
@@ -404,6 +409,7 @@ footer .institucional h3,
 footer .dados h3,
 footer .atendimento h3,
 footer .compra-segura h3,
+footer .portal-do-revendedor h3,
 .search-multiple-navigator h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
@@ -420,8 +426,9 @@ body.dep-cat-bus .mainShelf .sub .orderBy label {
 }
 
 .txt-darkBlue,
-.box-item .discountHighLight .flag,
-header .menu-header .submenu h3 {
+header .menu-header .submenu h3,
+.the-flags,
+.discountHighLight .flag {
 	color: #18318f;
 }
 
@@ -473,11 +480,10 @@ body.institucional main article h4 {
 }
 
 .txt-sz-20,
-.box-item .clusterHighLight .flag,
-.box-item .discountHighLight .flag,
 .shelfTitle .mark,
 .sta-cart-resume a,
-body.dep-cat-bus .mainShelf .pager ul li,
+.clusterHighLight .flag,
+.discountHighLight .flag,
 body.institucional main h3 {
 	font-size: 20px;
 	line-height: 24px;
@@ -495,15 +501,14 @@ footer .institucional h3,
 footer .dados h3,
 footer .atendimento h3,
 footer .compra-segura h3,
-header .menu-header .submenu h3,
+footer .portal-do-revendedor h3,
 body.orders footer h3,
 .vtex-bootstrap footer h3 {
 	font-size: 24px;
 	line-height: 28px;
 }
 
-.txt-sz-28,
-.sta-cart-title h3 {
+.txt-sz-28 {
 	font-size: 28px;
 	line-height: 32px;
 }
@@ -521,10 +526,12 @@ footer .institucional h3,
 footer .dados h3,
 footer .atendimento h3,
 footer .compra-segura h3,
+footer .portal-do-revendedor h3,
 footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
-footer .compra-segura ul li {
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li {
 	text-align: left;
 }
 
@@ -549,11 +556,12 @@ body.institucional main p {
 }
 
 .txt-up,
-.box-item .clusterHighLight .flag,
-.box-item .discountHighLight .flag,
 .Newsletter .form-newsletter .submit,
 .TipBar li,
-header .menu-header .menu-item a {
+header .menu-header .menu-item a,
+.clusterHighLight .flag,
+.the-flags,
+.discountHighLight .flag {
 	text-transform: uppercase;
 }
 
@@ -574,7 +582,8 @@ body.dep-cat-bus .mainShelf .pager ul li {
 footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
-footer .compra-segura ul li {
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li {
 	text-transform: capitalize;
 }
 
@@ -600,14 +609,17 @@ footer .institucional h3:after,
 footer .dados h3:after,
 footer .atendimento h3:after,
 footer .compra-segura h3:after,
+footer .portal-do-revendedor h3:after,
 footer .institucional h3.active:after,
 footer .dados h3.active:after,
 footer .atendimento h3.active:after,
 footer .compra-segura h3.active:after,
+footer .portal-do-revendedor h3.active:after,
 footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
+footer .portal-do-revendedor ul li,
 footer .socialLinks li:hover,
 .btn-add-buy-button-asynchronous,
 .box-item .buy-button,
@@ -617,8 +629,8 @@ footer .socialLinks li:hover,
 .box-item .buttons,
 .box-item .skus-selection,
 .box-item .drop,
-.search-multiple-navigator fieldset.filtro_cor label:hover .sr_box2,
-.search-single-navigator fieldset.filtro_cor label:hover .sr_box2,
+.search-multiple-navigator fieldset.filtro_cor label.sr_selected span.sr_box,
+.search-single-navigator fieldset.filtro_cor label.sr_selected span.sr_box,
 .search-multiple-navigator fieldset.filtro_cor label .sr_box2,
 .search-single-navigator fieldset.filtro_cor label .sr_box2,
 .search-multiple-navigator fieldset.filtro_cor label input:before,
@@ -639,7 +651,10 @@ footer .socialLinks li:hover,
 .search-single-navigator fieldset div label,
 .search-multiple-navigator fieldset label:before,
 .search-single-navigator fieldset label:before,
+main,
+main.search-active,
 .search-box,
+.search-box.active,
 .search-box .busca input.fulltext-search-box,
 #mini-cart,
 #mini-cart:hover #mini-cart-custom,
@@ -655,6 +670,7 @@ header.menu-persistente .container .row,
 header.ha-hidding,
 .TipBar li,
 .TipBar li .tooltip,
+body.active-menu main,
 header .menu-header,
 header .menu-header .submenu,
 header .menu-header .submenu .menu-item,
@@ -670,6 +686,12 @@ body.produto .portal-notify-me-ref form input.btn-ok:hover,
 body.produto .buy-box button.bg-blue,
 body.produto .buy-box button.add-to-cart,
 body.produto .buy-box .buy-area .buy-button,
+body.produto main .troca h2:after,
+body.produto main .descricao h2:after,
+body.produto main .especificacoes h3:after,
+body.produto main .troca h2.active:after,
+body.produto main .descricao h2.active:after,
+body.produto main .especificacoes h3.active:after,
 body.dep-cat-bus .sidebar,
 body.dep-cat-bus .sidebar .customRefinar,
 body.dep-cat-bus .sidebar li a,
@@ -728,8 +750,7 @@ body {
 
 .container {
 	width: 100%;
-	margin: 0 auto;
-	max-width: 380px;
+	margin: 0 auto; /* max-width: $container-max-width; */
 }
 
 .container .row {
@@ -806,14 +827,12 @@ body.dep-cat-bus main .mainShelf .prateleira li,
 .col-sm-6,
 .col-md-6,
 .Newsletter .form-newsletter fieldset,
-.Newsletter .form-newsletter fieldset.genero,
 .col-lg-6,
 .col-xs-7,
 .col-sm-7,
 .col-md-7,
 .col-lg-7,
 .col-xs-8,
-.Newsletter .form-newsletter fieldset.genero,
 .col-sm-8,
 .col-md-8,
 header .TipBar,
@@ -857,7 +876,6 @@ body.home main .shelf-title h2,
 body.dep-cat-bus main .mainShelf .prateleira li,
 .col-xs-7,
 .col-xs-8,
-.Newsletter .form-newsletter fieldset.genero,
 .col-xs-9,
 .col-xs-10,
 .col-xs-11,
@@ -899,8 +917,7 @@ body.dep-cat-bus main .mainShelf .prateleira li {
 	width: 58.3333333333%;
 }
 
-.col-xs-8,
-.Newsletter .form-newsletter fieldset.genero {
+.col-xs-8 {
 	width: 66.6666666667%;
 }
 
@@ -1110,6 +1127,7 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
+footer .portal-do-revendedor ul li,
 footer .metodos-pagamento h3,
 .btn-add-buy-button-asynchronous,
 .box-item .buy-button,
@@ -1131,6 +1149,7 @@ footer .institucional h3,
 footer .dados h3,
 footer .atendimento h3,
 footer .compra-segura h3,
+footer .portal-do-revendedor h3,
 .search-multiple-navigator h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
@@ -1146,11 +1165,12 @@ body.institucional main a {
 .i-dropBtn:after,
 .menuClose,
 .btn-plus-minus,
-.box-item .clusterHighLight .flag,
-.box-item .discountHighLight .flag,
 .shelfTitle .mark,
 #mini-cart .portal-totalizers-ref .cart-info .total-cart,
 .Newsletter .form-newsletter .submit,
+.clusterHighLight .flag,
+.the-flags,
+.discountHighLight .flag,
 body.dep-cat-bus #nav-dep .right .orderBy:after {
 	font-weight: 700;
 }
@@ -1170,6 +1190,7 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
+footer .portal-do-revendedor ul li,
 .bread-crumb ul li a,
 header .menu-header .menu-item a {
 	text-decoration: none;
@@ -1191,10 +1212,10 @@ header .ambientes .ambiente,
 .btn-add-buy-button-asynchronous,
 .box-item .buy-button,
 .menuClose,
-.box-item .clusterHighLight .flag,
 .shelfTitle .mark,
 .sta-cart-resume a,
 .Newsletter .form-newsletter .submit,
+.clusterHighLight .flag,
 body.dep-cat-bus .mainShelf .filtrarProdutos {
 	color: #ffffff;
 }
@@ -1217,6 +1238,7 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
+footer .portal-do-revendedor ul li,
 footer .textoLegal,
 footer .metodos-pagamento h3,
 footer .copyright-notice,
@@ -1244,6 +1266,7 @@ footer .institucional h3,
 footer .dados h3,
 footer .atendimento h3,
 footer .compra-segura h3,
+footer .portal-do-revendedor h3,
 .search-multiple-navigator h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
@@ -1260,8 +1283,9 @@ body.dep-cat-bus .mainShelf .sub .orderBy label {
 }
 
 .txt-darkBlue,
-.box-item .discountHighLight .flag,
-header .menu-header .submenu h3 {
+header .menu-header .submenu h3,
+.the-flags,
+.discountHighLight .flag {
 	color: #18318f;
 }
 
@@ -1313,11 +1337,10 @@ body.institucional main article h4 {
 }
 
 .txt-sz-20,
-.box-item .clusterHighLight .flag,
-.box-item .discountHighLight .flag,
 .shelfTitle .mark,
 .sta-cart-resume a,
-body.dep-cat-bus .mainShelf .pager ul li,
+.clusterHighLight .flag,
+.discountHighLight .flag,
 body.institucional main h3 {
 	font-size: 20px;
 	line-height: 24px;
@@ -1335,15 +1358,14 @@ footer .institucional h3,
 footer .dados h3,
 footer .atendimento h3,
 footer .compra-segura h3,
-header .menu-header .submenu h3,
+footer .portal-do-revendedor h3,
 body.orders footer h3,
 .vtex-bootstrap footer h3 {
 	font-size: 24px;
 	line-height: 28px;
 }
 
-.txt-sz-28,
-.sta-cart-title h3 {
+.txt-sz-28 {
 	font-size: 28px;
 	line-height: 32px;
 }
@@ -1361,10 +1383,12 @@ footer .institucional h3,
 footer .dados h3,
 footer .atendimento h3,
 footer .compra-segura h3,
+footer .portal-do-revendedor h3,
 footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
-footer .compra-segura ul li {
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li {
 	text-align: left;
 }
 
@@ -1389,11 +1413,12 @@ body.institucional main p {
 }
 
 .txt-up,
-.box-item .clusterHighLight .flag,
-.box-item .discountHighLight .flag,
 .Newsletter .form-newsletter .submit,
 .TipBar li,
-header .menu-header .menu-item a {
+header .menu-header .menu-item a,
+.clusterHighLight .flag,
+.the-flags,
+.discountHighLight .flag {
 	text-transform: uppercase;
 }
 
@@ -1414,7 +1439,8 @@ body.dep-cat-bus .mainShelf .pager ul li {
 footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
-footer .compra-segura ul li {
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li {
 	text-transform: capitalize;
 }
 
@@ -1573,6 +1599,7 @@ i.icon-diners {
    ========================================================================== */
 
 header {
+	width: 100%;
 	position: fixed;
 	z-index: 99999999 !important;
 }
@@ -1617,12 +1644,14 @@ header .mid-box .container {
 }
 
 header .logo {
-	margin-right: 30px;
+	padding: 0;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 header .logo img {
 	display: block;
-	max-width: 160px;
+	max-width: 140px;
 }
 
 header .options {
@@ -1727,6 +1756,14 @@ footer {
 	    flex-direction: column;
 }
 
+footer .obs-news {
+	font-size: 12px;
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+}
+
 footer .footer-middle {
 	width: 100%;
 	float: left;
@@ -1740,8 +1777,7 @@ footer .footer-middle ul {
 }
 
 footer .footer-middle ul li {
-	padding: 10px 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #eaeaea;
 }
 
 footer .footer-middle ul li:last-child {
@@ -1761,6 +1797,7 @@ footer input[type="radio"] + .checkbox {
 	margin-right: 10px;
 	border-radius: 5px;
 	display: inline-block;
+	vertical-align: bottom;
 	border: 1px solid #c0c0c0;
 }
 
@@ -1792,7 +1829,8 @@ footer .footer-bottom .container {
 footer .institucional,
 footer .dados,
 footer .atendimento,
-footer .compra-segura {
+footer .compra-segura,
+footer .portal-do-revendedor {
 	padding: 12px 0 0;
 	border-bottom: 1px solid #ccc;
 }
@@ -1800,7 +1838,8 @@ footer .compra-segura {
 footer .institucional h3,
 footer .dados h3,
 footer .atendimento h3,
-footer .compra-segura h3 {
+footer .compra-segura h3,
+footer .portal-do-revendedor h3 {
 	font-size: 22px;
 	margin-left: 10px;
 	position: relative;
@@ -1810,7 +1849,8 @@ footer .compra-segura h3 {
 footer .institucional h3:after,
 footer .dados h3:after,
 footer .atendimento h3:after,
-footer .compra-segura h3:after {
+footer .compra-segura h3:after,
+footer .portal-do-revendedor h3:after {
 	top: 0;
 	right: 10px;
 	color: #333;
@@ -1822,7 +1862,8 @@ footer .compra-segura h3:after {
 footer .institucional h3.active:after,
 footer .dados h3.active:after,
 footer .atendimento h3.active:after,
-footer .compra-segura h3.active:after {
+footer .compra-segura h3.active:after,
+footer .portal-do-revendedor h3.active:after {
 	content: 'v';
 	color: #ff9933;
 	display: block;
@@ -1831,7 +1872,8 @@ footer .compra-segura h3.active:after {
 footer .institucional h3 svg,
 footer .dados h3 svg,
 footer .atendimento h3 svg,
-footer .compra-segura h3 svg {
+footer .compra-segura h3 svg,
+footer .portal-do-revendedor h3 svg {
 	width: 30px;
 	margin: 5px;
 	height: auto;
@@ -1841,7 +1883,8 @@ footer .compra-segura h3 svg {
 footer .institucional h3 span,
 footer .dados h3 span,
 footer .atendimento h3 span,
-footer .compra-segura h3 span {
+footer .compra-segura h3 span,
+footer .portal-do-revendedor h3 span {
 	padding: 5px;
 	vertical-align: middle;
 }
@@ -1849,19 +1892,35 @@ footer .compra-segura h3 span {
 footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
-footer .compra-segura ul li {
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li {
 	list-style: none;
-	padding-left: 45px;
 }
 
 footer .institucional ul li a,
 footer .dados ul li a,
 footer .atendimento ul li a,
-footer .compra-segura ul li a {
+footer .compra-segura ul li a,
+footer .portal-do-revendedor ul li a {
 	font-size: 18px;
+	display: block;
 	color: inherit;
-	weight: inherit;
-	text-decoration: inherit;
+	text-decoration: none;
+	padding: 16px 0 16px 45px;
+}
+
+footer .atendimento ul li a {
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+footer .atendimento ul li a:last-of-type {
+	padding-left: 0;
+}
+
+footer .atendimento ul li a:first-of-type {
+	padding-left: 45px;
 }
 
 footer .selos-seguranca {
@@ -1886,6 +1945,17 @@ footer .selos-seguranca a:nth-of-type(4) {
 footer .selos-seguranca a img {
 	width: 90px;
 	height: auto;
+}
+
+footer .portal-do-revendedor h3:after {
+	display: none !important;
+}
+
+footer .portal-do-revendedor h3 a {
+	width: 100%;
+	color: #333;
+	display: block;
+	text-decoration: none;
 }
 
 footer .logo-social {
@@ -2001,6 +2071,12 @@ body.home footer .textoLegal {
 	padding: 10px;
 	cursor: pointer;
 	font-weight: 500;
+}
+
+button {
+	-moz-appearance: none !important;
+	     appearance: none !important;
+	-webkit-appearance: none !important;
 }
 
 .open-filters {
@@ -2138,7 +2214,7 @@ body.home footer .textoLegal {
 
 .js-open-mobile-menu .menu-toggle {
 	width: 40px;
-	height: 40px;
+	height: 20px;
 	display: block;
 	margin: 0 auto;
 	position: relative;
@@ -2250,13 +2326,9 @@ body.home footer .textoLegal {
 	    flex-wrap: wrap;
 }
 
-.prateleira .clusterHighLight .flag {
-	display: none !important;
-}
-
 .prateleira li {
 	padding: 4px;
-	height: 370px;
+	position: relative;
 }
 
 .prateleira li a {
@@ -2272,20 +2344,34 @@ body.home footer .textoLegal {
 	height: 45px;
 	display: block;
 	overflow: hidden;
+	margin-bottom: 10px;
 	font-weight: lighter;
 	text-overflow: ellipsis;
 }
 
 .prateleira li .price {
-	height: 75px;
 	display: block;
 }
 
 .prateleira li .price .shelfOldPrice {
 	font-size: 11px;
-	width: 100%;
-	display: block;
+	margin: 0;
+	bottom: 110px;
+	line-height: 0;
+	position: absolute;
+}
+
+.prateleira li .price .shelfOldPrice.ln-through {
 	text-decoration: line-through;
+}
+
+.prateleira li .price .shelfOldPrice:before {
+	font-size: 11px;
+	color: #f68026;
+	content: 'De: ';
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .prateleira li .price .shelfInstallment {
@@ -2301,7 +2387,6 @@ body.home footer .textoLegal {
 	display: -ms-flexbox;
 	display: flex;
 	padding-top: 10px;
-	pointer-events: none;
 	-ms-flex-align: stretch;
 	    align-items: stretch;
 }
@@ -2366,7 +2451,6 @@ body.home footer .textoLegal {
 
 .box-item .price .shelfOldPrice {
 	padding-right: 5px;
-	text-decoration: line-through;
 }
 
 .box-item .wrapper-buy-button-asynchronous {
@@ -2395,93 +2479,6 @@ body.home footer .textoLegal {
 	z-index: 99999;
 	background: #fff;
 	width: calc(100% + 2px);
-}
-
-.box-item .clusterHighLight {
-	top: 0;
-	right: 0;
-	z-index: 1;
-	position: absolute;
-	padding-right: 10px;
-}
-
-.box-item .clusterHighLight .flag {
-	padding: 10px 5px;
-	position: relative;
-	margin: 0 10px 0 5px;
-	display: table-cell;
-}
-
-.box-item .clusterHighLight .flag:before {
-	top: 0;
-	left: 0;
-	content: '';
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-	background-color: #f68026;
-	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-}
-
-.box-item .clusterHighLight .flag:after {
-	top: 0;
-	width: 0;
-	height: 0;
-	left: 100%;
-	content: '';
-	display: block;
-	position: absolute;
-	border-bottom: 10px solid #b85910;
-	border-right: 10px solid transparent;
-}
-
-.box-item .discountHighLight {
-	left: 0;
-	top: 7px;
-	z-index: 999999;
-	position: absolute;
-}
-
-.box-item .discountHighLight .flag {
-	margin: 10px 0;
-	padding: 10px 5px;
-	position: relative;
-	display: table-caption;
-}
-
-.box-item .discountHighLight .flag:before {
-	left: 0;
-	top: 50%;
-	height: 0;
-	content: '';
-	z-index: -1;
-	display: block;
-	position: absolute;
-	height: calc(100% + 8px);
-	-ms-transform: translateY(-50%);
-	    transform: translateY(-50%);
-	border-right: 8px solid #c79c2e;
-	border-top: 5px solid transparent;
-	border-bottom: 5px solid transparent;
-}
-
-.box-item .discountHighLight .flag:after {
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	content: '';
-	height: 100%;
-	display: block;
-	padding-left: 7px;
-	position: absolute;
-	background-color: #f0c451;
-	padding-right: calc(25% + 7px);
-	-webkit-clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
-	        clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
 }
 
 .no-title h2 {
@@ -2533,6 +2530,12 @@ body.home footer .textoLegal {
 	display: block;
 }
 
+.search-multiple-navigator fieldset,
+.search-single-navigator fieldset {
+	padding: 8px 0;
+	border-bottom: 1px solid #d1d1d1;
+}
+
 .search-multiple-navigator fieldset.filtro_cor label,
 .search-single-navigator fieldset.filtro_cor label {
 	display: inline-block;
@@ -2545,15 +2548,21 @@ body.home footer .textoLegal {
 	margin-right: 18px;
 }
 
-.search-multiple-navigator fieldset.filtro_cor label:hover .sr_box2,
-.search-single-navigator fieldset.filtro_cor label:hover .sr_box2 {
-	left: 29px;
+.search-multiple-navigator fieldset.filtro_cor label.sr_selected span.sr_box,
+.search-single-navigator fieldset.filtro_cor label.sr_selected span.sr_box {
+	top: 15px;
+	left: 48px;
+	width: 5px;
+	height: 5px;
+	display: block;
+	position: absolute;
+	background-color: red;
 }
 
 .search-multiple-navigator fieldset.filtro_cor label .sr_box2,
 .search-single-navigator fieldset.filtro_cor label .sr_box2 {
-	top: 11px;
-	left: 20px;
+	top: 14px;
+	left: 65px;
 	width: 5px;
 	height: 5px;
 	border-radius: 50%;
@@ -2749,8 +2758,8 @@ body.home footer .textoLegal {
 
 .search-multiple-navigator label.sr_selected span.sr_box,
 .search-single-navigator label.sr_selected span.sr_box {
-	top: 13px;
-	left: 3px;
+	top: 15px;
+	left: 49px;
 	width: 5px;
 	height: 5px;
 	display: block;
@@ -2781,13 +2790,11 @@ body.home footer .textoLegal {
 	cursor: pointer;
 	padding: 10px 10px;
 	position: relative;
-	background: #f4f4f4;
 	-ms-flex-align: center;
 	    align-items: center;
 	-ms-flex-direction: row;
 	    flex-direction: row;
 	text-decoration: none;
-	border: 1px solid #d1d1d1;
 	border-right: 0;
 	border-left: 4px solid transparent;
 	transition: color 0.2s linear, background 0.2s linear;
@@ -2966,14 +2973,7 @@ body.home footer .textoLegal {
 	cursor: pointer;
 	text-decoration: none;
 	text-transform: initial;
-}
-
-.search-multiple-navigator ul label:hover,
-.search-multiple-navigator fieldset div label:hover,
-.search-single-navigator ul label:hover,
-.search-single-navigator fieldset div label:hover {
-	padding-left: 10px;
-	text-decoration: underline;
+	padding: 10px 10px 10px 45px;
 }
 
 .search-multiple-navigator ul h5,
@@ -3041,6 +3041,10 @@ body.home footer .textoLegal {
 	background-color: transparent;
 }
 
+main.search-active {
+	padding-top: 107px;
+}
+
 .pager .top {
 	display: none;
 }
@@ -3082,26 +3086,19 @@ span.resultado-busca-numero {
 }
 
 .search-box {
-	top: 100%;
+	left: 0;
+	top: 55px;
+	opacity: 0;
 	z-index: 1;
 	width: 100%;
-	display: none;
 	padding-left: 0;
 	padding-right: 0;
 	text-align: right;
 	position: absolute;
-	-ms-transform: translateX(-100%);
-	    transform: translateX(-100%);
 }
 
 .search-box.active {
-	left: 0;
-	top: 50px;
-	width: 320px;
-	display: block;
-	margin-left: -178px;
-	-ms-transform: translateX(0);
-	transform: translateX(0);
+	opacity: 1;
 }
 
 .search-box .busca {
@@ -3112,6 +3109,16 @@ span.resultado-busca-numero {
 .search-box .busca label,
 .search-box .busca select {
 	display: none;
+}
+
+.search-box .busca svg {
+	top: 1px;
+	right: 1px;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	position: absolute;
+	background-color: #18318f;
 }
 
 .search-box .busca input.fulltext-search-box {
@@ -3130,6 +3137,7 @@ span.resultado-busca-numero {
 .search-box .busca input.btn-buscar {
 	top: 1px;
 	right: 1px;
+	opacity: 0;
 	position: absolute;
 	background-size: 60%;
 	background-position: center;
@@ -3142,9 +3150,13 @@ span.resultado-busca-numero {
    ========================================================================== */
 
 #mini-cart {
+	padding: 0;
+	border: none;
 	cursor: pointer;
+	background: none;
 	text-align: right;
 	position: relative;
+	margin-right: 10px;
 	-ms-flex-align: center;
 	    align-items: center;
 	display: -ms-inline-flexbox;
@@ -3317,7 +3329,7 @@ span.resultado-busca-numero {
 }
 
 .sta-cart-container {
-	width: 355px;
+	width: 290px;
 	height: 100%;
 	position: fixed;
 	top: 0;
@@ -3346,10 +3358,12 @@ span.resultado-busca-numero {
 	padding: 7px;
 	z-index: 99999;
 	cursor: pointer;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: -10px;
 	position: relative;
 	display: inline-block;
 	background-color: transparent;
-	margin-top: 10px;
 }
 
 .sta-cart .sta-cart-close svg {
@@ -3360,6 +3374,7 @@ span.resultado-busca-numero {
 }
 
 .sta-cart-title h3 {
+	font-size: 20px;
 	padding: 7px;
 }
 
@@ -3427,7 +3442,7 @@ span.resultado-busca-numero {
 }
 
 .sta-cart-items .sta-cart-pdt-info {
-	width: 188px;
+	width: 176px;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	position: relative;
@@ -3614,6 +3629,19 @@ span.resultado-busca-numero {
 	    justify-content: space-between;
 }
 
+.Newsletter .form-newsletter .error-msg {
+	font-size: 12px;
+	color: red;
+	display: block;
+	margin-top: 8px;
+	text-transform: uppercase;
+}
+
+.Newsletter .form-newsletter fieldset.genero .error-msg {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
 .Newsletter .form-newsletter input {
 	width: 100%;
 	border-radius: 5px;
@@ -3635,14 +3663,14 @@ span.resultado-busca-numero {
 	-ms-flex-align: center;
 	    align-items: center;
 	padding-right: 3.7%;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
+	display: inline-block;
 }
 
 .Newsletter .form-newsletter .submit {
 	border: 0;
 	outline: 0;
-	float: right;
+	float: none;
+	margin: 0 auto;
 	cursor: pointer;
 	padding: 20px 50px;
 	border-radius: 5px;
@@ -3712,11 +3740,11 @@ span.resultado-busca-numero {
 	======================================================================= */
 
 header.menu-persistente {
-	top: 0;
 	left: 0;
+	top: 40px;
 	width: 100%;
 	position: static;
-	min-height: 77px;
+	min-height: 26px;
 	z-index: 999999999;
 	background-color: #fff;
 }
@@ -3909,6 +3937,14 @@ header.ha-hide {
    SidePanel
    ========================================================================== */
 
+body.active-menu {
+	overflow: hidden;
+}
+
+body.active-menu main {
+	opacity: 0.3;
+}
+
 header .menu-header {
 	left: 0;
 	top: 66px;
@@ -3931,8 +3967,9 @@ header .menu-header.display {
 }
 
 header .menu-header.display .menu-item {
+	overflow: hidden;
 	background: #f4f4f4;
-	border-bottom: 1px solid #e6e7e8;
+	border-bottom: 1px solid #ccc;
 }
 
 header .menu-header.display .menu-item .submenu li {
@@ -3961,7 +3998,6 @@ header .menu-header .menu-item {
 	float: left;
 	width: 100%;
 	display: block;
-	border: 1px 1px solid #c1c1c1;
 }
 
 header .menu-header .menu-item.has-sub > a:after {
@@ -3998,14 +4034,16 @@ header .menu-header .submenu {
 }
 
 header .menu-header .submenu.active {
-	height: auto;
+	height: 360px;
 	display: block;
+	overflow-x: scroll;
 	-ms-transform: translateY(0);
 	    transform: translateY(0);
 }
 
 header .menu-header .submenu h3 {
-	margin-bottom: 5px;
+	font-size: 18px;
+	margin: 10px 0 5px 40px;
 }
 
 header .menu-header .submenu .menu-item a:before {
@@ -4087,6 +4125,7 @@ body.modal-active .modal-box .modal-container {
 	width: 100%;
 	height: 100%;
 	top: -10000px;
+	display: none;
 	min-height: 4500px;
 	position: absolute;
 }
@@ -4171,6 +4210,127 @@ body.product-popup .modal-container .news-element.error-add h3 {
 	line-height: 20px;
 }
 
+.clusterHighLight {
+	top: 2px;
+	z-index: 1;
+	right: -10px;
+	position: absolute;
+	padding-right: 10px;
+}
+
+.clusterHighLight .flag {
+	display: none;
+	padding: 20px 6px;
+	position: relative;
+	margin: 0 10px 0 5px;
+}
+
+.clusterHighLight .flag.lancamentos {
+	top: -4px;
+	margin: 0;
+	padding: 0;
+	width: 43px;
+	height: 38px;
+	font-size: 0;
+	display: block;
+	background: url("bt-prod-novo-mob.png") no-repeat scroll 0 0 transparent;
+}
+
+.clusterHighLight .flag.lancamentos:after,
+.clusterHighLight .flag.lancamentos:before {
+	display: none;
+}
+
+.clusterHighLight .flag:before {
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	background-color: #f68026;
+	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.clusterHighLight .flag:after {
+	top: 0;
+	width: 0;
+	height: 0;
+	left: 100%;
+	content: '';
+	display: block;
+	position: absolute;
+	border-bottom: 10px solid #b85910;
+	border-right: 10px solid transparent;
+}
+
+.the-flags {
+	font-size: 16px;
+	left: 0;
+	top: 5.89px;
+	height: 65px;
+	color: #18318e;
+	position: absolute;
+	padding: 18px 20px 20px 10px;
+	-webkit-clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+	        clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+	background: url(/arquivos/bg-flag-discount-v2.png) no-repeat scroll 0 0 transparent;
+}
+
+.the-flags span {
+	font-size: 17px;
+	font-weight: lighter;
+}
+
+.discountHighLight {
+	left: 0;
+	top: 7px;
+	z-index: 999999;
+	position: absolute;
+}
+
+.discountHighLight .flag {
+	margin: 10px 0;
+	padding: 10px 5px;
+	position: relative;
+	display: table-caption;
+}
+
+.discountHighLight .flag:before {
+	left: 0;
+	top: 50%;
+	height: 0;
+	content: '';
+	z-index: -1;
+	display: block;
+	position: absolute;
+	height: calc(100% + 8px);
+	-ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	border-right: 8px solid #c79c2e;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.discountHighLight .flag:after {
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	content: '';
+	height: 100%;
+	display: block;
+	padding-left: 7px;
+	position: absolute;
+	background-color: #f0c451;
+	padding-right: calc(25% + 7px);
+	-webkit-clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+	        clip-path: polygon(0% 0%, 50% 0, 100% 50%, 50% 100%, 0% 100%);
+}
+
 /* ==========================================================================
    Home
    ========================================================================== */
@@ -4179,8 +4339,7 @@ body.home main .box-banner {
 	cursor: pointer;
 }
 
-body.home main .slider-dois .slick-list {
-	height: 499px !important;
+body.home main .slider-dois .slick-list { /* height: 499px !important; */
 }
 
 body.home main .banners-orange {
@@ -4203,7 +4362,6 @@ body.home main .bottom-banners {
 
 body.home main .destaque {
 	clear: both;
-	height: 608px;
 	margin: 20px 0;
 	overflow: hidden;
 }
@@ -4221,11 +4379,12 @@ body.home main .destaque .banner-destaque {
 
 body.home main .mais-vendidos {
 	z-index: 3;
-	border-bottom: 1px solid #888;
+	margin-top: 30px;
+	border-bottom: 1px solid #eaeaea;
 }
 
 body.home main .mais-vendidos ul.slick-dots {
-	bottom: -4px;
+	bottom: -26px;
 }
 
 body.home main .em-promocao {
@@ -4243,7 +4402,7 @@ body.home main .em-promocao {
 	float: left;
 	width: 100%;
 	position: relative;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 
 body.home main .mais-vendidos .container,
@@ -4286,8 +4445,18 @@ body.home main .slider-escolha-por-santos {
 }
 
 body.home main .slider-escolha-por-santos .slick-dots {
-	bottom: -70px;
+	bottom: -55px;
 	margin-left: -55px;
+}
+
+body.home main .slider-escolha-por-santos .slick-dots li {
+	width: 12px;
+	height: 12px;
+}
+
+body.home main .slider-escolha-por-santos .slick-dots li button {
+	width: 12px;
+	height: 12px;
 }
 
 body.home main .slider-escolha-por-santos h2,
@@ -4300,16 +4469,17 @@ body.home main .slider-escolha-por-santos nav {
 }
 
 body.home main .slider-escolha-por-santos img {
-	max-width: 140px;
+	max-width: 100px;
+	margin-top: 23px;
 }
 
 body.home main .slider-escolha-por-santos h2 {
 	font-size: 20px;
-	top: 60px;
-	right: 33px;
+	top: 40px;
+	left: 50%;
 	color: #505050;
-	max-width: 310px;
 	font-weight: 400;
+	margin-left: -30px;
 	position: absolute;
 	text-transform: uppercase;
 }
@@ -4320,10 +4490,11 @@ body.home main .slider-escolha-por-santos h2 span {
 }
 
 body.home main .slider-escolha-por-santos nav {
+	float: right;
 	max-width: 55%;
 	padding: 0 0 0;
-	margin-right: 0;
-	margin-top: 50px;
+	margin-top: 70px;
+	margin-right: 20px;
 }
 
 body.home main .slider-escolha-por-santos nav ul li {
@@ -4331,7 +4502,7 @@ body.home main .slider-escolha-por-santos nav ul li {
 }
 
 body.home main .slider-escolha-por-santos nav ul li a {
-	font-size: 11px;
+	font-size: 9px;
 	color: #fff;
 	display: block;
 	line-height: 20px;
@@ -4354,10 +4525,24 @@ body.home main .slider-escolha-por-santos nav ul li a:after {
 	background: url(/arquivos/right-arrow-santo-branco.png) no-repeat scroll 0 0 transparent;
 }
 
-body.produto .bread-crumb {
-	margin: 0;
-	color: #999;
-	padding: 15px 0;
+body.produto .breadcrumbs {
+	clear: both;
+	overflow: hidden;
+	margin: 40px 0 10px;
+}
+
+body.produto .breadcrumbs ul li {
+	line-height: 23px;
+}
+
+body.produto .slick-dots {
+	left: auto;
+	width: 100%;
+	bottom: auto;
+	margin: 0 auto 0;
+	position: inherit;
+	-ms-transform: none !important;
+	    transform: none !important;
 }
 
 body.produto .buy-box {
@@ -4379,14 +4564,6 @@ body.produto.add-to-cart-active .modal-container h3 {
 body.produto .troca,
 body.produto .descricao {
 	border-bottom: 1px solid #ccc;
-}
-
-body.produto .descricao {
-	padding-bottom: 10px;
-}
-
-body.produto .easyzoom {
-	margin-bottom: 10px;
 }
 
 body.produto .portal-notify-me-ref {
@@ -4432,12 +4609,13 @@ body.produto .portal-notify-me-ref form input.btn-ok:hover {
 body.produto .sku-area button.btn-tabelaMedidas {
 	font-size: 12px;
 	top: 19px;
-	left: 91px;
+	left: 95px;
 	border: none;
-	color: #18318f;
+	z-index: 9999;
 	background: 0 0;
 	cursor: pointer;
 	font-weight: 600;
+	color: #18318f;
 	line-height: 25px;
 	position: absolute;
 	display: inline-block;
@@ -4481,8 +4659,8 @@ body.produto .thumbnails li:last-child {
 }
 
 body.produto main {
-	padding: 20px;
 	overflow: hidden;
+	padding: 20px 5px;
 }
 
 body.produto main .economia-de,
@@ -4500,10 +4678,9 @@ body.produto main .skuListPrice {
 }
 
 body.produto main .sizebay-embedded-recommendation-button {
-	width: 300px;
+	width: 100%;
 	border-radius: 0;
-	margin: 25px 16px 0 0 !important;
-	border: 1px solid #d2d2d2;
+	margin: 25px 0 0 !important;
 	background-color: #1F358A !important;
 }
 
@@ -4710,18 +4887,14 @@ body.produto .Tamanho .specification:after {
 	margin-top: 20px;
 }
 
-body.produto .Cor {
-	padding-left: 0;
-}
-
 body.produto .sku-area {
-	margin-bottom: 20px;
+	overflow: hidden;
 }
 
 body.produto .sku-selector-container {
+	overflow: hidden;
 	position: relative;
-	margin-bottom: 20px;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 	border-bottom: 1px solid #d1d1d1;
 }
 
@@ -4730,6 +4903,7 @@ body.produto .sku-selector-container .medidas {
 	left: 80px;
 	right: auto;
 	position: absolute;
+	border-bottom: 1px solid #d1d1d1;
 }
 
 body.produto .skuList input {
@@ -4746,6 +4920,7 @@ body.produto .skuList label {
 	margin-right: 10px;
 	border-radius: 5px;
 	text-align: center;
+	margin-bottom: 10px;
 	vertical-align: top;
 	display: inline-block;
 	border: 1px solid #bebebe;
@@ -4784,13 +4959,12 @@ body.produto .skuList label:last-of-type {
 }
 
 body.produto .sku-section {
+	padding: 0;
 	margin-right: 0;
-	padding-bottom: 20px;
 }
 
 body.produto .buy-box {
 	padding-top: 25px;
-	border-top: 1px solid #d1d1d1;
 }
 
 body.produto .buy-box button {
@@ -4805,42 +4979,27 @@ body.produto .buy-box button.bg-blue {
 	background-color: #18318f;
 }
 
-body.produto .buy-box button.bg-blue:hover {
-	background-color: #f68026;
-}
-
-body.produto main .buy-box button.add-to-cart:hover {
-	background-color: #f68026;
-}
-
 body.produto .buy-box button.add-to-cart {
-	font-size: 24px;
+	font-size: 17px;
 	color: #fff;
 	border: none;
 	height: 60px;
 	cursor: pointer;
-	padding: 0 28px;
-	line-height: 30px;
-	margin-bottom: 20px;
-	background-color: #00bb4f;
-}
-
-body.produto .buy-box .buy-area .buy-button:hover {
-	background-color: #f68026;
+	line-height: 19px;
+	background-color: #b81154;
 }
 
 body.produto .buy-box .buy-area .buy-button {
-	font-size: 24px;
+	font-size: 20px;
 	color: #fff;
 	border: none;
 	height: 60px;
 	cursor: pointer;
-	padding: 0 28px;
-	line-height: 55px;
+	line-height: 59px;
 	display: inline-block;
 	text-decoration: none;
 	text-transform: lowercase;
-	background-color: #b81154;
+	background-color: #00bb4f;
 }
 
 body.produto main #popupCalculoFreteWrapper {
@@ -4931,11 +5090,29 @@ body.produto main #calculoFrete .content label.prefixo:before {
 	background: url(/arquivos/cep-icon.png) no-repeat;
 }
 
+body.produto span.frete-calcular {
+	margin-right: 0 !important;
+}
+
+body.produto span.frete-calcular span {
+	margin-right: 0 !important;
+}
+
+body.produto .freight-zip-box {
+	width: 103px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+}
+
 body.produto main #calculoFrete .content label.prefixo {
-	font-size: 16px;
+	font-size: 13px;
 	color: #18318f;
 	line-height: 22px;
+	margin-right: 5px;
 	padding-left: 35px;
+	display: inline-block;
+	vertical-align: middle;
 	text-transform: uppercase;
 	background: url(/arquivos/cep-icon.png) no-repeat;
 }
@@ -4967,6 +5144,14 @@ body.produto main #calculoFrete .content .freight-btn {
 	background-color: #18318f;
 }
 
+body.produto .Cor {
+	margin-top: 20px;
+}
+
+body.produto .Cor.numopt-1 {
+	display: none;
+}
+
 body.produto main #prod-info {
 	overflow: hidden;
 	padding: 10px 0;
@@ -4990,26 +5175,60 @@ body.produto main .produtos-similares header .menu-header .submenu h2.menu-item.
 header .menu-header .submenu body.produto main .produtos-similares h2.menu-item.txt-orange,
 body.produto main .produtos-similares header .menu-header .submenu h2.menu-item.txt-orange,
 header .menu-header .submenu body.produto main .produtos-similares h2.menu-item.txt-orange {
-	font-size: 40px;
+	font-size: 20px;
 	text-align: center;
 	margin-bottom: 25px;
 	text-transform: uppercase;
 }
 
+body.produto main .descricao h2 {
+	margin-bottom: 10px;
+}
+
+body.produto main .troca h2,
 body.produto main .descricao h2,
-body.produto main .especificacoes h4 {
-	font-size: 26px;
-	margin-bottom: 15px;
+body.produto main .especificacoes h3 {
+	font-size: 15px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+body.produto main .troca h2:after,
+body.produto main .descricao h2:after,
+body.produto main .especificacoes h3:after {
+	font-size: 20px;
+	top: 0;
+	right: 0;
+	color: #000;
+	content: '>';
+	font-weight: 500;
+	position: absolute;
+}
+
+body.produto main .troca h2.active:after,
+body.produto main .descricao h2.active:after,
+body.produto main .especificacoes h3.active:after {
+	content: 'v';
+	color: #f68026;
+}
+
+body.produto main .troca h2:after {
+	right: -10px;
+}
+
+body.produto main .descricao h2,
+body.produto main .especificacoes h3 {
+	font-size: 18px;
 }
 
 body.produto main .troca {
 	margin: 30px 0 0;
-	padding: 20px 40px 0;
+	padding: 20px 20px 20px;
 	background-color: #ededed;
 }
 
 body.produto main .troca h2 {
-	font-size: 13px;
+	font-size: 12px;
 	height: 40px;
 	font-weight: 400;
 	line-height: 40px;
@@ -5022,9 +5241,9 @@ body.produto main .troca h2 strong {
 }
 
 body.produto main .troca span {
+	font-size: 12px;
 	color: #727272;
-	line-height: 26px;
-	padding-left: 45px;
+	line-height: 20px;
 }
 
 body.produto main .troca span a {
@@ -5041,39 +5260,37 @@ body.produto main .descricao {
 }
 
 body.produto main .descricao .productDescription {
+	font-size: 13px;
 	color: #666;
-	line-height: 22px;
-}
-
-body.produto main .especificacoes #caracteristicas table tr {
-	width: 100%;
-	display: block;
-	padding-bottom: 9px;
-}
-
-body.produto main .especificacoes #caracteristicas table tr td,
-body.produto main .especificacoes #caracteristicas table tr th {
-	color: #666;
-	text-align: left;
-	line-height: 22px;
-	font-weight: 400;
-}
-
-body.produto main .especificacoes h3 {
-	font-size: 26px;
-	margin-bottom: 12px;
+	line-height: 20px;
+	padding-bottom: 10px;
 }
 
 body.produto main .especificacoes #caracteristicas h4 {
 	display: none;
 }
 
-body.produto main .especificacoes #caracteristicas table tr th {
-	padding-right: 20px;
+body.produto main .especificacoes #caracteristicas table {
+	font-size: 12px;
+	color: #000;
+	margin-top: 10px;
+	line-height: 17px;
+	border: 1px solid #eaeaea;
 }
 
-body.produto main .especificacoes #caracteristicas table tr th:after {
-	content: ':';
+body.produto main .especificacoes #caracteristicas table tr {
+	border-bottom: 1px solid #eaeaea;
+}
+
+body.produto main .especificacoes #caracteristicas table tr:last-of-type {
+	border: none;
+}
+
+body.produto main .especificacoes #caracteristicas table th,
+body.produto main .especificacoes #caracteristicas table td {
+	padding: 10px;
+	border-right: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
 }
 
 body.produto .evaluation-product #yv-review-quickreview .yv-bootstrap i {
@@ -5088,7 +5305,6 @@ body.produto .box-yourviews-container {
 	clear: both;
 	overflow: hidden;
 	padding-top: 40px;
-	border-top: 1px solid #d1d1d1;
 }
 
 body.produto .box-yourviews-container #yv-show-reviews .yv-title {
@@ -5185,7 +5401,11 @@ body.dep-cat-bus #ajaxBusy {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	opacity: 0.9;
+	min-height: 365px;
 	position: absolute;
+	z-index: 9999999999;
+	background-color: #fff;
 }
 
 body.dep-cat-bus #ajaxBusy:before {
@@ -5203,13 +5423,15 @@ body.dep-cat-bus #ajaxBusy:before {
 }
 
 body.dep-cat-bus #ajaxBusy p {
-	position: fixed;
-	display: block !important;
-	opacity: 1;
-	left: 50%;
-	width: 300px;
 	top: 35%;
+	left: 50%;
+	opacity: 1;
+	width: 300px;
+	position: fixed;
+	line-height: 35px;
+	text-align: center;
 	margin-left: -150px;
+	display: block !important;
 }
 
 body.dep-cat-bus #ajaxBusy p:before {
@@ -5296,15 +5518,15 @@ body.dep-cat-bus .category-banner .box-banner img {
 }
 
 body.dep-cat-bus .sidebar {
-	top: 0;
 	left: 0;
+	top: 70px;
 	opacity: 0;
 	padding: 0;
 	height: 100%;
 	display: block;
 	position: fixed;
 	z-index: 999999;
-	max-width: 350px;
+	max-width: 260px;
 	background: #fff;
 	-ms-transform: translateX(-100%);
 	    transform: translateX(-100%);
@@ -5317,6 +5539,7 @@ body.dep-cat-bus .sidebar.active {
 	box-shadow: 0px 0px 15px 0px #000;
 }
 
+body.dep-cat-bus .sidebar .orderBy,
 body.dep-cat-bus .sidebar .menu-navegue {
 	display: none;
 }
@@ -5440,6 +5663,7 @@ body.dep-cat-bus .mainShelf .searchResultsTime {
 }
 
 body.dep-cat-bus .mainShelf .filtrarProdutos {
+	font-size: 13px;
 	border: 0;
 	outline: 0;
 	padding: 10px 25px;
@@ -5453,8 +5677,9 @@ body.dep-cat-bus .mainShelf .sub {
 }
 
 body.dep-cat-bus .mainShelf .sub .filtrarProdutos {
-	width: 40%;
+	width: 50%;
 	display: inline-block;
+	text-transform: lowercase;
 }
 
 body.dep-cat-bus .mainShelf .sub .resultado-busca-filtro {
@@ -5475,10 +5700,12 @@ body.dep-cat-bus .mainShelf .sub .orderBy {
 }
 
 body.dep-cat-bus .mainShelf .sub .orderBy label {
+	font-size: 10px;
 	padding-right: 5px;
 }
 
 body.dep-cat-bus .mainShelf .sub .orderBy select {
+	font-size: 12px;
 	width: 53%;
 	cursor: pointer;
 	-webkit-appearance: none;
@@ -5490,7 +5717,7 @@ body.dep-cat-bus .mainShelf .sub .orderBy select {
 }
 
 body.dep-cat-bus .mainShelf .sub .orderBy:after {
-	top: 50%;
+	top: 14px;
 	right: 10px;
 	content: '>';
 	color: #cbcbcb;
@@ -5516,6 +5743,7 @@ body.dep-cat-bus .mainShelf .pager {
 }
 
 body.dep-cat-bus .mainShelf .pager ul li {
+	font-size: 14px;
 	padding: 8px;
 	line-height: 12px;
 	border-radius: 5px;
@@ -5596,8 +5824,36 @@ body.buscavazia .mainShelf > span {
    Minha Conta
    ========================================================================== */
 
+body.account header {
+	z-index: 999 !important;
+}
+
 body.account header.menu-persistente {
 	position: relative;
+}
+
+body.account .ico-vert {
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+body.account .profile-detail-display h4:before {
+	width: 29px;
+	height: 29px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(/arquivos/ico-perfil.png) no-repeat scroll 0 0 transparent;
+}
+
+body.account .address-display-block h4:before {
+	width: 29px;
+	height: 29px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(/arquivos/ico-endereco.png) no-repeat scroll 0 0 transparent;
 }
 
 body.account .modal-backdrop {
@@ -5626,6 +5882,7 @@ body.account #profile-submit {
 }
 
 body.account main {
+	z-index: inherit;
 	overflow: hidden;
 	background-color: #fff;
 }
@@ -5652,13 +5909,16 @@ body.account main .container h3 {
 	border-color: #9e9ea6;
 }
 
+body.account .profile-detail-display {
+	background-color: #fafafa;
+}
+
 body.account .profile-detail-display,
 body.account .address-display-block {
 	font-size: 13px;
 	width: 100%;
 	margin-top: 20px;
-	padding: 20px 40px;
-	border: 1px solid #9e9ea6;
+	padding: 20px 30px;
 }
 
 body.account .profile-detail-display h5,
@@ -5668,7 +5928,7 @@ body.account .address-display-block h5 {
 
 body.account .profile-detail-display h4,
 body.account .address-display-block h4 {
-	font-size: 30px;
+	font-size: 24px;
 	clear: both;
 	color: #f68026;
 	margin: 20px 0;
@@ -6092,20 +6352,41 @@ body.orders footer .form-newsletter input,
 	margin: 2px 0;
 }
 
+body.orders header {
+	margin-left: -15px;
+}
+
+body.orders .ico-vert {
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
 body.orders h2.page-title {
 	font-size: 30px;
 	color: #F68026;
 	text-align: left;
-	min-width: 1000px;
 	display: inline-block;
 	background: none !important;
+}
+
+body.orders .back-account-bt {
+	font-size: 12px;
+	display: block;
+	line-height: 10px;
+	margin-bottom: 10px;
+}
+
+body.orders a.myo-collapsed-order {
+	text-decoration: none;
 }
 
 /* ==========================================================================
    Institucional
    ========================================================================== */
 
-body.institucional.como-comprar .title-page:before {
+body.institucional.como-comprar .title-page:before,
+body.institucional.politica-de-troca .title-page:before {
 	font-size: 16px;
 	width: 30px;
 	color: #fff;
@@ -6121,45 +6402,55 @@ body.institucional.como-comprar .title-page:before {
 	background-color: #f68026;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul {
+body.institucional.como-comprar main .main-institucional__content ul,
+body.institucional.politica-de-troca main .main-institucional__content ul {
 	margin-top: 25px;
 	list-style-type: none;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li {
+body.institucional.como-comprar main .main-institucional__content ul li,
+body.institucional.politica-de-troca main .main-institucional__content ul li {
 	line-height: 40px;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details {
-	padding-left: 25px;
+body.institucional.como-comprar main .main-institucional__content ul li details,
+body.institucional.politica-de-troca main .main-institucional__content ul li details {
+	padding-left: 10px;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary {
+body.institucional.como-comprar main .main-institucional__content ul li details summary,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary {
 	color: #585858;
 	cursor: pointer;
 	font-weight: 600;
 }
 
 body.institucional.como-comprar main .main-institucional__content ul li details summary::-moz-details-marker,
-body.institucional.como-comprar main .main-institucional__content ul li details summary::-webkit-details-marker {
+body.institucional.como-comprar main .main-institucional__content ul li details summary::-webkit-details-marker,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary::-moz-details-marker,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary::-webkit-details-marker {
 	display: none;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary:hover {
+body.institucional.como-comprar main .main-institucional__content ul li details summary:hover,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary:hover {
 	color: #03378d;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary span {
+body.institucional.como-comprar main .main-institucional__content ul li details summary span,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary span {
 	font-size: 24px;
 	color: #808080;
 	display: inline !important;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary span:hover {
+body.institucional.como-comprar main .main-institucional__content ul li details summary span:hover,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary span:hover {
 	color: #f68026;
 }
 
-body.institucional.como-comprar main .main-institucional__content ul li details summary p {
+body.institucional.como-comprar main .main-institucional__content ul li details summary p,
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary p {
 	margin: 12px 0;
 	line-height: 25px;
 	padding-left: 30px;
@@ -6311,12 +6602,13 @@ body.institucional .main-institucional__sidebar nav li svg {
 body.institucional main {
 	-ms-flex-order: 1;
 	    order: 1;
-	clear: initial;
-	overflow: hidden;
 	display: -ms-flexbox;
 	display: flex;
+	clear: initial;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	overflow: hidden;
+	padding-top: 95px;
 }
 
 body.institucional main .title-page {
@@ -6558,8 +6850,8 @@ footer .slider .poweredBy,
 
 .slick-dots li {
 	padding: 0;
-	width: 16px;
-	height: 16px;
+	width: 12px;
+	height: 12px;
 	cursor: pointer;
 	margin-right: 5px;
 	position: relative;
@@ -6569,8 +6861,8 @@ footer .slider .poweredBy,
 .slick-dots li button {
 	border: 0;
 	padding: 0;
-	width: 15px;
-	height: 15px;
+	width: 12px;
+	height: 12px;
 	cursor: pointer;
 	border-radius: 50%;
 	text-indent: -9999px;
@@ -6966,7 +7258,6 @@ body.dep-cat-bus main .mainShelf .prateleira li,
 .col-md-5,
 .col-md-6,
 .Newsletter .form-newsletter fieldset,
-.Newsletter .form-newsletter fieldset.genero,
 .col-md-7,
 .col-md-8,
 header .TipBar,
@@ -7005,8 +7296,7 @@ body.dep-cat-bus main .mainShelf .prateleira li {
 }
 
 .col-md-6,
-.Newsletter .form-newsletter fieldset,
-.Newsletter .form-newsletter fieldset.genero {
+.Newsletter .form-newsletter fieldset {
 	width: 50%;
 }
 
@@ -7224,13 +7514,6 @@ body.home main .shelf-title h2 {
 	padding: 10px 25px;
 }
 
-.search-multiple-navigator ul:not(.even):not(.odd).active,
-.search-multiple-navigator fieldset div:not(.even):not(.odd).active,
-.search-single-navigator ul:not(.even):not(.odd).active,
-.search-single-navigator fieldset div:not(.even):not(.odd).active {
-	padding: 10px 25px;
-}
-
 .search-multiple-navigator ul li,
 .search-multiple-navigator ul label,
 .search-multiple-navigator fieldset div li,
@@ -7241,33 +7524,6 @@ body.home main .shelf-title h2 {
 .search-single-navigator fieldset div label {
 	padding: 7px 0;
 	border-bottom: 0;
-}
-
-.search-multiple-navigator ul label,
-.search-multiple-navigator fieldset div label,
-.search-single-navigator ul label,
-.search-single-navigator fieldset div label {
-	padding-left: 0;
-}
-
-.search-multiple-navigator fieldset,
-.search-single-navigator fieldset {
-	padding-bottom: 10px;
-}
-
-.Newsletter .form-newsletter {
-	padding-left: 75px;
-	-ms-flex-pack: start;
-	    justify-content: flex-start;
-}
-
-.Newsletter .form-newsletter input {
-	width: 335px;
-}
-
-.Newsletter .form-newsletter .submit {
-	float: left;
-	margin: 7px;
 }
 
 header.menu-persistente .logo img {
@@ -7281,20 +7537,6 @@ header.menu-persistente .menu-header svg {
 
 .modal-box .close-modal {
 	margin-left: 268px;
-}
-
-body.dep-cat-bus .sidebar {
-	opacity: 1;
-	height: auto;
-	z-index: auto;
-	-ms-transform: none;
-	    transform: none;
-	overflow: hidden;
-	background: none;
-	padding-left: 7px;
-	padding-right: 3%;
-	position: relative;
-	max-width: initial;
 }
 
 body.dep-cat-bus .sidebar .customRefinar {
@@ -7618,6 +7860,18 @@ td.visible-xs {
 
 .hidden-xs {
 	display: none !important;
+}
+
+}
+
+@media screen and (max-width: 321px) {
+
+.container {
+	max-width: 320px;
+}
+
+body.home main .slider-escolha-por-santos h2 {
+	font-size: 14px;
 }
 
 }

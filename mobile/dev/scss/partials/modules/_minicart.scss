@@ -4,9 +4,13 @@
 
 #mini-cart {
 	@extend .transition;
+	padding: 0;
+	border: none;
 	cursor: pointer;
+	background: none;
 	text-align: right;
 	position: relative;
+	margin-right: 10px;
 	align-items: center;
 	display: inline-flex;
 
@@ -175,7 +179,7 @@
 
 
 .sta-cart-overlay { position: fixed; display: none; width: 100%; height: 100vh; top: 0; left: 0; z-index: 999999999; background: rgba(0, 0, 0, .6); }
-.sta-cart-container { width: 355px; height: 100%; position: fixed; top: 0; right: -355px; z-index: 9999999999; background: #fff; }
+.sta-cart-container { width: 290px; height: 100%; position: fixed; top: 0; right: -355px; z-index: 9999999999; background: #fff; }
 .sta-cart-title { 
 	width: 100%; 
 	color: #000; 
@@ -187,16 +191,18 @@
 }
 
 .sta-cart-title button { 
-	border: 0; 
-	outline: 0; 
-	float: left; 
+	border: 0;
+	outline: 0;
+	float: left;
 	padding: 7px;
-	z-index: 99999; 
-	cursor: pointer; 
-	position: relative; 
-	display: inline-block; 
-	background-color: transparent;
+	z-index: 99999;
+	cursor: pointer;
 	margin-top: 10px;
+	margin-right: 20px;
+    margin-left: -10px;
+	position: relative;
+	display: inline-block;
+	background-color: transparent;
 }
 
 .sta-cart .sta-cart-close svg{
@@ -207,7 +213,8 @@
 }
 
 .sta-cart-title h3 {
-	@extend .txt-orange, .txt-sz-28;
+	@include font-size(2);
+	@extend .txt-orange;
 	padding: 7px;
 }
 .sta-cart-items { padding: 12px; height: calc(100vh - 220px); overflow: auto; }
@@ -224,7 +231,7 @@
 .sta-cart-items .sta-cart-pdt-image img { width: 100%; border: 1px solid #d1d1d1; }
 .sta-cart-items .sta-cart-pdt-qtd-item { position: absolute; width: 25px; height: 25px; top: -10px; left: -10px; color: #fff; font-size: 12px; font-weight: 700; text-align: center; padding-top: 7px; background: #f68026;  -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
 .sta-cart-items .sta-cart-pdt-info { 
-	width: 188px; 
+	width: 176px; 
 	flex-wrap: wrap; 
 	position: relative; 
 	vertical-align: top; 

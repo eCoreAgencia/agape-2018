@@ -171,7 +171,9 @@ $(function() {
 	$('.prateleira li').each(function(event){
 		var me = $(this);
 		var bestPrice = me.find('.shelfBestPrice');
-	
+		
+		priceStatus();
+		
 		if($(bestPrice).length == 0){
 			me.find('.shelfOldPrice').removeClass('ln-through');		
 		}

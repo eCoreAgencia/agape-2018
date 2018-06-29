@@ -10,6 +10,11 @@
 	}
 }
 
+button {
+	appearance: none !important;
+	-webkit-appearance: none !important;
+}
+
 .open-filters{
 	@include font-size(1.6);
     border: 0;
@@ -131,7 +136,7 @@
 
 	.menu-toggle{
 		width: 40px;
-		height: 40px;
+		height: 20px;
 		display: block;
 		margin: 0 auto;
 		position: relative;

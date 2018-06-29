@@ -18,15 +18,9 @@
     	}
 	}
 
-	.clusterHighLight {
-		.flag {
-			display: none !important;
-		}
-	}
-
 	li {
 		padding: 4px;
-		height: 370px;
+		position: relative;
 		
 		a {
 			text-decoration: none;
@@ -41,19 +35,33 @@
 			height: 45px;
 			display: block;
 			overflow: hidden;
+			margin-bottom: 10px;
 			font-weight: lighter;
 			text-overflow: ellipsis;
 		}
 
 		.price {
-			height: 75px;
 			display: block;
 
 			.shelfOldPrice {
 				@include font-size(1.1);
-				width: 100%;
-				display: block;
-				text-decoration: line-through;
+				margin: 0;
+				bottom: 110px;
+				line-height: 0;
+				position: absolute;
+
+				&.ln-through {
+					text-decoration: line-through;
+				}
+
+				&:before {
+					@include font-size(1.1);
+					color: #f68026;
+					content: 'De: ';
+					margin-right: 5px;
+					display: inline-block;
+					vertical-align: middle;
+				}
 			}
 
 			.shelfInstallment {

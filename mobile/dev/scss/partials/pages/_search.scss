@@ -14,8 +14,12 @@ body.dep-cat-bus{
 		left: 0;
 		width: 100%;
 		height: 100%;
+		opacity: 0.9;
+		min-height: 365px;
 		position: absolute;
-		
+		z-index: 9999999999;
+		background-color: #fff;
+
 		&:before {
 			top: 0;
 			left: 0;
@@ -31,13 +35,15 @@ body.dep-cat-bus{
 		}
 
 		p {
-			position: fixed;
-			display: block!important;
-			opacity: 1;
-			left: 50%;
-			width: 300px;
 			top: 35%;
+			left: 50%;
+			opacity: 1;
+			width: 300px;
+			position: fixed;
+			line-height: 35px;
+			text-align: center;
 			margin-left: -150px;
+			display: block!important;
 
 			&:before {
 				content: '';
@@ -128,35 +134,25 @@ body.dep-cat-bus{
 
 	.sidebar {
 		@extend .transition;
-		top: 0;
 		left: 0;
+		top: 70px;
 		opacity: 0;
 		padding: 0;
 		height: 100%;
 		display: block;
 		position: fixed;
 		z-index: 999999;
-		max-width: 350px;
+		max-width: 260px;
 		background: #fff;
 		transform: translateX(-100%);
-		@include mq($screen-md) {
-			opacity: 1;
-			height: auto;
-			z-index: auto;
-			transform: none;
-			overflow: hidden;
-			background: none;
-			padding-left: 7px;
-			padding-right: 3%;
-			position: relative;
-			max-width: initial;
-		}
+
 		&.active{
 			opacity: 1;
 			transform: translateX(0);
 			box-shadow: 0px 0px 15px 0px #000;
 		}
 
+		.orderBy,
 		.menu-navegue {
 			display: none;
 		}
@@ -295,6 +291,7 @@ body.dep-cat-bus{
 		}
 
 		.filtrarProdutos{
+			@include font-size(1.3);
 			@extend .txt-white;
 			border: 0;
 			outline: 0;
@@ -307,8 +304,9 @@ body.dep-cat-bus{
 			padding: 10px 0;
 
 			.filtrarProdutos{
-				width: 40%;
+				width: 50%;
 				display: inline-block;
+				text-transform: lowercase;
 			}
 			
 			.resultado-busca-filtro{
@@ -324,11 +322,13 @@ body.dep-cat-bus{
 				display: inline-block;
 
 				label{
+					@include font-size(1);
 					@extend .txt-orange;
 					padding-right: 5px;
 				}
 
 				select{
+					@include font-size(1.2);
 					width: 53%;
 					cursor: pointer;
 					appearance: none;
@@ -338,7 +338,7 @@ body.dep-cat-bus{
 				}
 
 				&:after{
-				    top: 50%;
+				    top: 14px;
 		    		right: 10px;
 				    content: '>';
 				    color: #cbcbcb;
@@ -364,7 +364,8 @@ body.dep-cat-bus{
 
 			ul{
 				li{
-					@extend .txt-sz-20, .txt-lo, .regular, .txt-gray;
+					@include font-size(1.4);
+					@extend .txt-lo, .regular, .txt-gray;
 					padding: 8px;
 					line-height: 12px;
 					border-radius: 5px;

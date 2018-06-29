@@ -5,14 +5,16 @@
 header {
 	&.menu-persistente {
 		@extend .transition;
-		top: 0;
 		left: 0;
+		top: 40px;
 		width: 100%;
 		position:static;
+
 		@include mq($screen-sm-min){
 			position: fixed;
 		}
-		min-height: 77px;
+
+		min-height: 26px;
 		z-index: 999999999;
 		background-color: #fff;
 

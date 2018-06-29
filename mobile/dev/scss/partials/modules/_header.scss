@@ -3,6 +3,7 @@
    ========================================================================== */
 
 header{
+	width: 100%;
 	position: fixed;
 	z-index: 99999999 !important;
 
@@ -41,11 +42,13 @@ header{
 	}
 
 	.logo{
-		margin-right: 30px;
+		padding: 0;
+		margin-left: 10px;
+		margin-right: 10px;
 		
 		img {
 			display: block;
-			max-width: 160px;
+			max-width: 140px;
 		}
 	}
 	.options{

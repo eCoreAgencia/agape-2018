@@ -9,6 +9,14 @@ footer{
 	margin-top: 20px;
   	flex-direction: column;
 
+	.obs-news {
+		@include font-size(1.2);
+		width: 100%;
+		display: block;
+		margin-top: 10px;
+		text-align: center;
+	}
+
   	.footer-middle{
   		width: 100%;
   		float: left;
@@ -20,8 +28,7 @@ footer{
   			background-color: #f6f4f4;
 
   			li {
-  				padding: 10px 0;
-  				border-bottom: 1px solid #ccc;
+  				border-bottom: 1px solid #eaeaea;
 
   				&:last-child {
   					border-bottom: none;
@@ -42,6 +49,7 @@ footer{
 			margin-right: 10px;
 			border-radius: 5px;
 			display: inline-block;
+			vertical-align: bottom;
 			border: 1px solid #c0c0c0;
 
 			&:before{
@@ -74,7 +82,7 @@ footer{
 		}
 	}
 	
-	.institucional, .dados, .atendimento, .compra-segura{
+	.institucional, .dados, .atendimento, .compra-segura, .portal-do-revendedor{
 		padding: 12px 0 0;
 		border-bottom: 1px solid #ccc;
 
@@ -121,17 +129,38 @@ footer{
 			li{
 				@extend .txt-gray, .regular, .txt-dc-none, .txt-cap, .txt-left, .transition;
 				list-style: none;
-				padding-left: 45px;
 
 				a {
 					@include font-size(1.8);
+					display: block;
 					color: inherit;
-					weight: inherit;
-					text-decoration: inherit;
+					text-decoration: none;
+					padding: 16px 0 16px 45px;
 				}
 			}
 		}
 	}
+
+	.atendimento {
+		ul {
+			li {
+				a {
+					width: 100%;
+					display: inline-block;
+					vertical-align: middle;
+
+					&:last-of-type {
+						padding-left: 0;
+					}
+
+					&:first-of-type {
+						padding-left: 45px;
+					}
+				}
+			}
+		}
+	}
+
 	.selos-seguranca {
 	    width: 200px;
 		display: none;
@@ -151,6 +180,21 @@ footer{
 			img{
 				width: 90px;
 				height: auto;
+			}
+		}
+	}
+
+	.portal-do-revendedor{
+		h3 {
+			&:after {
+				display: none !important;
+			}
+			
+			a {
+				width: 100%;
+				color: #333;
+				display: block;
+				text-decoration: none;
 			}
 		}
 	}

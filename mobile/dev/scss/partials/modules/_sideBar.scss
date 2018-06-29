@@ -34,6 +34,9 @@
 	}
 
 	fieldset {
+		padding: 8px 0;
+		border-bottom: 1px solid #d1d1d1;
+
 		&.filtro_cor{
 			label{
 				display: inline-block;
@@ -44,17 +47,23 @@
 					margin-right: 18px;
 				}
 
-				&:hover {
-					.sr_box2 {
+				&.sr_selected {
+					span.sr_box {
 						@extend .transition;
-						left: 29px;
+						top: 15px;
+						left: 48px;
+						width: 5px;
+						height: 5px;
+						display: block;
+						position: absolute;
+						background-color: red;
 					}
 				}
 
 				.sr_box2 {
 					@extend .transition;
-					top: 11px;
-					left: 20px;
+					top: 14px;
+					left: 65px;
 					width: 5px;
 					height: 5px;
 					border-radius: 50%;
@@ -290,8 +299,8 @@
 		&.sr_selected {
 			span.sr_box {
 				@extend .transition;
-				top: 13px;
-				left: 3px;
+				top: 15px;
+				left: 49px;
 				width: 5px;
 				height: 5px;
 				display: block;
@@ -323,11 +332,9 @@
 		cursor: pointer;
       	padding: 10px 10px;
 		position: relative;
-		background: #f4f4f4;
 		align-items: center;
 		flex-direction: row;
 		text-decoration: none;
-		border: 1px solid #d1d1d1;
 		border-right: 0;
 		border-left: 4px solid transparent;
 		transition: color 0.2s linear, background 0.2s linear;
@@ -435,9 +442,6 @@
 	    		opacity: 1;
 	    		height: auto;
 	    		transform: translateX(0);
-	    		@include mq($screen-md){
-	    			padding: 10px 25px;
-	    		}
 	    	}
 	    }
 
@@ -457,6 +461,7 @@
 				border-bottom: 0;
 			}
 		}
+
 		label{
 			@extend .transition;
 			@include font-size(1.4);
@@ -464,15 +469,7 @@
 			cursor: pointer;
 			text-decoration: none;
 			text-transform: initial;
-			
-			@include mq($screen-md){
-				padding-left: 0;
-			}
-
-			&:hover{
-				padding-left: 10px;
-				text-decoration: underline;
-			}
+			padding: 10px 10px 10px 45px;
 		}
 		h5 {
 			@include font-size(1.5);
@@ -488,15 +485,12 @@
 	}
 
 	fieldset{
-		@include mq($screen-md){
-			padding-bottom: 10px;
-		}
-
 		label{
 			position: relative;
 			input[type="checkbox"]{
 				display: none;
 			}
+
 			&:before{
 				@extend .transition;
 				content: '';
