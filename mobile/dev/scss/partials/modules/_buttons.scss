@@ -31,10 +31,15 @@ button {
 .menuClose{
 	@extend .bold, .txt-white;
 	@include font-size(1.4);
-	padding: 10px 0;
-	line-height: 14px;
-	position: relative;
-	background: #0080b7;
+    width: 100%;
+	border: none;
+    text-align: left;
+    line-height: 14px;
+    position: relative;
+	background: #fff;
+	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid #eaeaea;
+
 	svg{
 		left: 0;
 		top: 50%;
@@ -136,7 +141,7 @@ button {
 
 	.menu-toggle{
 		width: 40px;
-		height: 20px;
+		height: 40px;
 		display: block;
 		margin: 0 auto;
 		position: relative;
@@ -170,6 +175,7 @@ button {
 
 	&.active{
 		.menu-toggle{
+			height: 20px;
 			span{
 				&:nth-child(1) {
 				top: 9px;

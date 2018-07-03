@@ -344,24 +344,6 @@
 	  // Ajuste Meus Pedidos //
 
   
-	  // Menu Persistente Begin //
-		  if($('body.account').length > 0){
-  
-		  } else {
-			  $(window).scroll(function() {
-				  var scroll = $(window).scrollTop();
-  
-				  if (scroll >= 350) {
-					  $('header').addClass('menu-persistente');
-					  $('body').addClass('top-height-active');
-				  } else {
-					  $('header').removeClass('menu-persistente');
-					  $('body').removeClass('top-height-active');
-				  }
-			  });
-		  }
-	  // Menu Persistente END //
-  
 	  // Remocao de Li HelperComplement Prateleira //
 		  if ($('.helperComplement').length) {
 			  $('.helperComplement').remove();
@@ -435,21 +417,13 @@
 				adaptiveHeight: true
 			});
 		// Slider
-  
 	  //
-
-	  $('main').on('click', function(){
-		$('body').removeClass('active-menu');
-		$('.menu-header').removeClass('display');
-		$('.js-open-mobile-menu').removeClass('active');
-	  });
 
 	  $('.js-open-mobile-menu').click(function(){
 		  var self = $(this);
-		  $('.js-open-mobile-menu').toggleClass('active');
-  
+		  $(this).toggleClass('active');
+		  $('body').toggleClass('menu-active');
 		  $('.menu-header').toggleClass('display');
-		  $('body').toggleClass('active-menu');
 
 		  if (self.hasClass('active')) {
 			  $('html, body')
@@ -467,8 +441,6 @@
 
 	// Open submenu mobile //
 		$(".first-menu").click(function() {
-			$('.first-menu').removeClass('active');
-			$('.submenu').removeClass('active');
 			$(this).toggleClass("active");
 			$(this).next().toggleClass("active");
 		});
@@ -535,6 +507,23 @@
   
 	  // Scripts Pagina de Produto //
 		  if (pagProduto.length > 0) {
+
+				$('.compra-persistente-bt').on('click', function(event){
+					document.querySelector('#id3').scrollIntoView({ 
+						behavior: 'smooth' 
+					});
+				});
+
+				$(function(){
+					var stickyHeaderTop = $('.troca').offset().top;
+					$(window).scroll(function(){
+						if( $(window).scrollTop() > stickyHeaderTop-85 ) {
+							$('.compra-persistente-bt').addClass('active');  
+						} else {
+							$('.compra-persistente-bt').removeClass('active');
+						}
+					});
+				});
 
 			  try {
 				  $document.ready(function() {
@@ -615,7 +604,7 @@
 								// Take Images //
 									var myImageID = val.imageId;
 									var myImageName = val.imageText;
-									$('<li><img src="/arquivos/ids/'+myImageID+'-325-325/'+myImageName+'.jpg" /></li>').appendTo('.ProductImage .slider ul');
+									$('<li><img src="/arquivos/ids/'+myImageID+'-650-650/'+myImageName+'.jpg" /></li>').appendTo('.ProductImage .slider ul');
 								// Take Images //
 							});
 						});
@@ -653,8 +642,6 @@
 				  $(".main-category__orderBy li:nth-child(5) a").addClass("active");
 			  }
 			  // Adicionando classe nos elementos do Ordernar Por quando ativos
-  
-			  $('.resultado-busca-filtro .orderBy').first().insertAfter('.filtrarProdutos');
   
 			  priceStatus();
 		  }
@@ -696,6 +683,16 @@
 		  } catch(e) {}
 	  // Remocao Loading Meus Pedidos//
   
+		  $(document).ready(function(){
+			$('.resultado-busca-filtro .orderBy').first().insertAfter('.filtrarProdutos');
+		  });
+
+		  $(document).ajaxComplete(function(){
+			$('.box-item ').each(function(){
+				$('.lds-heart').remove();
+			});
+		  });
+
 		  // fadeInOut
 	  function fadeInOut(item) {
 				item.fadeIn(1000).delay(3000).fadeOut(1000, function() {

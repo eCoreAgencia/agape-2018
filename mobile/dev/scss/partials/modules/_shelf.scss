@@ -3,12 +3,14 @@
    ========================================================================== */
 
 .prateleira {
-	margin:0 auto;
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+
 	h2 {display: none;}
 
 	ul,
 	.slick-track{
-		display: flex;
     	align-items: stretch;
 		list-style-type: none;
     	justify-content: flex-start;

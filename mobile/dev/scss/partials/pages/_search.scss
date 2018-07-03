@@ -142,14 +142,12 @@ body.dep-cat-bus{
 		display: block;
 		position: fixed;
 		z-index: 999999;
-		max-width: 260px;
 		background: #fff;
 		transform: translateX(-100%);
 
 		&.active{
 			opacity: 1;
 			transform: translateX(0);
-			box-shadow: 0px 0px 15px 0px #000;
 		}
 
 		.orderBy,
@@ -358,9 +356,10 @@ body.dep-cat-bus{
 		}
 
 		.pager{
+			width: 100%;
+			float: left;
 			padding: 6% 0;
 			display: block;
-			overflow: hidden;
 
 			ul{
 				li{

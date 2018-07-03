@@ -4,15 +4,12 @@
 
 #mini-cart {
 	@extend .transition;
-	padding: 0;
 	border: none;
 	cursor: pointer;
 	background: none;
 	text-align: right;
 	position: relative;
-	margin-right: 10px;
-	align-items: center;
-	display: inline-flex;
+	padding: 0 15px 0 0;
 
 	.portal-minicart-ref {
 		display: none;
@@ -246,7 +243,12 @@
 		line-height: 16px;
 		padding: 0 7px 10px;
     	height: 32px;
-    	overflow: hidden;
+		overflow: hidden;
+		
+		a {
+			@extend .txt-gray;
+			text-decoration: none;
+		}
 	}
 	p{
 		@extend .txt-sz-16, .txt-gray, .regular;

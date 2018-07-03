@@ -10,6 +10,7 @@
 #end
 	<input type="hidden" class="shelf-prod-id" id="shelf-pord-id-$product.Id" value="$product.Id"/>
     <a class="product-image" title="$escapedName" href="$uri">
+		<div class="lds-heart active"><div></div></div>
         $product.GetImageTag(2)
     </a>
     <a class="shelfProductName txt-sz-18 txt-gray txt-up" title="$escapedName" href="$uri">$product.Name</a>

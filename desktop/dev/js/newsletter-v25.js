@@ -87,8 +87,7 @@ function ClientCreate(){
           $("#cl_nome").val("");
           $("#cl_email").val("");
           $("#cl_genero").val("");
-          $('<div class="success-msg"><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>Obrigado! Agora você terá R$ 10 de desconto na sua primeira compra no site. Use o cupom <strong>PRIMEIRACOMPRA</strong> no carrinho de compras para ganhar seu benefício.</div>');
-
+          $('<div class="success-msg"><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><img class="col-md-3" src="/arquivos/img-legal-news.png" /><div class="col-md-9"><h3>Obrigado!</h3><br/>Agora você terá R$ 10 de desconto na sua primeira compra no site. Use o cupom <strong>PRIMEIRACOMPRA</strong> no carrinho de compras para ganhar seu benefício.</div></div>');
         },
         error: function (data) {
           console.log(data);

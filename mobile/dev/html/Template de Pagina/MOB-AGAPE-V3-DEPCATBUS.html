@@ -11,11 +11,11 @@
 <body>
     <vtex:template id="MOB-AGAPE-V3-HEADER" />
 	<main class="container">
+		<div class="opacity-filter"></div>
 		<section class="breadcrumbs hidden-xs hidden-sm col-xs-12"><vtex.cmc:breadCrumb /></section>
 		<section class="sidebar col-xs-12 col-md-3">
         	<button class="menuClose filtrarProdutos hidden-md hidden-lg">
-	            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.1 491.1" width="28" height="27"><path d="M111.85 208.25l192.8-192.8c20.6-20.6 54-20.6 74.6 0s20.6 54 0 74.6l-155.5 155.5 155.5 155.5c20.6 20.6 20.6 54 0 74.6s-54 20.6-74.6 0l-192.8-192.8c-20.6-20.6-20.6-54 0-74.6z" fill="#FFF"/></svg>
-	            <span class="storeName txt-center">Ágape Moda</span>
+	            <img src="/arquivos/bt-fechar.png" />
 	        </button>
         	<vtex.cmc:searchNavigator />
         	<vtex:contentPlaceHolder id="Banners-laterais" />
@@ -31,20 +31,22 @@
     <vtex:template id="MOB-AGAPE-V3-FOOTER" />
     <vtex:template id="MOB-AGAPE-V3-COMMONSCRIPTS" />
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.js"></script>
-    <script type="text/javascript" src="/arquivos/vtex-smartResearch-v10.js"></script>
+    <script type="text/javascript" src="/arquivos/vtex-smartResearch-v11.js"></script>
     <script>
 		if(window.matchMedia("(max-width: 1365px)").matches){
 			var showFilters = __element({type: 'button', class: 'filtrarProdutos hidden-md hidden-lg', name: 'filtrarProdutos', content: 'Filtrar produtos'});
 			$('.mainShelf .main .sub').prepend(showFilters);
 			$('.filtrarProdutos').click(function(){
 				$('.sidebar').toggleClass('active');
+				$('body').toogleClass('menu-active');
 				$('.filtrarProdutos').toggleClass('active');
-				$('body').toggleClass('active-menu');
+				$('.opacity-filter').toggleClass('active');
 			});
 
 			$('.menuClose').click(function(){
 				$('.sidebar').removeClass('active');
-				$('body').removeClass('active-menu');
+				$('body').removeClass('menu-active');
+				$('.opacity-filter').removeClass('active');
 				$('.filtrarProdutos').removeClass('active');
 			});
 		}

@@ -2221,6 +2221,7 @@ body.home footer .textoLegal {
 .prateleira li {
 	height: 100%;
 	padding: 4px;
+	position: relative;
 }
 
 .prateleira li a {
@@ -3502,6 +3503,7 @@ span.resultado-busca-numero {
 .Newsletter {
 	overflow: hidden;
 	padding: 20px 7px;
+	position: relative;
 }
 
 .Newsletter .container {
@@ -3511,6 +3513,54 @@ span.resultado-busca-numero {
 	    flex-wrap: wrap;
 	-ms-flex-align: center;
 	    align-items: center;
+}
+
+.Newsletter .spinner {
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: none;
+	padding: 140px 0;
+	text-align: center;
+	position: absolute;
+	background-color: #e8e8e8;
+	-webkit-transition: opacity 4s ease-in-out;
+	-moz-transition: opacity 4s ease-in-out;
+	-ms-transition: opacity 4s ease-in-out;
+	-o-transition: opacity 4s ease-in-out;
+}
+
+.Newsletter .success-msg {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 680px;
+	overflow: hidden;
+}
+
+.Newsletter .success-msg .col-md-9,
+.Newsletter .success-msg footer .metodos-pagamento,
+footer .Newsletter .success-msg .metodos-pagamento {
+	font-size: 18px;
+	color: #9e9e9e;
+	font-weight: 100;
+	line-height: 24px;
+}
+
+.Newsletter .success-msg .col-md-9 strong,
+.Newsletter .success-msg footer .metodos-pagamento strong,
+footer .Newsletter .success-msg .metodos-pagamento strong {
+	text-transform: uppercase;
+}
+
+.Newsletter .success-msg .col-md-9 h3,
+.Newsletter .success-msg footer .metodos-pagamento h3,
+footer .Newsletter .success-msg .metodos-pagamento h3 {
+	font-size: 24px;
+	color: #f38138;
+	margin: 20px 0 0 0;
+	text-transform: uppercase;
 }
 
 .Newsletter .Newsletter-image {

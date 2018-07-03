@@ -23,10 +23,15 @@ body{@extend .ff-signikaNegative }
 }
 
 #ajaxBusy {
-
 	p {
 		display: none;
 	}
+}
+
+body.menu-active {
+	position: fixed;
+	overflow: hidden;
+	max-height: 100px;
 }
 
 img{

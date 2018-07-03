@@ -211,6 +211,11 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
 #ajaxBusy p {
   display: none; }
 
+body.menu-active {
+  position: fixed;
+  overflow: hidden;
+  max-height: 100px; }
+
 img {
   max-width: 100%;
   height: auto; }

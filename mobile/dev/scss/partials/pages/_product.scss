@@ -1,5 +1,9 @@
 body.produto {
 
+    .sc {
+        -webkit-overflow-scrolling: touch;
+    }
+
     .breadcrumbs {
         clear: both;
         overflow: hidden;
@@ -12,12 +16,37 @@ body.produto {
         }
     }
 
+    .compra-persistente-bt {
+        @include font-size(2);
+        @extend .transition;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 100%;
+        height: 60px;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        position: fixed;
+        line-height: 59px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: lowercase;
+        background-color: #00bb4f;
+        z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+
+        &.active {
+            @extend .transition;
+            opacity: 1;
+        }
+    }
+
     .slick-dots {
         left: auto;
         width: 100%;
         bottom: auto;
-        margin: 0 auto 0;
         position: inherit;
+        margin: 10px auto 0;
         transform: none !important;
     }
 
@@ -45,9 +74,6 @@ body.produto {
     }
 
     .portal-notify-me-ref {
-        left: 0;
-        top: -7px;
-        position: absolute;
         background-color: #fff;
 
         h3 {
@@ -148,6 +174,7 @@ body.produto {
 body.produto main {
     overflow: hidden;
     padding: 20px 5px;
+    position: relative;
 }
 
 body.produto main .economia-de,
@@ -633,6 +660,9 @@ body.produto main #calculoFrete .content .freight-btn {
     cursor: pointer;
     margin-top: -2px;
     padding: 7px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;  
     background-color: #18318f
 }
 

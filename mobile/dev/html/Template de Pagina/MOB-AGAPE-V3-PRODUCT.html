@@ -8,7 +8,15 @@
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
         <link rel="stylesheet" type="text/css" href="/arquivos/produto-quaresma.css" />
-        <style>.zoomWrapperImage{width:60%!important}</style>
+		<style>
+			.zoomWrapperImage{
+				width: 60%!important;
+			}
+
+			.sc {
+				-webkit-overflow-scrolling: touch;
+			}
+		</style>
    </head>
    <body>
       	<vtex:template id="MOB-AGAPE-V3-HEADER" />
@@ -45,6 +53,7 @@
 	                		<vtex.cmc:skuPrice/>
 	                	</div>
 
+						<a id="id3"></a>
 	                	<div class="sku-section col-xs-12">
 	                		<div class="sku-area">
 	                			<vtex.cmc:skuRichSelection changeImage="1" />
@@ -54,14 +63,10 @@
                 				<button class="btn-tabelaMedidas">tabela de medidas</button>
                 				<vtex.cmc:partTabelaMedidas/>
 							</div>
-
 	                	</div>
 
 	                	<div class="buy-box col-xs-12">
-                			<button class="col-xs-6 add-to-cart">
-                				adicionar ao carrinho
-                			</button>
-                			<div class="col-xs-6 buy-area">
+                			<div class="buy-area">
 	                			<vtex.cmc:BuyButton/>
                 			</div>
                 		</div>
@@ -72,14 +77,14 @@
             	</div>
             </section>
 
-            <section class="troca col-xs-12">
+            <section class="troca sc col-xs-12">
             	<div class="container">
                     <h2 class="section-title troca-title txt-sz-20 txt-darkerGray">Não serviu? <strong>A Ágape troca de graça!</strong></h2>
 					<span class="mobile-info-troca txt-gray"><vtex:contentPlaceHolder id="texto-troca" /></span>	
 	            </div>
             </section>
 
-            <div id="prod-info" class="container">
+            <div id="prod-info" class="container sc">
             	<section class="descricao col-xs-12 col-md-7">
             		<h2 class="section-title txt-darkBlue">Descrição</h2>
                     <vtex.cmc:ProductDescription/>
@@ -90,7 +95,7 @@
             	</section>
             </div>
 
-            <section class="row produtos-similares">
+            <section class="row produtos-similares sc">
 				<div class="container">
 					<h2 class="section-title txt-orange bold txt-sz-20">
 						<vtex:contentPlaceHolder id="tituloPrateleira"/>
@@ -109,6 +114,8 @@
 				</div>
 			</article>
 			<!-- Final Yourviews -->
+
+			<span class="compra-persistente-bt">Comprar</span>
 
 		</main>
 

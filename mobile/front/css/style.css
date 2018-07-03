@@ -387,6 +387,7 @@ footer .metodos-pagamento h3,
 footer .copyright-notice,
 .search-box .busca input.fulltext-search-box:focus,
 .sta-cart-items .sta-cart-pdt-info h4,
+.sta-cart-items .sta-cart-pdt-info h4 a,
 .sta-cart-items .sta-cart-pdt-info p,
 header .menu-header.display .menu-item,
 header .menu-header .submenu .menu-item,
@@ -471,8 +472,6 @@ body.institucional main p {
 }
 
 .txt-sz-18,
-header .options > a,
-header .options button,
 .Newsletter .form-newsletter .submit,
 body.institucional main article h4 {
 	font-size: 18px;
@@ -681,6 +680,8 @@ body.modal-active .modal-box,
 .modal-box .modal-container,
 body.home main .slider-escolha-por-santos nav ul li a,
 body.home main .slider-escolha-por-santos nav ul li a:after,
+body.produto .compra-persistente-bt,
+body.produto .compra-persistente-bt.active,
 body.produto .portal-notify-me-ref form input.btn-ok,
 body.produto .portal-notify-me-ref form input.btn-ok:hover,
 body.produto .buy-box button.bg-blue,
@@ -704,6 +705,12 @@ body.institucional main a {
 
 #ajaxBusy p {
 	display: none;
+}
+
+body.menu-active {
+	position: fixed;
+	overflow: hidden;
+	max-height: 100px;
 }
 
 img {
@@ -1244,6 +1251,7 @@ footer .metodos-pagamento h3,
 footer .copyright-notice,
 .search-box .busca input.fulltext-search-box:focus,
 .sta-cart-items .sta-cart-pdt-info h4,
+.sta-cart-items .sta-cart-pdt-info h4 a,
 .sta-cart-items .sta-cart-pdt-info p,
 header .menu-header.display .menu-item,
 header .menu-header .submenu .menu-item,
@@ -1328,8 +1336,6 @@ body.institucional main p {
 }
 
 .txt-sz-18,
-header .options > a,
-header .options button,
 .Newsletter .form-newsletter .submit,
 body.institucional main article h4 {
 	font-size: 18px;
@@ -1645,32 +1651,22 @@ header .mid-box .container {
 
 header .logo {
 	padding: 0;
-	margin-left: 10px;
-	margin-right: 10px;
+	text-align: center;
 }
 
-header .logo img {
+header .logo a {
 	display: block;
-	max-width: 140px;
 }
 
 header .options {
-	-ms-flex-align: center;
-	    align-items: center;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-ms-flex-pack: end;
-	    justify-content: flex-end;
+	text-align: right;
+	display: inline-block;
 }
 
 header .options > a,
 header .options button {
 	border: 0;
 	text-align: left;
-	-ms-flex-align: center;
-	    align-items: center;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
 }
 
 header .options > a:not(.search-toggle),
@@ -2096,10 +2092,14 @@ button {
 
 .menuClose {
 	font-size: 14px;
-	padding: 10px 0;
+	width: 100%;
+	border: none;
+	text-align: left;
 	line-height: 14px;
 	position: relative;
-	background: #0080b7;
+	background: #fff;
+	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid #eaeaea;
 }
 
 .menuClose svg {
@@ -2214,7 +2214,7 @@ button {
 
 .js-open-mobile-menu .menu-toggle {
 	width: 40px;
-	height: 20px;
+	height: 40px;
 	display: block;
 	margin: 0 auto;
 	position: relative;
@@ -2244,6 +2244,10 @@ button {
 
 .js-open-mobile-menu .menu-toggle span:nth-child(3) {
 	top: 28px;
+}
+
+.js-open-mobile-menu.active .menu-toggle {
+	height: 20px;
 }
 
 .js-open-mobile-menu.active .menu-toggle span:nth-child(1) {
@@ -2302,6 +2306,8 @@ button {
    ========================================================================== */
 
 .prateleira {
+	width: 100%;
+	float: left;
 	margin: 0 auto;
 }
 
@@ -2311,8 +2317,6 @@ button {
 
 .prateleira ul,
 .prateleira .slick-track {
-	display: -ms-flexbox;
-	display: flex;
 	-ms-flex-align: stretch;
 	    align-items: stretch;
 	list-style-type: none;
@@ -2378,9 +2382,63 @@ button {
 	font-size: 14px;
 }
 
+.box-item .product-image {
+	display: block;
+	overflow: hidden;
+	min-height: 170px;
+	position: relative;
+}
+
 .box-item .product-image img {
 	width: 100%;
 	height: auto;
+}
+
+.box-item .lds-heart {
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	opacity: 0.9;
+	display: none;
+	margin-left: -110%;
+	position: absolute;
+	background-color: #fff;
+	-ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+}
+
+.box-item .lds-heart.active {
+	display: inline-block;
+}
+
+.box-item .lds-heart div {
+	top: 86px;
+	left: 111px;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	background: #f68026;
+	animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.box-item .lds-heart div:after,
+.box-item .lds-heart div:before {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 26px;
+	height: 26px;
+	background: #f68026;
+}
+
+.box-item .lds-heart div:before {
+	left: -17px;
+	border-radius: 50% 0 0 50%;
+}
+
+.box-item .lds-heart div:after {
+	top: -17px;
+	border-radius: 50% 50% 0 0;
 }
 
 .box-item .buttons {
@@ -2858,16 +2916,6 @@ button {
 	    transform: translateY(-50%) rotate(90deg);
 }
 
-.search-multiple-navigator h5:hover:before,
-.search-single-navigator h5:hover:before {
-	will-change: opacity, transform;
-}
-
-.search-multiple-navigator h5:hover:after,
-.search-single-navigator h5:hover:after {
-	will-change: transform;
-}
-
 .search-multiple-navigator h5.active:before,
 .search-single-navigator h5.active:before {
 	opacity: 0;
@@ -3087,10 +3135,10 @@ span.resultado-busca-numero {
 
 .search-box {
 	left: 0;
-	top: 55px;
-	opacity: 0;
+	top: 64px;
 	z-index: 1;
 	width: 100%;
+	display: none;
 	padding-left: 0;
 	padding-right: 0;
 	text-align: right;
@@ -3098,7 +3146,7 @@ span.resultado-busca-numero {
 }
 
 .search-box.active {
-	opacity: 1;
+	display: block;
 }
 
 .search-box .busca {
@@ -3150,17 +3198,12 @@ span.resultado-busca-numero {
    ========================================================================== */
 
 #mini-cart {
-	padding: 0;
 	border: none;
 	cursor: pointer;
 	background: none;
 	text-align: right;
 	position: relative;
-	margin-right: 10px;
-	-ms-flex-align: center;
-	    align-items: center;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
+	padding: 0 15px 0 0;
 }
 
 #mini-cart .portal-minicart-ref {
@@ -3465,6 +3508,10 @@ span.resultado-busca-numero {
 	overflow: hidden;
 }
 
+.sta-cart-items .sta-cart-pdt-info h4 a {
+	text-decoration: none;
+}
+
 .sta-cart-items .sta-cart-pdt-info p {
 	float: left;
 	padding: 5px 7px;
@@ -3615,6 +3662,58 @@ span.resultado-busca-numero {
 .Newsletter .Newsletter-image img {
 	width: 100%;
 	height: auto;
+}
+
+.Newsletter .spinner {
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: none;
+	padding: 140px 0;
+	text-align: center;
+	position: absolute;
+	background-color: #e8e8e8;
+	-webkit-transition: opacity 4s ease-in-out;
+	-moz-transition: opacity 4s ease-in-out;
+	-ms-transition: opacity 4s ease-in-out;
+	-o-transition: opacity 4s ease-in-out;
+}
+
+.Newsletter .success-msg {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 680px;
+	overflow: hidden;
+}
+
+.Newsletter .success-msg img {
+	max-width: 90px;
+}
+
+.Newsletter .success-msg .col-md-9,
+.Newsletter .success-msg footer .metodos-pagamento,
+footer .Newsletter .success-msg .metodos-pagamento {
+	font-size: 18px;
+	color: #9e9e9e;
+	font-weight: 100;
+	line-height: 24px;
+}
+
+.Newsletter .success-msg .col-md-9 strong,
+.Newsletter .success-msg footer .metodos-pagamento strong,
+footer .Newsletter .success-msg .metodos-pagamento strong {
+	text-transform: uppercase;
+}
+
+.Newsletter .success-msg .col-md-9 h3,
+.Newsletter .success-msg footer .metodos-pagamento h3,
+footer .Newsletter .success-msg .metodos-pagamento h3 {
+	font-size: 24px;
+	color: #f38138;
+	margin: 20px 0 0 0;
+	text-transform: uppercase;
 }
 
 .Newsletter .form-newsletter {
@@ -3933,6 +4032,22 @@ header.ha-hide {
 	display: block;
 }
 
+.opacity-filter {
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	display: none;
+	position: absolute;
+	background-color: #fff;
+}
+
+.opacity-filter.active {
+	display: block;
+}
+
 /* ==========================================================================
    SidePanel
    ========================================================================== */
@@ -3949,14 +4064,14 @@ header .menu-header {
 	left: 0;
 	top: 66px;
 	margin: 0;
-	width: 80%;
 	padding: 0;
 	z-index: 99;
-	height: 100%;
+	width: 100%;
+	height: 88%;
 	position: fixed;
 	list-style: none;
-	max-width: 350px;
 	background: #fff;
+	overflow-y: scroll;
 	-ms-transform: translateX(-100%);
 	    transform: translateX(-100%);
 }
@@ -4034,7 +4149,7 @@ header .menu-header .submenu {
 }
 
 header .menu-header .submenu.active {
-	height: 360px;
+	height: 100%;
 	display: block;
 	overflow-x: scroll;
 	-ms-transform: translateY(0);
@@ -4339,9 +4454,6 @@ body.home main .box-banner {
 	cursor: pointer;
 }
 
-body.home main .slider-dois .slick-list { /* height: 499px !important; */
-}
-
 body.home main .banners-orange {
 	width: 100%;
 	float: left;
@@ -4403,16 +4515,6 @@ body.home main .em-promocao {
 	width: 100%;
 	position: relative;
 	padding-bottom: 40px;
-}
-
-body.home main .mais-vendidos .container,
-body.home main .em-promocao .container {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-ms-flex-align: center;
-	    align-items: center;
 }
 
 body.home main .shelf-title {
@@ -4525,6 +4627,10 @@ body.home main .slider-escolha-por-santos nav ul li a:after {
 	background: url(/arquivos/right-arrow-santo-branco.png) no-repeat scroll 0 0 transparent;
 }
 
+body.produto .sc {
+	-webkit-overflow-scrolling: touch;
+}
+
 body.produto .breadcrumbs {
 	clear: both;
 	overflow: hidden;
@@ -4535,12 +4641,35 @@ body.produto .breadcrumbs ul li {
 	line-height: 23px;
 }
 
+body.produto .compra-persistente-bt {
+	font-size: 20px;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	width: 100%;
+	height: 60px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	position: fixed;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	background-color: #00bb4f;
+	z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+
+body.produto .compra-persistente-bt.active {
+	opacity: 1;
+}
+
 body.produto .slick-dots {
 	left: auto;
 	width: 100%;
 	bottom: auto;
-	margin: 0 auto 0;
 	position: inherit;
+	margin: 10px auto 0;
 	-ms-transform: none !important;
 	    transform: none !important;
 }
@@ -4567,9 +4696,6 @@ body.produto .descricao {
 }
 
 body.produto .portal-notify-me-ref {
-	left: 0;
-	top: -7px;
-	position: absolute;
 	background-color: #fff;
 }
 
@@ -4661,6 +4787,7 @@ body.produto .thumbnails li:last-child {
 body.produto main {
 	overflow: hidden;
 	padding: 20px 5px;
+	position: relative;
 }
 
 body.produto main .economia-de,
@@ -5141,6 +5268,9 @@ body.produto main #calculoFrete .content .freight-btn {
 	cursor: pointer;
 	margin-top: -2px;
 	padding: 7px 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	background-color: #18318f;
 }
 
@@ -5526,7 +5656,6 @@ body.dep-cat-bus .sidebar {
 	display: block;
 	position: fixed;
 	z-index: 999999;
-	max-width: 260px;
 	background: #fff;
 	-ms-transform: translateX(-100%);
 	    transform: translateX(-100%);
@@ -5536,7 +5665,6 @@ body.dep-cat-bus .sidebar.active {
 	opacity: 1;
 	-ms-transform: translateX(0);
 	    transform: translateX(0);
-	box-shadow: 0px 0px 15px 0px #000;
 }
 
 body.dep-cat-bus .sidebar .orderBy,
@@ -5737,9 +5865,10 @@ body.dep-cat-bus .mainShelf .sub:last-child {
 }
 
 body.dep-cat-bus .mainShelf .pager {
+	width: 100%;
+	float: left;
 	padding: 6% 0;
 	display: block;
-	overflow: hidden;
 }
 
 body.dep-cat-bus .mainShelf .pager ul li {
@@ -5823,6 +5952,10 @@ body.buscavazia .mainShelf > span {
 /* ==========================================================================
    Minha Conta
    ========================================================================== */
+
+body.account.no-scroll {
+	position: fixed;
+}
 
 body.account header {
 	z-index: 999 !important;
@@ -6018,10 +6151,10 @@ body.account .modal {
 }
 
 body.account .modal form {
-	top: 80px;
+	top: 40px;
 	left: 50%;
 	width: 100%;
-	height: 523px;
+	height: 420px;
 	position: fixed;
 	max-width: 300px;
 	overflow-y: scroll;
@@ -6898,6 +7031,10 @@ html {
 	box-sizing: inherit;
 }
 
+#divBtnAsc {
+	display: none !important;
+}
+
 @media (min-width: 768px) and (max-width: 1289px) {
 
 .visible-sm {
@@ -7501,12 +7638,6 @@ body.home main .shelf-title h2 {
 	border-top: 1px solid #d1d1d1;
 }
 
-.search-multiple-navigator h5:after,
-.search-single-navigator h5:after {
-	left: 25px;
-	top: calc(50% + 5px);
-}
-
 .search-multiple-navigator ul,
 .search-multiple-navigator fieldset div,
 .search-single-navigator ul,
@@ -7872,6 +8003,34 @@ td.visible-xs {
 
 body.home main .slider-escolha-por-santos h2 {
 	font-size: 14px;
+}
+
+}
+
+@keyframes lds-heart {
+
+0% {
+	transform: scale(0.95);
+}
+
+5% {
+	transform: scale(1.1);
+}
+
+39% {
+	transform: scale(0.85);
+}
+
+45% {
+	transform: scale(1);
+}
+
+60% {
+	transform: scale(0.95);
+}
+
+100% {
+	transform: scale(0.9);
 }
 
 }

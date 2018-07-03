@@ -9,12 +9,6 @@ body.home{
 			cursor: pointer;
 		}
 
-		.slider-dois {
-			.slick-list {
-				/* height: 499px !important; */
-			}
-		}
-
 		.banners-orange{
     		width: 100%;
 		    float: left;
@@ -77,12 +71,6 @@ body.home{
 			width: 100%;
 			position: relative;
 			padding-bottom: 40px;
-
-			.container{
-				display: flex;
-				flex-wrap: wrap;
-				align-items: center;
-			}
 		}
 
 		.shelf-title{

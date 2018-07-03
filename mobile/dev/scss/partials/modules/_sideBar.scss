@@ -387,18 +387,6 @@
 		    display: block;
 		    position: absolute;
 		    transform: translateY(-50%) rotate(90deg);
-		    @include mq($screen-md){
-		    	left: 25px;
-		    	top: calc(50% + 5px );
-		    }
-		}
-		&:hover{
-			&:before{
-				will-change: opacity, transform;
-			}
-			&:after{
-				will-change: transform;
-			}
 		}
 		&.active{
 			&:before{
