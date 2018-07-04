@@ -680,12 +680,14 @@ body.modal-active .modal-box,
 .modal-box .modal-container,
 body.home main .slider-escolha-por-santos nav ul li a,
 body.home main .slider-escolha-por-santos nav ul li a:after,
+body.produto.opacity-active .sku-section,
 body.produto .compra-persistente-bt,
 body.produto .compra-persistente-bt.active,
 body.produto .portal-notify-me-ref form input.btn-ok,
 body.produto .portal-notify-me-ref form input.btn-ok:hover,
+body.produto .sku-section,
 body.produto .buy-box button.bg-blue,
-body.produto .buy-box button.add-to-cart,
+body.produto .buy-box .bt-comprar,
 body.produto .buy-box .buy-area .buy-button,
 body.produto main .troca h2:after,
 body.produto main .descricao h2:after,
@@ -711,6 +713,12 @@ body.menu-active {
 	position: fixed;
 	overflow: hidden;
 	max-height: 100px;
+}
+
+body.menu-active footer,
+body.menu-active .mainShelf,
+body.menu-active .breadcrumbs {
+	display: none;
 }
 
 img {
@@ -4627,8 +4635,49 @@ body.home main .slider-escolha-por-santos nav ul li a:after {
 	background: url(/arquivos/right-arrow-santo-branco.png) no-repeat scroll 0 0 transparent;
 }
 
-body.produto .sc {
-	-webkit-overflow-scrolling: touch;
+body.produto .close-bt-opacity {
+	font-size: 20px;
+	top: -15px;
+	right: 0px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 999999999999;
+	background-color: red;
+	color: #fff !important;
+	display: none !important;
+}
+
+body.produto .close-bt-opacity.active {
+	display: block !important;
+}
+
+body.produto.opacity-active {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+body.produto.opacity-active .opacity-all {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 125%;
+	opacity: 0.5;
+	z-index: 9999;
+	position: absolute;
+	background-color: #000;
+}
+
+body.produto.opacity-active .sku-section {
+	padding: 0 10px;
+	z-index: 999999999;
+	position: relative;
+	background-color: #fff;
 }
 
 body.produto .breadcrumbs {
@@ -4657,7 +4706,7 @@ body.produto .compra-persistente-bt {
 	text-decoration: none;
 	text-transform: lowercase;
 	background-color: #00bb4f;
-	z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+	z-index: 9999999999999999999999999999999999999;
 }
 
 body.produto .compra-persistente-bt.active {
@@ -5106,14 +5155,17 @@ body.produto .buy-box button.bg-blue {
 	background-color: #18318f;
 }
 
-body.produto .buy-box button.add-to-cart {
-	font-size: 17px;
+body.produto .buy-box .bt-comprar {
+	font-size: 20px;
 	color: #fff;
 	border: none;
 	height: 60px;
 	cursor: pointer;
-	line-height: 19px;
-	background-color: #b81154;
+	line-height: 59px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: lowercase;
+	background-color: #00bb4f;
 }
 
 body.produto .buy-box .buy-area .buy-button {
@@ -5657,6 +5709,7 @@ body.dep-cat-bus .sidebar {
 	position: fixed;
 	z-index: 999999;
 	background: #fff;
+	overflow-y: scroll;
 	-ms-transform: translateX(-100%);
 	    transform: translateX(-100%);
 }

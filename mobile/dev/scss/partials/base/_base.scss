@@ -32,6 +32,12 @@ body.menu-active {
 	position: fixed;
 	overflow: hidden;
 	max-height: 100px;
+
+	footer,
+	.mainShelf,
+	.breadcrumbs {
+		display: none;
+	}
 }
 
 img{

@@ -143,6 +143,7 @@ body.dep-cat-bus{
 		position: fixed;
 		z-index: 999999;
 		background: #fff;
+		overflow-y: scroll;
 		transform: translateX(-100%);
 
 		&.active{

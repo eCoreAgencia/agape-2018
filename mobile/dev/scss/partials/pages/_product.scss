@@ -1,7 +1,49 @@
 body.produto {
 
-    .sc {
-        -webkit-overflow-scrolling: touch;
+    .close-bt-opacity {
+        @include font-size(2);
+        top: -15px;
+        right: 0px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 999999999999;
+        background-color: red;
+        color: #fff !important;
+        display: none !important;
+
+        &.active {
+            display: block !important;
+        }
+    }
+
+    &.opacity-active {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        .opacity-all {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 125%;
+            opacity: 0.5;
+            z-index: 9999;
+            position: absolute;
+            background-color: #000;
+        }
+
+        .sku-section {
+            @extend .transition;
+            padding: 0 10px;
+            z-index: 999999999;
+            position: relative;
+            background-color: #fff;
+        }
     }
 
     .breadcrumbs {
@@ -33,7 +75,7 @@ body.produto {
         text-decoration: none;
         text-transform: lowercase;
         background-color: #00bb4f;
-        z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+        z-index: 9999999999999999999999999999999999999;
 
         &.active {
             @extend .transition;
@@ -473,6 +515,7 @@ body.produto .skuList label:last-of-type {
 }
 
 body.produto .sku-section {
+    @extend .transition;
     padding: 0;
     margin-right: 0;
 }
@@ -494,15 +537,18 @@ body.produto .buy-box button.bg-blue {
     background-color: #18318f
 }
 
-body.produto .buy-box button.add-to-cart {
-    @include font-size(1.7);
+body.produto .buy-box .bt-comprar {
+    @include font-size(2);
     @extend .transition;
     color: #fff;
     border: none;
     height: 60px;
     cursor: pointer;
-    line-height: 19px;
-    background-color: #b81154;
+    line-height: 59px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: lowercase;
+    background-color: #00bb4f;
 }
 
 body.produto .buy-box .buy-area .buy-button {

@@ -215,6 +215,10 @@ body.menu-active {
   position: fixed;
   overflow: hidden;
   max-height: 100px; }
+  body.menu-active footer,
+  body.menu-active .mainShelf,
+  body.menu-active .breadcrumbs {
+    display: none; }
 
 img {
   max-width: 100%;

@@ -176,6 +176,7 @@
 	  });
 
 	  $('.options button').on('click', function(event){
+		$('body').removeClass('opacity-active');
 		$('.search-box .btn-buscar').simulateClick('click');
 	  });
 
@@ -423,6 +424,7 @@
 		  var self = $(this);
 		  $(this).toggleClass('active');
 		  $('body').toggleClass('menu-active');
+		  $('body').removeClass('opacity-active');
 		  $('.menu-header').toggleClass('display');
 
 		  if (self.hasClass('active')) {
@@ -509,9 +511,26 @@
 		  if (pagProduto.length > 0) {
 
 				$('.compra-persistente-bt').on('click', function(event){
+					$('.close-bt-opacity').toggleClass('active');
+					$('body').toggleClass('opacity-active');
 					document.querySelector('#id3').scrollIntoView({ 
 						behavior: 'smooth' 
 					});
+				});
+
+				$('.close-bt-opacity').on('click', function(event){
+					$('body').removeClass('opacity-active');
+					$(this).removeClass('active');
+				});
+
+				$('.opacity-all').on('click', function(event){
+					$('body').removeClass('opacity-active');
+					$('.close-bt-opacity').removeClass('active');
+				});
+
+				$('.skuList label').on('click', function(event){
+					$('body').removeClass('opacity-active');
+					$('.close-bt-opacity').removeClass('active');
 				});
 
 				$(function(){
@@ -644,6 +663,33 @@
 			  // Adicionando classe nos elementos do Ordernar Por quando ativos
   
 			  priceStatus();
+
+			var showFilters = __element({type: 'button', class: 'filtrarProdutos', name: 'filtrarProdutos', content: 'Filtrar produtos'});
+			$('.mainShelf .main .sub').prepend(showFilters);
+
+			$('.filtrarProdutos').click(function(){
+				$('.sidebar').toggleClass('active');
+				$('body').toggleClass('menu-active');
+				$('.filtrarProdutos').toggleClass('active');
+				$('.opacity-filter').toggleClass('active');
+			});
+
+			$('.menuClose').click(function(){
+				$('.sidebar').removeClass('active');
+				$('body').removeClass('menu-active');
+				$('.opacity-filter').removeClass('active');
+				$('.filtrarProdutos').removeClass('active');
+			});
+			
+			$('.search-single-navigator, .search-multiple-navigator').find('fieldset').on('click', 'h5',function(){
+				$(this).toggleClass('active');
+				$(this).next().toggleClass('active');
+			});
+			$('.search-single-navigator, .search-multiple-navigator').find('input[type="checkbox"]:checked').parent().addClass('active');
+			$('.search-single-navigator, .search-multiple-navigator').find('input[type="checkbox"]').on('change',function(){
+				this.parentNode.classList[((this.checked)? 'add':'remove')]('active')
+			});
+
 		  }
 		// Scripts Departamento //
   

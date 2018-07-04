@@ -32,33 +32,5 @@
     <vtex:template id="MOB-AGAPE-V3-COMMONSCRIPTS" />
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.js"></script>
     <script type="text/javascript" src="/arquivos/vtex-smartResearch-v11.js"></script>
-    <script>
-		if(window.matchMedia("(max-width: 1365px)").matches){
-			var showFilters = __element({type: 'button', class: 'filtrarProdutos hidden-md hidden-lg', name: 'filtrarProdutos', content: 'Filtrar produtos'});
-			$('.mainShelf .main .sub').prepend(showFilters);
-			$('.filtrarProdutos').click(function(){
-				$('.sidebar').toggleClass('active');
-				$('body').toogleClass('menu-active');
-				$('.filtrarProdutos').toggleClass('active');
-				$('.opacity-filter').toggleClass('active');
-			});
-
-			$('.menuClose').click(function(){
-				$('.sidebar').removeClass('active');
-				$('body').removeClass('menu-active');
-				$('.opacity-filter').removeClass('active');
-				$('.filtrarProdutos').removeClass('active');
-			});
-		}
-		
-    	$('.search-single-navigator, .search-multiple-navigator').find('fieldset').on('click', 'h5',function(){
-			$(this).toggleClass('active');
-			$(this).next().toggleClass('active');
-		});
-		$('.search-single-navigator, .search-multiple-navigator').find('input[type="checkbox"]:checked').parent().addClass('active');
-		$('.search-single-navigator, .search-multiple-navigator').find('input[type="checkbox"]').on('change',function(){
-			this.parentNode.classList[((this.checked)? 'add':'remove')]('active')
-		});
-    </script>
 </body>
 </html>
