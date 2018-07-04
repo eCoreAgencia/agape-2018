@@ -6,6 +6,12 @@ body.produto .bread-crumb {
 
 body.produto {
 
+    .skuList {
+        li {
+            padding-right: 30px;
+        }
+    }
+
     .buy-box {
         position: relative;
     }
@@ -78,8 +84,8 @@ body.produto {
     .sku-area {
         button.btn-tabelaMedidas {
             @include font-size(1.2);
-            top: 19px;
-            left: 91px;
+            top: 20px;
+            left: 95px;
             border: none;
             color: #18318f;
             background: 0 0;
@@ -367,15 +373,11 @@ body.produto .Cor {
 
 body.produto .sku-area {
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 body.produto .sku-selector-container {
     overflow: hidden;
     position: relative;
-    margin-bottom: 20px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #d1d1d1
 }
 
 body.produto .sku-selector-container .medidas {
@@ -416,6 +418,7 @@ body.produto .skuList label {
     border-radius: 5px;
     text-align: center;
     vertical-align: top;
+    margin-bottom: 10px;
     display: inline-block;
     border: 1px solid #bebebe;
     background-color: #ededed
@@ -454,7 +457,7 @@ body.produto .skuList label:last-of-type {
 
 body.produto .sku-section {
     margin-right: 0;
-    padding-bottom: 20px
+    padding-bottom: 20px;
 }
 
 body.produto .buy-box {

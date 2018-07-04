@@ -529,7 +529,7 @@ $(function() {
 				$('ul.Cor').addClass('col-md-6 col-xs-12');
 				$('ul.Cor').insertAfter('ul.Tamanho');
 				$('ul.Tamanho').addClass('col-md-6 col-xs-12');
-				$('.btn-tabelaMedidas').insertBefore('.sku-selector-container .Tamanho');
+				$('.btn-tabelaMedidas').insertAfter('.sku-selector-container .Cor');
 
 		        // Script Mudando regulamento de lugar
 		        	$('#caracteristicas table.Regra').appendTo('.reg-conteudo');
@@ -540,7 +540,7 @@ $(function() {
 
 			try {
 				$document.ajaxStop(function() {
-					$('#szb_btn').insertAfter('ul.Tamanho');
+					$('#szb_btn').insertAfter('ul.Cor');
 					$('#szb_size_chart').appendTo('.medidas');
 
 					$('.btn-tabelaMedidas').on('click', function(e){
@@ -604,6 +604,71 @@ $(function() {
 					});
 				});
 			// Controller Image Thumbs, Featured and SuperZoom //
+
+			// Change Pic //
+				body.on('click', '.Cor .skuList label', function(event){
+					$('.Cor .skuList label').removeClass('checked');
+					$(this).addClass('checked');
+
+					$('.thumbnails li').remove();
+					$('.easyzoom a').remove();
+
+					window.currentColor = $(this).text();
+					console.log(currentColor);
+					var x = "";
+
+					var id = $('#___rc-p-id').attr("value");
+					var data = "/api/catalog_system/pub/products/search/?fq=productId:"+id+"";
+
+					$.getJSON(data, function(data) {
+						$.each(data, function(key, val) {
+							var elements = val.items;
+							$(elements).each(function(i, items, key, val){
+								if(elements[i].Cor == currentColor) {
+									window.me = $(this);
+									var colors = elements[i];
+								}
+							});
+
+							var changeColor = me[0].images;
+
+							$(changeColor).each(function(data, val){
+
+								// Take Image Thumbs //
+									var myLabel = val.imageLabel;
+									var myImageID = val.imageId;
+									var myImageName = val.imageText;
+									$('<li class="'+myLabel+'"><a href="/arquivos/ids/'+myImageID+'-1250-1250/'+myImageName+'.jpg" data-standard="/arquivos/ids/'+myImageID+'-600-600/'+myImageName+'.jpg"><img src="/arquivos/ids/'+myImageID+'-170-170/'+myImageName+'.jpg" /></a></li>').appendTo('ul.thumbnails');
+								// Take Image Thumbs //
+
+								var myFirst = $('.thumbnails li').first();
+								myFirst.addClass('first-thumb');
+
+								var firstThumbStand = $('.thumbnails li.first-thumb a').attr('data-standard');
+								var firstThumbLink = $('.thumbnails li.first-thumb a').attr('href');
+								var firstThumbEx = $('<a href="'+firstThumbLink+'"><img src="'+firstThumbStand+'"/></a>');
+								firstThumbEx.appendTo('.easyzoom');
+								$('.easyzoom a:first-of-type').nextAll().remove();
+
+								// Instantiate EasyZoom instances
+								var $easyzoom = $('.easyzoom').easyZoom();
+
+								// Setup thumbnails example
+								var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+								$('.thumbnails').on('click', 'a', function(e) {
+									var $this = $(this);
+									e.preventDefault();
+									// Use EasyZoom's `swap` method
+									api1.swap($this.data('standard'), $this.attr('href'));
+								});
+
+								var firstItem = $('.thumbnails li').first().find('a');
+								firstItem.simulateClick('click');
+							});
+						});
+					});
+				});
+			// Change Pic //
 
 	    }
     // Scripts Pagina de Produto //

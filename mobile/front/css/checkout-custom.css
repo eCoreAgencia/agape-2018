@@ -217,7 +217,12 @@ body.menu-active {
   max-height: 100px; }
   body.menu-active footer,
   body.menu-active .mainShelf,
-  body.menu-active .breadcrumbs {
+  body.menu-active .breadcrumbs,
+  body.menu-active .product-box,
+  body.menu-active .troca,
+  body.menu-active #prod-info,
+  body.menu-active .produtos-similares,
+  body.menu-active .box-yourviews-container {
     display: none; }
 
 img {

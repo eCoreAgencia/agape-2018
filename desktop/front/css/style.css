@@ -2515,7 +2515,9 @@ body.produto .shelfItem .shelfProductName {
 }
 
 .search-multiple-navigator fieldset.filtro_cor label.sr_bege .sr_box2,
-.search-single-navigator fieldset.filtro_cor label.sr_bege .sr_box2 {
+.search-multiple-navigator fieldset.filtro_cor label.sr_bege-cha .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_bege .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_bege-cha .sr_box2 {
 	background-color: #e2cfae;
 }
 
@@ -2640,12 +2642,24 @@ body.produto .shelfItem .shelfProductName {
 }
 
 .search-multiple-navigator fieldset.filtro_cor label.sr_verde .sr_box2,
-.search-single-navigator fieldset.filtro_cor label.sr_verde .sr_box2 {
+.search-multiple-navigator fieldset.filtro_cor label.sr_verde-menta .sr_box2,
+.search-multiple-navigator fieldset.filtro_cor label.sr_verde-oceano .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_verde .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_verde-menta .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_verde-oceano .sr_box2 {
 	background-color: #4ed1c3;
 }
 
+.search-multiple-navigator fieldset.filtro_cor label.sr_perola .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_perola .sr_box2 {
+	border: 1px solid;
+	background-color: #fffff0;
+}
+
 .search-multiple-navigator fieldset.filtro_cor label.sr_vermelho .sr_box2,
-.search-single-navigator fieldset.filtro_cor label.sr_vermelho .sr_box2 {
+.search-multiple-navigator fieldset.filtro_cor label.sr_vermelho-bordo .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_vermelho .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_vermelho-bordo .sr_box2 {
 	background-color: #e45049;
 }
 
@@ -4568,6 +4582,10 @@ body.produto .bread-crumb {
 	padding: 15px 0;
 }
 
+body.produto .skuList li {
+	padding-right: 30px;
+}
+
 body.produto .buy-box {
 	position: relative;
 }
@@ -4633,8 +4651,8 @@ body.produto .portal-notify-me-ref form input.btn-ok:hover {
 
 body.produto .sku-area button.btn-tabelaMedidas {
 	font-size: 12px;
-	top: 19px;
-	left: 91px;
+	top: 20px;
+	left: 95px;
 	border: none;
 	color: #18318f;
 	background: 0 0;
@@ -4918,15 +4936,11 @@ body.produto .Cor {
 
 body.produto .sku-area {
 	overflow: hidden;
-	margin-bottom: 20px;
 }
 
 body.produto .sku-selector-container {
 	overflow: hidden;
 	position: relative;
-	margin-bottom: 20px;
-	padding-bottom: 25px;
-	border-bottom: 1px solid #d1d1d1;
 }
 
 body.produto .sku-selector-container .medidas {
@@ -4967,6 +4981,7 @@ body.produto .skuList label {
 	border-radius: 5px;
 	text-align: center;
 	vertical-align: top;
+	margin-bottom: 10px;
 	display: inline-block;
 	border: 1px solid #bebebe;
 	background-color: #ededed;

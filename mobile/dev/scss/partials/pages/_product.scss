@@ -213,6 +213,22 @@ body.produto {
     }
 }
 
+body.produto .skuList label.error {
+    border: 1px solid red;
+}
+
+body.produto main span.error-picked {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: red !important;
+    display: none !important;
+    text-transform: uppercase;
+
+    &:first-of-type {
+        display: block !important;
+    }
+}
+
 body.produto main {
     overflow: hidden;
     padding: 20px 5px;
@@ -414,6 +430,8 @@ body.produto main .ProductImage .slider {
 }
 
 body.produto main .buy-box .buy-area {
+    z-index: 99;
+    position: relative;
     text-align: center;
 }
 
@@ -540,6 +558,7 @@ body.produto .buy-box button.bg-blue {
 body.produto .buy-box .bt-comprar {
     @include font-size(2);
     @extend .transition;
+    width: 100%;
     color: #fff;
     border: none;
     height: 60px;

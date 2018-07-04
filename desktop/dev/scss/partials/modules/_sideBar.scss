@@ -62,68 +62,69 @@
 					background-color: #00f;
 				}
 
-				&.sr_amarelo{
+				&.sr_amarelo {
 					.sr_box2 {
 						background-color: #fcbb23;
 					}
 				}
 
-				&.sr_branco{
+				&.sr_branco {
 					.sr_box2 {
 						background-color: #fff;
 						border: 1px solid #eaeaea;
 					}
 				}
 
-				&.sr_azul{
+				&.sr_azul {
 					.sr_box2 {
 						background-color: #0000ff;
 					}
 				}
 
-				&.sr_azul_claro{
+				&.sr_azul_claro {
 					.sr_box2 {
 						background-color: #658ebc;
 					}
 				}
 
-				&.sr_azul_marinho{
+				&.sr_azul_marinho {
 					.sr_box2 {
 						background-color: #0f1d42;
 					}
 				}
 
-				&.sr_bege{
+				&.sr_bege,
+				&.sr_bege-cha {
 					.sr_box2 {
 						background-color: #e2cfae;
 					}
 				}
 
-				&.sr_branco{
+				&.sr_branco {
 					.sr_box2 {
 						background-color: #fff;
 					}
 				}
 
-				&.sr_bronze{
+				&.sr_bronze {
 					.sr_box2 {
 						background-color: #895837;
 					}
 				}
 
-				&.sr_caqui{
+				&.sr_caqui {
 					.sr_box2 {
 						background-color: #856d41;
 					}
 				}
 
-				&.sr_caramelo{
+				&.sr_caramelo {
 					.sr_box2 {
 						background-color: #d0822f;
 					}
 				}
 
-				&.sr_castanho{
+				&.sr_castanho {
 					.sr_box2 {
 						background-color: #3e2101;
 					}
@@ -243,13 +244,23 @@
 					}
 				}
 
-				&.sr_verde{
+				&.sr_verde,
+				&.sr_verde-menta,
+				&.sr_verde-oceano{
 					.sr_box2 {
 						background-color: #4ed1c3;
 					}
 				}
 
-				&.sr_vermelho{
+				&.sr_perola{
+					.sr_box2{
+						border: 1px solid;
+						background-color: #fffff0;
+					}
+				}
+
+				&.sr_vermelho,
+				&.sr_vermelho-bordo{
 					.sr_box2 {
 						background-color: #e45049;
 					}

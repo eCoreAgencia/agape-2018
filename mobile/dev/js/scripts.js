@@ -183,9 +183,9 @@
 	  var myWidth = $('body').width();
 	  $('.search-box').css('width', myWidth+'px');
 
-	  $('<img class="ico-vert" src="/arquivos/ico-perfil.png" />').insertBefore('body.orders .txt-center');
-	  $('<img class="ico-vert" src="/arquivos/ico-perfil.png" />').insertBefore('.profile-detail-display h4');
-	  $('<img class="ico-vert" src="/arquivos/ico-endereco.png" />').insertBefore('.address-display-block h4');
+	  $('<svg class="ico-vert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258.75 258.75" width="35" height="35"><g fill="#fff"><circle cx="129.375" cy="60" r="60"></circle><path d="M129.375 150c-60.061 0-108.75 48.689-108.75 108.75h217.5c0-60.061-48.689-108.75-108.75-108.75z"></path></g></svg>').insertBefore('body.orders .txt-center');
+	  $('<svg class="ico-vert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258.75 258.75" width="35" height="35"><g fill="#fff"><circle cx="129.375" cy="60" r="60"></circle><path d="M129.375 150c-60.061 0-108.75 48.689-108.75 108.75h217.5c0-60.061-48.689-108.75-108.75-108.75z"></path></g></svg>').insertBefore('.profile-detail-display h4');
+	  $('<svg class="ico-vert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.053 512.053" width="35" height="35"><path d="M365.027 44.5c-30-29.667-66.333-44.5-109-44.5s-79 14.833-109 44.5-45 65.5-45 107.5c0 25.333 12.833 67.667 38.5 127 25.667 59.334 51.333 113.334 77 162s38.5 72.334 38.5 71c4-7.334 9.5-17.334 16.5-30s19.333-36.5 37-71.5 33.167-67.166 46.5-96.5c13.334-29.332 25.667-59.667 37-91s17-55 17-71c0-42-15-77.833-45-107.5zm-76 139.5c-9.333 9.333-20.5 14-33.5 14s-24.167-4.667-33.5-14-14-20.5-14-33.5 4.667-24 14-33 20.5-13.5 33.5-13.5 24.167 4.5 33.5 13.5 14 20 14 33-4.667 24.167-14 33.5z" fill="#f68026"/></svg>').insertBefore('.address-display-block h4');
 
 	  $('.prateleira li').each(function(event){
 		  var me = $(this);
@@ -240,11 +240,13 @@
 				  
 				  if($('ul.Tamanho label.checked').length == 0){
 					  $('body.produto ul.Tamanho .skuList label').addClass('error');
+					  $('ul.Tamanho .error-picked').remove();
 					  $('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Tamanho li.specification');
 				  }
   
 				  if($('ul.Cor label.checked').length == 0){
-					  $('body.produto ul.Tamanho .skuList label').addClass('error');
+					  $('body.produto ul.Cor .skuList label').addClass('error');
+					  $('ul.Cor .error-picked').remove();
 					  $('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Cor li.specification');
 				  }
 				  
@@ -289,11 +291,13 @@
 			  if($(myBt).attr('href') == "javascript:alert('Por favor, selecione o modelo desejado.');" ) {
 				  if($('ul.Tamanho label.checked').length == 0){
 					  $('body.produto ul.Tamanho .skuList label').addClass('error');
+					  $('ul.Tamanho .error-picked').remove();
 					  $('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Tamanho li.specification');
 				  }
   
 				  if($('ul.Cor label.checked').length == 0){
-					  $('body.produto ul.Tamanho .skuList label').addClass('error');
+					  $('body.produto ul.Cor .skuList label').addClass('error');
+					  $('ul.Cor .error-picked').remove();
 					  $('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Cor li.specification');
 				  }
 				  
@@ -301,7 +305,31 @@
 					  behavior: 'smooth' 
 				  });
 			  } else {
-				  $(myBt).simulateClick('click');
+				var myBtLink = $('.buy-box .buy-button').attr('href');
+				  
+				$.get(myBtLink, function(data) {
+					vtexjs.checkout.getOrderForm().done(function(orderForm) {
+						console.log(orderForm);
+						
+						var elements = orderForm.items;
+						$(elements).each(function(orderForm, val){
+							var tempPrice = val.formattedPrice;
+							var tempImage = val.imageUrl;
+							var tempName = val.name;
+							
+							$('.sta-cart-items ul li.fake-insert').remove();
+							$('<li class="fake-insert"><div class="sta-cart-pdt-image"></div><div class="sta-cart-pdt-info"><button class="remove-item" data-index="0"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><polygon fill="#000" points="88.711,86.588 52.121,50 88.709,13.412 86.588,11.291 50,47.878 13.41,11.291 11.289,13.412   47.878,50 11.289,86.588 13.41,88.709 50,52.12 86.59,88.709 "></polygon></svg><span>remover</span></button><div class="sta-cart-pdt-qtd"></div></div></li>').appendTo('.sta-cart-items ul');
+							$('<img src='+tempImage+'/>').appendTo('li.fake-insert .sta-cart-pdt-image');
+							$('<h4>'+tempName+'</h4>').insertBefore('li.fake-insert .sta-cart-pdt-info button');
+							$('<p>'+tempPrice+'</p>').insertAfter('li.fake-insert .sta-cart-pdt-qtd');
+							var tempPrice = $('.total-cart-em').text();
+							$('.sta-cart-total strong').text(tempPrice);
+
+							htmlBody.animate({ scrollTop: 0 }, 300);
+							$('.amount-items-em').simulateClick('click');
+						});
+					});
+				});
 			  }
 		  });
   
@@ -641,6 +669,53 @@
 				  });
 			  // Controller Image Thumbs, Featured //
   
+			// Change Pic //
+				body.on('click', '.Cor .skuList label', function(event){
+					$('.Cor .skuList label').removeClass('checked');
+					$(this).addClass('checked');
+
+					$('.ProductImage .slider ul li').remove();
+
+					window.currentColor = $(this).text();
+					console.log(currentColor);
+					var x = "";
+
+					var id = $('#___rc-p-id').attr("value");
+					var data = "/api/catalog_system/pub/products/search/?fq=productId:"+id+"";
+
+					$.getJSON(data, function(data) {
+						$.each(data, function(key, val) {
+							var elements = val.items;
+							$(elements).each(function(i, items, key, val){
+								if(elements[i].Cor == currentColor) {
+									window.me = $(this);
+									var colors = elements[i];
+								}
+							});
+
+							var changeColor = me[0].images;
+
+							$(changeColor).each(function(data, val){
+								// Take Images //
+									var myImageID = val.imageId;
+									var myImageName = val.imageText;
+									$('<li><img src="/arquivos/ids/'+myImageID+'-650-650/'+myImageName+'.jpg" /></li>').appendTo('.ProductImage .slider ul');
+								// Take Images //
+							});
+
+							$('.ProductImage .slider ul').slick({
+								autoplay: false,
+								arrows: false,
+								dots: true,
+								draggable: true,
+								touchMove: true,
+								slidesToShow: 1,
+								slidesToScroll: 1
+							});
+						});
+					});
+				});
+			// Change Pic //
 		  }
 	  // Scripts Pagina de Produto //
   

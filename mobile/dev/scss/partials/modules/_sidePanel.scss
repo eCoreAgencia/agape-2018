@@ -25,6 +25,9 @@ header .menu-header{
 	background: #fff;
 	overflow-y: scroll;
 	transform: translateX(-100%);
+	@media  (max-device-width: 780px) and (orientation: landscape) {
+		height: 80%;
+	}
 
 	&.display{
 		transform: translateX(0);

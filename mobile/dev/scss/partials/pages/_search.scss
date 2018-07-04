@@ -168,11 +168,6 @@ body.dep-cat-bus{
 		    padding: 10px 15px;
 		    background: #0180b7;
 		    width: calc(100% - 30px);
-		    @include mq($screen-md){
-		    	width: auto;
-		    	margin: 15px auto;
-		    	position: relative;
-		    }
 		}
 	
 		li{
@@ -184,6 +179,7 @@ body.dep-cat-bus{
 				padding-left: 0;
 				text-decoration: none;
 				text-transform: initial;
+
 				&:hover{
 					padding-left: 10px;
 					text-decoration: underline;
@@ -196,20 +192,18 @@ body.dep-cat-bus{
 			left: 0;
 			width: 100%;
 			z-index: 90;
-			height: 100%;
+			height: 82%;
 			background: #fff;
 			overflow-y: scroll;
-			@include mq($screen-md) {
-				opacity:1;
-				transform: none;
-				box-shadow: none;
-				overflow: hidden;
-				padding-right: 4%;
-				position: relative;
+
+			@media (max-device-width: 780px) and (orientation: landscape) {
+				height: 73%;
 			}
+
 			.menu-departamento{
 				padding: 0;
 			}
+
 			.close-filters{
 			    border: 0;
 			    float: right;
@@ -229,9 +223,6 @@ body.dep-cat-bus{
 			overflow: hidden;
 			align-items: center;
 			justify-content: space-between;
-			@include mq($screen-md){
-				display: block;
-			}
 
 			.orderBy{
 				@include font-size(1.2);
@@ -276,10 +267,6 @@ body.dep-cat-bus{
 
 			.select2-container--default{
 				display: none;
-			}
-
-			@include mq($screen-sm) {
-				float: none !important;
 			}
 		}
 	}

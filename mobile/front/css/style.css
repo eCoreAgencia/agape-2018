@@ -717,7 +717,12 @@ body.menu-active {
 
 body.menu-active footer,
 body.menu-active .mainShelf,
-body.menu-active .breadcrumbs {
+body.menu-active .breadcrumbs,
+body.menu-active .product-box,
+body.menu-active .troca,
+body.menu-active #prod-info,
+body.menu-active .produtos-similares,
+body.menu-active .box-yourviews-container {
 	display: none;
 }
 
@@ -2663,7 +2668,9 @@ button {
 }
 
 .search-multiple-navigator fieldset.filtro_cor label.sr_bege .sr_box2,
-.search-single-navigator fieldset.filtro_cor label.sr_bege .sr_box2 {
+.search-multiple-navigator fieldset.filtro_cor label.sr_bege-cha .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_bege .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_bege-cha .sr_box2 {
 	background-color: #e2cfae;
 }
 
@@ -2788,12 +2795,24 @@ button {
 }
 
 .search-multiple-navigator fieldset.filtro_cor label.sr_verde .sr_box2,
-.search-single-navigator fieldset.filtro_cor label.sr_verde .sr_box2 {
+.search-multiple-navigator fieldset.filtro_cor label.sr_verde-menta .sr_box2,
+.search-multiple-navigator fieldset.filtro_cor label.sr_verde-oceano .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_verde .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_verde-menta .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_verde-oceano .sr_box2 {
 	background-color: #4ed1c3;
 }
 
+.search-multiple-navigator fieldset.filtro_cor label.sr_perola .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_perola .sr_box2 {
+	border: 1px solid;
+	background-color: #fffff0;
+}
+
 .search-multiple-navigator fieldset.filtro_cor label.sr_vermelho .sr_box2,
-.search-single-navigator fieldset.filtro_cor label.sr_vermelho .sr_box2 {
+.search-multiple-navigator fieldset.filtro_cor label.sr_vermelho-bordo .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_vermelho .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_vermelho-bordo .sr_box2 {
 	background-color: #e45049;
 }
 
@@ -4833,6 +4852,22 @@ body.produto .thumbnails li:last-child {
 	margin-bottom: 0;
 }
 
+body.produto .skuList label.error {
+	border: 1px solid red;
+}
+
+body.produto main span.error-picked {
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: red !important;
+	display: none !important;
+	text-transform: uppercase;
+}
+
+body.produto main span.error-picked:first-of-type {
+	display: block !important;
+}
+
 body.produto main {
 	overflow: hidden;
 	padding: 20px 5px;
@@ -5034,6 +5069,8 @@ body.produto main .ProductImage .slider {
 }
 
 body.produto main .buy-box .buy-area {
+	z-index: 99;
+	position: relative;
 	text-align: center;
 }
 
@@ -5157,6 +5194,7 @@ body.produto .buy-box button.bg-blue {
 
 body.produto .buy-box .bt-comprar {
 	font-size: 20px;
+	width: 100%;
 	color: #fff;
 	border: none;
 	height: 60px;
@@ -5760,7 +5798,7 @@ body.dep-cat-bus .sidebar .navigation-tabs {
 	left: 0;
 	width: 100%;
 	z-index: 90;
-	height: 100%;
+	height: 82%;
 	background: #fff;
 	overflow-y: scroll;
 }
@@ -6019,8 +6057,11 @@ body.account header.menu-persistente {
 }
 
 body.account .ico-vert {
-	margin-right: 5px;
+	padding: 8px;
+	border-radius: 50%;
+	margin: 0px 5px 0px 0;
 	display: inline-block;
+	background-color: #F68026;
 	vertical-align: text-bottom;
 }
 
@@ -6068,7 +6109,7 @@ body.account #profile-submit {
 }
 
 body.account main {
-	z-index: inherit;
+	z-index: unset;
 	overflow: hidden;
 	background-color: #fff;
 }
@@ -6543,9 +6584,12 @@ body.orders header {
 }
 
 body.orders .ico-vert {
-	margin-right: 5px;
+	padding: 8px;
+	border-radius: 50%;
+	margin: 0px 5px 0px 0;
 	display: inline-block;
-	vertical-align: text-bottom;
+	vertical-align: bottom;
+	background-color: #F68026;
 }
 
 body.orders h2.page-title {
@@ -7088,6 +7132,24 @@ html {
 	display: none !important;
 }
 
+@media (max-device-width: 780px) and (orientation: landscape) {
+
+header .menu-header {
+	height: 80%;
+}
+
+body.dep-cat-bus .sidebar .navigation-tabs {
+	height: 73%;
+}
+
+body.account .modal form {
+	height: 255px;
+	max-width: 500px;
+	margin-left: -250px;
+}
+
+}
+
 @media (min-width: 768px) and (max-width: 1289px) {
 
 .visible-sm {
@@ -7364,10 +7426,6 @@ header.menu-persistente {
 	width: 600px;
 	margin-left: -262px;
 	height: 330px;
-}
-
-body.dep-cat-bus #nav-dep .right {
-	float: none !important;
 }
 
 body.institucional main #lista-lojas {
@@ -7674,11 +7732,6 @@ body.home main .shelf-title h2 {
 	margin-left: 100%;
 }
 
-.search-multiple-navigator,
-.search-single-navigator {
-	margin-top: 10px;
-}
-
 .search-multiple-navigator h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
@@ -7721,26 +7774,6 @@ header.menu-persistente .menu-header svg {
 
 .modal-box .close-modal {
 	margin-left: 268px;
-}
-
-body.dep-cat-bus .sidebar .customRefinar {
-	width: auto;
-	margin: 15px auto;
-	position: relative;
-}
-
-body.dep-cat-bus .sidebar .navigation-tabs {
-	opacity: 1;
-	-ms-transform: none;
-	    transform: none;
-	box-shadow: none;
-	overflow: hidden;
-	padding-right: 4%;
-	position: relative;
-}
-
-body.dep-cat-bus #nav-dep .right {
-	display: block;
 }
 
 body.institucional main {
