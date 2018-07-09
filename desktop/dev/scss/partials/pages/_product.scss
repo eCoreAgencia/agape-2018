@@ -5,16 +5,19 @@ body.produto .bread-crumb {
 }
 
 body.produto {
-
     .skuList {
         li {
             padding-right: 30px;
         }
     }
 
+    .codigo-produto {
+        line-height: 0;
+    }
+
     .buy-box {
         position: relative;
-    }
+    } 
 
     #calculoFrete {
         position: relative;
@@ -31,9 +34,9 @@ body.produto {
     }
 
     .portal-notify-me-ref {
+        top: 0;
         left: -7px;
         z-index: 1;
-        top: -122px;
         position: absolute;
         background-color: #fff;
 
@@ -84,7 +87,7 @@ body.produto {
     .sku-area {
         button.btn-tabelaMedidas {
             @include font-size(1.2);
-            top: 20px;
+            top: 10px;
             left: 95px;
             border: none;
             color: #18318f;
@@ -196,8 +199,6 @@ body.produto main li {
 }
 
 body.produto main .title-section {
-    margin-bottom: 5px;
-    padding-bottom: 5px;
     border-bottom: 1px solid #d1d1d1
 }
 
@@ -347,10 +348,14 @@ body.produto .Cor .specification,
 body.produto .Tamanho .specification {
     @include font-size(1.8);
     color: #666;
-    margin-top: 20px;
+    margin-top: 10px;
     line-height: 24px;
     margin-bottom: 10px;
     text-transform: uppercase
+}
+
+body.produto .Cor .specification {
+    margin-bottom: 16px;
 }
 
 body.produto .Cor.numopt-1 {
@@ -457,11 +462,11 @@ body.produto .skuList label:last-of-type {
 
 body.produto .sku-section {
     margin-right: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 body.produto .buy-box {
-    padding-top: 25px;
+    padding-top: 20px;
     border-top: 1px solid #d1d1d1
 }
 
@@ -858,4 +863,32 @@ body.produto .Cor .skuList label {
     40% {
         transform: scale(1.0);
     }
+}
+
+@media (max-width: 1024px) {
+	body.produto {
+		main {
+            .ProductImage {
+                .easyzoom {
+                    max-width: 410px;
+                }
+            }
+            .buy-box {
+                button.add-to-cart {
+                    @include font-size(1.7);
+                    width: 60%;
+                }
+            }
+            #calculoFrete {
+                .content {
+                    input {
+                        max-width: 99px;
+                    }
+                }
+            }
+            .shelfItem {
+                min-height: 440px;
+            }
+		} 
+	}
 }

@@ -23,6 +23,7 @@ body{
 	display: none;
 	min-height: 4500px;
 	position: absolute;
+	-webkit-overflow-scrolling: touch;
 
 	.close-modal {
 		@extend .transition;

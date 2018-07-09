@@ -237,6 +237,53 @@ select {
 	transform: translateY(-50%) scaleY(-1) scaleX(1.8);
 }
 
+.lds-heart {
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	opacity: 0.9;
+	display: none;
+	margin-left: -110%;
+	position: absolute;
+	background-color: #fff;
+	-ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+}
+
+.lds-heart.active {
+	display: inline-block;
+}
+
+.lds-heart div {
+	top: 86px;
+	left: 111px;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	background: #f68026;
+	animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 26px;
+	height: 26px;
+	background: #f68026;
+}
+
+.lds-heart div:before {
+	left: -17px;
+	border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+	top: -17px;
+	border-radius: 50% 50% 0 0;
+}
+
 /* ==========================================================================
    Base Classes
    ========================================================================== */
@@ -586,6 +633,10 @@ footer .portal-do-revendedor ul li {
 	text-transform: capitalize;
 }
 
+body {
+	-webkit-overflow-scrolling: touch;
+}
+
 .clearfix {
 	*zoom: 1;
 }
@@ -713,6 +764,7 @@ body.menu-active {
 	position: fixed;
 	overflow: hidden;
 	max-height: 100px;
+	-webkit-overflow-scrolling: touch;
 }
 
 body.menu-active footer,
@@ -758,6 +810,7 @@ button {
 
 body {
 	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
 }
 
 /*
@@ -2407,53 +2460,6 @@ button {
 	height: auto;
 }
 
-.box-item .lds-heart {
-	left: 50%;
-	width: 200%;
-	height: 200%;
-	opacity: 0.9;
-	display: none;
-	margin-left: -110%;
-	position: absolute;
-	background-color: #fff;
-	-ms-transform: rotate(45deg);
-	    transform: rotate(45deg);
-}
-
-.box-item .lds-heart.active {
-	display: inline-block;
-}
-
-.box-item .lds-heart div {
-	top: 86px;
-	left: 111px;
-	width: 26px;
-	height: 26px;
-	position: absolute;
-	background: #f68026;
-	animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.box-item .lds-heart div:after,
-.box-item .lds-heart div:before {
-	content: " ";
-	position: absolute;
-	display: block;
-	width: 26px;
-	height: 26px;
-	background: #f68026;
-}
-
-.box-item .lds-heart div:before {
-	left: -17px;
-	border-radius: 50% 0 0 50%;
-}
-
-.box-item .lds-heart div:after {
-	top: -17px;
-	border-radius: 50% 50% 0 0;
-}
-
 .box-item .buttons {
 	display: -ms-flexbox;
 	display: flex;
@@ -4101,6 +4107,7 @@ header .menu-header {
 	overflow-y: scroll;
 	-ms-transform: translateX(-100%);
 	    transform: translateX(-100%);
+	-webkit-overflow-scrolling: touch;
 }
 
 header .menu-header.display {
@@ -4112,6 +4119,7 @@ header .menu-header.display .menu-item {
 	overflow: hidden;
 	background: #f4f4f4;
 	border-bottom: 1px solid #ccc;
+	-webkit-overflow-scrolling: touch;
 }
 
 header .menu-header.display .menu-item .submenu li {
@@ -4270,6 +4278,7 @@ body.modal-active .modal-box .modal-container {
 	display: none;
 	min-height: 4500px;
 	position: absolute;
+	-webkit-overflow-scrolling: touch;
 }
 
 .modal-box .close-modal {
@@ -4654,6 +4663,17 @@ body.home main .slider-escolha-por-santos nav ul li a:after {
 	background: url(/arquivos/right-arrow-santo-branco.png) no-repeat scroll 0 0 transparent;
 }
 
+body.produto .lds-heart {
+	z-index: 2;
+	left: 85px;
+	width: 130%;
+	height: 310%;
+	background: none;
+	position: absolute;
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
 body.produto .close-bt-opacity {
 	font-size: 20px;
 	top: -15px;
@@ -4697,6 +4717,7 @@ body.produto.opacity-active .sku-section {
 	z-index: 999999999;
 	position: relative;
 	background-color: #fff;
+	-webkit-overflow-scrolling: touch;
 }
 
 body.produto .breadcrumbs {
@@ -4725,6 +4746,7 @@ body.produto .compra-persistente-bt {
 	text-decoration: none;
 	text-transform: lowercase;
 	background-color: #00bb4f;
+	-webkit-overflow-scrolling: touch;
 	z-index: 9999999999999999999999999999999999999;
 }
 
@@ -4869,7 +4891,7 @@ body.produto main span.error-picked:first-of-type {
 }
 
 body.produto main {
-	overflow: hidden;
+	overflow: unset;
 	padding: 20px 5px;
 	position: relative;
 }
@@ -5065,6 +5087,7 @@ body.produto main .ProductImage {
 }
 
 body.produto main .ProductImage .slider {
+	min-height: 380px;
 	margin-bottom: 20px;
 }
 
@@ -5750,6 +5773,7 @@ body.dep-cat-bus .sidebar {
 	overflow-y: scroll;
 	-ms-transform: translateX(-100%);
 	    transform: translateX(-100%);
+	-webkit-overflow-scrolling: touch;
 }
 
 body.dep-cat-bus .sidebar.active {
@@ -5801,6 +5825,7 @@ body.dep-cat-bus .sidebar .navigation-tabs {
 	height: 82%;
 	background: #fff;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 body.dep-cat-bus .sidebar .navigation-tabs .menu-departamento {
@@ -6242,6 +6267,7 @@ body.account .modal {
 	display: none;
 	position: fixed;
 	background: rgba(0, 0, 0, 0.6);
+	-webkit-overflow-scrolling: touch;
 }
 
 body.account .modal form {
@@ -6253,6 +6279,7 @@ body.account .modal form {
 	max-width: 300px;
 	overflow-y: scroll;
 	margin-left: -150px;
+	-webkit-overflow-scrolling: touch;
 }
 
 body.account .modal-header {
@@ -7136,6 +7163,7 @@ html {
 
 header .menu-header {
 	height: 80%;
+	-webkit-overflow-scrolling: touch;
 }
 
 body.dep-cat-bus .sidebar .navigation-tabs {

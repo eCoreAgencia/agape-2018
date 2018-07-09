@@ -126,12 +126,14 @@ function priceStatus() {
 		var me = $(this);
 
 		var myDrop = $(this).find('.drop');
+		var myOldBox = $(this).find('.shelfOldPrice');
 		var myOld = $(this).find('.shelfOldPrice').text();
 		var myNew = $('<span class="txt-sz-16 shelfBestPrice txt-gray">ou '+myOld+' à vista</span>');
 		var myBest = $(this).find('.shelfBestPrice');
 		var myInstallments = $(this).find('.shelfInstallment');
 
 		if($(myBest).length == 0){
+			myOldBox.hide();
 			myDrop.css('margin-top', '-4px');
 			myNew.insertAfter(myInstallments);
 			myInstallments.css('border', 'none');
@@ -223,12 +225,12 @@ $(function() {
 				
 				if($('ul.Tamanho label.checked').length == 0){
 					$('body.produto ul.Tamanho .skuList label').addClass('error');
-					$('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Tamanho li.specification');
+					$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.specification');
 				}
 
 				if($('ul.Cor label.checked').length == 0){
-					$('body.produto ul.Tamanho .skuList label').addClass('error');
-					$('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Cor li.specification');
+					$('body.produto ul.Cor .skuList label').addClass('error');
+					$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
 				}
 				
 				document.querySelector('#id3').scrollIntoView({ 
@@ -272,12 +274,12 @@ $(function() {
 			if($(myBt).attr('href') == "javascript:alert('Por favor, selecione o modelo desejado.');" ) {
 				if($('ul.Tamanho label.checked').length == 0){
 					$('body.produto ul.Tamanho .skuList label').addClass('error');
-					$('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Tamanho li.specification');
+					$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.specification');
 				}
 
 				if($('ul.Cor label.checked').length == 0){
-					$('body.produto ul.Tamanho .skuList label').addClass('error');
-					$('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Cor li.specification');
+					$('body.produto ul.Cor .skuList label').addClass('error');
+					$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
 				}
 				
 				document.querySelector('#id3').scrollIntoView({ 
@@ -288,9 +290,14 @@ $(function() {
 			}
 		});
 
-		body.on('click', '.skuList label', function(event){
-			$('.error-picked').remove();
-			$('.skuList label').removeClass('error');
+		body.on('click', 'ul.Tamanho .skuList label', function(event){
+			$('ul.Tamanho .error-picked').remove();
+			$('ul.Tamanho .skuList label').removeClass('error');
+		});
+
+		body.on('click', 'ul.Cor .skuList label', function(event){
+			$('ul.Cor .error-picked').remove();
+			$('ul.Cor .skuList label').removeClass('error');
 		});
 
 	// Add to Cart Button //
@@ -526,9 +533,9 @@ $(function() {
 		        	$('.shipping-value').simulateClick('click');
 		        // Frete Gratis //
 
-				$('ul.Cor').addClass('col-md-6 col-xs-12');
+				$('ul.Cor').addClass('col-md-4 col-xs-12');
 				$('ul.Cor').insertAfter('ul.Tamanho');
-				$('ul.Tamanho').addClass('col-md-6 col-xs-12');
+				$('ul.Tamanho').addClass('col-md-8 col-xs-12');
 				$('.btn-tabelaMedidas').insertAfter('.sku-selector-container .Cor');
 
 		        // Script Mudando regulamento de lugar

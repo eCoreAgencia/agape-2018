@@ -144,3 +144,13 @@
 		}
 	}
 }
+
+@media (max-width: 1024px) {
+	.Newsletter {
+		.form-newsletter {
+			input {
+				width: 280px;
+			}
+		}
+	}
+}

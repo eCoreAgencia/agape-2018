@@ -72,6 +72,129 @@ body.institucional {
 		}
 	}
 
+	&.fale-conosco {
+
+		.success-msg {
+			text-align: center;
+			padding-bottom: 40px;
+
+			svg {
+				margin-right: 20px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			div {
+				h3 {
+					margin-bottom: 0;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.form-area {
+			h2.title-page {
+				color: #f68026;
+				text-align: center;
+				font-weight: normal;
+
+				i {
+					margin-right: 10px;
+					vertical-align: -webkit-baseline-middle;
+				}
+
+				p.big-title {
+					@include font-size(3);
+					text-align: center;
+
+					strong {
+						font-weight: bold;
+					}	
+				}
+
+				p.small-title {
+					@include font-size(1.4);
+					color: #666;
+					text-align: center;
+				}
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+
+		.form-faleConosco {
+			margin-top: 20px;
+			overflow: hidden;
+			margin-bottom: 20px;
+
+			span.error-msg {
+				color: red;
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			fieldset {
+				margin-bottom: 10px;
+
+				legend {
+					display: none;
+				}
+
+				&.error-msg {
+					input,
+					select,
+					textarea {
+						border: 1px solid red;
+					}
+				}
+
+				input,
+				select,
+				textarea {
+					@include font-size(1.4);
+					@extend .transition;
+					outline: 0;
+					width: 100%;
+					height: 30px;
+					resize: none;
+					color: #bebebe;
+					border-radius: 5px;
+					background-color: #fff;
+					border: 1px solid #bebebe;
+					padding: 20px 40px 20px 20px;
+				}
+
+				select {
+					height: 41px;
+				}
+
+				textarea {
+					height: 120px;
+				}
+			}
+
+			button {
+				@extend .transition;
+				border: none;
+				float: right;
+				width: 100px;
+				height: 30px;
+				color: #fff;
+				cursor: pointer;
+				appearance: none;
+				line-height: 30px;
+				background-color: #00bb4f;
+
+				&:hover {
+					@extend .transition;
+					background-color: #f68026;
+				}
+			}
+		}
+	}
+
 	.main-institucional__content {
 		h2 {
 			@include font-size(2);

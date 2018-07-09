@@ -66,6 +66,60 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
   -ms-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) scaleY(-1) scaleX(1.8); }
 
+.lds-heart {
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  opacity: 0.9;
+  display: none;
+  margin-left: -110%;
+  position: absolute;
+  background-color: #fff;
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .lds-heart.active {
+    display: inline-block; }
+
+.lds-heart div {
+  top: 86px;
+  left: 111px;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  background: #f68026;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: #f68026; }
+
+.lds-heart div:before {
+  left: -17px;
+  border-radius: 50% 0 0 50%; }
+
+.lds-heart div:after {
+  top: -17px;
+  border-radius: 50% 50% 0 0; }
+
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95); }
+  5% {
+    transform: scale(1.1); }
+  39% {
+    transform: scale(0.85); }
+  45% {
+    transform: scale(1); }
+  60% {
+    transform: scale(0.95); }
+  100% {
+    transform: scale(0.9); } }
+
 /* ==========================================================================
    Base Classes
    ========================================================================== */
@@ -196,6 +250,9 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
 .txt-cap, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li {
   text-transform: capitalize; }
 
+body {
+  -webkit-overflow-scrolling: touch; }
+
 .clearfix {
   *zoom: 1; }
   .clearfix:before, .clearfix:after {
@@ -214,7 +271,8 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
 body.menu-active {
   position: fixed;
   overflow: hidden;
-  max-height: 100px; }
+  max-height: 100px;
+  -webkit-overflow-scrolling: touch; }
   body.menu-active footer,
   body.menu-active .mainShelf,
   body.menu-active .breadcrumbs,
@@ -246,7 +304,8 @@ input, textarea, select, button {
   background-color: #0099cc; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
 
 /*
    Breakpoints

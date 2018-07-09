@@ -76,7 +76,8 @@
 					}
 				}
 
-				&.sr_branco {
+				&.sr_branco,
+				&.&.sr_off-white {
 					.sr_box2 {
 						background-color: #fff;
 						border: 1px solid #eaeaea;

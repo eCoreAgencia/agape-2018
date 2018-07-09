@@ -1,5 +1,16 @@
 body.produto {
 
+    .lds-heart {
+        z-index: 2;
+        left: 85px;
+        width: 130%;
+        height: 310%;
+        background: none;
+        position: absolute;
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
     .close-bt-opacity {
         @include font-size(2);
         top: -15px;
@@ -43,6 +54,7 @@ body.produto {
             z-index: 999999999;
             position: relative;
             background-color: #fff;
+            -webkit-overflow-scrolling: touch;
         }
     }
 
@@ -75,6 +87,7 @@ body.produto {
         text-decoration: none;
         text-transform: lowercase;
         background-color: #00bb4f;
+        -webkit-overflow-scrolling: touch;
         z-index: 9999999999999999999999999999999999999;
 
         &.active {
@@ -230,7 +243,7 @@ body.produto main span.error-picked {
 }
 
 body.produto main {
-    overflow: hidden;
+    overflow: unset;
     padding: 20px 5px;
     position: relative;
 }
@@ -426,6 +439,7 @@ body.produto main .ProductImage {
 }
 
 body.produto main .ProductImage .slider {
+    min-height: 380px;
     margin-bottom: 20px;
 }
 

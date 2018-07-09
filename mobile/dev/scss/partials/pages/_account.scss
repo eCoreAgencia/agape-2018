@@ -200,6 +200,7 @@ body.account {
 		display: none;
 		position: fixed;
 		background: rgba(#000, .6);
+		-webkit-overflow-scrolling: touch;
 
 		form {
 			top: 40px;
@@ -210,6 +211,7 @@ body.account {
 			max-width: 300px;
 			overflow-y: scroll;
 			margin-left: -150px;
+			-webkit-overflow-scrolling: touch;
 		}
 
 		@media  (max-device-width: 780px) and (orientation: landscape) {

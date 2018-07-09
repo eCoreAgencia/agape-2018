@@ -28,12 +28,17 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 	width: 100%;
 	margin: 0 auto;
 	max-width: $container-max-width;
+
+	@media (max-width: 1024px) {
+		max-width: 1024px;
+	}
 	.row{
 		clear:both;
 		width:100%;
 		display:inline-block;
 	}
 }
+
 
 /*
    Cores

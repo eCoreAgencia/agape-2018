@@ -51,3 +51,11 @@ input, textarea, select, button{
 body{
 	overflow-x: hidden; 
 }
+
+@media (max-width: 1024px) {
+	.prateleira {
+		.slick-slider {
+			min-height: 340px;
+		}
+	}
+}

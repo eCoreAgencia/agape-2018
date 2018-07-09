@@ -208,6 +208,7 @@
   
 	  // Color Sku not addClass Checked because is not the primary SKU element. Adding to work validation //
 		  body.on('click', '.Cor .skuList label', function(event){
+		      $('<div class="lds-heart active"><div></div></div>').insertBefore('.slider ul');
 			  $('.Cor .skuList label').removeClass('checked');
 			  $(this).addClass('checked');
   
@@ -241,13 +242,13 @@
 				  if($('ul.Tamanho label.checked').length == 0){
 					  $('body.produto ul.Tamanho .skuList label').addClass('error');
 					  $('ul.Tamanho .error-picked').remove();
-					  $('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Tamanho li.specification');
+					  $('<span class="error-picked">É Preciso selecionar o tamanho</span>').insertAfter('ul.Tamanho li.specification');
 				  }
   
 				  if($('ul.Cor label.checked').length == 0){
 					  $('body.produto ul.Cor .skuList label').addClass('error');
 					  $('ul.Cor .error-picked').remove();
-					  $('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Cor li.specification');
+					  $('<span class="error-picked">É Preciso selecionar a cor</span>').insertAfter('ul.Cor li.specification');
 				  }
 				  
 				  document.querySelector('#id3').scrollIntoView({ 
@@ -537,14 +538,18 @@
   
 	  // Scripts Pagina de Produto //
 		  if (pagProduto.length > 0) {
-
 				$('.compra-persistente-bt').on('click', function(event){
-					$('.close-bt-opacity').toggleClass('active');
-					$('body').toggleClass('opacity-active');
-					document.querySelector('#id3').scrollIntoView({ 
-						behavior: 'smooth' 
-					});
-				});
+					var myBtLink = $('.buy-box .buy-button');
+					if($(myBtLink).attr('href') == "javascript:alert('Por favor, selecione o modelo desejado.');" ) {
+						$('.close-bt-opacity').toggleClass('active');
+						$('body').toggleClass('opacity-active');
+						document.querySelector('#id3').scrollIntoView({ 
+							behavior: 'smooth' 
+						});
+					} else {
+						$('.bt-comprar').simulateClick('click');
+					}
+				});				
 
 				$('.close-bt-opacity').on('click', function(event){
 					$('body').removeClass('opacity-active');
@@ -671,10 +676,12 @@
   
 			// Change Pic //
 				body.on('click', '.Cor .skuList label', function(event){
+					$('<div class="lds-heart active"><div></div></div>').insertBefore('.slider ul');
 					$('.Cor .skuList label').removeClass('checked');
 					$(this).addClass('checked');
 
-					$('.ProductImage .slider ul li').remove();
+					$('.ProductImage .slider ul').remove();
+					$('<ul></ul>').appendTo('.ProductImage .slider');
 
 					window.currentColor = $(this).text();
 					console.log(currentColor);
@@ -702,6 +709,8 @@
 									$('<li><img src="/arquivos/ids/'+myImageID+'-650-650/'+myImageName+'.jpg" /></li>').appendTo('.ProductImage .slider ul');
 								// Take Images //
 							});
+
+							$('.lds-heart').remove();
 
 							$('.ProductImage .slider ul').slick({
 								autoplay: false,
@@ -809,7 +818,7 @@
 		  });
 
 		  $(document).ajaxComplete(function(){
-			$('.box-item ').each(function(){
+			$('.box-item').each(function(){
 				$('.lds-heart').remove();
 			});
 		  });
