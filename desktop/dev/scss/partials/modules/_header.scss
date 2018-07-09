@@ -2,6 +2,16 @@
    Header
    ========================================================================== */
 
+@media (max-width: 1024px) {
+	header {
+		.menu-header {
+			.submenu {
+				max-width: 1000px;
+			}
+		}
+	}
+}
+
 header{
 	width: 100%;
 	position: fixed;
@@ -134,15 +144,5 @@ header{
 body.login {
 	header {
 		z-index: 1;
-	}
-}
-
-@media (max-width: 1024px) {
-	header {
-		.menu-header {
-			.submenu {
-				max-width: 1000px;
-			}
-		}
 	}
 }

@@ -125,6 +125,10 @@ body.home{
 			img {
 				max-width: 100px;
 				margin-top: 23px;
+			
+				@media (max-device-width: 780px) and (orientation: landscape) {
+					margin-left: 70px;
+				}
 			}
 
 			h2 {
@@ -173,6 +177,10 @@ body.home{
 							text-decoration: none;
 							background-color: #f68026;
 							text-transform: uppercase;
+
+							@media (max-device-width: 780px) and (orientation: landscape) {
+								@include font-size(1.2);
+							}
 
 							&:after {
 								@extend .transition;

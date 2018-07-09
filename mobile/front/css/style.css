@@ -739,7 +739,6 @@ body.produto .portal-notify-me-ref form input.btn-ok:hover,
 body.produto .sku-section,
 body.produto .buy-box button.bg-blue,
 body.produto .buy-box .bt-comprar,
-body.produto .buy-box .buy-area .buy-button,
 body.produto main .troca h2:after,
 body.produto main .descricao h2:after,
 body.produto main .especificacoes h3:after,
@@ -750,6 +749,11 @@ body.dep-cat-bus .sidebar,
 body.dep-cat-bus .sidebar .customRefinar,
 body.dep-cat-bus .sidebar li a,
 body.dep-cat-bus .sidebar .navigation-tabs,
+body.institucional.fale-conosco .form-faleConosco fieldset input,
+body.institucional.fale-conosco .form-faleConosco fieldset select,
+body.institucional.fale-conosco .form-faleConosco fieldset textarea,
+body.institucional.fale-conosco .form-faleConosco button,
+body.institucional.fale-conosco .form-faleConosco button:hover,
 body.institucional .main-institucional__content ul li a:hover,
 body.institucional main a {
 	transition-duration: .3s;
@@ -2653,7 +2657,9 @@ button {
 }
 
 .search-multiple-navigator fieldset.filtro_cor label.sr_branco .sr_box2,
-.search-single-navigator fieldset.filtro_cor label.sr_branco .sr_box2 {
+.search-multiple-navigator fieldset.filtro_cor label.sr_off-white .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_branco .sr_box2,
+.search-single-navigator fieldset.filtro_cor label.sr_off-white .sr_box2 {
 	background-color: #fff;
 	border: 1px solid #eaeaea;
 }
@@ -4663,6 +4669,10 @@ body.home main .slider-escolha-por-santos nav ul li a:after {
 	background: url(/arquivos/right-arrow-santo-branco.png) no-repeat scroll 0 0 transparent;
 }
 
+body.produto.item_unavaliable .compra-persistente-bt {
+	display: none !important;
+}
+
 body.produto .lds-heart {
 	z-index: 2;
 	left: 85px;
@@ -4785,7 +4795,12 @@ body.produto .descricao {
 	border-bottom: 1px solid #ccc;
 }
 
-body.produto .portal-notify-me-ref {
+body.produto .portal-notify-me-ref .sku-notifyme {
+	top: 0;
+	left: -7px;
+	right: -7px;
+	height: 255px;
+	position: absolute;
 	background-color: #fff;
 }
 
@@ -5086,7 +5101,7 @@ body.produto main .ProductImage {
 	position: relative;
 }
 
-body.produto main .ProductImage .slider {
+body.produto main .ProductImage .prateleira .slider {
 	min-height: 380px;
 	margin-bottom: 20px;
 }
@@ -5163,6 +5178,153 @@ body.produto .skuList label {
 	background-color: #ededed;
 }
 
+body.produto .skuList label.skuespec_Amarelo {
+	background-color: #fcbb23;
+}
+
+body.produto .skuList label.skuespec_Branco,
+body.produto .skuList label.skuespec_Off-white {
+	background-color: #fff;
+	border: 1px solid #eaeaea;
+}
+
+body.produto .skuList label.skuespec_Azul {
+	background-color: #0000ff;
+}
+
+body.produto .skuList label.skuespec_Azul_claro {
+	background-color: #658ebc;
+}
+
+body.produto .skuList label.skuespec_Azul_marinho {
+	background-color: #0f1d42;
+}
+
+body.produto .skuList label.skuespec_Bege,
+body.produto .skuList label.skuespec_Bege-cha {
+	background-color: #e2cfae;
+}
+
+body.produto .skuList label.skuespec_Branco {
+	background-color: #fff;
+}
+
+body.produto .skuList label.skuespec_Bronze {
+	background-color: #895837;
+}
+
+body.produto .skuList label.skuespec_Caqui {
+	background-color: #856d41;
+}
+
+body.produto .skuList label.skuespec_Caramelo {
+	background-color: #d0822f;
+}
+
+body.produto .skuList label.skuespec_Castanho {
+	background-color: #3e2101;
+}
+
+body.produto .skuList label.skuespec_Chocolate {
+	background-color: #57362f;
+}
+
+body.produto .skuList label.skuespec_Cinza {
+	background-color: #6b6b6b;
+}
+
+body.produto .skuList label.skuespec_Creme {
+	background-color: #6b6b6b;
+}
+
+body.produto .skuList label.skuespec_Estampado {
+	background-color: #844345;
+}
+
+body.produto .skuList label.skuespec_Laranja {
+	background-color: #f73c07;
+}
+
+body.produto .skuList label.skuespec_Lilas {
+	background-color: #9d8dcb;
+}
+
+body.produto .skuList label.skuespec_Limao {
+	background-color: #48f86d;
+}
+
+body.produto .skuList label.skuespec_Madeira {
+	background-color: #644b35;
+}
+
+body.produto .skuList label.skuespec_Marfim {
+	background-color: #e0b370;
+}
+
+body.produto .skuList label.skuespec_Marrom {
+	background-color: #301701;
+}
+
+body.produto .skuList label.skuespec_Ocre {
+	background-color: #272725;
+}
+
+body.produto .skuList label.skuespec_Ouro {
+	background-color: #be9b47;
+}
+
+body.produto .skuList label.skuespec_Prata {
+	background-color: #76757b;
+}
+
+body.produto .skuList label.skuespec_Preto {
+	background-color: #000;
+}
+
+body.produto .skuList label.skuespec_Rosa {
+	background-color: #f968a9;
+}
+
+body.produto .skuList label.skuespec_Roxo {
+	background-color: #8756a1;
+}
+
+body.produto .skuList label.skuespec_Salmao {
+	background-color: #fd7360;
+}
+
+body.produto .skuList label.skuespec_Tangerina {
+	background-color: #e8740d;
+}
+
+body.produto .skuList label.skuespec_Turquesa {
+	background-color: #24c7b1;
+}
+
+body.produto .skuList label.skuespec_Verde,
+body.produto .skuList label.skuespec_Verde-menta,
+body.produto .skuList label.skuespec_Verde-oceano {
+	background-color: #4ed1c3;
+}
+
+body.produto .skuList label.skuespec_Perola {
+	border: 1px solid;
+	background-color: #fffff0;
+}
+
+body.produto .skuList label.skuespec_Vermelho,
+body.produto .skuList label.skuespec_Vermelho-bordo {
+	background-color: #e45049;
+}
+
+body.produto .skuList label.skuespec_Vinho {
+	background-color: #630015;
+}
+
+body.produto .skuList label.skuespec_Violeta {
+	background-color: #ba2161;
+}
+
 body.produto .skuList label.sku-picked,
 body.produto .skuList label:hover {
 	color: #fff;
@@ -5230,16 +5392,7 @@ body.produto .buy-box .bt-comprar {
 }
 
 body.produto .buy-box .buy-area .buy-button {
-	font-size: 20px;
-	color: #fff;
-	border: none;
-	height: 60px;
-	cursor: pointer;
-	line-height: 59px;
-	display: inline-block;
-	text-decoration: none;
-	text-transform: lowercase;
-	background-color: #00bb4f;
+	display: none !important;
 }
 
 body.produto main #popupCalculoFreteWrapper {
@@ -6713,6 +6866,123 @@ body.institucional.politica-de-troca main .main-institucional__content ul li det
 	padding-left: 30px;
 }
 
+body.institucional.fale-conosco main {
+	padding-left: 0 !important;
+}
+
+body.institucional.fale-conosco .success-msg {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+body.institucional.fale-conosco .success-msg svg {
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body.institucional.fale-conosco .success-msg div h3 {
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+body.institucional.fale-conosco .form-area h2.title-page {
+	color: #f68026;
+	text-align: center;
+	font-weight: normal;
+}
+
+body.institucional.fale-conosco .form-area h2.title-page i {
+	margin-right: 10px;
+	vertical-align: -webkit-baseline-middle;
+}
+
+body.institucional.fale-conosco .form-area h2.title-page p.big-title {
+	font-size: 30px;
+	text-align: center;
+}
+
+body.institucional.fale-conosco .form-area h2.title-page p.big-title strong {
+	font-weight: bold;
+}
+
+body.institucional.fale-conosco .form-area h2.title-page p.small-title {
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+}
+
+body.institucional.fale-conosco .form-area h2.title-page:before {
+	display: none;
+}
+
+body.institucional.fale-conosco .form-faleConosco {
+	margin-top: 20px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+body.institucional.fale-conosco .form-faleConosco span.error-msg {
+	color: red;
+	display: block;
+	margin-bottom: 10px;
+}
+
+body.institucional.fale-conosco .form-faleConosco fieldset {
+	margin-bottom: 10px;
+}
+
+body.institucional.fale-conosco .form-faleConosco fieldset legend {
+	display: none;
+}
+
+body.institucional.fale-conosco .form-faleConosco fieldset.error-msg input,
+body.institucional.fale-conosco .form-faleConosco fieldset.error-msg select,
+body.institucional.fale-conosco .form-faleConosco fieldset.error-msg textarea {
+	border: 1px solid red;
+}
+
+body.institucional.fale-conosco .form-faleConosco fieldset input,
+body.institucional.fale-conosco .form-faleConosco fieldset select,
+body.institucional.fale-conosco .form-faleConosco fieldset textarea {
+	font-size: 14px;
+	outline: 0;
+	width: 100%;
+	height: 30px;
+	resize: none;
+	color: #bebebe;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #bebebe;
+	padding: 20px 40px 20px 20px;
+}
+
+body.institucional.fale-conosco .form-faleConosco fieldset select {
+	height: 41px;
+}
+
+body.institucional.fale-conosco .form-faleConosco fieldset textarea {
+	height: 120px;
+}
+
+body.institucional.fale-conosco .form-faleConosco button {
+	border: none;
+	float: right;
+	width: 100px;
+	height: 30px;
+	color: #fff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	line-height: 30px;
+	background-color: #00bb4f;
+}
+
+body.institucional.fale-conosco .form-faleConosco button:hover {
+	background-color: #f68026;
+}
+
 body.institucional .main-institucional__content {
 	margin-top: 30px;
 }
@@ -7164,6 +7434,14 @@ html {
 header .menu-header {
 	height: 80%;
 	-webkit-overflow-scrolling: touch;
+}
+
+body.home main .slider-escolha-por-santos img {
+	margin-left: 70px;
+}
+
+body.home main .slider-escolha-por-santos nav ul li a {
+	font-size: 12px;
 }
 
 body.dep-cat-bus .sidebar .navigation-tabs {

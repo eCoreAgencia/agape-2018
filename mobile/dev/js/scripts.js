@@ -205,7 +205,15 @@
 			  $('.img-box img').first().addClass('active');
 		  });
 	  });
-  
+
+		body.on('click', 'ul.Tamanho .skuList label', function(event){
+			if($(this).hasClass('item_unavaliable')){
+				$('body').addClass('item_unavaliable');
+			} else {
+				$('body').removeClass('item_unavaliable');
+			}
+		});
+
 	  // Color Sku not addClass Checked because is not the primary SKU element. Adding to work validation //
 		  body.on('click', '.Cor .skuList label', function(event){
 		      $('<div class="lds-heart active"><div></div></div>').insertBefore('.slider ul');
@@ -240,15 +248,15 @@
 			  if($(myBt).attr('href') == "javascript:alert('Por favor, selecione o modelo desejado.');" ) {
 				  
 				  if($('ul.Tamanho label.checked').length == 0){
-					  $('body.produto ul.Tamanho .skuList label').addClass('error');
-					  $('ul.Tamanho .error-picked').remove();
-					  $('<span class="error-picked">É Preciso selecionar o tamanho</span>').insertAfter('ul.Tamanho li.specification');
+					$('body.produto ul.Tamanho .skuList label').addClass('error');
+					$('ul.Tamanho .error-picked').remove();
+					$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.specification');
 				  }
   
 				  if($('ul.Cor label.checked').length == 0){
-					  $('body.produto ul.Cor .skuList label').addClass('error');
-					  $('ul.Cor .error-picked').remove();
-					  $('<span class="error-picked">É Preciso selecionar a cor</span>').insertAfter('ul.Cor li.specification');
+					$('body.produto ul.Cor .skuList label').addClass('error');
+					$('ul.Cor .error-picked').remove();
+					$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
 				  }
 				  
 				  document.querySelector('#id3').scrollIntoView({ 
@@ -293,13 +301,13 @@
 				  if($('ul.Tamanho label.checked').length == 0){
 					  $('body.produto ul.Tamanho .skuList label').addClass('error');
 					  $('ul.Tamanho .error-picked').remove();
-					  $('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Tamanho li.specification');
+					  $('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.specification');
 				  }
   
 				  if($('ul.Cor label.checked').length == 0){
 					  $('body.produto ul.Cor .skuList label').addClass('error');
 					  $('ul.Cor .error-picked').remove();
-					  $('<span class="error-picked">É Preciso selecionar sua variação</span>').insertAfter('ul.Cor li.specification');
+					  $('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
 				  }
 				  
 				  document.querySelector('#id3').scrollIntoView({ 
@@ -334,9 +342,14 @@
 			  }
 		  });
   
-		  body.on('click', '.skuList label', function(event){
-			  $('.error-picked').remove();
-			  $('.skuList label').removeClass('error');
+		  body.on('click', 'ul.Tamanho .skuList label', function(event){
+			$('ul.Tamanho .error-picked').remove();
+			$('ul.Tamanho .skuList label').removeClass('error');
+		  });
+
+		  body.on('click', 'ul.Cor .skuList label', function(event){
+			$('ul.Cor .error-picked').remove();
+			$('ul.Cor .skuList label').removeClass('error');
 		  });
   
 	  // Add to Cart Button //

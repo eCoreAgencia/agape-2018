@@ -90,7 +90,6 @@ function ClientCreate(){
           $("#cl_genero").val("");
           $('.Newsletter-image').remove();
           $('.form-newsletter').remove();
-          /*$('<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>').appendTo('.Newsletter');*/
           $('<div class="success-msg"><img class="col-xs-12 col-md-3" src="/arquivos/img-legal-news.png" /><div class="col-xs-12 col-md-9"><h3>Obrigado!</h3><br/>Agora você terá R$ 10 de desconto na sua primeira compra no site. Use o cupom <strong>PRIMEIRACOMPRA</strong> no carrinho de compras para ganhar seu benefício.</div></div>').appendTo('.Newsletter');
         },
         error: function (data) {

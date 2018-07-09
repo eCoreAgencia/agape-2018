@@ -73,7 +73,10 @@ body.institucional {
 	}
 
 	&.fale-conosco {
-
+		main {
+			padding-left: 0 !important;
+		}
+		
 		.success-msg {
 			text-align: center;
 			padding-bottom: 40px;

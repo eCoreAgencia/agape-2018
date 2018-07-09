@@ -24,10 +24,13 @@ $(document).ready(function(){
         $('fieldset.mensagem').removeClass('error-msg');
     });
 
-    $('form').submit(function(event){
-        event.preventDefault();
-        //add stuff here
-    });
+	$('form').on('keyup keypress', function(e) {
+		var keyCode = e.keyCode || e.which;
+		if (keyCode === 13) { 
+			e.preventDefault();
+		return false;
+		}
+	});
 });
 
 

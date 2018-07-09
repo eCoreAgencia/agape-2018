@@ -426,7 +426,154 @@ body.produto .skuList label {
     margin-bottom: 10px;
     display: inline-block;
     border: 1px solid #bebebe;
-    background-color: #ededed
+    background-color: #ededed;
+
+     &.skuespec_Amarelo {
+        background-color: #fcbb23;
+    }
+
+    &.skuespec_Branco,
+    &.skuespec_Off-white {
+        background-color: #fff;
+        border: 1px solid #eaeaea;
+    }
+
+    &.skuespec_Azul {
+        background-color: #0000ff;
+    }
+
+    &.skuespec_Azul_claro {
+        background-color: #658ebc;
+    }
+
+    &.skuespec_Azul_marinho {
+        background-color: #0f1d42;
+    }
+
+    &.skuespec_Bege,
+    &.skuespec_Bege-cha {
+        background-color: #e2cfae;
+    }
+
+    &.skuespec_Branco {
+        background-color: #fff;
+    }
+
+    &.skuespec_Bronze {
+        background-color: #895837;
+    }
+
+    &.skuespec_Caqui {
+        background-color: #856d41;
+    }
+
+    &.skuespec_Caramelo {
+        background-color: #d0822f;
+    }
+
+    &.skuespec_Castanho {
+        background-color: #3e2101;
+    }
+
+    &.skuespec_Chocolate{
+        background-color: #57362f;
+    }
+
+    &.skuespec_Cinza{
+        background-color: #6b6b6b;
+    }
+
+    &.skuespec_Creme{
+        background-color: #6b6b6b;
+    }
+
+    &.skuespec_Estampado{
+        background-color: #844345;
+    }
+
+    &.skuespec_Laranja{
+        background-color: #f73c07;
+    }
+
+    &.skuespec_Lilas{
+        background-color: #9d8dcb;
+    }
+
+    &.skuespec_Limao{
+        background-color: #48f86d;
+    }
+
+    &.skuespec_Madeira{
+        background-color: #644b35;
+    }
+
+    &.skuespec_Marfim{
+        background-color: #e0b370;
+    }
+
+    &.skuespec_Marrom{
+        background-color: #301701;
+    }
+
+    &.skuespec_Ocre{
+        background-color: #272725;
+    }
+
+    &.skuespec_Ouro{
+        background-color: #be9b47;
+    }
+
+    &.skuespec_Prata{
+        background-color: #76757b;
+    }
+
+    &.skuespec_Preto{
+        background-color: #000;
+    }
+
+    &.skuespec_Rosa{
+        background-color: #f968a9;
+    }
+
+    &.skuespec_Roxo{
+        background-color: #8756a1;
+    }
+
+    &.skuespec_Salmao{
+        background-color: #fd7360;
+    }
+
+    &.skuespec_Tangerina{
+        background-color: #e8740d;
+    }
+
+    &.skuespec_Turquesa{
+        background-color: #24c7b1;
+    }
+
+    &.skuespec_Verde,
+    &.skuespec_Verde-menta,
+    &.skuespec_Verde-oceano{
+        background-color: #4ed1c3;
+    }
+
+    &.skuespec_Perola{
+        border: 1px solid;
+        background-color: #fffff0;
+    }
+
+    &.skuespec_Vermelho,
+    &.skuespec_Vermelho-bordo{
+        background-color: #e45049;
+    }
+
+    &.skuespec_Vinho{
+        background-color: #630015;
+    }
+
+    &.skuespec_Violeta{
+        background-color: #ba2161;
+    }
 }
 
 body.produto .skuList label.sku-picked,
