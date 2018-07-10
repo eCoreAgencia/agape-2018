@@ -127,7 +127,12 @@ body.institucional {
 			}
 		}
 
-		.form-faleConosco {
+		.alert {
+			color: #f68026;
+			text-align: center;
+		}
+
+		#co_form {
 			margin-top: 20px;
 			overflow: hidden;
 			margin-bottom: 20px;
@@ -138,8 +143,40 @@ body.institucional {
 				margin-bottom: 10px;
 			}
 
-			fieldset {
+			.form-field {
+				width: 48%;
+				margin-right: 15px;
 				margin-bottom: 10px;
+				vertical-align: top;
+				display: inline-block;
+
+				&.cl_first_name {
+					margin-right: 23px;
+				}
+				
+				&.cl_email,
+				&.cl_assunto {
+					margin-right: 0;
+				}
+
+				&.cl_email {
+					width: 50%;
+				}
+
+				&.co_type,
+				&.cl_assunto,
+				&.cl_home_phone {
+					width: 32.5%;
+				}
+
+				&.co_description {
+					width: 100%;
+				}
+
+				label {
+					display: block;
+					margin-bottom: 10px;
+				}
 
 				legend {
 					display: none;
@@ -178,16 +215,16 @@ body.institucional {
 				}
 			}
 
-			button {
+			input#commit {
 				@extend .transition;
-				border: none;
-				float: right;
-				width: 100px;
+				width: 90px;
 				height: 30px;
+				border: none;
 				color: #fff;
 				cursor: pointer;
 				appearance: none;
-				line-height: 30px;
+				line-height: 3px;
+				text-transform: uppercase;
 				background-color: #00bb4f;
 
 				&:hover {

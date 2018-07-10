@@ -127,7 +127,12 @@ body.institucional {
 			}
 		}
 
-		.form-faleConosco {
+		.alert {
+			color: #f68026;
+			text-align: center;
+		}
+
+		#co_form {
 			margin-top: 20px;
 			overflow: hidden;
 			margin-bottom: 20px;
@@ -138,8 +143,23 @@ body.institucional {
 				margin-bottom: 10px;
 			}
 
-			fieldset {
+			.form-field {
+				width: 48%;
+				margin-right: 8px;
 				margin-bottom: 10px;
+				vertical-align: top;
+				display: inline-block;
+
+				&.cl_assunto,
+				&.co_description {
+					width: 100%;
+				}
+
+
+				label {
+					display: block;
+					margin-bottom: 10px;
+				}
 
 				legend {
 					display: none;
@@ -178,16 +198,16 @@ body.institucional {
 				}
 			}
 
-			button {
+			input#commit {
 				@extend .transition;
-				border: none;
-				float: right;
-				width: 100px;
+				width: 90px;
 				height: 30px;
+				border: none;
 				color: #fff;
 				cursor: pointer;
 				appearance: none;
-				line-height: 30px;
+				line-height: 3px;
+				text-transform: uppercase;
 				background-color: #00bb4f;
 
 				&:hover {

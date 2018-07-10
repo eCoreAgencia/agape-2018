@@ -2,16 +2,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
 	<head>
 	    <title>Fale Conosco | Ágape - Moda Católica tem nome</title>
-	    <vtex:metaTags/>
-        <vtex:template id="AGAPE-V3-COMMONSTYLES" />
-		<script type="text/javascript" src="/arquivos/form-validate-v11.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<vtex:template id="MOB-AGAPE-V3-COMMONSTYLES" />
+		<script type="text/javascript" src="/arquivos/contact-agape-2018-v3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var storeName = "agapemoda"; //Indica o nome da conta utilizada na API do MasterData
+				var dataEntity = "CO"; //Indica a sigla da entidade de dados utilizada na API do MasterData
+				var htmlElementId = "contactForm"; //Indica o ID do elemento HTML que receberá o formulário
+				var messageLoading = "Carregando..."; //Mensagem de carregamento do formulário (ao salvar)
+				var messageValidation = "Preencha corretamente todos os campos obrigatórios do formulário."; //Mensagem de validação de formulário
+				var messageSuccess = "Contato realizado com sucesso. Em breve nossa equipe entrará em contato com você. Obrigado."; //Mensagem de sucesso
+				var messageError = "Algum erro aconteceu. Tente novamente mais tarde."; //Mensagem de erro
+				FormCreate(storeName, dataEntity, htmlElementId, messageLoading, messageValidation, messageSuccess, messageError);
+			});
+		</script>
 	</head>
 	<body>
-	    <vtex:template id="AGAPE-V3-HEADER" />
+	    <vtex:template id="MOB-AGAPE-V3-HEADER" />
 		
 		<main style="padding-left: 0;">
 	        <div class="container">
-	            <section id="main-content" class="main-institucional__content col-xs-12">
+	            <section id="main-content" class="main-institucional__content col-xs-12 col-md-12">
                     <section class="form-area">
 						<h2 class="title-page">
 							<p class="big-title">
@@ -20,53 +33,13 @@
 							</p>
 							<p class="small-title">Entre em contato através do nosso formulário de contato</p>
 						</h2>
-						<form action="javascript:faleConosco()" method="POST" class="form-faleConosco" data-module="faleConosco">
-							<input type="hidden" name="faleConoscoPart" value="faleConosco" />
-							<input type="hidden" name="faleConoscoPage" value="_" />
-							<input type="hidden" name="faleConoscoCampaign" value="faleConosco:opt-in" />
-							<fieldset class="nome col-xs-6">
-								<legend>Nome:</legend>
-								<input type="text" name="faleConoscoClientName" id="co_nome" class="nome faleConosco-client-nome" placeholder="Digite seu nome" data-validation="required" data-msg-required="Preencha o seu nome" />
-							</fieldset>
-							<fieldset class="email col-xs-6">
-								<legend>E-mail:</legend>
-								<input type="email" name="faleConoscoClientEmail" id="co_email" class="email" placeholder="E-mail" data-validation="required email" data-msg-required="Digite seu email" data-msg-email="O e-mail que você inseriu está incorreto" />
-							</fieldset>
-							<fieldset class="telefone col-xs-6">
-								<legend>Telefone:</legend>
-								<input type="telefone" name="faleConoscoClientTelefone" id="co_telefone" class="telefone" placeholder="Telefone" data-validation="required telefone" data-msg-required="Digite seu telefone" data-msg-email="É preciso inserir seu telefone" />
-							</fieldset>
-							<!-- fieldset class="departamento col-md-3">
-								<legend>Departamento:</legend>
-								<input style="display: none;" type="text" name="co_dep" id="co_dep" />
-								<select name="co_departamento" id="co_departamento">
-									<option value="">Departamento</option>
-									<option value="Dúvidas de entrega">Dúvidas de entrega</option>
-									<option value="Dúvidas sobre produtos">Dúvidas sobre produtos</option>
-									<option value="Dúvidas sobre o site">Dúvidas sobre o site</option>
-									<option value="Reclamação sobre produtos">Reclamação sobre produtos</option>
-									<option value="Sugestões para o site">Sugestões para o site</option>
-									<option value="Imprensa">Imprensa</option>
-									<option value="Fornecedores">Fornecedores</option>
-									<option value="Franquias">Franquias</option>
-									<option value="Outros">Outros</option>
-								</select>
-							</fieldset -->
-							<fieldset class="assunto col-xs-6">
-								<legend>Assunto:</legend>
-								<input type="assunto" name="faleConoscoClientAssunto" id="co_assunto" class="assunto" placeholder="Assunto" data-validation="required assunto" data-msg-required="Digite seu assunto" data-msg-email="É preciso inserir o assunto" />
-							</fieldset>
-							<fieldset class="mensagem col-xs-12">
-								<textarea name="faleConoscoClientMensagem" id="co_mensagem" class="mensagem" placeholder="Mensagem" data-validation="required mensagem" data-msg-required="Digite a Mensagem" data-msg-email="É preciso inserir a mensagem"></textarea>
-							</fieldset>
-							<button type="submit" class="faleConosco-button-ok submit">Enviar</button>
-						</form>
+						<div id="contactForm"><!-- Aqui se carrega o Form via Js --></div>
                     </section>
 	            </section>
 	        </div>
 		</main>
 
-	    <vtex:template id="AGAPE-V3-FOOTER" />
-	    <vtex:template id="AGAPE-V3-COMMONSCRIPTS" />
+		<vtex:template id="MOB-AGAPE-V3-FOOTER" />
+		<vtex:template id="MOB-AGAPE-V3-COMMONSCRIPTS" />
 	</body>
 </html>
