@@ -2871,9 +2871,7 @@ button {
 
 .search-multiple-navigator .bt-refinar,
 .search-single-navigator .bt-refinar {
-	top: 100%;
-	display: block;
-	position: absolute;
+	display: none !important;
 }
 
 .search-multiple-navigator h3,
@@ -5835,10 +5833,6 @@ body.dep-cat-bus #ajaxBusy p:before {
 	height: 59px;
 	display: block;
 	background: url(/arquivos/loja-agape-moda-logo.png) no-repeat scroll center center transparent;
-}
-
-body.dep-cat-bus main {
-	overflow: hidden;
 }
 
 body.dep-cat-bus main .search-multiple-navigator h3,
