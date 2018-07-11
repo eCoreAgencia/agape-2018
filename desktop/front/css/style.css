@@ -5981,15 +5981,39 @@ body.resultado-busca .mainShelf {
 	margin-top: -65px;
 }
 
-body.buscavazia .mainShelf .main-tlt {
-	font-size: 24px;
-	line-height: 32px;
-	padding: 25px 15px 5px;
+body.busca-vazia .error-message {
+	padding: 40px 0;
+	text-align: center;
 }
 
-body.buscavazia .mainShelf > span {
-	display: block;
-	padding: 5px 15px;
+body.busca-vazia .error-message h2 {
+	font-size: 22px;
+	color: #18318e;
+}
+
+body.busca-vazia .prateleira li {
+	max-width: 320px;
+}
+
+body.busca-vazia .prateleira-title {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+body.busca-vazia .prateleira-title i {
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body.busca-vazia .prateleira-title i svg {
+	width: 40px;
+	height: 40px;
+}
+
+body.busca-vazia .prateleira-title h2 {
+	font-size: 18px;
+	color: #f68026;
 }
 
 /* ==========================================================================
@@ -8364,15 +8388,6 @@ body.dep-cat-bus #nav-dep .right {
 
 body.dep-cat-bus .mainShelf {
 	position: initial;
-}
-
-body.buscavazia .mainShelf .main-tlt {
-	padding: 5px 0;
-}
-
-body.buscavazia .mainShelf > span {
-	padding-left: 0;
-	padding-right: 0;
 }
 
 body.account .profile-detail-display,

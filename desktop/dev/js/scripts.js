@@ -450,26 +450,6 @@ $(function() {
 		}
 	});
 
-	$('header').find('.menu-header.display').on('click', 'li.has-sub > a', function(e){
-        e.preventDefault();
-        $(this).siblings('.submenu').toggleClass('active');
-    });
-
-	$(".menu-header .has-sub > a:first-of-type").on('click', function(e){
-		e.preventDefault();
-		$(this).parent().siblings('.has-sub').children('a:first-of-type').each(function(){
-			$(this).next('.submenu').hide();
-		});
-		$(this).next('.submenu').toggle();
-	});
-
-	// Open submenu mobile //
-		$(".first-menu").click(function() {
-			$(this).toggleClass("active");
-			$(this).next().slideToggle();
-		});
-	// Open submenu mobile //
-
 	var mountBread = function(){
 		var bCrumb = $(".bread-crumb li").length;
 		if(bCrumb <= 2){
@@ -480,7 +460,6 @@ $(function() {
 			$(".bread-crumb-box .text2").html($(".bread-crumb li:last-of-type").text());
 		}
 	}
-
 
 	// Smart Research //
 		if (sidebar.length > 0) {

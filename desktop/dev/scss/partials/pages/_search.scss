@@ -413,26 +413,44 @@ body.resultado-busca {
 	}
 }
 
-body.buscavazia{
-	.mainShelf{
-		.main-tlt{
-			@include font-size(2.4);
-			line-height: 32px;
-			padding: 25px 15px 5px; 
-			
-			@include mq($screen-md){
-				padding: 5px 0;
-			}
-		}
-		& > span{
-			display: block;
-			padding: 5px 15px;
+body.busca-vazia{
 
-			@include mq($screen-md){
-				padding-left: 0;
-				padding-right: 0;
-			} 
+	.error-message {
+		padding: 40px 0;
+		text-align: center;
+
+		h2 {
+			@include font-size(2.2);
+			color: #18318e;
 		}
+	}
+
+	.prateleira {
+		li {
+			max-width: 320px;
+		}
+	}
+
+	.prateleira-title {
+		text-align: center;
+		margin-bottom: 10px;
+
+		i {
+			margin-right: 10px;
+			display: inline-block;
+			vertical-align: middle;
+
+			svg {
+				width: 40px;
+				height: 40px;
+			}			
+		}
+
+		h2 {
+			@include font-size(1.8);
+			color: #f68026;
+		}
+
 	}
 }
 
