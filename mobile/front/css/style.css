@@ -4494,6 +4494,11 @@ body.home main .box-banner {
 	cursor: pointer;
 }
 
+body.home main .slider-dois .slick-dots {
+	margin-top: 30px;
+	position: inherit;
+}
+
 body.home main .banners-orange {
 	width: 100%;
 	float: left;

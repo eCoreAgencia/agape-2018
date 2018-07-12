@@ -63,9 +63,9 @@
 	}
 
 	.shelfBestPrice, .shelfInstallment, .shelfOldPrice{
-		display: block;
 		margin-top: 2px;
 		margin-bottom: 2px;
+		display: inline-block;
 	}
 
 	.shelfBestPrice {
@@ -209,7 +209,7 @@
 
 body.home {
 	.shelfItem {
-		max-height: 491px;
+		max-height: 520px;
 	}
 }
 

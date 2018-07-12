@@ -1124,6 +1124,8 @@ footer {
       color: inherit;
       weight: inherit;
       text-decoration: inherit; }
+  footer .compra-segura {
+    padding: 10px 7px 0 !important; }
   footer .selos-seguranca {
     width: 200px;
     column-count: 2;
@@ -1136,11 +1138,10 @@ footer {
         width: 90px;
         height: auto; }
   footer .logo-social {
-    text-aling: center;
-    padding: 40px 7px 20px; }
+    text-aling: center; }
     @media (min-width: 1024px) {
       footer .logo-social {
-        padding: 20px 7px; } }
+        padding: 0; } }
     footer .logo-social a {
       display: inline-block; }
   footer .socialLinks {

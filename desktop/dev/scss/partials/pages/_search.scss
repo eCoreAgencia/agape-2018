@@ -162,12 +162,12 @@ body.dep-cat-bus{
 		left: 0;
 		opacity: 0;
 		padding: 0;
-		height: 100%;
 		display: block;
 		position: fixed;
 		z-index: 999999;
 		max-width: 350px;
 		background: #fff;
+		min-height: 250px;
 		transform: translateX(-100%);
 		@include mq($screen-md) {
 			opacity: 1;
@@ -402,14 +402,6 @@ body.dep-cat-bus{
 body.resultado-busca {
 	.search-single-navigator {
 		display: block !important;
-	}
-
-	.navigation {
-		margin-top: 45px;
-	}
-
-	.mainShelf {
-		margin-top: -65px;
 	}
 }
 

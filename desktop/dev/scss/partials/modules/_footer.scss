@@ -136,6 +136,11 @@ footer{
 			}
 		}
 	}
+
+	.compra-segura {
+		padding: 10px 7px 0 !important;
+	}
+
 	.selos-seguranca {
 	    width: 200px;
 	    column-count: 2;
@@ -154,9 +159,9 @@ footer{
 	}
 	.logo-social{
 		text-aling: center;
-		padding: 40px 7px 20px;
+
 		@include mq($screen-md){
-			padding: 20px 7px;
+			padding: 0;
 		}
 		a{
 			display: inline-block;

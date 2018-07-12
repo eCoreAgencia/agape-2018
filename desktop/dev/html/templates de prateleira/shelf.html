@@ -3,13 +3,11 @@
 #set($uri = $product.Uri)
 #set($escapedName = $product.HtmlEscapedName)
 
-#if ($product.IsInStock)
-	#if ($product.HasBestPrice || $product.NumbersOfInstallment > 1)
+    #if ($product.IsInStock)
 		<div class="box-item hasOldPrice shelfItem" data-prodId="$product.Id">
-	#else
-		<div class="box-item shelfItem product-off" data-prodId="$product.Id">
-	#end
-#end
+    #else
+    	<div class="box-item shelfItem product-off" data-prodId="$product.Id">
+    #end
 	<input type="hidden" class="shelf-prod-id" id="shelf-pord-id-$product.Id" value="$product.Id"/>
     <a class="product-image" title="$escapedName" href="$uri">
         $product.GetImageTag(2)
@@ -17,6 +15,10 @@
     <a class="shelfProductName txt-sz-18 txt-gray txt-up" title="$escapedName" href="$uri">$product.Name</a>
     #if ($product.IsInStock)
     	<div class="drop">
+    	    <!-- Inicio Yourviews -->
+                <!-- Estrelas que carregam a nota do produto nas prateleiras, de preferência manter próximo ao nome do produto  -->
+                <div class="yv-review-quickreview" value="$product.Id"></div>
+            <!-- Final Yourviews -->
 	    	<span class="price">
 	    		<a title="$escapedName" href="$uri">
 	    			#if ($product.HasBestPrice || $product.NumbersOfInstallment > 1)
@@ -53,6 +55,10 @@
 			$product.ListPriceMinusBestPriceInPercent
 		</div>
 	#else
+	    <!-- Inicio Yourviews -->
+            <!-- Estrelas que carregam a nota do produto nas prateleiras, de preferência manter próximo ao nome do produto  -->
+            <div class="yv-review-quickreview" value="$product.Id"></div>
+        <!-- Final Yourviews -->
 		<span class="out-of-stock">Produto Esgotado</span> 
 	#end
 </div>

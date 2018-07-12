@@ -1842,6 +1842,10 @@ footer .compra-segura ul li a {
 	text-decoration: inherit;
 }
 
+footer .compra-segura {
+	padding: 10px 7px 0 !important;
+}
+
 footer .selos-seguranca {
 	width: 200px;
 	column-count: 2;
@@ -1863,7 +1867,6 @@ footer .selos-seguranca a img {
 
 footer .logo-social {
 	text-aling: center;
-	padding: 40px 7px 20px;
 }
 
 footer .logo-social a {
@@ -2299,9 +2302,9 @@ body.home footer .textoLegal {
 .shelfItem .shelfBestPrice,
 .shelfItem .shelfInstallment,
 .shelfItem .shelfOldPrice {
-	display: block;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	display: inline-block;
 }
 
 .shelfItem .shelfBestPrice {
@@ -2393,7 +2396,7 @@ body.home footer .textoLegal {
 }
 
 body.home .shelfItem {
-	max-height: 491px;
+	max-height: 520px;
 }
 
 body.dep-cat-bus .skus-selection {
@@ -4449,6 +4452,14 @@ body.home main .bottom-banners .box-banner:hover img {
 	    transform: scale(1.05);
 }
 
+body.home main .slider-dois .shelfItem .shelfBestPrice {
+	display: none;
+}
+
+body.home main .slider-dois .shelfItem:hover .shelfBestPrice {
+	display: block;
+}
+
 body.home main .destaque {
 	clear: both;
 	margin: 20px 0;
@@ -5759,12 +5770,12 @@ body.dep-cat-bus .sidebar {
 	left: 0;
 	opacity: 0;
 	padding: 0;
-	height: 100%;
 	display: block;
 	position: fixed;
 	z-index: 999999;
 	max-width: 350px;
 	background: #fff;
+	min-height: 250px;
 	-ms-transform: translateX(-100%);
 	    transform: translateX(-100%);
 }
@@ -5971,14 +5982,6 @@ body.dep-cat-bus .mainShelf .pager.bottom {
 
 body.resultado-busca .search-single-navigator {
 	display: block !important;
-}
-
-body.resultado-busca .navigation {
-	margin-top: 45px;
-}
-
-body.resultado-busca .mainShelf {
-	margin-top: -65px;
 }
 
 body.busca-vazia .error-message {
@@ -8042,7 +8045,7 @@ footer .compra-segura h3:after {
 }
 
 footer .logo-social {
-	padding: 20px 7px;
+	padding: 0;
 }
 
 footer .socialLinks {

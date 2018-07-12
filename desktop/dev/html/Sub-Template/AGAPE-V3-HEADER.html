@@ -3,16 +3,20 @@
 		<div class="container">
 			<vtex.cmc:tibBar/>
 			<nav class="ambientes col-md-4">
-				<a class="ambiente" target="_blank" href="http://revenda.agapemoda.com.br/">Portal do Revendedor</a>
+				<a class="ambiente" target="_blank" href="http://revenda.agapemoda.com.br/?utm_campaign=ecommerce+click&amp;utm_source=desktop&amp;utm_medium=top+button">Portal do Revendedor</a>
 				<a class="ambiente active" href="#">Loja virtual</a>
 			</nav>
 		</div>
 	</section>
 	<section class="mid-box bg-white txt-gray">
 		<div class="container">
-			<div class="logo col-md-3"><a href="/"><vtex.cmc:logoVinteAnos/></a></div>
-			<div class="search-box col-md-5"><vtex.cmc:fullTextSearchBox/></div>
-			<div class="options col-md-4">
+			<button class="js-open-mobile-menu hidden-md hidden-lg"><i class="menu-toggle"><span></span><span></span><span></span></i></button>
+			<div class="logo col-xs-7 col-sm-4 col-md-3"><a href="/"><vtex.cmc:logoVinteAnos/></a></div>
+			<div class="search-box col-xs-12 col-sm-6 col-md-5"><vtex.cmc:fullTextSearchBox/></div>
+			<div class="options col-xs-5 col-sm-2 col-md-4">
+				<button class="search-toggle hidden-sm hidden-md hidden-lg">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 475.084 475.084"><path d="M464.524 412.846l-97.929-97.925c23.6-34.068 35.406-72.047 35.406-113.917 0-27.218-5.284-53.249-15.852-78.087-10.561-24.842-24.838-46.254-42.825-64.241-17.987-17.987-39.396-32.264-64.233-42.826C254.246 5.285 228.217.003 200.999.003c-27.216 0-53.247 5.282-78.085 15.847C98.072 26.412 76.66 40.689 58.673 58.676c-17.989 17.987-32.264 39.403-42.827 64.241C5.282 147.758 0 173.786 0 201.004c0 27.216 5.282 53.238 15.846 78.083 10.562 24.838 24.838 46.247 42.827 64.234 17.987 17.993 39.403 32.264 64.241 42.832 24.841 10.563 50.869 15.844 78.085 15.844 41.879 0 79.852-11.807 113.922-35.405l97.929 97.641c6.852 7.231 15.406 10.849 25.693 10.849 9.897 0 18.467-3.617 25.694-10.849 7.23-7.23 10.848-15.796 10.848-25.693.003-10.082-3.518-18.651-10.561-25.694zM291.363 291.358c-25.029 25.033-55.148 37.549-90.364 37.549-35.21 0-65.329-12.519-90.36-37.549-25.031-25.029-37.546-55.144-37.546-90.36 0-35.21 12.518-65.334 37.546-90.36 25.026-25.032 55.15-37.546 90.36-37.546 35.212 0 65.331 12.519 90.364 37.546 25.033 25.026 37.548 55.15 37.548 90.36 0 35.216-12.519 65.331-37.548 90.36z" fill="#FFF"/></svg>
+				</button>
 				<a class="btn-account" rel="nofollow" href="/account">
 					<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 510 510"><path id="hover-blue" d="M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm0 76.5c43.35 0 76.5 33.15 76.5 76.5s-33.15 76.5-76.5 76.5-76.5-33.15-76.5-76.5 33.15-76.5 76.5-76.5zm0 362.1c-63.75 0-119.85-33.149-153-81.6 0-51 102-79.05 153-79.05S408 306 408 357c-33.15 48.45-89.25 81.6-153 81.6z" fill="#f68026"/></svg>
 					<span>Minha <strong>Conta</strong></span>
@@ -26,16 +30,23 @@
 	</section>
 	<nav class="menu-header bg-orange txt-sz-23 txt-white">
 		<ul class="container">
+			<li class="menuClose js-open-mobile-menu bg-yellow txt-dark-blue hidden-md hidden-lg">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.1 491.1" width="28" height="27"><path d="M111.85 208.25l192.8-192.8c20.6-20.6 54-20.6 74.6 0s20.6 54 0 74.6l-155.5 155.5 155.5 155.5c20.6 20.6 20.6 54 0 74.6s-54 20.6-74.6 0l-192.8-192.8c-20.6-20.6-20.6-54 0-74.6z" fill="#147eb8"/></svg>
+	    		<span class="storeName txt-center">Ágape Moda</span>
+			</li>
 			<li class="menu-item has-sub">
 				<a href="/feminino" class="first-menu">Feminino</a>
 				<div class="submenu">
 		            <ul class="section-box col-md-2">
 		            	<h3>destaque</h3>
 		            	<li class="menu-item">
-		            		<a href="/busca/?fq=C:15&amp;fq=H:149">lançamentos</a>
+		            		<a href="/lancamentos/feminino">lançamentos</a>
 		            	</li>
 		            	<li class="menu-item txt-orange">
-		            		<a href="/busca/?fq=C:15&amp;fq=H:150">promoções</a>
+		            		<a href="/promocoes/feminino">promoções</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/feminino">ver todos</a>
 		            	</li>
 		           	</ul>
 		           	<ul class="section-box col-md-3">
@@ -44,7 +55,7 @@
 		            		<a href="/feminino/bordados-manuais">bordados manuais</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="/feminino/bordados-industrais">bordados industriais</a>
+		            		<a href="/feminino/bordados-industriais">bordados industriais</a>
 		            	</li>
 		            	<li class="menu-item">
 		            		<a href="/feminino/imagens-basicas">imagens básicas</a>
@@ -56,19 +67,19 @@
 		           	<ul class="section-box col-md-3">
 		            	<h3>Produto</h3>
 		            	<li class="menu-item">
-		            		<a href="">baby look</a>
+		            		<a href="/feminino?fq=specificationFilter_42:Baby+Look&amp;fq=C:15">baby look</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">batas</a>
+		            		<a href="/feminino?fq=specificationFilter_42:Bata&amp;fq=C:15">batas</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">blusas</a>
+		            		<a href="/feminino?fq=specificationFilter_42:Blusa&amp;fq=C:15">blusas</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">camisetas</a>
+		            		<a href="/feminino?fq=specificationFilter_42:Camiseta&amp;fq=C:15">camisetas</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">vestidos</a>
+		            		<a href="/feminino?fq=specificationFilter_42:Vestido&amp;fq=C:15">vestidos</a>
 		            	</li>
 		           	</ul>
 		           	<figure class="section-box col-md-4">
@@ -82,10 +93,13 @@
 		            <ul class="section-box col-md-2">
 		            	<h3>destaque</h3>
 		            	<li class="menu-item">
-		            		<a href="/busca/?fq=C:16&amp;fq=H:149">lançamentos</a>
+		            		<a href="/lancamentos/masculino">lançamentos</a>
 		            	</li>
 		            	<li class="menu-item txt-orange">
-		            		<a href="/busca/?fq=C:16&amp;fq=H:150">promoções</a>
+		            		<a href="/promocoes/masculino">promoções</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/masculino">ver todos</a>
 		            	</li>
 		           	</ul>
 		           	<ul class="section-box col-md-3">
@@ -103,10 +117,10 @@
 		           	<ul class="section-box col-md-3">
 		            	<h3>Produto</h3>
 		            	<li class="menu-item">
-		            		<a href="">camisetas</a>
+		            		<a href="/masculino?fq=specificationFilter_42:Camiseta&amp;fq=C:16">camisetas</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">pólos</a>
+		            		<a href="/masculino?fq=specificationFilter_42:Pólo&amp;fq=C:16">pólos</a>
 		            	</li>
 		           	</ul>
 		           	<figure class="section-box col-md-4">
@@ -115,45 +129,45 @@
 				</div>
 			</li>
 			<li class="menu-item has-sub">
-				<a href="/busca" class="first-menu">Infantil</a>
+				<a href="/infantil" class="first-menu">Infantil</a>
 				<div class="submenu">
 		            <ul class="section-box col-md-2">
 		            	<h3>destaque</h3>
 		            	<li class="menu-item">
-		            		<a href="/busca/?fq=C:16&amp;fq=H:149">lançamentos</a>
+		            		<a href="/lancamentos/infantil">lançamentos</a>
 		            	</li>
 		            	<li class="menu-item txt-orange">
-		            		<a href="/busca/?fq=C:16&amp;fq=H:150">promoções</a>
+		            		<a href="/promocoes/infantil">promoções</a>
+		            	</li>
+		            	<li class="menu-item">
+		            		<a href="/infantil">ver todos</a>
 		            	</li>
 		           	</ul>
 		           	<ul class="section-box col-md-3">
 		            	<h3>Categorias</h3>
 		            	<li class="menu-item">
-		            		<a href="">bordados manuais</a>
+		            		<a href="/infantil/bordados">bordados</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">bordados industriais</a>
+		            		<a href="/infantil/imagens-basicas">imagens básicas</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">imagens básicas</a>
-		            	</li>
-		            	<li class="menu-item">
-		            		<a href="">mensagens</a>
+		            		<a href="/infantil/mensagens">mensagens</a>
 		            	</li>
 		           	</ul>
 		           	<ul class="section-box col-md-3">
 		            	<h3>Produto</h3>
 		            	<li class="menu-item">
-		            		<a href="">batas</a>
+		            		<a href="/infantil?fq=specificationFilter_42:Bata&amp;fq=C:17">batas</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">blusas</a>
+		            		<a href="/infantil?fq=specificationFilter_42:Blusa&amp;fq=C:17">blusas</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">camisetas</a>
+		            		<a href="/infantil?fq=specificationFilter_42:Camiseta&amp;fq=C:17">camisetas</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="">vestidos</a>
+		            		<a href="/infantil?fq=specificationFilter_42:Vestido&amp;fq=C:17">vestidos</a>
 		            	</li>
 		           	</ul>
 		           	<figure class="section-box col-md-4">
@@ -166,76 +180,73 @@
 				<div class="submenu">
 					<ul class="section-box col-md-3">
 						<li class="menu-item">
-		            		<a href="/aparecida">Nossa Senhora Aparecida</a>
+		            		<a href="/santo/nossa-senhora-aparecida">Nossa Senhora Aparecida</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="/gracas">Nossa Senhora das Graças</a>
+		            		<a href="/santo/nossa-senhora-das-gracas">Nossa Senhora das Graças</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="/fatima">Nossa Senhora de Fátima</a>
+		            		<a href="/santo/nossa-senhora-de-fatima">Nossa Senhora de Fátima</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="/guadalupe">Nossa Senhora de Guadalupe</a>
+		            		<a href="/santo/nossa-senhora-de-guadalupe">Nossa Senhora de Guadalupe</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="/lourdes">Nossa Senhora de Lourdes</a>
+		            		<a href="/santo/nossa-senhora-de-lourdes">Nossa Senhora de Lourdes</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="/socorro">Nossa Senhora do Perpétuo Socorro</a>
+		            		<a href="/santo/nossa-senhora-do-perpetuo-socorro">Nossa Senhora do Perpétuo Socorro</a>
 		            	</li>
 					</ul>
 					<ul class="section-box col-md-3">
 		            	<li class="menu-item">
-		            		<a href="/arcanjo">São Miguel Arcanjo</a>
+		            		<a href="/santo/sao-miguel-arcanjo">São Miguel Arcanjo</a>
 		            	</li>
 		            	<li class="menu-item">
-		            		<a href="/jorge">São Jorge</a>
+		            		<a href="/santo/sao-jorge">São Jorge</a>
 		            	</li>
 						<li class="menu-item">
-							<a href="/francisco">Saão Francisco de Assis</a>
+							<a href="/santo/sao-francisco-de-assis">São Francisco de Assis</a>
 						</li>
 						<li class="menu-item">
-							<a href="/cassia">Santa Rita de Cássia</a>
+							<a href="/santo/santa-rita-de-cassia">Santa Rita de Cássia</a>
 						</li>
 						<li class="menu-item">
-							<a href="/rainha%20da%20paz">Rainha da Paz</a>
+							<a href="/santo/nossa-senhora-do-carmo">Nossa Senhora do Carmo</a>
 						</li>
 						<li class="menu-item">
-							<a href="/carmo">Nossa Senhora do Carmo</a>
-						</li>
-					</ul>
-					<ul class="section-box col-md-3">
-						<li class="menu-item">
-							<a href="/rosario">Nossa Senhora do Rosário</a>
-						</li>
-						<li class="menu-item">
-							<a href="/conceicao">Nossa Senhora da Conceição</a>
-						</li>
-						<li class="menu-item">
-							<a href="/mistica">Nossa Senhora da Rosa Mística</a>
-						</li>
-						<li class="menu-item">
-							<a href="/sagrado%20coracao">Sagrado Coração de Jesus</a>
-						</li>
-						<li class="menu-item">
-							<a href="/imaculado">Imaculado Coração de Maria</a>
+							<a href="/santo/nossa-senhora-do-rosario">Nossa Senhora do Rosário</a>
 						</li>
 					</ul>
 					<ul class="section-box col-md-3">
 						<li class="menu-item">
-							<a href="/bento">São Bento</a>
+							<a href="/santo/nossa-senhora-da-conceicao">Nossa Senhora da Conceição</a>
 						</li>
 						<li class="menu-item">
-							<a href="/sagrada%20familia">Sagrada Família</a>
+							<a href="/santo/nossa-senhora-da-rosa-mistica">Nossa Senhora da Rosa Mística</a>
 						</li>
 						<li class="menu-item">
-							<a href="/espirito%20santo">Espírito Santo</a>
+							<a href="/santo/sagrado-coracao-de-jesus">Sagrado Coração de Jesus</a>
 						</li>
 						<li class="menu-item">
-							<a href="/jesus">Jesus Cristo</a>
+							<a href="/santo/imaculado-coracao-de-maria">Imaculado Coração de Maria</a>
+						</li>
+					</ul>
+					<ul class="section-box col-md-3">
+						<li class="menu-item">
+							<a href="/santo/medalha-de-sao-bento">São Bento</a>
 						</li>
 						<li class="menu-item">
-							<a href="/nazare">Nossa Senhora de Nazaré</a>
+							<a href="/santo/sagrada-familia">Sagrada Família</a>
+						</li>
+						<li class="menu-item">
+							<a href="/santo/espirito-santo">Espírito Santo</a>
+						</li>
+						<li class="menu-item">
+							<a href="//santo/jesus-cristo">Jesus Cristo</a>
+						</li>
+						<li class="menu-item">
+							<a href="/santo/nossa-senhora-de-nazare">Nossa Senhora de Nazaré</a>
 						</li>
 					</ul>
 					<!-- <figure class="section-box col-md-4">
@@ -244,7 +255,7 @@
 				</div>
 			</li>
 			<li class="menu-item">
-				<a href="/busca" class="first-menu">Promoções</a>
+				<a href="/promocoes" class="first-menu">Promoções</a>
 			</li>
 		</ul>
 	</nav>

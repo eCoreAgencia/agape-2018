@@ -128,7 +128,7 @@ function priceStatus() {
 		var myDrop = $(this).find('.drop');
 		var myOldBox = $(this).find('.shelfOldPrice');
 		var myOld = $(this).find('.shelfOldPrice').text();
-		var myNew = $('<span class="txt-sz-16 shelfBestPrice txt-gray">ou '+myOld+' à vista</span>');
+		var myNew = $('<span style="display: block;" class="txt-sz-16 shelfBestPrice txt-gray">ou '+myOld+' à vista</span>');
 		var myBest = $(this).find('.shelfBestPrice');
 		var myInstallments = $(this).find('.shelfInstallment');
 
@@ -169,6 +169,10 @@ var body = $('body'),
 $(function() {
 	
 	setFlags();
+
+	if($('.search-multiple-navigator').length > 0){
+		$('.search-multiple-navigator').next().remove();
+	}
 
 	$('.prateleira li').each(function(event){
 		var me = $(this);
@@ -666,8 +670,16 @@ $(function() {
 			// Adicionando classe nos elementos do Ordernar Por quando ativos
 
 			$('.resultado-busca-filtro .orderBy').first().insertBefore('.navigation-tabs');
+			$('.resultado-busca-filtro .orderBy').last().hide();
 
 			priceStatus();
+		}
+
+		if($('body.busca-vazia').length > 0){
+			$('.sidebar .navigation').addClass('navigation-tabs');
+			$('.sidebar .navigation-tabs').removeClass('navigation');
+			$('.resultado-busca-filtro .orderBy').first().insertBefore('.navigation-tabs');
+			$('.resultado-busca-filtro .orderBy').last().hide();
 		}
   	// Scripts Departamento //
 

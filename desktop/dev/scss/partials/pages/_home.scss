@@ -159,6 +159,20 @@ body.home{
 			}
 		}
 
+		.slider-dois {
+			.shelfItem {
+				.shelfBestPrice {
+					display: none;
+				}
+
+				&:hover {
+					.shelfBestPrice {
+						display: block;
+					}
+				}
+			}
+		}
+
 		.destaque{
 			clear: both;
 			margin: 20px 0;
