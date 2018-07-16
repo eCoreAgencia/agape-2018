@@ -98,9 +98,27 @@ body.orders {
 
     .back-account-bt {
         @include font-size(1.2);
+        color: #666;
         display: block;
+        margin-top: 5px;
         line-height: 10px;
         margin-bottom: 10px;
+        text-decoration: none;
+
+        &:before {
+            @include font-size(1.5);
+            width: 30px;
+            color: #fff;
+            height: 30px;
+            content: '<';
+            line-height: 30px;
+            margin-right: 5px;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #F68026;
+        }
     }
 
 	a.myo-collapsed-order {

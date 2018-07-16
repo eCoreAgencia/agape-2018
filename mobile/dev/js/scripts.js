@@ -169,6 +169,10 @@
   $(function() {
 	  
 	  setFlags();
+
+	  if($('.search-multiple-navigator').length > 0){
+		 $('.search-multiple-navigator').next().remove();
+	  }
   
 	  $('.footer-middle h3').on('click', function(event){
 	  	  $(this).toggleClass('active');
@@ -775,9 +779,17 @@
 				this.parentNode.classList[((this.checked)? 'add':'remove')]('active')
 			});
 
+			$('.resultado-busca-filtro .orderBy').first().insertBefore('.navigation-tabs');
+
 		  }
 		// Scripts Departamento //
   
+		if($('body.busca-vazia').length > 0){
+			$('.sidebar .navigation').addClass('navigation-tabs');
+			$('.sidebar .navigation-tabs').removeClass('navigation');
+			$('.resultado-busca-filtro .orderBy').first().insertBefore('.navigation-tabs');
+		}
+
   // Scripts Modal //
 	  // Open Modal //
 		  // Open Modal //
