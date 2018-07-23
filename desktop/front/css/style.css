@@ -689,7 +689,11 @@ body.institucional.fale-conosco #co_form .form-field textarea,
 body.institucional.fale-conosco #co_form input#commit,
 body.institucional.fale-conosco #co_form input#commit:hover,
 body.institucional .main-institucional__content ul li a:hover,
-body.institucional main a {
+body.institucional main a,
+body.landing-pais-2018 main .shelf-pais li:hover .buy-button,
+body.landing-pais-2018 main .shelf-pais .buy-button,
+body.landing-pais-2018 main .banners-top.slick-slider .slick-arrow,
+body.landing-pais-2018 main .banners-top.slick-slider .slick-arrow:hover {
 	transition-duration: .3s;
 	transition-timing-function: ease;
 }
@@ -7061,6 +7065,383 @@ body.institucional main #lista-lojas figure {
 body.institucional main #lista-lojas figure img {
 	width: 100%;
 	height: auto;
+}
+
+/* ==========================================================================
+   Landing Pais 2018
+   ========================================================================== */
+
+body.landing-pais-2018 header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	box-shadow: inset 0 94px 24px 3px rgba(0, 0, 0, 0.14);
+}
+
+body.landing-pais-2018 header .mid-box .options a,
+body.landing-pais-2018 header .mid-box .options span,
+body.landing-pais-2018 header .mid-box .options em {
+	color: #fff;
+}
+
+body.landing-pais-2018 header .mid-box .options svg path {
+	fill: #fff;
+}
+
+body.landing-pais-2018 header .mid-box .options .btn-account svg path,
+body.landing-pais-2018 header .mid-box .options #mini-cart:hover svg path {
+	fill: #fff;
+}
+
+body.landing-pais-2018 main {
+	padding-top: 0;
+}
+
+body.landing-pais-2018 main .news-pais {
+	box-shadow: 0px 12px 20px -1px #cccccc;
+	background-color: #fff;
+	border-radius: 5px;
+	top: 480px;
+	z-index: 999999999;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: -645px;
+	padding: 30px 20px;
+}
+
+body.landing-pais-2018 main .news-pais .title-box svg,
+body.landing-pais-2018 main .news-pais .title-box p {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #1d349e;
+	font-family: 'Mitr', sans-serif;
+}
+
+body.landing-pais-2018 main .news-pais .title-box svg {
+	margin-right: 10px;
+}
+
+body.landing-pais-2018 main .news-pais .title-box strong {
+	display: block;
+}
+
+body.landing-pais-2018 main .news-pais .title-box .obs-promo {
+	display: block;
+	margin-top: 18px;
+	font-size: 12px;
+	color: #bbb;
+	font-weight: lighter;
+}
+
+body.landing-pais-2018 main .news-pais .spinner {
+	right: 0;
+	width: 68%;
+}
+
+body.landing-pais-2018 main .news-pais .form-newsletter {
+	background-color: #fff;
+}
+
+body.landing-pais-2018 main .news-pais .form-newsletter .fieldset-inputs .nome,
+body.landing-pais-2018 main .news-pais .form-newsletter .fieldset-inputs .email {
+	display: inline-block;
+	width: 50%;
+}
+
+body.landing-pais-2018 main .news-pais .form-newsletter .fieldset-inputs .nome input,
+body.landing-pais-2018 main .news-pais .form-newsletter .fieldset-inputs .email input {
+	width: 95%;
+	border-radius: 10px;
+	padding: 8px 20px;
+	border: 1px solid #ccc;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+body.landing-pais-2018 main .news-pais .form-newsletter .fieldset-inputs .genero {
+	clear: both;
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+body.landing-pais-2018 main .news-pais .form-newsletter .fieldset-inputs .genero label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body.landing-pais-2018 main .news-pais .form-newsletter .fieldset-inputs .genero label .checkbox {
+	display: inline-block;
+}
+
+body.landing-pais-2018 main .news-pais .form-newsletter .fieldset-inputs .genero label#feminino {
+	margin-right: 10px;
+}
+
+body.landing-pais-2018 main .news-pais .form-newsletter .fieldset-inputs .genero label#feminino:before {
+	content: "Selecione o seu gênero:";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+body.landing-pais-2018 main .news-pais .form-newsletter .newsletter-button-ok {
+	border-radius: 10px;
+	padding: 8px 20px;
+	font-size: 14px;
+	background-image: none;
+	background-color: #18318d;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Mitr', sans-serif;
+}
+
+body.landing-pais-2018 main .news-pais .success-msg {
+	position: absolute;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	padding: 36px 0;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+body.landing-pais-2018 main .news-pais .success-msg svg,
+body.landing-pais-2018 main .news-pais .success-msg .txt-success {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body.landing-pais-2018 main .news-pais .success-msg svg {
+	width: 80px;
+	height: 80px;
+}
+
+body.landing-pais-2018 main .news-pais .success-msg .txt-success {
+	font-family: 'Mitr', sans-serif;
+	color: #767676;
+	font-weight: 200;
+	width: 450px;
+	line-height: 20px;
+}
+
+body.landing-pais-2018 main .news-pais .success-msg .txt-success h3 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+body.landing-pais-2018 main .news-pais .success-msg .txt-success strong {
+	font-weight: 400;
+	color: #F08128;
+}
+
+body.landing-pais-2018 main .news-pais .error-msg {
+	display: block;
+	font-weight: 400;
+	color: red;
+	font-size: 12px;
+	margin: 5px 0 0;
+}
+
+body.landing-pais-2018 main .vestido-com-devocao {
+	margin-top: 12%;
+}
+
+body.landing-pais-2018 main .para-vestir-com-o-filho {
+	margin-bottom: 12%;
+}
+
+body.landing-pais-2018 main .shelf-pais li {
+	text-align: center;
+}
+
+body.landing-pais-2018 main .shelf-pais li .shelfOldPrice {
+	padding-right: 1px;
+}
+
+body.landing-pais-2018 main .shelf-pais li .shelfInstallment {
+	font-size: 18px;
+}
+
+body.landing-pais-2018 main .shelf-pais li:hover .buy-button {
+	display: block;
+	background-color: #404f90;
+	z-index: 99999999999999999999999;
+}
+
+body.landing-pais-2018 main .shelf-pais .shelfProductName {
+	font-weight: 300;
+	margin-top: 10px;
+	display: block;
+	font-size: 16px;
+}
+
+body.landing-pais-2018 main .shelf-pais .buy-button {
+	display: none;
+}
+
+body.landing-pais-2018 main .shelf-title {
+	text-align: center;
+	overflow: hidden;
+	display: block;
+	margin: 14% 0 4%;
+}
+
+body.landing-pais-2018 main .shelf-title i {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+body.landing-pais-2018 main .shelf-title i svg {
+	width: 110px;
+}
+
+body.landing-pais-2018 main .shelf-title i.bullet-after svg {
+	-ms-transform: rotate(180deg);
+	    transform: rotate(180deg);
+}
+
+body.landing-pais-2018 main .shelf-title h2 {
+	font-size: 30px;
+	color: #404f90;
+	font-weight: 400;
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+body.landing-pais-2018 main .shelf .slick-slider {
+	min-height: 510px;
+}
+
+body.landing-pais-2018 main .shelf .slick-slider .slick-arrow {
+	display: inline-block !important;
+	top: 27%;
+	width: 40px !important;
+	height: 40px;
+	font-size: 0;
+	padding: 0;
+	line-height: 0;
+	cursor: pointer;
+	position: absolute;
+	border: none;
+	padding: 0;
+	z-index: 99999999;
+}
+
+body.landing-pais-2018 main .shelf .slick-slider .slick-arrow.slick-next {
+	right: -25px;
+}
+
+body.landing-pais-2018 main .shelf .slick-slider .slick-arrow.slick-prev {
+	left: -25px;
+}
+
+body.landing-pais-2018 main .banners-top.slick-slider .slick-arrow {
+	display: inline-block !important;
+	top: 50%;
+	width: 60px !important;
+	height: 60px;
+	border: none;
+	z-index: 99999999;
+	position: absolute;
+	padding: 0;
+	cursor: pointer;
+	font-size: 0;
+	line-height: 0;
+	background-color: #243D9A;
+	opacity: 0.8;
+}
+
+body.landing-pais-2018 main .banners-top.slick-slider .slick-arrow:hover {
+	opacity: 1;
+}
+
+body.landing-pais-2018 main .slick-dots {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	list-style: none;
+	display: block;
+	text-align: center;
+	padding: 0;
+	width: auto;
+	-ms-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	z-index: 1;
+}
+
+body.landing-pais-2018 main .slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+}
+
+body.landing-pais-2018 main .slick-dots li button {
+	border: 0;
+	padding: 0;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	text-indent: -9999px;
+	background-color: #DDDDDD;
+	border-radius: 50%;
+}
+
+body.landing-pais-2018 main .slick-dots li button:hover,
+body.landing-pais-2018 main .slick-dots li button:focus {
+	background-color: #18318D;
+}
+
+body.landing-pais-2018 main .slick-dots li.slick-active button {
+	background-color: #18318D;
+}
+
+body.landing-pais-2018 #sugestoes-button {
+	font-family: 'Mitr', sans-serif;
+	position: absolute;
+	top: 620px;
+	width: 320px;
+	left: 50%;
+	margin-left: -150px;
+	background-color: #F89C59;
+	overflow: hidden;
+	z-index: 999;
+	border-radius: 50px;
+	text-align: center;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+body.landing-pais-2018 #sugestoes-button svg,
+body.landing-pais-2018 #sugestoes-button span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body.landing-pais-2018 #sugestoes-button svg {
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
+}
+
+body.landing-pais-2018 #sugestoes-button span {
+	color: #fff;
+}
+
+body.landing-pais-2018 footer .Newsletter {
+	display: none;
 }
 
 /* ==========================================================================

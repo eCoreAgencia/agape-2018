@@ -318,14 +318,6 @@ $(function() {
 
 	// Scripts Modal //
 
-
-	// Ajuste Meus Pedidos //
-		if (orderList.length > 0) {
-			orderList.find('link').remove();
-			orderList.find('.page-header').unwrap('.container');
-		}
-	// Ajuste Meus Pedidos //
-
 	$('.fulltext-search-box').val('O que você procura?');
 
 	// Menu Persistente Begin //
@@ -358,24 +350,6 @@ $(function() {
 		});
 	// Busca Mob //
 
-
-  	// Voltar ao Topo //
-		$(window).scroll(function() {
-			var scroll = $(window).scrollTop();
-
-			if (scroll >= 450) {
-				$('.js-back-to-top').addClass('active');
-			} else {
-				$('.js-back-to-top').removeClass('active');
-			}
-		});
-
-		body.on('click', '.js-back-to-top', function(event) {
-		    event.preventDefault();
-		    htmlBody.animate({ scrollTop: 0 }, 300);
-		});
-  	// Voltar ao Topo //
-
 	// Slider
 		$('.banners-top.slider').slick({
 			adaptiveHeight: true,
@@ -387,50 +361,24 @@ $(function() {
 			draggable: true,
 			touchMove: true,
 			slidesToShow: 1,
+			prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175" width="40" height="40"><path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#ffffff"/></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175" width="40" height="40"><path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#ffffff"/></svg></button>',
 			slidesToScroll: 1
-		});
-
-		$('.shelf.slider').find('.prateleira > ul').slick({
-			dots: false,
-			arrows: true,
-			draggable: true,
-			touchMove: true,
-			autoplay: false,
-			slidesToShow: 2,
-			mobileFirst: true,
-			slidesToScroll: 3,
-			prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 46.02 46.02"><path d="M14.757 46.02a5.688 5.688 0 0 1-3.929-1.569 5.705 5.705 0 0 1-.204-8.063L23.382 22.97 10.637 9.645a5.703 5.703 0 0 1 8.242-7.884l16.505 17.253a5.707 5.707 0 0 1 .013 7.872L18.893 44.247a5.699 5.699 0 0 1-4.136 1.773z" fill="#FFF"/></svg></button>',
-			nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 46.02 46.02"><path d="M14.757 46.02a5.688 5.688 0 0 1-3.929-1.569 5.705 5.705 0 0 1-.204-8.063L23.382 22.97 10.637 9.645a5.703 5.703 0 0 1 8.242-7.884l16.505 17.253a5.707 5.707 0 0 1 .013 7.872L18.893 44.247a5.699 5.699 0 0 1-4.136 1.773z" fill="#FFF"/></svg></button>',
-			adaptiveHeight: true,
-			responsive: [
-				{
-					breakpoint: 767,
-					settings: {
-						slidesToShow: 2
-					}
-				},
-				{
-					breakpoint: 991,
-					settings: {
-						slidesToShow: 3
-					}
-				},
-			]
-	    });
-
-	    $('.slider-dois.slider').find('.prateleira > ul').slick({
-			dots: false,
-			arrows: true,
-			draggable: true,
-			touchMove: true,
-			autoplay: false,
-			slidesToShow: 2,
-			mobileFirst: true,
-			slidesToScroll: 2,
-			prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 46.02 46.02"><path d="M14.757 46.02a5.688 5.688 0 0 1-3.929-1.569 5.705 5.705 0 0 1-.204-8.063L23.382 22.97 10.637 9.645a5.703 5.703 0 0 1 8.242-7.884l16.505 17.253a5.707 5.707 0 0 1 .013 7.872L18.893 44.247a5.699 5.699 0 0 1-4.136 1.773z" fill="#FFF"/></svg></button>',
-			nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 46.02 46.02"><path d="M14.757 46.02a5.688 5.688 0 0 1-3.929-1.569 5.705 5.705 0 0 1-.204-8.063L23.382 22.97 10.637 9.645a5.703 5.703 0 0 1 8.242-7.884l16.505 17.253a5.707 5.707 0 0 1 .013 7.872L18.893 44.247a5.699 5.699 0 0 1-4.136 1.773z" fill="#FFF"/></svg></button>',
-			adaptiveHeight: true,
-		});
+        });
+        
+        $('.shelf-pais.slider').find('.prateleira > ul').slick({
+            dots: true,
+            arrows: true,
+            draggable: true,
+            touchMove: true,
+            autoplay: false,
+            slidesToShow: 4,
+            mobileFirst: true,
+            slidesToScroll: 4,
+            prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175" width="40" height="40"><path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#404f90"/></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175" width="40" height="40"><path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#404f90"/></svg></button>',
+            adaptiveHeight: true,
+        });
 		
 	// Slider 
 
@@ -454,235 +402,12 @@ $(function() {
 		         .on('touchstart touchmove', function (e) {});
 		}
 	});
-
-	var mountBread = function(){
-		var bCrumb = $(".bread-crumb li").length;
-		if(bCrumb <= 2){
-			$(".bread-crumb-box .text1").html();
-			$(".bread-crumb-box .text2").html($(".bread-crumb li:last-child").text());
-		}else{
-			$(".bread-crumb-box .text1").html($(".bread-crumb li:nth-last-of-type(2)").text());
-			$(".bread-crumb-box .text2").html($(".bread-crumb li:last-of-type").text());
-		}
-	}
-
-	// Smart Research //
-		if (sidebar.length > 0) {
-			mountBread();
-			try {
-				sidebar.find('input[type="checkbox"]').vtexSmartResearch({
-					elemLoading: '',
-					returnTopText: '',
-					elemLoading:'<i class="shelf__loading"></i>',
-					filterScrollTop: function(shelfOffset) {
-						return 20;
-					}
-				});
-			} catch(e) {}
-		}
-	// Smart Research //
-
-	if($(pagInstitucional).length > 0){
-
-		// Slide Toggle itens
-			$(".tab span").click(function() {
-				$(this).toggleClass("active");
-				$(this).next().slideToggle();
-			});
-		// Slide Toggle itens //
-
-	}
-
-    // Scripts Pagina de Produto //
-	    if (pagProduto.length > 0) {
-			try {
-				$document.ready(function() {
-
-				$('label.prefixo input').insertAfter('label.prefixo');
-				$('label.prefixo').text('Calcule o frete');
-		        
-		        // Frete Gratis //
-		        	$('.shipping-value').simulateClick('click');
-		        // Frete Gratis //
-
-				$('ul.Cor').addClass('col-md-4 col-xs-12');
-				$('ul.Cor').insertAfter('ul.Tamanho');
-				$('ul.Tamanho').addClass('col-md-8 col-xs-12');
-				$('.btn-tabelaMedidas').insertAfter('.sku-selector-container .Cor');
-
-		        // Script Mudando regulamento de lugar
-		        	$('#caracteristicas table.Regra').appendTo('.reg-conteudo');
-		        // Script Mudando regulamento de lugar END
-
-				});
-			} catch(e) {}
-
-			try {
-				$document.ajaxStop(function() {
-					$('#szb_btn').insertAfter('ul.Cor');
-					$('#szb_size_chart').appendTo('.medidas');
-
-					$('.btn-tabelaMedidas').on('click', function(e){
-						$('#szb_size_chart').simulateClick();
-					});
-
-					$('.freight-btn').val('Calcular');
-
-					$('.freight-btn').on('click', function(event){
-						// Mounting Loader //
-						$('<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>').insertBefore('.freight-values');
-						// Mounting Loader //
-
-						$('.spinner').fadeOut('6000');
-					});
-
-					$('label.prefixo input').insertAfter('label.prefixo');
-					$('label.prefixo').text('Calcule o frete');
-				});
-			} catch(e) {}
-
-			// Controller Image Thumbs, Featured and SuperZoom //
-				$("#___rc-p-id").each(function(index) {
-					var id = $(this).attr("value");
-					var data = "/api/catalog_system/pub/products/search/?fq=productId:"+id+"";
-
-					$.getJSON(data, function(data) {
-						$.each(data, function(key, val) {
-							var elements = val.items[0].images;
-
-							$(elements).each(function(data, val){
-								// Take Image Thumbs //
-									var myLabel = val.imageLabel;
-									var myImageID = val.imageId;
-									var myImageName = val.imageText;
-									$('<li class="'+myLabel+'"><a href="/arquivos/ids/'+myImageID+'-1250-1250/'+myImageName+'.jpg" data-standard="/arquivos/ids/'+myImageID+'-600-600/'+myImageName+'.jpg"><img src="/arquivos/ids/'+myImageID+'-170-170/'+myImageName+'.jpg" /></a></li>').appendTo('ul.thumbnails');
-								// Take Image Thumbs //
-
-								var myFirst = $('.thumbnails li').first();
-								myFirst.addClass('first-thumb');
-
-								var firstThumbStand = $('.thumbnails li.first-thumb a').attr('data-standard');
-								var firstThumbLink = $('.thumbnails li.first-thumb a').attr('href');
-								var firstThumbEx = $('<a href="'+firstThumbLink+'"><img src="'+firstThumbStand+'"/></a>');
-								firstThumbEx.appendTo('.easyzoom');
-								$('.easyzoom a:first-of-type').nextAll().remove();
-
-								// Instantiate EasyZoom instances
-								var $easyzoom = $('.easyzoom').easyZoom();
-
-								// Setup thumbnails example
-								var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
-								$('.thumbnails').on('click', 'a', function(e) {
-									var $this = $(this);
-									e.preventDefault();
-									// Use EasyZoom's `swap` method
-									api1.swap($this.data('standard'), $this.attr('href'));
-								});
-							});
-						});
-					});
-				});
-			// Controller Image Thumbs, Featured and SuperZoom //
-
-			// Change Pic //
-				body.on('click', '.Cor .skuList label', function(event){
-					$('.Cor .skuList label').removeClass('checked');
-					$(this).addClass('checked');
-
-					$('.thumbnails li').remove();
-					$('.easyzoom a').remove();
-
-					window.currentColor = $(this).text();
-					console.log(currentColor);
-					var x = "";
-
-					var id = $('#___rc-p-id').attr("value");
-					var data = "/api/catalog_system/pub/products/search/?fq=productId:"+id+"";
-
-					$.getJSON(data, function(data) {
-						$.each(data, function(key, val) {
-							var elements = val.items;
-							$(elements).each(function(i, items, key, val){
-								if(elements[i].Cor == currentColor) {
-									window.me = $(this);
-									var colors = elements[i];
-								}
-							});
-
-							var changeColor = me[0].images;
-
-							$(changeColor).each(function(data, val){
-
-								// Take Image Thumbs //
-									var myLabel = val.imageLabel;
-									var myImageID = val.imageId;
-									var myImageName = val.imageText;
-									$('<li class="'+myLabel+'"><a href="/arquivos/ids/'+myImageID+'-1250-1250/'+myImageName+'.jpg" data-standard="/arquivos/ids/'+myImageID+'-600-600/'+myImageName+'.jpg"><img src="/arquivos/ids/'+myImageID+'-170-170/'+myImageName+'.jpg" /></a></li>').appendTo('ul.thumbnails');
-								// Take Image Thumbs //
-
-								var myFirst = $('.thumbnails li').first();
-								myFirst.addClass('first-thumb');
-
-								var firstThumbStand = $('.thumbnails li.first-thumb a').attr('data-standard');
-								var firstThumbLink = $('.thumbnails li.first-thumb a').attr('href');
-								var firstThumbEx = $('<a href="'+firstThumbLink+'"><img src="'+firstThumbStand+'"/></a>');
-								firstThumbEx.appendTo('.easyzoom');
-								$('.easyzoom a:first-of-type').nextAll().remove();
-
-								// Instantiate EasyZoom instances
-								var $easyzoom = $('.easyzoom').easyZoom();
-
-								// Setup thumbnails example
-								var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
-								$('.thumbnails').on('click', 'a', function(e) {
-									var $this = $(this);
-									e.preventDefault();
-									// Use EasyZoom's `swap` method
-									api1.swap($this.data('standard'), $this.attr('href'));
-								});
-
-								var firstItem = $('.thumbnails li').first().find('a');
-								firstItem.simulateClick('click');
-							});
-						});
-					});
-				});
-			// Change Pic //
-
-	    }
-    // Scripts Pagina de Produto //
-
-
-  	// Scripts Departamento //
-		if($(depCatBus).length > 0){
-			// Adicionando classe nos elementos do Ordernar Por quando ativos
-			if(window.location.href.indexOf("OrderByTopSaleDESC")!=-1){
-				$(".main-category__orderBy li:nth-child(2) a").addClass("active");
-			}
-			if(window.location.href.indexOf("OrderByReleaseDateDESC")!=-1){
-				$(".main-category__orderBy li:nth-child(3) a").addClass("active");
-			}
-			if(window.location.href.indexOf("OrderByPriceDESC")!=-1){
-				$(".main-category__orderBy li:nth-child(4) a").addClass("active");
-			}
-			if(window.location.href.indexOf("OrderByPriceASC")!=-1){
-				$(".main-category__orderBy li:nth-child(5) a").addClass("active");
-			}
-			// Adicionando classe nos elementos do Ordernar Por quando ativos
-
-			$('.resultado-busca-filtro .orderBy').first().insertBefore('.navigation-tabs');
-			$('.resultado-busca-filtro .orderBy').last().hide();
-
-			priceStatus();
-		}
-
-		if($('body.busca-vazia').length > 0){
-			$('.sidebar .navigation').addClass('navigation-tabs');
-			$('.sidebar .navigation-tabs').removeClass('navigation');
-			$('.resultado-busca-filtro .orderBy').first().insertBefore('.navigation-tabs');
-			$('.resultado-busca-filtro .orderBy').last().hide();
-		}
-  	// Scripts Departamento //
+    
+    $('#sugestoes-button').on('click', function(event){
+        document.querySelector('.vestido-com-devocao').scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    });
 
 // Scripts Modal //
     // Open Modal //
@@ -712,16 +437,8 @@ $(function() {
 	    // Close Modal //
 	// Scripts Modal //
 
-    // Remocao Loading Meus Pedidos//
-		try {
-			$document.ajaxStop(function() {
-				orderList.parents('html').removeClass('is-loading');
-			});
-		} catch(e) {}
-    // Remocao Loading Meus Pedidos//
-
 		// fadeInOut
-    function fadeInOut(item) {
+        function fadeInOut(item) {
   			item.fadeIn(1000).delay(3000).fadeOut(1000, function() {
 		    if (item.next().length)
 		    {
@@ -732,15 +449,6 @@ $(function() {
 		    }
   		});
 
-		}
-		if($("body").hasClass('home')){
-			var tipBar = function(s){
-				if (typeof window.screen.orientation !== 'undefined' && s <= 768) {
-					fadeInOut(jQuery('.tipBar ul li:first-child'));
-				}
-			}
-			tipBar(window.screen.width);
-			$(window).on('resize', function(){ tipBar(window.screen.width) });
-		}
+	}
 
 });

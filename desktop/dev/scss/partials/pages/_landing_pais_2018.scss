@@ -1,0 +1,403 @@
+/* ==========================================================================
+   Landing Pais 2018
+   ========================================================================== */
+
+body.landing-pais-2018{
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        -webkit-box-shadow: inset 0 94px 24px 3px rgba(0,0,0,.14);
+        -moz-box-shadow: inset 0 94px 24px 3px rgba(0,0,0,.14);
+        box-shadow: inset 0 94px 24px 3px rgba(0,0,0,.14);
+
+        .mid-box{
+            .options{
+                a, span, em{
+                    color: #fff;
+                }
+
+                svg{
+                    path{
+                        fill: #fff;
+                    }
+                }
+
+                .btn-account,
+                #mini-cart:hover{
+                    svg{
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        padding-top: 0;
+
+        .news-pais{
+            -webkit-box-shadow: 0px 12px 20px -1px rgba(204,204,204,1);
+            -moz-box-shadow: 0px 12px 20px -1px rgba(204,204,204,1);
+            box-shadow: 0px 12px 20px -1px rgba(204,204,204,1);
+            background-color: #fff;
+            border-radius: 5px;
+            top: 480px;
+            z-index: 999999999;
+            overflow: hidden;
+            position: absolute;
+            left: 50%;
+            margin-left: -645px;
+            padding: 30px 20px;
+
+            .title-box{
+                svg, p{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    color: #1d349e;
+                    font-family: 'Mitr', sans-serif;
+                }
+
+                svg{
+                    margin-right: 10px;
+                }
+
+                strong{
+                    display: block;
+                }
+
+                .obs-promo{
+                    display: block;
+                    margin-top: 18px;
+                    font-size: 12px;
+                    color: #bbb;
+                    font-weight: lighter;
+                }
+            }
+            
+            .spinner{
+                right: 0;
+                width: 68%;
+            }
+
+            .form-newsletter{
+                background-color: #fff;
+
+                .fieldset-inputs{
+                    .nome, .email{
+                        display: inline-block;
+                        width: 50%;
+
+                        input{
+                            width: 95%;
+                            border-radius: 10px;
+                            padding: 8px 20px;
+                            border: 1px solid #ccc;
+                            font-weight: 300;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .genero{
+                        clear: both;
+                        display: block;
+                        width: 100%;
+                        margin-top: 20px;
+                        font-weight: 300;
+                        font-size: 13px;
+
+                        label{
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            .checkbox{
+                                display: inline-block;
+                            }
+
+                            &#feminino{
+                                margin-right: 10px;
+
+                                &:before{
+                                    content: "Selecione o seu gênero:";
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .newsletter-button-ok{
+                    border-radius: 10px;
+                    padding: 8px 20px;
+                    font-size: 14px;
+                    background-image: none;
+                    background-color: #18318d;
+                    color: #fff;
+                    cursor: pointer;
+                    font-family: 'Mitr', sans-serif;
+                }
+            }
+
+            .success-msg{
+                position: absolute;
+                background-color: #fff;
+                top: 0;
+                left: 0;
+                padding: 36px 0;
+                text-align: center;
+                margin: 0 auto;
+                width: 100%;
+
+                svg, .txt-success{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                svg{
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .txt-success{
+                    font-family: 'Mitr', sans-serif;
+                    color: #767676;
+                    font-weight: 200;
+                    width: 450px;
+                    line-height: 20px;
+
+                    h3{
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                    strong{
+                        font-weight: 400;
+                        color: #F08128;
+                    }
+                }
+            }
+
+            .error-msg{
+                display: block;
+                font-weight: 400;
+                color: red;
+                font-size: 12px;
+                margin: 5px 0 0;
+            }
+        }
+
+        .vestido-com-devocao{
+            margin-top: 12%;
+        }
+
+        .para-vestir-com-o-filho{
+            margin-bottom: 12%;
+        }
+
+        .shelf-pais{
+            li{
+                text-align: center;
+
+                .shelfOldPrice {
+                    padding-right: 1px;
+                }
+
+                .shelfInstallment{
+                    font-size: 18px;
+                }
+
+                &:hover{
+                    .buy-button{
+                        @extend .transition;
+                        display: block;
+                        background-color: #404f90;
+                        z-index: 99999999999999999999999;
+                    }
+                }
+            }
+
+            .shelfProductName{
+                font-weight: 300;
+                margin-top: 10px;
+                display: block;
+                font-size: 16px;
+            }
+
+            .buy-button{
+                @extend .transition;
+                display: none;
+            }
+        }
+
+        .shelf-title{
+            text-align: center;
+            overflow: hidden;
+            display: block;
+            margin: 14% 0 4%;
+
+            i{
+                display: inline-block;
+                margin: 0 10px;
+
+                svg{
+                    width: 110px;
+                }
+
+                &.bullet-after{
+                    svg{
+                        @include rotate(180deg);
+                    }
+                }
+            }
+
+            h2{
+                font-size: 30px;
+                color: #404f90;
+                font-weight: 400;
+                line-height: 40px;
+                display: inline-block;
+                vertical-align: text-bottom;
+            }
+        }
+
+        .shelf{
+            .slick-slider{
+                min-height: 510px;
+
+                .slick-arrow{
+                    display: inline-block!important;
+                    top: 27%;
+                    width: 40px !important;
+                    height: 40px;
+                    font-size: 0;
+                    padding: 0;
+                    line-height: 0;
+                    cursor: pointer;
+                    position: absolute;
+                    border: none;
+                    padding: 0;
+                    z-index: 99999999;
+
+                    &.slick-next{
+                        right: -25px;
+                    }
+
+                    &.slick-prev{
+                        left: -25px;
+                    }
+                }
+            }
+        }
+
+        .banners-top.slick-slider {
+            .slick-arrow {
+                @extend .transition;
+                display: inline-block!important;
+                top: 50%;
+                width: 60px!important;
+                height: 60px;
+                border: none;
+                z-index: 99999999;
+                position: absolute;
+                padding: 0;
+                cursor: pointer;
+                font-size: 0;
+                line-height: 0;
+                background-color: #243D9A;
+                opacity: 0.8;
+
+                &:hover{
+                    @extend .transition;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            list-style: none;
+            display: block;
+            text-align: center;
+            padding: 0;
+            width: auto;
+            transform: translateX(-50%);
+            z-index: 1;
+          
+            li {
+              position: relative;
+              display: inline-block;
+              width: 8px;
+              height: 8px;
+              margin: 0 5px;
+              padding: 0;
+              cursor: pointer;
+          
+              button {
+                border: 0;
+                padding: 0;
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+                text-indent: -9999px;
+                background-color: #DDDDDD;
+                border-radius: 50%;
+          
+                &:hover,
+                &:focus { 
+                  background-color: #18318D;
+                }
+              }
+          
+              &.slick-active button {
+                background-color: #18318D;
+              }
+            }
+        }
+    }
+
+    #sugestoes-button{
+        font-family: 'Mitr', sans-serif;
+        position: absolute;
+        top: 620px;
+        width: 320px;
+        left: 50%;
+        margin-left: -150px;
+        background-color: #F89C59;
+        overflow: hidden;
+        z-index: 999;
+        border-radius: 50px;
+        text-align: center;
+        padding: 10px 20px;
+        cursor: pointer;
+
+        svg, span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        svg{
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        span{
+            color: #fff;
+        }
+    }
+
+    footer{
+        .Newsletter{
+            display: none;
+        }
+    }
+}

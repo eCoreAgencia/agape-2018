@@ -1,0 +1,1821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 99 33" style="enable-background:new 0 0 99 33;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+	.st3{opacity:0.14;fill:#FFFFFF;}
+	.st4{opacity:4.000000e-02;fill:#FFFFFF;}
+	.st5{opacity:0.5;fill:url(#SVGID_4_);}
+	.st6{fill:#FFFFFF;}
+	.st7{clip-path:url(#SVGID_6_);}
+	.st8{display:inline;}
+	.st9{fill:#18318D;}
+	.st10{fill:#FFFFFF;stroke:#BDBDBD;stroke-miterlimit:10;}
+	.st11{fill:#E0E0E0;}
+	.st12{fill:none;stroke:#FF8013;stroke-miterlimit:10;}
+	.st13{fill:#FF8013;}
+	.st14{fill:#FCC345;}
+	.st15{fill:#D39B15;}
+	.st16{fill:#BBBBBB;}
+	.st17{fill:#DEDEDE;}
+	.st18{fill:none;stroke:#FF8013;stroke-width:0.5;stroke-miterlimit:10;}
+	.st19{fill:none;stroke:#BBBBBB;stroke-width:0.75;stroke-miterlimit:10;}
+	.st20{opacity:0.5;}
+	.st21{display:inline;fill:url(#degrade_branco_1_);}
+	.st22{opacity:0.95;}
+	.st23{fill:url(#SVGID_49_);}
+	.st24{display:none;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<image style="overflow:visible;" width="1350" height="589" xlink:href="9BBFD0.jpg"  transform="matrix(1 0 0 1 -1155 -773)">
+</image>
+<g id="Guias" class="st0">
+</g>
+<image style="display:none;overflow:visible;" width="1900" height="630" xlink:href="../Fotos/05-07-PAIS-ANTECIPADO-BANNER-1-INSTITUCIONAL.jpg"  transform="matrix(0.7397 0 0 0.7397 249 -775)">
+</image>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="248" y="-775" width="1366" height="548"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="BG_BLUE" class="st1">
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1239.6646" y1="78.1227" x2="622.3354" y2="-991.1227">
+			<stop  offset="0" style="stop-color:#18318D"/>
+			<stop  offset="1" style="stop-color:#4B65C6"/>
+		</linearGradient>
+		<rect x="248" y="-775" class="st2" width="1366" height="637"/>
+		<polyline class="st3" points="1234,-134 248,-134 248,-774 		"/>
+		<polyline class="st4" points="249,-392 249,-775 632,-775 		"/>
+	</g>
+</g>
+<g id="HEADER">
+	<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="931" y1="-775" x2="931" y2="-658">
+		<stop  offset="0" style="stop-color:#000000"/>
+		<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+	</linearGradient>
+	<rect x="248" y="-775" class="st5" width="1366" height="117"/>
+	
+		<image style="overflow:visible;enable-background:new    ;" width="283" height="59" id="Logo" xlink:href="9BBFD0.png"  transform="matrix(1 0 0 1 284 -750)">
+	</image>
+	<g id="Minha_Conta">
+		<g>
+			<rect x="1345" y="-738" style="fill:none;" width="50" height="35"/>
+			<text transform="matrix(1 0 0 1 1345 -725.0762)"><tspan x="0" y="0" class="st6" style="font-family:'Cairo-Regular'; font-size:18px;">Minha</tspan><tspan x="0" y="21.6" class="st6" style="font-family:'Cairo-Bold'; font-size:18px;">Conta</tspan></text>
+		</g>
+		<path id="hover-blue" class="st6" d="M1312.5-743c-12.4,0-22.5,10.1-22.5,22.5s10.1,22.5,22.5,22.5s22.5-10.1,22.5-22.5
+			S1324.9-743,1312.5-743z M1312.5-736.3c3.8,0,6.8,2.9,6.8,6.8s-2.9,6.8-6.8,6.8s-6.8-2.9-6.8-6.8S1308.7-736.3,1312.5-736.3z
+			 M1312.5-704.3c-5.6,0-10.6-2.9-13.5-7.2c0-4.5,9-7,13.5-7s13.5,2.5,13.5,7C1323.1-707.2,1318.1-704.3,1312.5-704.3z"/>
+	</g>
+	<g id="Minicart">
+		<g>
+			<rect x="1515" y="-736" style="fill:none;" width="63" height="35"/>
+			<text transform="matrix(1 0 0 1 1515 -723.0762)"><tspan x="0" y="0" class="st6" style="font-family:'Cairo-Regular'; font-size:18px;">0 Itens:</tspan><tspan x="0" y="21.6" class="st6" style="font-family:'Cairo-Bold'; font-size:18px;">R$ 0,00</tspan></text>
+		</g>
+		<path id="hover-blue_1_" class="st6" d="M1498.6-714.9l5.3-15.9c0.3-0.8,0.1-1.2-0.2-1.5c-0.6-0.8-1.7-0.8-1.9-0.8l-30.1,0
+			l-0.8-3.8c-0.2-0.9-0.9-1.8-2.1-1.8h-8.4c-0.9,0-1.4,0.4-1.4,1.2v2.2c0,0.8,0.5,1,1.4,1h7.1l5.5,23.2c-0.9,0.9-1.3,2.3-1.3,3.5
+			c0,2.7,2.2,5.3,5,5.3c2.6,0,4.6-2.5,4.9-3.9h10.6c0.3,1.5,1.9,4,4.9,4c2.7,0,5-2.4,5-5.1c0-2.7-1.7-5.2-5-5.2
+			c-1.4,0-3,0.7-3.8,1.8h-13.1c-0.9-1.5-2.2-1.9-3.6-2l-0.2-1h19.9C1498-713.7,1498.3-714.2,1498.6-714.9z M1497.2-709.3
+			c1,0,1.9,0.8,1.9,1.9s-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9C1495.3-708.5,1496.1-709.3,1497.2-709.3z M1478.5-707.5
+			c0,1-0.8,1.9-1.9,1.9c-1,0-1.9-0.9-1.9-1.9c0-1,0.9-1.9,1.9-1.9C1477.6-709.4,1478.5-708.5,1478.5-707.5z"/>
+	</g>
+</g>
+<g id="Foto_Modelo">
+	<defs>
+		<rect id="SVGID_5_" x="563" y="-646.3" width="340" height="397.7"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="DV2981_-_SAGRADA_FAMÍLIA_-_BRANCO__x28_1_x29_.tif" class="st7">
+		
+			<image style="overflow:visible;" width="4480" height="6720" id="DV2981_-_SAGRADA_FAMÍLIA_-_BRANCO__x28_1_x29__2_" xlink:href="9BBFD1.png"  transform="matrix(0.1037 0 0 0.1037 498.8974 -660.9072)">
+		</image>
+	</g>
+</g>
+<image style="overflow:visible;" width="1349" height="298" xlink:href="9BBFD3.jpg"  transform="matrix(1 0 0 1 2251 45)">
+</image>
+<g id="Campanha_Pai_x1F__x1F_">
+	<g>
+		<path class="st6" d="M996-579.4v-32.4c0-0.7,0.1-1.2,0.3-1.5c0.2-0.3,0.7-0.4,1.4-0.4h2.4c0.6,0,1,0.1,1.2,0.4
+			c0.2,0.3,0.4,0.7,0.4,1.2l0.1,3.7c1.5-2,3.2-3.6,5.2-4.7c2-1.1,4.4-1.7,7.2-1.7c2.2,0,4.2,0.6,6,1.7c1.7,1.1,2.9,2.7,3.5,4.8
+			c1.3-2,3.1-3.6,5.2-4.8c2.1-1.1,4.6-1.7,7.4-1.7c3.5,0,6.2,1.1,8.3,3.2c2.1,2.1,3.1,5.3,3.1,9.5v22.8c0,1.5-0.8,2.3-2.4,2.3h-2
+			c-0.8,0-1.4-0.2-1.8-0.6c-0.4-0.4-0.5-1-0.5-1.7v-22.4c0-2.8-0.6-4.8-1.7-6c-1.1-1.2-2.9-1.8-5.1-1.8c-2.6,0-4.8,0.9-6.5,2.6
+			c-1.7,1.7-2.6,3.9-2.6,6.6v21.1c0,1.5-0.8,2.3-2.3,2.3h-1.9c-0.8,0-1.4-0.2-1.8-0.6c-0.4-0.4-0.5-1-0.5-1.7v-23
+			c0-2.5-0.5-4.3-1.6-5.5c-1.1-1.2-2.7-1.8-4.9-1.8c-2.7,0-4.9,0.9-6.8,2.7c-1.8,1.8-2.7,4.1-2.7,6.9v20.7c0,0.8-0.2,1.3-0.5,1.7
+			c-0.4,0.4-0.9,0.6-1.8,0.6h-2C996.8-577.1,996-577.9,996-579.4z"/>
+		<path class="st6" d="M1066.4-578c-3.2-1.3-5.7-3.4-7.6-6.2c-1.9-2.8-2.9-6.3-2.9-10.6c0-6.6,1.7-11.6,5.1-15
+			c3.4-3.4,8.3-5.1,14.6-5.1c6.3,0,11,1.6,14.1,4.9c3.2,3.3,4.7,8.2,4.7,14.6c0,1.4-0.7,2.1-2,2.1h-30c0,4,1.3,7.1,4,9.2
+			c2.6,2.1,6.3,3.1,11,3.1c4.4,0,8.2-1,11.4-3c0.3-0.2,0.5-0.2,0.7-0.2c0.3,0,0.5,0.2,0.7,0.5l1.4,2.5c0.1,0.2,0.2,0.4,0.2,0.6
+			c0,0.4-0.2,0.7-0.6,0.9c-2,1.3-4.2,2.2-6.5,2.8c-2.3,0.6-5,0.9-8,0.9C1073-576,1069.6-576.6,1066.4-578z M1088.1-598
+			c0-3.8-1-6.8-3.1-8.9c-2.1-2.1-5.2-3.2-9.3-3.2c-4.2,0-7.5,1.1-9.7,3.3c-2.3,2.2-3.4,5.1-3.4,8.8H1088.1z"/>
+		<path class="st6" d="M1106.7-579.5c-2.6-2.3-3.9-5.7-3.9-10.2v-21.8c0-1.5,0.8-2.3,2.3-2.3h2.4c0.8,0,1.4,0.2,1.8,0.6
+			c0.4,0.4,0.5,1,0.5,1.7v21.7c0,2.9,0.8,5.1,2.3,6.4c1.6,1.3,3.9,2,6.9,2c3.3,0,6-0.9,8.2-2.7c2.2-1.8,3.4-4.1,3.4-6.9v-20.7
+			c0-1.5,0.8-2.3,2.4-2.3h2.3c0.8,0,1.4,0.2,1.8,0.6c0.4,0.4,0.5,1,0.5,1.7v32.4c0,0.7-0.1,1.2-0.3,1.5c-0.2,0.3-0.7,0.4-1.3,0.4
+			h-2.5c-0.6,0-0.9-0.1-1.1-0.4c-0.2-0.3-0.3-0.7-0.4-1.2l-0.2-3.7c-1.7,2.1-3.8,3.7-6.1,4.8c-2.4,1.1-5.3,1.6-8.7,1.6
+			C1112.7-576,1109.3-577.1,1106.7-579.5z"/>
+		<path class="st6" d="M1157.1-578.2c-0.7-0.7-1-1.8-1-3.3v-43.2c0-1.5,0.3-2.6,1-3.3c0.7-0.7,1.9-1.1,3.5-1.1h18.2
+			c7.6,0,13.2,1.5,16.7,4.5c3.5,3,5.2,7.6,5.2,13.7c0,6.1-1.7,10.7-5.2,13.7c-3.5,3-9,4.5-16.6,4.5h-4.6v11.1c0,1.5-0.3,2.6-1,3.3
+			c-0.7,0.7-1.9,1.1-3.6,1.1h-9.1C1158.9-577.1,1157.8-577.5,1157.1-578.2z M1177.2-605.6c1.6,0,2.9-0.4,3.9-1.3
+			c0.9-0.9,1.4-2.2,1.4-3.9c0-1.8-0.5-3.1-1.4-4c-0.9-0.9-2.2-1.3-3.9-1.3h-5.2v10.5H1177.2z"/>
+		<path class="st6" d="M1201.6-580.7c-2.8-3.1-4.3-7.5-4.3-13.2c0-4.2,1.1-7.9,3.2-11.1c2.1-3.2,5.1-5.7,8.9-7.4
+			c3.8-1.7,8-2.6,12.8-2.6c4.1,0,7.5,0.4,10.3,1.2c2.8,0.8,5.6,2.1,8.3,3.9v30.2c0,1-0.2,1.7-0.6,2c-0.4,0.3-1.2,0.5-2.3,0.5h-9.6
+			c-0.6,0-1-0.1-1.3-0.2c-0.3-0.2-0.6-0.4-0.8-0.8l-1.2-1.9c-1.5,1.4-3.2,2.4-5.1,3.1c-1.9,0.7-4.2,1-6.9,1
+			C1208.2-576,1204.4-577.5,1201.6-580.7z M1222.8-589.2c0.8-0.7,1.2-1.7,1.2-3v-10.4c-0.5-0.2-1.1-0.3-1.8-0.3
+			c-2.1,0-3.7,0.8-4.9,2.3c-1.2,1.6-1.8,3.8-1.8,6.7c0,3.8,1.4,5.7,4.1,5.7C1220.9-588.1,1222-588.5,1222.8-589.2z"/>
+		<path class="st6" d="M1247.7-618c-1-1-1.6-2.3-1.6-3.8v-1.9c0-1.5,0.5-2.7,1.6-3.8c1-1,2.6-1.6,4.5-1.6h6.6c2,0,3.5,0.5,4.6,1.6
+			c1.1,1,1.6,2.3,1.6,3.8v1.9c0,1.5-0.5,2.7-1.6,3.8c-1.1,1-2.6,1.6-4.6,1.6h-6.6C1250.2-616.4,1248.7-616.9,1247.7-618z
+			 M1247.5-578.2c-0.7-0.7-1-1.8-1-3.3v-27.9c0-1.5,0.3-2.6,1-3.3c0.7-0.7,1.9-1.1,3.5-1.1h9.1c1.7,0,2.9,0.3,3.6,1
+			c0.7,0.7,1,1.8,1,3.3v27.9c0,1.5-0.3,2.6-1,3.3c-0.7,0.7-1.9,1.1-3.6,1.1h-9.1C1249.3-577.1,1248.1-577.5,1247.5-578.2z"/>
+	</g>
+	<g>
+		<path class="st6" d="M996-508.4v-32.4c0-0.7,0.1-1.2,0.3-1.5c0.2-0.3,0.7-0.4,1.4-0.4h2.4c0.6,0,1,0.1,1.2,0.4
+			c0.2,0.3,0.4,0.7,0.4,1.2l0.1,3.7c1.5-2,3.2-3.6,5.2-4.7c2-1.1,4.4-1.7,7.2-1.7c2.2,0,4.2,0.6,6,1.7c1.7,1.1,2.9,2.7,3.5,4.8
+			c1.3-2,3.1-3.6,5.2-4.8c2.1-1.1,4.6-1.7,7.4-1.7c3.5,0,6.2,1.1,8.3,3.2c2.1,2.1,3.1,5.3,3.1,9.5v22.8c0,1.5-0.8,2.3-2.4,2.3h-2
+			c-0.8,0-1.4-0.2-1.8-0.6c-0.4-0.4-0.5-1-0.5-1.7v-22.4c0-2.8-0.6-4.8-1.7-6c-1.1-1.2-2.9-1.8-5.1-1.8c-2.6,0-4.8,0.9-6.5,2.6
+			c-1.7,1.7-2.6,3.9-2.6,6.6v21.1c0,1.5-0.8,2.3-2.3,2.3h-1.9c-0.8,0-1.4-0.2-1.8-0.6c-0.4-0.4-0.5-1-0.5-1.7v-23
+			c0-2.5-0.5-4.3-1.6-5.5c-1.1-1.2-2.7-1.8-4.9-1.8c-2.7,0-4.9,0.9-6.8,2.7c-1.8,1.8-2.7,4.1-2.7,6.9v20.7c0,0.8-0.2,1.3-0.5,1.7
+			c-0.4,0.4-0.9,0.6-1.8,0.6h-2C996.8-506.1,996-506.9,996-508.4z"/>
+		<path class="st6" d="M1066.4-507c-3.2-1.3-5.7-3.4-7.6-6.2s-2.9-6.3-2.9-10.6c0-6.6,1.7-11.6,5.1-15c3.4-3.4,8.3-5.1,14.6-5.1
+			c6.3,0,11,1.6,14.1,4.9c3.2,3.3,4.7,8.2,4.7,14.6c0,1.4-0.7,2.1-2,2.1h-30c0,4,1.3,7.1,4,9.2c2.6,2.1,6.3,3.1,11,3.1
+			c4.4,0,8.2-1,11.4-3c0.3-0.2,0.5-0.2,0.7-0.2c0.3,0,0.5,0.2,0.7,0.5l1.4,2.5c0.1,0.2,0.2,0.4,0.2,0.6c0,0.4-0.2,0.7-0.6,0.9
+			c-2,1.3-4.2,2.2-6.5,2.8c-2.3,0.6-5,0.9-8,0.9C1073-505,1069.6-505.7,1066.4-507z M1088.1-527c0-3.8-1-6.8-3.1-8.9
+			c-2.1-2.1-5.2-3.2-9.3-3.2c-4.2,0-7.5,1.1-9.7,3.3c-2.3,2.2-3.4,5.1-3.4,8.8H1088.1z"/>
+		<path class="st6" d="M1106.7-508.5c-2.6-2.3-3.9-5.7-3.9-10.2v-21.8c0-1.5,0.8-2.3,2.3-2.3h2.4c0.8,0,1.4,0.2,1.8,0.6
+			c0.4,0.4,0.5,1,0.5,1.7v21.7c0,2.9,0.8,5.1,2.3,6.4c1.6,1.3,3.9,2,6.9,2c3.3,0,6-0.9,8.2-2.7c2.2-1.8,3.4-4.1,3.4-6.9v-20.7
+			c0-1.5,0.8-2.3,2.4-2.3h2.3c0.8,0,1.4,0.2,1.8,0.6c0.4,0.4,0.5,1,0.5,1.7v32.4c0,0.7-0.1,1.2-0.3,1.5c-0.2,0.3-0.7,0.4-1.3,0.4
+			h-2.5c-0.6,0-0.9-0.1-1.1-0.4c-0.2-0.3-0.3-0.7-0.4-1.2l-0.2-3.7c-1.7,2.1-3.8,3.7-6.1,4.8c-2.4,1.1-5.3,1.6-8.7,1.6
+			C1112.7-505,1109.3-506.2,1106.7-508.5z"/>
+		<path class="st6" d="M1164.6-509.2c-2.8-2.8-4.2-6.8-4.2-11.8v-9.5h-2.4c-1.6,0-2.7-0.3-3.3-1c-0.6-0.7-0.9-1.8-0.9-3.3v-3.5
+			c0-1.5,0.3-2.6,0.9-3.3c0.6-0.7,1.7-1,3.3-1h2.4v-0.8c0-1.3,0.3-2.7,1-4c0.7-1.3,1.6-3,2.7-5c0.6-1,1.1-1.6,1.6-1.9
+			c0.5-0.3,1.4-0.5,2.8-0.5h5.5c1.7,0,2.9,0.3,3.6,1c0.7,0.7,1,1.8,1,3.3v7.9h4.6c1.6,0,2.7,0.3,3.3,1c0.6,0.7,0.9,1.8,0.9,3.3v3.5
+			c0,1.5-0.3,2.6-0.9,3.3c-0.6,0.7-1.7,1-3.3,1h-4.6v9.2c0,1.2,0.2,2,0.7,2.6c0.5,0.6,1.3,0.9,2.3,0.9c0.8,0,1.3-0.1,1.7-0.2
+			c0.4-0.2,0.9-0.5,1.6-0.9c0.5-0.3,0.9-0.5,1.3-0.5c0.6,0,1.1,0.4,1.5,1.1l3.6,6.2c0.5,0.8,0.7,1.5,0.7,2c0,0.6-0.3,1-0.9,1.4
+			c-1.9,1.2-4,2.1-6.3,2.8c-2.3,0.6-5.1,1-8.4,1C1171.4-505,1167.4-506.4,1164.6-509.2z"/>
+		<path class="st6" d="M1195.8-508.5c-2.4-2.4-3.7-5.9-3.7-10.7v-19.1c0-1.5,0.3-2.6,1-3.3c0.7-0.7,1.9-1.1,3.5-1.1h9.1
+			c1.7,0,2.9,0.3,3.6,1c0.7,0.7,1,1.8,1,3.3v18.3c0,1,0.2,1.8,0.6,2.3c0.4,0.5,1,0.7,1.9,0.7c1,0,1.6-0.2,2-0.7
+			c0.4-0.5,0.5-1.2,0.5-2.3v-18.3c0-1.5,0.3-2.6,1-3.3c0.7-0.7,1.9-1.1,3.5-1.1h9.1c1.7,0,2.9,0.3,3.6,1c0.7,0.7,1,1.8,1,3.3v29.8
+			c0,1-0.2,1.7-0.6,2c-0.4,0.3-1.2,0.5-2.3,0.5h-9.6c-0.7,0-1.2-0.1-1.5-0.2c-0.3-0.1-0.5-0.4-0.6-0.9l-0.5-1.9
+			c-1.4,1.2-3.2,2.2-5.5,3c-2.3,0.8-4.7,1.1-7.4,1.1C1201.6-505,1198.2-506.2,1195.8-508.5z"/>
+		<path class="st6" d="M1243.4-510c-3.9-3.3-5.9-8.3-5.9-14.8c0-5.8,1.6-10.5,4.9-14c3.3-3.5,7.9-5.2,14-5.2c1.2,0,2.5,0.1,3.9,0.4
+			c1.3,0.3,2.4,0.6,3.2,0.9v-11.1c0-1.5,0.4-2.6,1.1-3.3c0.7-0.7,1.9-1,3.6-1h8.7c1.7,0,2.9,0.4,3.5,1.1c0.7,0.7,1,1.8,1,3.3v43
+			c-2.3,1.7-5.3,3-8.9,4.1c-3.6,1-7.5,1.6-11.6,1.6C1253.1-505,1247.3-506.7,1243.4-510z M1263.8-517.4v-10.7c0-1.3-0.3-2.3-0.8-2.9
+			c-0.5-0.6-1.4-0.9-2.7-0.9c-1.5,0-2.7,0.6-3.4,1.9c-0.8,1.3-1.1,3-1.1,5.1c0,2.7,0.5,4.7,1.5,5.9c1,1.2,2.5,1.8,4.4,1.8
+			C1262.5-517.1,1263.3-517.2,1263.8-517.4z"/>
+		<path class="st6" d="M1294.6-507.4c-3.4-1.6-6-3.9-7.8-6.8c-1.8-2.9-2.7-6.3-2.7-10.3c0-4,0.9-7.4,2.7-10.3
+			c1.8-2.9,4.4-5.2,7.8-6.8c3.4-1.6,7.5-2.4,12.2-2.4c7.2,0,12.8,1.7,16.8,5.2c4,3.5,6,8.2,6,14.2c0,3.9-0.9,7.3-2.7,10.3
+			c-1.8,2.9-4.4,5.2-7.8,6.8c-3.4,1.6-7.5,2.4-12.3,2.4C1302.1-505,1298-505.8,1294.6-507.4z M1311.4-524.5c0-2.3-0.4-4-1.2-5
+			c-0.8-1-1.9-1.5-3.4-1.5c-1.5,0-2.6,0.5-3.4,1.5c-0.8,1-1.1,2.7-1.1,5c0,4.4,1.5,6.6,4.5,6.6
+			C1309.9-517.8,1311.4-520,1311.4-524.5z"/>
+	</g>
+</g>
+<g id="FORMULÁRIO" class="st0">
+	<g class="st8">
+		
+			<image style="overflow:visible;opacity:0.5;" width="1318" height="198" xlink:href="9BBFDE.png"  transform="matrix(1 0 0 1 272 -335)">
+		</image>
+		<g>
+			<path class="st6" d="M1569-151H293c-5,0-9-4-9-9v-156c0-5,4-9,9-9h1276c5,0,9,4,9,9v156C1578-155,1574-151,1569-151z"/>
+		</g>
+	</g>
+	<rect x="310" y="-209" style="display:inline;fill:none;" width="316" height="27.3"/>
+	<text transform="matrix(1 0 0 1 310 -200.3594)" class="st8"><tspan x="0" y="0" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">*Válido para compras acima de R$ 150 até 11/08/2018. </tspan><tspan x="0" y="14.4" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">Desconto não cumulativo.</tspan></text>
+	<g class="st8">
+		<rect x="372" y="-288" style="fill:none;" width="306" height="46"/>
+		<text transform="matrix(1 0 0 1 372 -273.04)"><tspan x="0" y="0" class="st9" style="font-family:'Mitr-Medium'; font-size:22px;">Ganhe R$ 15 de desconto</tspan><tspan x="280.5" y="0" class="st9" style="font-family:'Mitr-Light'; font-size:22px;"> </tspan><tspan x="0" y="26" class="st9" style="font-family:'Mitr-Light'; font-size:22px;">no presente do papai. </tspan></text>
+		<g>
+			<g>
+				<path class="st9" d="M311-263.8h1.9v17.7c0,1,0.7,1.7,1.7,1.7h34.1c1,0,1.7-0.7,1.7-1.7v-17.7h1.9c1,0,1.7-0.7,1.7-1.7v-12.3
+					c0-1-0.7-1.8-1.7-1.8h-8.4c3.9-2.1,5.9-4,6.2-6.2c0.2-1.3-0.2-3.3-3.1-5c-3.1-1.8-5.6-1.5-7.2-0.8c-2.6,1.1-4.9,3.7-6.8,7.8
+					c-0.3,0.6-0.5,1.2-0.8,1.8c-0.2-0.6-0.5-1.2-0.8-1.8c-1.9-4.1-4.2-6.7-6.8-7.8c-1.6-0.7-4.1-1-7.2,0.8c-2.9,1.8-3.3,3.7-3.1,5.1
+					c0.3,2.2,2.3,4.1,6.2,6.2H311c-1,0-1.7,0.8-1.7,1.8v12.3C309.3-264.4,310-263.8,311-263.8z M316.5-263.8h13.4v15.8h-13.4V-263.8
+					z M346.9-248h-13.4v-15.8h13.4L346.9-248L346.9-248z M350.4-267.3h-1.7h-15.3v-8.6h1l0,0l0,0h16V-267.3z M336.2-282.3
+					c1.5-3.2,3.2-5.3,5-6c0.4-0.2,0.9-0.3,1.4-0.3c0.8,0,1.7,0.3,2.6,0.8c0.9,0.6,1.5,1.2,1.5,1.5c-0.2,1.6-5.4,4.5-11.4,6.3
+					C335.4-280.6,335.8-281.4,336.2-282.3z M317.7-286.2c-0.1-0.4,0.5-1,1.5-1.5c0.9-0.6,1.8-0.8,2.6-0.8c0.5,0,0.9,0.1,1.4,0.3
+					c2.8,1.1,4.9,5.3,6,8.4C323.1-281.7,317.9-284.6,317.7-286.2z M312.9-276h17v8.6h-15.3h-1.7V-276z"/>
+			</g>
+		</g>
+	</g>
+	<g id="Nome" class="st8">
+		<path class="st10" d="M1033-244.5H743c-2.8,0-5-2.2-5-5v-30c0-2.8,2.2-5,5-5h290c2.8,0,5,2.2,5,5v30
+			C1038-246.7,1035.8-244.5,1033-244.5z"/>
+		<rect x="753.5" y="-270.5" style="fill:none;" width="232" height="12"/>
+		<text transform="matrix(1 0 0 1 753.5 -259.73)" style="fill:#212121; font-family:'Cairo-Regular'; font-size:15px;">Digite seu nome</text>
+	</g>
+	<g id="Nome_1_" class="st8">
+		<path class="st10" d="M1355.5-244.5h-290c-2.8,0-5-2.2-5-5v-30c0-2.8,2.2-5,5-5h290c2.8,0,5,2.2,5,5v30
+			C1360.5-246.7,1358.3-244.5,1355.5-244.5z"/>
+		<rect x="1076" y="-270.5" style="fill:none;" width="232" height="12"/>
+		<text transform="matrix(1 0 0 1 1076 -259.73)" style="fill:#212121; font-family:'Cairo-Regular'; font-size:15px;">E-mail</text>
+	</g>
+	<rect x="743" y="-209.5" style="display:inline;fill:none;" width="148" height="12"/>
+	
+		<text transform="matrix(1 0 0 1 743 -198.73)" style="display:inline;fill:#212121; font-family:'Cairo-Regular'; font-size:15px;">Selecione o seu gênero:</text>
+	<g id="Masc." class="st8">
+		<rect x="1040" y="-207.5" style="fill:none;" width="67" height="12"/>
+		<text transform="matrix(1 0 0 1 1040 -196.73)" style="fill:#212121; font-family:'Cairo-Regular'; font-size:15px;">Masculino</text>
+		<path class="st10" d="M1024.3-193.5L1024.3-193.5c-4.5,0-8.2-3.7-8.2-8.2v-0.7c0-4.5,3.7-8.2,8.2-8.2l0,0c4.5,0,8.2,3.7,8.2,8.2
+			v0.7C1032.4-197.2,1028.8-193.5,1024.3-193.5z"/>
+	</g>
+	<g id="fem." class="st8">
+		<rect x="934" y="-207.5" style="fill:none;" width="59" height="12"/>
+		<text transform="matrix(1 0 0 1 934 -196.73)" style="fill:#212121; font-family:'Cairo-Regular'; font-size:15px;">Feminino</text>
+		<path class="st10" d="M918.3-193.5L918.3-193.5c-4.5,0-8.2-3.7-8.2-8.2v-0.7c0-4.5,3.7-8.2,8.2-8.2l0,0c4.5,0,8.2,3.7,8.2,8.2v0.7
+			C926.4-197.2,922.8-193.5,918.3-193.5z"/>
+	</g>
+	<g id="Cadastrar" class="st8">
+		<path class="st9" d="M1546-244h-159.5c-2.8,0-5-2.2-5-5v-30c0-2.8,2.2-5,5-5H1546c2.8,0,5,2.2,5,5v30
+			C1551-246.2,1548.8-244,1546-244z"/>
+		<rect x="1381" y="-272" style="fill:none;" width="170" height="17"/>
+		<text transform="matrix(1 0 0 1 1411.562 -257.04)" class="st6" style="font-family:'Mitr-Regular'; font-size:22px;">Cadastrar</text>
+	</g>
+</g>
+<g id="Mensagem_Sucesso">
+	<g>
+		
+			<image style="overflow:visible;opacity:0.5;" width="1318" height="198" xlink:href="9BBFDF.png"  transform="matrix(1 0 0 1 272 -335)">
+		</image>
+		<g>
+			<path class="st6" d="M1569-151H293c-5,0-9-4-9-9v-156c0-5,4-9,9-9h1276c5,0,9,4,9,9v156C1578-155,1574-151,1569-151z"/>
+		</g>
+	</g>
+	<rect x="775" y="-239" style="fill:none;" width="428" height="46"/>
+	<text transform="matrix(1 0 0 1 835.4736 -228.1201)"><tspan x="0" y="0" style="fill:#757575; font-family:'Mitr-Light'; font-size:16px;">Para presentear o papai, use o cupom</tspan><tspan x="7" y="26" style="fill:#F68026; font-family:'Mitr-Medium'; font-size:16px;">“MEUTUDO”</tspan><tspan x="98" y="26" style="fill:#757575; font-family:'Mitr-Regular'; font-size:16px;"> </tspan><tspan x="104.3" y="26" style="fill:#757575; font-family:'Mitr-Light'; font-size:16px;">no Carrinho de Compras.</tspan></text>
+	<rect x="775" y="-279" style="fill:none;" width="428" height="19"/>
+	<text transform="matrix(1 0 0 1 775 -265.4004)"><tspan x="0" y="0" style="fill:#757575; font-family:'Mitr-Medium'; font-size:20px;">Parabéns, cadastro efetuado com suces</tspan><tspan x="403.8" y="0" style="fill:#757575; font-family:'Mitr-Medium'; font-size:20px;">-</tspan></text>
+	<g>
+		<path class="st11" d="M735.4-233.1c1.7-2.6,2.6-5.4,2.6-8.5c0-3.6-1.3-6.7-4-9.3c-2.6-2.6-5.8-4-9.4-4h-9.2
+			c1.7-3.4,2.5-6.8,2.5-10c0-4.1-0.6-7.3-1.8-9.7c-1.2-2.4-3-4.2-5.3-5.3c-2.3-1.1-4.9-1.7-7.9-1.7c-1.8,0-3.3,0.6-4.7,1.9
+			c-1.5,1.5-2.6,3.3-3.2,5.6c-0.7,2.3-1.2,4.5-1.6,6.6c-0.4,2.1-1,3.6-1.8,4.5c-1.7,1.8-3.6,4.1-5.6,6.7c-3.5,4.5-5.9,7.2-7.1,8.1
+			h-14.3c-1.8,0-3.4,0.7-4.7,2c-1.3,1.3-2,2.9-2,4.7v33.3c0,1.8,0.7,3.4,2,4.7c1.3,1.3,2.9,2,4.7,2h15c0.8,0,3.2,0.7,7.2,2.1
+			c4.3,1.5,8,2.6,11.3,3.4c3.2,0.8,6.5,1.2,9.9,1.2h4.8h1.9c4.9,0,8.8-1.4,11.8-4.2c3-2.8,4.5-6.6,4.4-11.4c2.1-2.7,3.1-5.8,3.1-9.3
+			c0-0.8-0.1-1.5-0.2-2.2c1.3-2.3,2-4.8,2-7.5C735.9-230.8,735.8-232,735.4-233.1z M670.3-209.2c-0.7,0.7-1.4,1-2.3,1
+			c-0.9,0-1.7-0.3-2.3-1c-0.7-0.7-1-1.4-1-2.3c0-0.9,0.3-1.7,1-2.3c0.7-0.7,1.4-1,2.3-1c0.9,0,1.7,0.3,2.3,1c0.7,0.7,1,1.4,1,2.3
+			C671.3-210.7,671-209.9,670.3-209.2z M730.2-237.4c-0.7,1.6-1.7,2.4-2.8,2.4c0.5,0.6,1,1.4,1.3,2.5c0.3,1.1,0.5,2,0.5,2.9
+			c0,2.4-0.9,4.5-2.8,6.2c0.6,1.1,0.9,2.3,0.9,3.6c0,1.3-0.3,2.6-0.9,3.8c-0.6,1.3-1.4,2.2-2.5,2.7c0.2,1,0.3,2,0.3,2.9
+			c0,5.8-3.3,8.7-10,8.7H708c-4.5,0-10.5-1.3-17.8-3.8c-0.2-0.1-0.7-0.3-1.5-0.5c-0.8-0.3-1.4-0.5-1.8-0.7c-0.4-0.1-1-0.3-1.8-0.6
+			c-0.8-0.3-1.5-0.5-2-0.6c-0.5-0.1-1.1-0.2-1.7-0.3c-0.6-0.1-1.2-0.2-1.6-0.2H678v-33.3h1.7c0.6,0,1.2-0.2,1.8-0.5
+			c0.7-0.3,1.4-0.8,2.1-1.4c0.7-0.6,1.4-1.2,2-1.8c0.6-0.6,1.3-1.4,2.1-2.3c0.8-0.9,1.4-1.7,1.8-2.2c0.4-0.6,1-1.3,1.6-2.1
+			c0.7-0.9,1.1-1.4,1.2-1.6c1.9-2.4,3.2-3.9,4-4.7c1.4-1.5,2.5-3.4,3.1-5.7c0.6-2.3,1.2-4.5,1.6-6.5c0.4-2,1.1-3.5,2-4.4
+			c3.3,0,5.6,0.8,6.7,2.4c1.1,1.6,1.7,4.1,1.7,7.6c0,2-0.8,4.8-2.5,8.4c-1.7,3.5-2.5,6.3-2.5,8.3h18.3c1.7,0,3.3,0.7,4.6,2
+			c1.4,1.3,2,2.9,2,4.7C731.3-240.4,731-239,730.2-237.4z"/>
+	</g>
+</g>
+<g id="Vestido_com_Devoção">
+	<rect x="248" y="-75" style="fill:none;" width="1366" height="35"/>
+	<text transform="matrix(1 0 0 1 713.2227 -47.8003)" class="st9" style="font-family:'Mitr-Regular'; font-size:40px;">Vestido com Devoção</text>
+	<g id="_x31_.Produto">
+		<g>
+			<defs>
+				<rect id="SVGID_7_" x="336" y="17" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_8_">
+				<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_8_);">
+				<image style="overflow:visible;" width="600" height="600" xlink:href="9BBFD1.jpg"  transform="matrix(0.48 0 0 0.48 336 17)">
+				</image>
+			</g>
+		</g>
+		<rect x="336" y="316" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 379.0498 327.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA SAGRADA FAMÍLIA</text>
+		<rect x="336" y="370" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 397.4653 381.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação">
+			<g>
+				<path class="st12" d="M502.7,339.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C503.8,338.9,503,338.8,502.7,339.5L502.7,339.5z"/>
+				<path class="st12" d="M485.7,339.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C486.8,338.9,486,338.8,485.7,339.5L485.7,339.5z"/>
+				<path class="st13" d="M468.7,339.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C469.8,338.9,469,338.8,468.7,339.5L468.7,339.5z"/>
+				<path class="st13" d="M451.7,339.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C452.8,338.9,452,338.8,451.7,339.5L451.7,339.5z"/>
+				<path class="st13" d="M434.7,339.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C435.8,338.9,435,338.8,434.7,339.5L434.7,339.5z"/>
+				<rect x="518.3" y="341" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 518.3335 349.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Flag" class="st0">
+			
+				<image style="display:inline;overflow:visible;" width="86" height="76" id="Produto_Novo_3_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 538 3)">
+			</image>
+			<g id="Desconto" class="st8">
+				<g id="Flag_Desconto">
+					<polygon class="st14" points="387,111 329,111 329,28 387,28 429,70 					"/>
+					<polygon class="st15" points="329,28 329,24 337,17 337,28 					"/>
+					<polygon class="st15" points="329,111 329,115 337,122 337,111 					"/>
+				</g>
+				<g>
+					<rect x="337" y="43.7" style="fill:none;" width="50" height="51.3"/>
+					<text transform="matrix(1 0 0 1 337 62.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">30%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+				</g>
+			</g>
+		</g>
+		<g id="Hover">
+			<g>
+				<path class="st16" d="M630.8,10.3v438H329.3v-438H630.8 M631.5,9.5h-303V449h303V9.5L631.5,9.5z"/>
+			</g>
+			<g id="Comprar">
+				<rect x="328.5" y="404" class="st9" width="303" height="47"/>
+				<rect x="336" y="418" style="fill:none;" width="288" height="20"/>
+				<text transform="matrix(1 0 0 1 440.9614 433.6636)" class="st6" style="font-family:'Cairo-SemiBold'; font-size:22px;">comprar</text>
+			</g>
+			<g id="Info">
+				<rect x="336" y="331" class="st6" width="288" height="73"/>
+				<rect x="332" y="350" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 393.4653 361.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+				<rect x="332" y="374" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 411.2412 385.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">ou R$ 49,90 à vista</text>
+			</g>
+		</g>
+	</g>
+	<g id="_x32_.Produto">
+		<g>
+			<defs>
+				<rect id="SVGID_9_" x="638" y="16" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_10_">
+				<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_10_);">
+				
+					<image style="overflow:visible;" width="600" height="600" xlink:href="1682B96F.jpg"  transform="matrix(0.4883 0 0 0.4883 633 12)">
+				</image>
+			</g>
+		</g>
+		<rect x="638" y="315" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 656.1299 326.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA MEDALHA DE SÃO BENTO</text>
+		<rect x="638" y="369" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 699.4653 380.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_1_">
+			<g>
+				<path class="st12" d="M804.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C805.8,337.9,805,337.8,804.7,338.5L804.7,338.5z"/>
+				<path class="st12" d="M787.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C788.8,337.9,788,337.8,787.7,338.5L787.7,338.5z"/>
+				<path class="st13" d="M770.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C771.8,337.9,771,337.8,770.7,338.5L770.7,338.5z"/>
+				<path class="st13" d="M753.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C754.8,337.9,754,337.8,753.7,338.5L753.7,338.5z"/>
+				<path class="st13" d="M736.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C737.8,337.9,737,337.8,736.7,338.5L736.7,338.5z"/>
+				<rect x="820.3" y="340" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 820.3335 348.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Flag_1_" class="st0">
+			
+				<image style="display:inline;overflow:visible;" width="86" height="76" id="Produto_Novo_2_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 840 2)">
+			</image>
+			<g id="Desconto_1_" class="st8">
+				<g id="Flag_Desconto_1_">
+					<polygon class="st14" points="689,110 631,110 631,27 689,27 731,69 					"/>
+					<polygon class="st15" points="631,27 631,23 639,16 639,27 					"/>
+					<polygon class="st15" points="631,110 631,114 639,121 639,110 					"/>
+				</g>
+				<g>
+					<rect x="639" y="42.7" style="fill:none;" width="50" height="51.3"/>
+					<text transform="matrix(1 0 0 1 639 61.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">30%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g id="_x33_.Produto">
+		<g>
+			<defs>
+				<rect id="SVGID_11_" x="941" y="16" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_12_">
+				<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_12_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B96B.jpg"  transform="matrix(0.2376 0 0 0.2376 939 12)">
+				</image>
+			</g>
+		</g>
+		<rect x="941" y="315" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1002.2495 326.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA OSTENSÓRIO</text>
+		<rect x="941" y="369" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1002.4653 380.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_6_">
+			<g>
+				<path class="st12" d="M1107.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1108.8,337.9,1108,337.8,1107.7,338.5L1107.7,338.5z"/>
+				<path class="st12" d="M1090.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1091.8,337.9,1091,337.8,1090.7,338.5L1090.7,338.5z"/>
+				<path class="st13" d="M1073.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1074.8,337.9,1074,337.8,1073.7,338.5L1073.7,338.5z"/>
+				<path class="st13" d="M1056.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1057.8,337.9,1057,337.8,1056.7,338.5L1056.7,338.5z"/>
+				<path class="st13" d="M1039.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1040.8,337.9,1040,337.8,1039.7,338.5L1039.7,338.5z"/>
+				<rect x="1123.3" y="340" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1123.3335 348.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Flag_3_" class="st0">
+			
+				<image style="display:inline;overflow:visible;" width="86" height="76" id="Produto_Novo_4_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 1143 2)">
+			</image>
+			<g id="Desconto_3_" class="st8">
+				<g id="Flag_Desconto_3_">
+					<polygon class="st14" points="992,110 934,110 934,27 992,27 1034,69 					"/>
+					<polygon class="st15" points="934,27 934,23 942,16 942,27 					"/>
+					<polygon class="st15" points="934,110 934,114 942,121 942,110 					"/>
+				</g>
+				<g>
+					<rect x="942" y="42.7" style="fill:none;" width="50" height="51.3"/>
+					<text transform="matrix(1 0 0 1 942 61.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">30%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g id="_x34_.Produto">
+		<g>
+			<defs>
+				<rect id="SVGID_13_" x="1243" y="16" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_14_">
+				<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_14_);">
+				
+					<image style="overflow:visible;" width="600" height="600" xlink:href="1682B967.jpg"  transform="matrix(0.48 0 0 0.48 1243 16)">
+				</image>
+			</g>
+			<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_14_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B965.jpg"  transform="matrix(0.2352 0 0 0.2352 1239 14)">
+				</image>
+			</g>
+		</g>
+		<rect x="1243" y="315" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1266.4502 326.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA JESUS MISERICORDIOSO</text>
+		<rect x="1243" y="369" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1304.4653 380.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_2_">
+			<g>
+				<path class="st12" d="M1409.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1410.8,337.9,1410,337.8,1409.7,338.5L1409.7,338.5z"/>
+				<path class="st12" d="M1392.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1393.8,337.9,1393,337.8,1392.7,338.5L1392.7,338.5z"/>
+				<path class="st13" d="M1375.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1376.8,337.9,1376,337.8,1375.7,338.5L1375.7,338.5z"/>
+				<path class="st13" d="M1358.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1359.8,337.9,1359,337.8,1358.7,338.5L1358.7,338.5z"/>
+				<path class="st13" d="M1341.7,338.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1342.8,337.9,1342,337.8,1341.7,338.5L1341.7,338.5z"/>
+				<rect x="1425.3" y="340" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1425.3335 348.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Flag_2_" class="st0">
+			
+				<image style="display:inline;overflow:visible;" width="86" height="76" id="Produto_Novo_5_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 1445 2)">
+			</image>
+			<g id="Desconto_2_" class="st8">
+				<g id="Flag_Desconto_2_">
+					<polygon class="st14" points="1294,110 1236,110 1236,27 1294,27 1336,69 					"/>
+					<polygon class="st15" points="1236,27 1236,23 1244,16 1244,27 					"/>
+					<polygon class="st15" points="1236,110 1236,114 1244,121 1244,110 					"/>
+				</g>
+				<g>
+					<rect x="1244" y="42.7" style="fill:none;" width="50" height="51.3"/>
+					<text transform="matrix(1 0 0 1 1244 61.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">30%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g id="arrow_e">
+		<g>
+			<g id="XMLID_59_">
+				<polygon id="XMLID_60_" class="st9" points="286.2,165 314.1,192.6 316.5,190.3 290.1,163.8 316.6,137.3 314.1,135 286.2,162.7 
+									"/>
+			</g>
+		</g>
+	</g>
+	<g id="arrow_d_1_">
+		<g>
+			<g id="XMLID_55_">
+				<polygon id="XMLID_56_" class="st9" points="1575.4,162.7 1547.5,135 1545.1,137.3 1571.5,163.8 1545,190.3 1547.5,192.6 
+					1575.4,165 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="Slideshow">
+		<circle class="st9" cx="876.9" cy="471.5" r="8.5"/>
+		<circle class="st17" cx="905.6" cy="471.5" r="8.5"/>
+		<circle class="st17" cx="932.4" cy="471.5" r="8.5"/>
+		<circle class="st17" cx="959.2" cy="471.5" r="8.5"/>
+		<circle class="st17" cx="986.1" cy="471.5" r="8.5"/>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M1160-57l12-0.1c4,0,8,0,12,0c8,0,16,0.1,24,0l24-0.1c8,0,16,0.1,24,0.1v0c-8,0-16,0.1-24,0.1l-24-0.1
+				c-8-0.1-16,0-24,0c-4,0-8,0-12,0L1160-57L1160-57z"/>
+		</g>
+		<g>
+			
+				<rect x="1164.5" y="-67.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 384.4546 814.1556)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M1175-71.8l7.5,7.2l7.6,7.4l0.3,0.3l-0.3,0.3c-2.4,2.5-4.9,5-7.4,7.5l-7.4,7.5l-0.4,0.4l-0.4-0.4l-7.4-7.5
+				c-2.5-2.5-4.9-5-7.4-7.5l-0.3-0.3l0.3-0.3l7.6-7.4L1175-71.8z M1175-71.8l-7.3,7.7l-7.2,7.5v-0.5c2.5,2.4,5,4.9,7.5,7.4l7.5,7.4
+				h-0.7l7.5-7.4c2.5-2.5,5-4.9,7.5-7.4v0.5l-7.2-7.5L1175-71.8z"/>
+		</g>
+		<g>
+			
+				<rect x="1196.9" y="-64.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 392.9485 834.6616)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M1204-67l5.1,4.8l5.2,5l0.3,0.3l-0.3,0.3c-1.6,1.7-3.3,3.4-4.9,5.1l-5,5l-0.4,0.4l-0.4-0.4l-5-5
+				c-1.6-1.7-3.3-3.3-5-5l-0.3-0.3l0.3-0.3l5.2-5L1204-67z M1204-67l-4.9,5.2l-4.8,5v-0.5c1.7,1.6,3.4,3.3,5,5l5,5h-0.7l5-5
+				c1.7-1.7,3.3-3.3,5.1-4.9v0.5l-4.8-5L1204-67z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M704-57l-12,0.1c-4,0-8,0-12,0c-8,0-16-0.1-24,0l-24,0.1c-8,0-16-0.1-24-0.1v0c8,0,16-0.1,24-0.1l24,0.1
+				c8,0.1,16,0,24,0c4,0,8,0,12,0L704-57L704-57z"/>
+		</g>
+		<g>
+			
+				<rect x="678.5" y="-67.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 242.1085 470.5016)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M689-42.2l-7.5-7.2l-7.6-7.4l-0.3-0.3l0.3-0.3c2.4-2.5,4.9-5,7.4-7.5l7.4-7.5l0.4-0.4l0.4,0.4l7.4,7.5
+				c2.5,2.5,4.9,5,7.4,7.5l0.3,0.3l-0.3,0.3l-7.6,7.4L689-42.2z M689-42.2l7.3-7.7l7.2-7.5v0.5c-2.5-2.4-5-4.9-7.5-7.4l-7.5-7.4h0.7
+				l-7.5,7.4c-2.5,2.5-5,4.9-7.5,7.4v-0.5l7.2,7.5L689-42.2z"/>
+		</g>
+		<g>
+			
+				<rect x="652.9" y="-64.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 233.6146 449.9956)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M660-47l-5.1-4.8l-5.2-5l-0.3-0.3l0.3-0.3c1.6-1.7,3.3-3.4,4.9-5.1l5-5l0.4-0.4l0.4,0.4l5,5
+				c1.6,1.7,3.3,3.3,5,5l0.3,0.3l-0.3,0.3l-5.2,5L660-47z M660-47l4.9-5.2l4.8-5v0.5c-1.7-1.6-3.4-3.3-5-5l-5-5h0.7l-5,5
+				c-1.7,1.7-3.3,3.3-5.1,4.9v-0.5l4.8,5L660-47z"/>
+		</g>
+	</g>
+</g>
+<g id="Mensagens_de_Fé">
+	<rect x="249" y="543" style="fill:none;" width="1366" height="35"/>
+	<text transform="matrix(1 0 0 1 759.9419 570.1997)" class="st9" style="font-family:'Mitr-Regular'; font-size:40px;">Mensagens de Fé</text>
+	<g id="_x31_.Produto_1_">
+		<g>
+			<defs>
+				<rect id="SVGID_15_" x="337" y="635" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_16_">
+				<use xlink:href="#SVGID_15_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_16_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B97D.jpg"  transform="matrix(0.2368 0 0 0.2368 330 634)">
+				</image>
+			</g>
+		</g>
+		<rect x="337" y="934" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 341.626 945.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA NOSSA SENHORA APARECIDA</text>
+		<rect x="337" y="988" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 398.4653 999.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_14_">
+			<g>
+				<path class="st12" d="M503.7,957.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C504.8,956.9,504,956.8,503.7,957.5L503.7,957.5z"/>
+				<path class="st12" d="M486.7,957.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C487.8,956.9,487,956.8,486.7,957.5L486.7,957.5z"/>
+				<path class="st13" d="M469.7,957.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C470.8,956.9,470,956.8,469.7,957.5L469.7,957.5z"/>
+				<path class="st13" d="M452.7,957.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C453.8,956.9,453,956.8,452.7,957.5L452.7,957.5z"/>
+				<path class="st13" d="M435.7,957.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C436.8,956.9,436,956.8,435.7,957.5L435.7,957.5z"/>
+				<rect x="519.3" y="959" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 519.3335 967.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Flag_4_" class="st0">
+			
+				<image style="display:inline;overflow:visible;" width="86" height="76" id="Produto_Novo_7_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 539 621)">
+			</image>
+			<g id="Desconto_4_" class="st8">
+				<g id="Flag_Desconto_4_">
+					<polygon class="st14" points="388,729 330,729 330,646 388,646 430,688 					"/>
+					<polygon class="st15" points="330,646 330,642 338,635 338,646 					"/>
+					<polygon class="st15" points="330,729 330,733 338,740 338,729 					"/>
+				</g>
+				<g>
+					<rect x="338" y="661.7" style="fill:none;" width="50" height="51.3"/>
+					<text transform="matrix(1 0 0 1 338 680.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">30%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+				</g>
+			</g>
+		</g>
+		<g id="Hover_1_" class="st0">
+			<g class="st8">
+				<path class="st16" d="M631.8,628.3v438H330.3v-438H631.8 M632.5,627.5h-303V1067h303V627.5L632.5,627.5z"/>
+			</g>
+			<g id="Comprar_1_" class="st8">
+				<rect x="329.5" y="1022" class="st9" width="303" height="47"/>
+				<rect x="337" y="1036" style="fill:none;" width="288" height="20"/>
+				<text transform="matrix(1 0 0 1 441.9614 1051.6636)" class="st6" style="font-family:'Cairo-SemiBold'; font-size:22px;">comprar</text>
+			</g>
+			<g id="Info_1_" class="st8">
+				<rect x="337" y="949" class="st6" width="288" height="73"/>
+				<rect x="333" y="968" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 394.4653 979.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+				<rect x="333" y="992" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 412.2412 1003.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">ou R$ 49,90 à vista</text>
+			</g>
+		</g>
+	</g>
+	<g id="_x32_.Produto_1_">
+		<g>
+			<defs>
+				<rect id="SVGID_17_" x="639" y="634" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_18_">
+				<use xlink:href="#SVGID_17_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_18_);">
+				
+					<image style="overflow:visible;" width="600" height="600" xlink:href="1682B97A.jpg"  transform="matrix(0.48 0 0 0.48 639 634)">
+				</image>
+			</g>
+			<g style="clip-path:url(#SVGID_18_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B99E.jpg"  transform="matrix(0.24 0 0 0.24 630 629)">
+				</image>
+			</g>
+		</g>
+		<rect x="639" y="933" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 650.5786 944.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA DOCE ESPÍRITO SANTO DE...</text>
+		<rect x="639" y="987" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 700.4653 998.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_12_">
+			<g>
+				<path class="st12" d="M805.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C806.8,955.9,806,955.8,805.7,956.5L805.7,956.5z"/>
+				<path class="st12" d="M788.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C789.8,955.9,789,955.8,788.7,956.5L788.7,956.5z"/>
+				<path class="st13" d="M771.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C772.8,955.9,772,955.8,771.7,956.5L771.7,956.5z"/>
+				<path class="st13" d="M754.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C755.8,955.9,755,955.8,754.7,956.5L754.7,956.5z"/>
+				<path class="st13" d="M737.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C738.8,955.9,738,955.8,737.7,956.5L737.7,956.5z"/>
+				<rect x="821.3" y="958" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 821.3335 966.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+	</g>
+	<g id="_x33_.Produto_1_">
+		<g>
+			<defs>
+				<rect id="SVGID_19_" x="942" y="634" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_20_">
+				<use xlink:href="#SVGID_19_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_20_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B99D.jpg"  transform="matrix(0.2368 0 0 0.2368 936 630)">
+				</image>
+			</g>
+		</g>
+		<rect x="942" y="933" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 956.3706 944.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA ELE NÃO DESISTE DE VOCÊ</text>
+		<rect x="942" y="1010" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1003.4653 1021.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_10_">
+			<g>
+				<path class="st12" d="M1108.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1109.8,955.9,1109,955.8,1108.7,956.5L1108.7,956.5z"/>
+				<path class="st12" d="M1091.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1092.8,955.9,1092,955.8,1091.7,956.5L1091.7,956.5z"/>
+				<path class="st13" d="M1074.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1075.8,955.9,1075,955.8,1074.7,956.5L1074.7,956.5z"/>
+				<path class="st13" d="M1057.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1058.8,955.9,1058,955.8,1057.7,956.5L1057.7,956.5z"/>
+				<path class="st13" d="M1040.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1041.8,955.9,1041,955.8,1040.7,956.5L1040.7,956.5z"/>
+				<rect x="1124.3" y="958" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1124.3335 966.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Desconto_5_">
+			<g id="Flag_Desconto_5_">
+				<polygon class="st14" points="992,728 934,728 934,645 992,645 1034,687 				"/>
+				<polygon class="st15" points="934,645 934,641 942,634 942,645 				"/>
+				<polygon class="st15" points="934,728 934,732 942,739 942,728 				"/>
+			</g>
+			<g>
+				<rect x="942" y="660.7" style="fill:none;" width="50" height="51.3"/>
+				<text transform="matrix(1 0 0 1 942 679.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">30%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+			</g>
+		</g>
+		<g id="Preço_anterior">
+			<rect x="942" y="987" style="fill:none;" width="288" height="15"/>
+			<text transform="matrix(1 0 0 1 1047.8784 997.0518)" class="st13" style="font-family:'Cairo-Regular'; font-size:14px;">De: R$ 59,00</text>
+			<line class="st18" x1="1041" y1="993" x2="1131" y2="993"/>
+		</g>
+	</g>
+	<g id="_x34_.Produto_1_">
+		<g>
+			<defs>
+				<rect id="SVGID_21_" x="1244" y="634" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_22_">
+				<use xlink:href="#SVGID_21_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_22_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B99A.jpg"  transform="matrix(0.24 0 0 0.24 1239 633)">
+				</image>
+			</g>
+		</g>
+		<rect x="1244" y="933" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1267.4502 944.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA JESUS MISERICORDIOSO</text>
+		<rect x="1244" y="987" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1305.4653 998.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_3_">
+			<g>
+				<path class="st12" d="M1410.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1411.8,955.9,1411,955.8,1410.7,956.5L1410.7,956.5z"/>
+				<path class="st12" d="M1393.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1394.8,955.9,1394,955.8,1393.7,956.5L1393.7,956.5z"/>
+				<path class="st13" d="M1376.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1377.8,955.9,1377,955.8,1376.7,956.5L1376.7,956.5z"/>
+				<path class="st13" d="M1359.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1360.8,955.9,1360,955.8,1359.7,956.5L1359.7,956.5z"/>
+				<path class="st13" d="M1342.7,956.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1343.8,955.9,1343,955.8,1342.7,956.5L1342.7,956.5z"/>
+				<rect x="1426.3" y="958" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1426.3335 966.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		
+			<image style="overflow:visible;" width="86" height="76" id="Produto_Novo_6_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 1446 620)">
+		</image>
+	</g>
+	<g id="arrow_e_1_">
+		<g>
+			<g id="XMLID_27_">
+				<polygon id="XMLID_28_" class="st9" points="287.2,783 315.1,810.6 317.5,808.3 291.1,781.8 317.6,755.3 315.1,753 287.2,780.7 
+									"/>
+			</g>
+		</g>
+	</g>
+	<g id="arrow_d_3_">
+		<g>
+			<g id="XMLID_29_">
+				<polygon id="XMLID_30_" class="st9" points="1576.4,780.7 1548.5,753 1546.1,755.3 1572.5,781.8 1546,808.3 1548.5,810.6 
+					1576.4,783 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="Slideshow_1_">
+		<circle class="st9" cx="877.9" cy="1080.5" r="8.5"/>
+		<circle class="st17" cx="906.6" cy="1080.5" r="8.5"/>
+		<circle class="st17" cx="933.4" cy="1080.5" r="8.5"/>
+		<circle class="st17" cx="960.2" cy="1080.5" r="8.5"/>
+		<circle class="st17" cx="987.1" cy="1080.5" r="8.5"/>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M1119,561l12-0.1c4,0,8,0,12,0c8,0,16,0.1,24,0l24-0.1c8,0,16,0.1,24,0.1v0c-8,0-16,0.1-24,0.1l-24-0.1
+				c-8-0.1-16,0-24,0c-4,0-8,0-12,0L1119,561L1119,561z"/>
+		</g>
+		<g>
+			
+				<rect x="1123.5" y="550.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -64.546 966.1722)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M1134,546.2l7.5,7.2l7.6,7.4l0.3,0.3l-0.3,0.3c-2.4,2.5-4.9,5-7.4,7.5l-7.4,7.5l-0.4,0.4l-0.4-0.4l-7.4-7.5
+				c-2.5-2.5-4.9-5-7.4-7.5l-0.3-0.3l0.3-0.3l7.6-7.4L1134,546.2z M1134,546.2l-7.3,7.7l-7.2,7.5v-0.5c2.5,2.4,5,4.9,7.5,7.4
+				l7.5,7.4h-0.7l7.5-7.4c2.5-2.5,5-4.9,7.5-7.4v0.5l-7.2-7.5L1134,546.2z"/>
+		</g>
+		<g>
+			
+				<rect x="1155.9" y="553.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -56.0521 986.6783)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M1163,551l5.1,4.8l5.2,5l0.3,0.3l-0.3,0.3c-1.6,1.7-3.3,3.4-4.9,5.1l-5,5l-0.4,0.4l-0.4-0.4l-5-5
+				c-1.6-1.7-3.3-3.3-5-5l-0.3-0.3l0.3-0.3l5.2-5L1163,551z M1163,551l-4.9,5.2l-4.8,5v-0.5c1.7,1.6,3.4,3.3,5,5l5,5h-0.7l5-5
+				c1.7-1.7,3.3-3.3,5.1-4.9v0.5l-4.8-5L1163,551z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M744,560l-12,0.1c-4,0-8,0-12,0c-8,0-16-0.1-24,0l-24,0.1c-8,0-16-0.1-24-0.1v0c8,0,16-0.1,24-0.1l24,0.1
+				c8,0.1,16,0,24,0c4,0,8,0,12,0L744,560L744,560z"/>
+		</g>
+		<g>
+			
+				<rect x="718.5" y="549.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -182.4606 679.501)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M729,574.8l-7.5-7.2l-7.6-7.4l-0.3-0.3l0.3-0.3c2.4-2.5,4.9-5,7.4-7.5l7.4-7.5l0.4-0.4l0.4,0.4l7.4,7.5
+				c2.5,2.5,4.9,5,7.4,7.5l0.3,0.3l-0.3,0.3l-7.6,7.4L729,574.8z M729,574.8l7.3-7.7l7.2-7.5v0.5c-2.5-2.4-5-4.9-7.5-7.4l-7.5-7.4
+				h0.7l-7.5,7.4c-2.5,2.5-5,4.9-7.5,7.4v-0.5l7.2,7.5L729,574.8z"/>
+		</g>
+		<g>
+			
+				<rect x="692.9" y="552.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -190.9545 658.9949)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M700,570l-5.1-4.8l-5.2-5l-0.3-0.3l0.3-0.3c1.6-1.7,3.3-3.4,4.9-5.1l5-5l0.4-0.4l0.4,0.4l5,5
+				c1.6,1.7,3.3,3.3,5,5l0.3,0.3l-0.3,0.3l-5.2,5L700,570z M700,570l4.9-5.2l4.8-5v0.5c-1.7-1.6-3.4-3.3-5-5l-5-5h0.7l-5,5
+				c-1.7,1.7-3.3,3.3-5.1,4.9v-0.5l4.8,5L700,570z"/>
+		</g>
+	</g>
+</g>
+<g id="Música_e_Louvor">
+	<rect x="248" y="1153" style="fill:none;" width="1366" height="35"/>
+	<text transform="matrix(1 0 0 1 768.6821 1180.1997)" class="st9" style="font-family:'Mitr-Regular'; font-size:40px;">Música e Louvor</text>
+	<g id="_x31_.Produto_2_">
+		<g>
+			<defs>
+				<rect id="SVGID_23_" x="336" y="1245" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_24_">
+				<use xlink:href="#SVGID_23_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_24_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B996.jpg"  transform="matrix(0.2344 0 0 0.2344 333 1244)">
+				</image>
+			</g>
+		</g>
+		<rect x="336" y="1544" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 376.0098 1555.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA LOUVE AO SENHOR</text>
+		<rect x="336" y="1598" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 397.4653 1609.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_22_">
+			<g>
+				<path class="st12" d="M502.7,1567.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C503.8,1566.9,503,1566.8,502.7,1567.5L502.7,1567.5z"/>
+				<path class="st12" d="M485.7,1567.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C486.8,1566.9,486,1566.8,485.7,1567.5L485.7,1567.5z"/>
+				<path class="st13" d="M468.7,1567.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C469.8,1566.9,469,1566.8,468.7,1567.5L468.7,1567.5z"/>
+				<path class="st13" d="M451.7,1567.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C452.8,1566.9,452,1566.8,451.7,1567.5L451.7,1567.5z"/>
+				<path class="st13" d="M434.7,1567.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C435.8,1566.9,435,1566.8,434.7,1567.5L434.7,1567.5z"/>
+				<rect x="518.3" y="1569" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 518.3335 1577.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Flag_5_" class="st0">
+			
+				<image style="display:inline;overflow:visible;" width="86" height="76" id="Produto_Novo_9_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 538 1231)">
+			</image>
+			<g id="Desconto_7_" class="st8">
+				<g id="Flag_Desconto_7_">
+					<polygon class="st14" points="387,1339 329,1339 329,1256 387,1256 429,1298 					"/>
+					<polygon class="st15" points="329,1256 329,1252 337,1245 337,1256 					"/>
+					<polygon class="st15" points="329,1339 329,1343 337,1350 337,1339 					"/>
+				</g>
+				<g>
+					<rect x="337" y="1271.7" style="fill:none;" width="50" height="51.3"/>
+					<text transform="matrix(1 0 0 1 337 1290.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">30%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+				</g>
+			</g>
+		</g>
+		<g id="Hover_2_" class="st0">
+			<g class="st8">
+				<path class="st16" d="M630.8,1238.3v438H329.3v-438H630.8 M631.5,1237.5h-303V1677h303V1237.5L631.5,1237.5z"/>
+			</g>
+			<g id="Comprar_2_" class="st8">
+				<rect x="328.5" y="1632" class="st9" width="303" height="47"/>
+				<rect x="336" y="1646" style="fill:none;" width="288" height="20"/>
+				<text transform="matrix(1 0 0 1 440.9614 1661.6636)" class="st6" style="font-family:'Cairo-SemiBold'; font-size:22px;">comprar</text>
+			</g>
+			<g id="Info_2_" class="st8">
+				<rect x="336" y="1559" class="st6" width="288" height="73"/>
+				<rect x="332" y="1578" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 393.4653 1589.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+				<rect x="332" y="1602" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 411.2412 1613.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">ou R$ 49,90 à vista</text>
+			</g>
+		</g>
+	</g>
+	<g id="_x32_.Produto_2_">
+		<g>
+			<defs>
+				<rect id="SVGID_25_" x="638" y="1244" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_26_">
+				<use xlink:href="#SVGID_25_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_26_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B98A.jpg"  transform="matrix(0.2448 0 0 0.2448 624 1241)">
+				</image>
+			</g>
+		</g>
+		<rect x="638" y="1543" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 689.4897 1554.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA PRA TE LOUVAR</text>
+		<rect x="638" y="1597" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 699.4653 1608.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_20_">
+			<g>
+				<path class="st12" d="M804.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C805.8,1565.9,805,1565.8,804.7,1566.5L804.7,1566.5z"/>
+				<path class="st12" d="M787.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C788.8,1565.9,788,1565.8,787.7,1566.5L787.7,1566.5z"/>
+				<path class="st13" d="M770.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C771.8,1565.9,771,1565.8,770.7,1566.5L770.7,1566.5z"/>
+				<path class="st13" d="M753.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C754.8,1565.9,754,1565.8,753.7,1566.5L753.7,1566.5z"/>
+				<path class="st13" d="M736.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C737.8,1565.9,737,1565.8,736.7,1566.5L736.7,1566.5z"/>
+				<rect x="820.3" y="1568" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 820.3335 1576.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+	</g>
+	<g id="_x33_.Produto_2_">
+		<g>
+			<defs>
+				<rect id="SVGID_27_" x="941" y="1244" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_28_">
+				<use xlink:href="#SVGID_27_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_28_);">
+				
+					<image style="overflow:visible;" width="600" height="600" xlink:href="1682B98D.jpg"  transform="matrix(0.48 0 0 0.48 941 1244)">
+				</image>
+			</g>
+			<g style="clip-path:url(#SVGID_28_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B98E.jpg"  transform="matrix(0.2344 0 0 0.2344 938 1242)">
+				</image>
+			</g>
+		</g>
+		<rect x="941" y="1543" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 970.2979 1554.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA ORAÇÃO DE UM JUSTO</text>
+		<rect x="941" y="1620" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1002.4653 1631.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_18_">
+			<g>
+				<path class="st12" d="M1107.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1108.8,1565.9,1108,1565.8,1107.7,1566.5L1107.7,1566.5z"/>
+				<path class="st12" d="M1090.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1091.8,1565.9,1091,1565.8,1090.7,1566.5L1090.7,1566.5z"/>
+				<path class="st13" d="M1073.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1074.8,1565.9,1074,1565.8,1073.7,1566.5L1073.7,1566.5z"/>
+				<path class="st13" d="M1056.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1057.8,1565.9,1057,1565.8,1056.7,1566.5L1056.7,1566.5z"/>
+				<path class="st13" d="M1039.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1040.8,1565.9,1040,1565.8,1039.7,1566.5L1039.7,1566.5z"/>
+				<rect x="1123.3" y="1568" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1123.3335 1576.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Desconto_6_">
+			<g id="Flag_Desconto_6_">
+				<polygon class="st14" points="991,1338 933,1338 933,1255 991,1255 1033,1297 				"/>
+				<polygon class="st15" points="933,1255 933,1251 941,1244 941,1255 				"/>
+				<polygon class="st15" points="933,1338 933,1342 941,1349 941,1338 				"/>
+			</g>
+			<g>
+				<rect x="941" y="1270.7" style="fill:none;" width="50" height="51.3"/>
+				<text transform="matrix(1 0 0 1 941 1289.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">50%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+			</g>
+		</g>
+		<g id="Preço_anterior_1_">
+			<rect x="941" y="1597" style="fill:none;" width="288" height="15"/>
+			<text transform="matrix(1 0 0 1 1046.8784 1607.0518)" class="st13" style="font-family:'Cairo-Regular'; font-size:14px;">De: R$ 59,00</text>
+			<line class="st18" x1="1040" y1="1603" x2="1130" y2="1603"/>
+		</g>
+	</g>
+	<g id="_x34_.Produto_2_">
+		<g>
+			<defs>
+				<rect id="SVGID_29_" x="1243" y="1244" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_30_">
+				<use xlink:href="#SVGID_29_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_30_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B98C.jpg"  transform="matrix(0.2352 0 0 0.2352 1239 1243)">
+				</image>
+			</g>
+		</g>
+		<rect x="1243" y="1543" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1265.0981 1554.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA VIOLÃO TONY ALLYSSON</text>
+		<rect x="1243" y="1597" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1304.4653 1608.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_9_">
+			<g>
+				<path class="st12" d="M1409.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1410.8,1565.9,1410,1565.8,1409.7,1566.5L1409.7,1566.5z"/>
+				<path class="st12" d="M1392.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1393.8,1565.9,1393,1565.8,1392.7,1566.5L1392.7,1566.5z"/>
+				<path class="st13" d="M1375.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1376.8,1565.9,1376,1565.8,1375.7,1566.5L1375.7,1566.5z"/>
+				<path class="st13" d="M1358.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1359.8,1565.9,1359,1565.8,1358.7,1566.5L1358.7,1566.5z"/>
+				<path class="st13" d="M1341.7,1566.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1342.8,1565.9,1342,1565.8,1341.7,1566.5L1341.7,1566.5z"/>
+				<rect x="1425.3" y="1568" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1425.3335 1576.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		
+			<image style="display:none;overflow:visible;" width="86" height="76" id="Produto_Novo_12_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 1445 1230)">
+		</image>
+	</g>
+	<g id="arrow_e_2_">
+		<g>
+			<g id="XMLID_13_">
+				<polygon id="XMLID_14_" class="st9" points="286.2,1393 314.1,1420.6 316.5,1418.3 290.1,1391.8 316.6,1365.3 314.1,1363 
+					286.2,1390.7 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="arrow_d_5_">
+		<g>
+			<g id="XMLID_1_">
+				<polygon id="XMLID_2_" class="st9" points="1575.4,1390.7 1547.5,1363 1545.1,1365.3 1571.5,1391.8 1545,1418.3 1547.5,1420.6 
+					1575.4,1393 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="Slideshow_2_">
+		<circle class="st9" cx="876.9" cy="1720.5" r="8.5"/>
+		<circle class="st17" cx="905.6" cy="1720.5" r="8.5"/>
+		<circle class="st17" cx="932.4" cy="1720.5" r="8.5"/>
+		<circle class="st17" cx="959.2" cy="1720.5" r="8.5"/>
+		<circle class="st17" cx="986.1" cy="1720.5" r="8.5"/>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M1109,1171l12-0.1c4,0,8,0,12,0c8,0,16,0.1,24,0l24-0.1c8,0,16,0.1,24,0.1v0c-8,0-16,0.1-24,0.1l-24-0.1
+				c-8-0.1-16,0-24,0c-4,0-8,0-12,0L1109,1171L1109,1171z"/>
+		</g>
+		<g>
+			
+				<rect x="1113.5" y="1160.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -498.8101 1137.766)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M1124,1156.2l7.5,7.2l7.6,7.4l0.3,0.3l-0.3,0.3c-2.4,2.5-4.9,5-7.4,7.5l-7.4,7.5l-0.4,0.4l-0.4-0.4l-7.4-7.5
+				c-2.5-2.5-4.9-5-7.4-7.5l-0.3-0.3l0.3-0.3l7.6-7.4L1124,1156.2z M1124,1156.2l-7.3,7.7l-7.2,7.5v-0.5c2.5,2.4,5,4.9,7.5,7.4
+				l7.5,7.4h-0.7l7.5-7.4c2.5-2.5,5-4.9,7.5-7.4v0.5l-7.2-7.5L1124,1156.2z"/>
+		</g>
+		<g>
+			
+				<rect x="1145.9" y="1163.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -490.3162 1158.2721)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M1153,1161l5.1,4.8l5.2,5l0.3,0.3l-0.3,0.3c-1.6,1.7-3.3,3.4-4.9,5.1l-5,5l-0.4,0.4l-0.4-0.4l-5-5
+				c-1.6-1.7-3.3-3.3-5-5l-0.3-0.3l0.3-0.3l5.2-5L1153,1161z M1153,1161l-4.9,5.2l-4.8,5v-0.5c1.7,1.6,3.4,3.3,5,5l5,5h-0.7l5-5
+				c1.7-1.7,3.3-3.3,5.1-4.9v0.5l-4.8-5L1153,1161z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M751,1170l-12,0.1c-4,0-8,0-12,0c-8,0-16-0.1-24,0l-24,0.1c-8,0-16-0.1-24-0.1v0c8,0,16-0.1,24-0.1l24,0.1
+				c8,0.1,16,0,24,0c4,0,8,0,12,0L751,1170L751,1170z"/>
+		</g>
+		<g>
+			
+				<rect x="725.5" y="1159.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -611.7455 863.1157)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M736,1184.8l-7.5-7.2l-7.6-7.4l-0.3-0.3l0.3-0.3c2.4-2.5,4.9-5,7.4-7.5l7.4-7.5l0.4-0.4l0.4,0.4l7.4,7.5
+				c2.5,2.5,4.9,5,7.4,7.5l0.3,0.3l-0.3,0.3l-7.6,7.4L736,1184.8z M736,1184.8l7.3-7.7l7.2-7.5v0.5c-2.5-2.4-5-4.9-7.5-7.4l-7.5-7.4
+				h0.7l-7.5,7.4c-2.5,2.5-5,4.9-7.5,7.4v-0.5l7.2,7.5L736,1184.8z"/>
+		</g>
+		<g>
+			
+				<rect x="699.9" y="1162.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -620.2394 842.6096)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M707,1180l-5.1-4.8l-5.2-5l-0.3-0.3l0.3-0.3c1.6-1.7,3.3-3.4,4.9-5.1l5-5l0.4-0.4l0.4,0.4l5,5
+				c1.6,1.7,3.3,3.3,5,5l0.3,0.3l-0.3,0.3l-5.2,5L707,1180z M707,1180l4.9-5.2l4.8-5v0.5c-1.7-1.6-3.4-3.3-5-5l-5-5h0.7l-5,5
+				c-1.7,1.7-3.3,3.3-5.1,4.9v-0.5l4.8,5L707,1180z"/>
+		</g>
+	</g>
+</g>
+<g id="Estilo_e_Elegância">
+	<rect x="248" y="1796" style="fill:none;" width="1366" height="35"/>
+	<text transform="matrix(1 0 0 1 755.9834 1823.1997)" class="st9" style="font-family:'Mitr-Regular'; font-size:40px;">Estilo e Elegância</text>
+	<g id="_x31_.Produto_3_">
+		<g>
+			<defs>
+				<rect id="SVGID_31_" x="336" y="1888" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_32_">
+				<use xlink:href="#SVGID_31_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_32_);">
+				
+					<image style="overflow:visible;" width="600" height="600" xlink:href="1682B9AF.jpg"  transform="matrix(0.48 0 0 0.48 336 1888)">
+				</image>
+			</g>
+			<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_32_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B991.jpg"  transform="matrix(0.2376 0 0 0.2376 331 1887)">
+				</image>
+			</g>
+		</g>
+		<rect x="336" y="2187" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 425.0571 2198.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA JOÃO</text>
+		<rect x="336" y="2241" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 397.4653 2252.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_30_">
+			<g>
+				<path class="st12" d="M502.7,2210.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C503.8,2209.9,503,2209.8,502.7,2210.5L502.7,2210.5z"/>
+				<path class="st12" d="M485.7,2210.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C486.8,2209.9,486,2209.8,485.7,2210.5L485.7,2210.5z"/>
+				<path class="st13" d="M468.7,2210.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C469.8,2209.9,469,2209.8,468.7,2210.5L468.7,2210.5z"/>
+				<path class="st13" d="M451.7,2210.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C452.8,2209.9,452,2209.8,451.7,2210.5L451.7,2210.5z"/>
+				<path class="st13" d="M434.7,2210.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C435.8,2209.9,435,2209.8,434.7,2210.5L434.7,2210.5z"/>
+				<rect x="518.3" y="2212" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 518.3335 2220.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Flag_6_" class="st0">
+			
+				<image style="display:inline;overflow:visible;" width="86" height="76" id="Produto_Novo_8_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 538 1874)">
+			</image>
+			<g id="Desconto_9_" class="st8">
+				<g id="Flag_Desconto_9_">
+					<polygon class="st14" points="387,1982 329,1982 329,1899 387,1899 429,1941 					"/>
+					<polygon class="st15" points="329,1899 329,1895 337,1888 337,1899 					"/>
+					<polygon class="st15" points="329,1982 329,1986 337,1993 337,1982 					"/>
+				</g>
+				<g>
+					<rect x="337" y="1914.7" style="fill:none;" width="50" height="51.3"/>
+					<text transform="matrix(1 0 0 1 337 1933.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">30%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+				</g>
+			</g>
+		</g>
+		<g id="Hover_3_" class="st0">
+			<g class="st8">
+				<path class="st16" d="M630.8,1881.3v438H329.3v-438H630.8 M631.5,1880.5h-303V2320h303V1880.5L631.5,1880.5z"/>
+			</g>
+			<g id="Comprar_3_" class="st8">
+				<rect x="328.5" y="2275" class="st9" width="303" height="47"/>
+				<rect x="336" y="2289" style="fill:none;" width="288" height="20"/>
+				<text transform="matrix(1 0 0 1 440.9614 2304.6636)" class="st6" style="font-family:'Cairo-SemiBold'; font-size:22px;">comprar</text>
+			</g>
+			<g id="Info_3_" class="st8">
+				<rect x="336" y="2202" class="st6" width="288" height="73"/>
+				<rect x="332" y="2221" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 393.4653 2232.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+				<rect x="332" y="2245" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 411.2412 2256.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">ou R$ 49,90 à vista</text>
+			</g>
+		</g>
+	</g>
+	<g id="_x32_.Produto_3_">
+		<g>
+			<defs>
+				<rect id="SVGID_33_" x="638" y="1887" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_34_">
+				<use xlink:href="#SVGID_33_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_34_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B990.jpg"  transform="matrix(0.2344 0 0 0.2344 635 1886)">
+				</image>
+			</g>
+		</g>
+		<rect x="638" y="2186" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 721.5049 2197.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA TERÇO</text>
+		<rect x="638" y="2240" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 699.4653 2251.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_28_">
+			<g>
+				<path class="st12" d="M804.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C805.8,2208.9,805,2208.8,804.7,2209.5L804.7,2209.5z"/>
+				<path class="st12" d="M787.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C788.8,2208.9,788,2208.8,787.7,2209.5L787.7,2209.5z"/>
+				<path class="st13" d="M770.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C771.8,2208.9,771,2208.8,770.7,2209.5L770.7,2209.5z"/>
+				<path class="st13" d="M753.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C754.8,2208.9,754,2208.8,753.7,2209.5L753.7,2209.5z"/>
+				<path class="st13" d="M736.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C737.8,2208.9,737,2208.8,736.7,2209.5L736.7,2209.5z"/>
+				<rect x="820.3" y="2211" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 820.3335 2219.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+	</g>
+	<g id="_x33_.Produto_3_">
+		<g>
+			<defs>
+				<rect id="SVGID_35_" x="941" y="1887" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_36_">
+				<use xlink:href="#SVGID_35_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_36_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B997.jpg"  transform="matrix(0.2368 0 0 0.2368 937 1885)">
+				</image>
+			</g>
+		</g>
+		<rect x="941" y="2186" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 959.1299 2197.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA MEDALHA DE SÃO BENTO</text>
+		<rect x="941" y="2240" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1002.4653 2251.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_36_">
+			<g>
+				<path class="st12" d="M1107.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1108.8,2208.9,1108,2208.8,1107.7,2209.5L1107.7,2209.5z"/>
+				<path class="st12" d="M1090.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1091.8,2208.9,1091,2208.8,1090.7,2209.5L1090.7,2209.5z"/>
+				<path class="st13" d="M1073.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1074.8,2208.9,1074,2208.8,1073.7,2209.5L1073.7,2209.5z"/>
+				<path class="st13" d="M1056.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1057.8,2208.9,1057,2208.8,1056.7,2209.5L1056.7,2209.5z"/>
+				<path class="st13" d="M1039.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1040.8,2208.9,1040,2208.8,1039.7,2209.5L1039.7,2209.5z"/>
+				<rect x="1123.3" y="2211" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1123.3335 2219.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		
+			<image style="display:none;overflow:visible;" width="86" height="76" id="Produto_Novo_11_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 1143 1873)">
+		</image>
+	</g>
+	<g id="_x34_.Produto_3_">
+		<g>
+			<defs>
+				<rect id="SVGID_37_" x="1243" y="1887" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_38_">
+				<use xlink:href="#SVGID_37_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_38_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B993.jpg"  transform="matrix(0.236 0 0 0.236 1240 1886)">
+				</image>
+			</g>
+		</g>
+		<rect x="1243" y="2186" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1266.4502 2197.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA JESUS MISERICORDIOSO</text>
+		<rect x="1243" y="2240" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1304.4653 2251.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_17_">
+			<g>
+				<path class="st12" d="M1409.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1410.8,2208.9,1410,2208.8,1409.7,2209.5L1409.7,2209.5z"/>
+				<path class="st12" d="M1392.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1393.8,2208.9,1393,2208.8,1392.7,2209.5L1392.7,2209.5z"/>
+				<path class="st13" d="M1375.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1376.8,2208.9,1376,2208.8,1375.7,2209.5L1375.7,2209.5z"/>
+				<path class="st13" d="M1358.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1359.8,2208.9,1359,2208.8,1358.7,2209.5L1358.7,2209.5z"/>
+				<path class="st13" d="M1341.7,2209.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1342.8,2208.9,1342,2208.8,1341.7,2209.5L1341.7,2209.5z"/>
+				<rect x="1425.3" y="2211" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1425.3335 2219.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		
+			<image style="overflow:visible;" width="86" height="76" id="Produto_Novo_10_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 1445 1873)">
+		</image>
+	</g>
+	<g id="arrow_e_5_">
+		<g>
+			<g id="XMLID_25_">
+				<polygon id="XMLID_26_" class="st9" points="286.2,2036 314.1,2063.6 316.5,2061.3 290.1,2034.8 316.6,2008.3 314.1,2006 
+					286.2,2033.7 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="arrow_d_8_">
+		<g>
+			<g id="XMLID_19_">
+				<polygon id="XMLID_20_" class="st9" points="1575.4,2033.7 1547.5,2006 1545.1,2008.3 1571.5,2034.8 1545,2061.3 1547.5,2063.6 
+					1575.4,2036 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="Slideshow_3_">
+		<circle class="st9" cx="876.9" cy="2324.5" r="8.5"/>
+		<circle class="st17" cx="905.6" cy="2324.5" r="8.5"/>
+		<circle class="st17" cx="932.4" cy="2324.5" r="8.5"/>
+		<circle class="st17" cx="959.2" cy="2324.5" r="8.5"/>
+		<circle class="st17" cx="986.1" cy="2324.5" r="8.5"/>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M1124,1814l12-0.1c4,0,8,0,12,0c8,0,16,0.1,24,0l24-0.1c8,0,16,0.1,24,0.1v0c-8,0-16,0.1-24,0.1l-24-0.1
+				c-8-0.1-16,0-24,0c-4,0-8,0-12,0L1124,1814L1124,1814z"/>
+		</g>
+		<g>
+			
+				<rect x="1128.5" y="1803.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -949.0863 1336.7029)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M1139,1799.2l7.5,7.2l7.6,7.4l0.3,0.3l-0.3,0.3c-2.4,2.5-4.9,5-7.4,7.5l-7.4,7.5l-0.4,0.4l-0.4-0.4l-7.4-7.5
+				c-2.5-2.5-4.9-5-7.4-7.5l-0.3-0.3l0.3-0.3l7.6-7.4L1139,1799.2z M1139,1799.2l-7.3,7.7l-7.2,7.5v-0.5c2.5,2.4,5,4.9,7.5,7.4
+				l7.5,7.4h-0.7l7.5-7.4c2.5-2.5,5-4.9,7.5-7.4v0.5l-7.2-7.5L1139,1799.2z"/>
+		</g>
+		<g>
+			
+				<rect x="1160.9" y="1806.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -940.5924 1357.209)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M1168,1804l5.1,4.8l5.2,5l0.3,0.3l-0.3,0.3c-1.6,1.7-3.3,3.4-4.9,5.1l-5,5l-0.4,0.4l-0.4-0.4l-5-5
+				c-1.6-1.7-3.3-3.3-5-5l-0.3-0.3l0.3-0.3l5.2-5L1168,1804z M1168,1804l-4.9,5.2l-4.8,5v-0.5c1.7,1.6,3.4,3.3,5,5l5,5h-0.7l5-5
+				c1.7-1.7,3.3-3.3,5.1-4.9v0.5l-4.8-5L1168,1804z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M738,1813l-12,0.1c-4,0-8,0-12,0c-8,0-16-0.1-24,0l-24,0.1c-8,0-16-0.1-24-0.1v0c8,0,16-0.1,24-0.1l24,0.1
+				c8,0.1,16,0,24,0c4,0,8,0,12,0L738,1813L738,1813z"/>
+		</g>
+		<g>
+			
+				<rect x="712.5" y="1802.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1070.2228 1042.2537)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M723,1827.8l-7.5-7.2l-7.6-7.4l-0.3-0.3l0.3-0.3c2.4-2.5,4.9-5,7.4-7.5l7.4-7.5l0.4-0.4l0.4,0.4l7.4,7.5
+				c2.5,2.5,4.9,5,7.4,7.5l0.3,0.3l-0.3,0.3l-7.6,7.4L723,1827.8z M723,1827.8l7.3-7.7l7.2-7.5v0.5c-2.5-2.4-5-4.9-7.5-7.4l-7.5-7.4
+				h0.7l-7.5,7.4c-2.5,2.5-5,4.9-7.5,7.4v-0.5l7.2,7.5L723,1827.8z"/>
+		</g>
+		<g>
+			
+				<rect x="686.9" y="1805.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1078.7167 1021.7475)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M694,1823l-5.1-4.8l-5.2-5l-0.3-0.3l0.3-0.3c1.6-1.7,3.3-3.4,4.9-5.1l5-5l0.4-0.4l0.4,0.4l5,5
+				c1.6,1.7,3.3,3.3,5,5l0.3,0.3l-0.3,0.3l-5.2,5L694,1823z M694,1823l4.9-5.2l4.8-5v0.5c-1.7-1.6-3.4-3.3-5-5l-5-5h0.7l-5,5
+				c-1.7,1.7-3.3,3.3-5.1,4.9v-0.5l4.8,5L694,1823z"/>
+		</g>
+	</g>
+</g>
+<g id="Para_Vestir_com_o_Filho">
+	<rect x="249" y="2402" style="fill:none;" width="1366" height="35"/>
+	<text transform="matrix(1 0 0 1 697.9038 2429.1997)" class="st9" style="font-family:'Mitr-Regular'; font-size:40px;">Para Vestir com o Filho</text>
+	<g id="_x31_.Produto_4_">
+		<g>
+			<defs>
+				<rect id="SVGID_39_" x="337" y="2494" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_40_">
+				<use xlink:href="#SVGID_39_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_40_);">
+				
+					<image style="overflow:visible;" width="600" height="600" xlink:href="1682B99F.jpg"  transform="matrix(0.48 0 0 0.48 337 2494)">
+				</image>
+			</g>
+			<g style="clip-path:url(#SVGID_40_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B9FC.jpg"  transform="matrix(0.2344 0 0 0.2344 334 2493)">
+				</image>
+			</g>
+		</g>
+		<rect x="337" y="2793" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 392.2739 2804.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA TUDO É DO PAI</text>
+		<rect x="337" y="2847" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 398.4653 2858.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_38_">
+			<g>
+				<path class="st12" d="M503.7,2816.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C504.8,2815.9,504,2815.8,503.7,2816.5L503.7,2816.5z"/>
+				<path class="st12" d="M486.7,2816.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C487.8,2815.9,487,2815.8,486.7,2816.5L486.7,2816.5z"/>
+				<path class="st13" d="M469.7,2816.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C470.8,2815.9,470,2815.8,469.7,2816.5L469.7,2816.5z"/>
+				<path class="st13" d="M452.7,2816.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C453.8,2815.9,453,2815.8,452.7,2816.5L452.7,2816.5z"/>
+				<path class="st13" d="M435.7,2816.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C436.8,2815.9,436,2815.8,435.7,2816.5L435.7,2816.5z"/>
+				<rect x="519.3" y="2818" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 519.3335 2826.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Flag_7_" class="st0">
+			
+				<image style="display:inline;overflow:visible;" width="86" height="76" id="Produto_Novo_13_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 539 2480)">
+			</image>
+			<g id="Desconto_11_" class="st8">
+				<g id="Flag_Desconto_11_">
+					<polygon class="st14" points="388,2588 330,2588 330,2505 388,2505 430,2547 					"/>
+					<polygon class="st15" points="330,2505 330,2501 338,2494 338,2505 					"/>
+					<polygon class="st15" points="330,2588 330,2592 338,2599 338,2588 					"/>
+				</g>
+				<g>
+					<rect x="338" y="2520.7" style="fill:none;" width="50" height="51.3"/>
+					<text transform="matrix(1 0 0 1 338 2539.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">30%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+				</g>
+			</g>
+		</g>
+		<g id="Hover_4_" class="st0">
+			<g class="st8">
+				<path class="st16" d="M631.8,2487.3v438H330.3v-438H631.8 M632.5,2486.5h-303V2926h303V2486.5L632.5,2486.5z"/>
+			</g>
+			<g id="Comprar_4_" class="st8">
+				<rect x="329.5" y="2881" class="st9" width="303" height="47"/>
+				<rect x="337" y="2895" style="fill:none;" width="288" height="20"/>
+				<text transform="matrix(1 0 0 1 441.9614 2910.6636)" class="st6" style="font-family:'Cairo-SemiBold'; font-size:22px;">comprar</text>
+			</g>
+			<g id="Info_4_" class="st8">
+				<rect x="337" y="2808" class="st6" width="288" height="73"/>
+				<rect x="333" y="2827" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 394.4653 2838.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+				<rect x="333" y="2851" style="fill:none;" width="288" height="15"/>
+				<text transform="matrix(1 0 0 1 412.2412 2862.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">ou R$ 49,90 à vista</text>
+			</g>
+		</g>
+	</g>
+	<g id="_x32_.Produto_4_">
+		<g>
+			<defs>
+				<rect id="SVGID_41_" x="639" y="2493" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_42_">
+				<use xlink:href="#SVGID_41_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_42_);">
+				
+					<image style="overflow:visible;" width="600" height="600" xlink:href="1682B9FD.jpg"  transform="matrix(0.48 0 0 0.48 639 2493)">
+				</image>
+			</g>
+			<g style="clip-path:url(#SVGID_42_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B9FB.jpg"  transform="matrix(0.2312 0 0 0.2312 638 2492)">
+				</image>
+			</g>
+		</g>
+		<rect x="639" y="2792" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 660.7466 2803.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA INFANTIL TUDO É DO PAI</text>
+		<rect x="639" y="2869" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 700.4653 2880.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_33_">
+			<g>
+				<path class="st12" d="M805.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C806.8,2814.9,806,2814.8,805.7,2815.5L805.7,2815.5z"/>
+				<path class="st12" d="M788.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C789.8,2814.9,789,2814.8,788.7,2815.5L788.7,2815.5z"/>
+				<path class="st13" d="M771.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C772.8,2814.9,772,2814.8,771.7,2815.5L771.7,2815.5z"/>
+				<path class="st13" d="M754.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C755.8,2814.9,755,2814.8,754.7,2815.5L754.7,2815.5z"/>
+				<path class="st13" d="M737.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C738.8,2814.9,738,2814.8,737.7,2815.5L737.7,2815.5z"/>
+				<rect x="821.3" y="2817" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 821.3335 2825.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Desconto_12_">
+			<g id="Flag_Desconto_12_">
+				<polygon class="st14" points="689,2587 631,2587 631,2504 689,2504 731,2546 				"/>
+				<polygon class="st15" points="631,2504 631,2500 639,2493 639,2504 				"/>
+				<polygon class="st15" points="631,2587 631,2591 639,2598 639,2587 				"/>
+			</g>
+			<g>
+				<rect x="639" y="2519.7" style="fill:none;" width="50" height="51.3"/>
+				<text transform="matrix(1 0 0 1 639 2538.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">14%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+			</g>
+		</g>
+		<g id="Preço_anterior_4_">
+			<rect x="639" y="2846" style="fill:none;" width="288" height="15"/>
+			<text transform="matrix(1 0 0 1 744.8784 2856.0518)" class="st13" style="font-family:'Cairo-Regular'; font-size:14px;">De: R$ 59,00</text>
+			<line class="st18" x1="738" y1="2852" x2="828" y2="2852"/>
+		</g>
+	</g>
+	<g id="_x33_.Produto_4_">
+		<g>
+			<defs>
+				<rect id="SVGID_43_" x="942" y="2493" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_44_">
+				<use xlink:href="#SVGID_43_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_44_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B9F4.jpg"  transform="matrix(0.2368 0 0 0.2368 938 2490)">
+				</image>
+			</g>
+		</g>
+		<rect x="942" y="2792" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 970.1865 2803.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA PÓLO ESPÍRITO SANTO</text>
+		<rect x="942" y="2869" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1003.4653 2880.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_34_">
+			<g>
+				<path class="st12" d="M1108.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1109.8,2814.9,1109,2814.8,1108.7,2815.5L1108.7,2815.5z"/>
+				<path class="st12" d="M1091.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1092.8,2814.9,1092,2814.8,1091.7,2815.5L1091.7,2815.5z"/>
+				<path class="st13" d="M1074.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1075.8,2814.9,1075,2814.8,1074.7,2815.5L1074.7,2815.5z"/>
+				<path class="st13" d="M1057.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1058.8,2814.9,1058,2814.8,1057.7,2815.5L1057.7,2815.5z"/>
+				<path class="st13" d="M1040.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1041.8,2814.9,1041,2814.8,1040.7,2815.5L1040.7,2815.5z"/>
+				<rect x="1124.3" y="2817" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1124.3335 2825.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		<g id="Desconto_10_">
+			<g id="Flag_Desconto_10_">
+				<polygon class="st14" points="992,2587 934,2587 934,2504 992,2504 1034,2546 				"/>
+				<polygon class="st15" points="934,2504 934,2500 942,2493 942,2504 				"/>
+				<polygon class="st15" points="934,2587 934,2591 942,2598 942,2587 				"/>
+			</g>
+			<g>
+				<rect x="942" y="2519.7" style="fill:none;" width="50" height="51.3"/>
+				<text transform="matrix(1 0 0 1 942 2538.5664)"><tspan x="0" y="0" class="st9" style="font-family:'Cairo-Bold'; font-size:27px;">10%</tspan><tspan x="0" y="32.4" class="st9" style="font-family:'Cairo-Regular'; font-size:27px;">OFF</tspan></text>
+			</g>
+		</g>
+		<g id="Preço_anterior_3_">
+			<rect x="942" y="2846" style="fill:none;" width="288" height="15"/>
+			<text transform="matrix(1 0 0 1 1047.8784 2856.0518)" class="st13" style="font-family:'Cairo-Regular'; font-size:14px;">De: R$ 59,00</text>
+			<line class="st18" x1="1041" y1="2852" x2="1131" y2="2852"/>
+		</g>
+	</g>
+	<g id="_x34_.Produto_4_">
+		<g>
+			<defs>
+				<rect id="SVGID_45_" x="1244" y="2493" width="288" height="288"/>
+			</defs>
+			<clipPath id="SVGID_46_">
+				<use xlink:href="#SVGID_45_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_46_);">
+				
+					<image style="overflow:visible;" width="1250" height="1250" xlink:href="1682B9F7.jpg"  transform="matrix(0.2352 0 0 0.2352 1242 2489)">
+				</image>
+			</g>
+		</g>
+		<rect x="1244" y="2792" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1259.5547 2803.4878)" style="fill:#616161; font-family:'Cairo-Regular'; font-size:16px;">CAMISETA INFANTIL ESPÍRITO SANTO</text>
+		<rect x="1244" y="2846" style="fill:none;" width="288" height="15"/>
+		<text transform="matrix(1 0 0 1 1305.4653 2857.4878)"><tspan x="0" y="0" style="fill:#212121; font-family:'Cairo-Regular'; font-size:16px;">Por apenas: </tspan><tspan x="82.6" y="0" style="fill:#212121; font-family:'Cairo-Bold'; font-size:16px;">3x R$ 16,63</tspan></text>
+		<g id="Avaliação_25_">
+			<g>
+				<path class="st12" d="M1410.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1411.8,2814.9,1411,2814.8,1410.7,2815.5L1410.7,2815.5z"/>
+				<path class="st12" d="M1393.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1394.8,2814.9,1394,2814.8,1393.7,2815.5L1393.7,2815.5z"/>
+				<path class="st13" d="M1376.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1377.8,2814.9,1377,2814.8,1376.7,2815.5L1376.7,2815.5z"/>
+				<path class="st13" d="M1359.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1360.8,2814.9,1360,2814.8,1359.7,2815.5L1359.7,2815.5z"/>
+				<path class="st13" d="M1342.7,2815.5l-1.7,3.4l-3.7,0.5c-0.7,0.1-0.9,0.9-0.4,1.4l2.7,2.6l-0.6,3.7c-0.1,0.7,0.6,1.2,1.2,0.9
+					l3.3-1.7l3.3,1.7c0.6,0.3,1.3-0.2,1.2-0.9l-0.6-3.7l2.7-2.6c0.5-0.5,0.2-1.3-0.4-1.4l-3.7-0.5l-1.7-3.4
+					C1343.8,2814.9,1343,2814.8,1342.7,2815.5L1342.7,2815.5z"/>
+				<rect x="1426.3" y="2817" style="fill:none;" width="13.7" height="11"/>
+				<text transform="matrix(1 0 0 1 1426.3335 2825.6157)" style="fill:#757575; font-family:'Cairo-Regular'; font-size:12px;">(2)</text>
+			</g>
+		</g>
+		
+			<image style="overflow:visible;" width="86" height="76" id="Produto_Novo_14_" xlink:href="../../../../../Downloads/image.png"  transform="matrix(1 0 0 1 1446 2479)">
+		</image>
+	</g>
+	<g id="arrow_e_7_">
+		<g>
+			<g id="XMLID_51_">
+				<polygon id="XMLID_52_" class="st9" points="287.2,2642 315.1,2669.6 317.5,2667.3 291.1,2640.8 317.6,2614.3 315.1,2612 
+					287.2,2639.7 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="arrow_d_10_">
+		<g>
+			<g id="XMLID_53_">
+				<polygon id="XMLID_54_" class="st9" points="1576.4,2639.7 1548.5,2612 1546.1,2614.3 1572.5,2640.8 1546,2667.3 1548.5,2669.6 
+					1576.4,2642 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="Slideshow_4_">
+		<circle class="st9" cx="877.9" cy="2945.5" r="8.5"/>
+		<circle class="st17" cx="906.6" cy="2945.5" r="8.5"/>
+		<circle class="st17" cx="933.4" cy="2945.5" r="8.5"/>
+		<circle class="st17" cx="960.2" cy="2945.5" r="8.5"/>
+		<circle class="st17" cx="987.1" cy="2945.5" r="8.5"/>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M1186,2420l12-0.1c4,0,8,0,12,0c8,0,16,0.1,24,0l24-0.1c8,0,16,0.1,24,0.1v0c-8,0-16,0.1-24,0.1l-24-0.1
+				c-8-0.1-16,0-24,0c-4,0-8,0-12,0L1186,2420L1186,2420z"/>
+		</g>
+		<g>
+			
+				<rect x="1190.5" y="2409.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1359.4336 1558.0369)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M1201,2405.2l7.5,7.2l7.6,7.4l0.3,0.3l-0.3,0.3c-2.4,2.5-4.9,5-7.4,7.5l-7.4,7.5l-0.4,0.4l-0.4-0.4l-7.4-7.5
+				c-2.5-2.5-4.9-5-7.4-7.5l-0.3-0.3l0.3-0.3l7.6-7.4L1201,2405.2z M1201,2405.2l-7.3,7.7l-7.2,7.5v-0.5c2.5,2.4,5,4.9,7.5,7.4
+				l7.5,7.4h-0.7l7.5-7.4c2.5-2.5,5-4.9,7.5-7.4v0.5l-7.2-7.5L1201,2405.2z"/>
+		</g>
+		<g>
+			
+				<rect x="1222.9" y="2412.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1350.9397 1578.543)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M1230,2410l5.1,4.8l5.2,5l0.3,0.3l-0.3,0.3c-1.6,1.7-3.3,3.4-4.9,5.1l-5,5l-0.4,0.4l-0.4-0.4l-5-5
+				c-1.6-1.7-3.3-3.3-5-5l-0.3-0.3l0.3-0.3l5.2-5L1230,2410z M1230,2410l-4.9,5.2l-4.8,5v-0.5c1.7,1.6,3.4,3.3,5,5l5,5h-0.7l5-5
+				c1.7-1.7,3.3-3.3,5.1-4.9v0.5l-4.8-5L1230,2410z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st9" d="M680,2419l-12,0.1c-4,0-8,0-12,0c-8,0-16-0.1-24,0l-24,0.1c-8,0-16-0.1-24-0.1v0c8,0,16-0.1,24-0.1l24,0.1
+				c8,0.1,16,0,24,0c4,0,8,0,12,0L680,2419L680,2419z"/>
+		</g>
+		<g>
+			
+				<rect x="654.5" y="2408.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1515.7173 1178.7347)" class="st6" width="21" height="21"/>
+			<path class="st9" d="M665,2433.8l-7.5-7.2l-7.6-7.4l-0.3-0.3l0.3-0.3c2.4-2.5,4.9-5,7.4-7.5l7.4-7.5l0.4-0.4l0.4,0.4l7.4,7.5
+				c2.5,2.5,4.9,5,7.4,7.5l0.3,0.3l-0.3,0.3l-7.6,7.4L665,2433.8z M665,2433.8l7.3-7.7l7.2-7.5v0.5c-2.5-2.4-5-4.9-7.5-7.4l-7.5-7.4
+				h0.7l-7.5,7.4c-2.5,2.5-5,4.9-7.5,7.4v-0.5l7.2,7.5L665,2433.8z"/>
+		</g>
+		<g>
+			
+				<rect x="628.9" y="2411.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1524.2112 1158.2286)" class="st6" width="14.1" height="14.1"/>
+			<path class="st9" d="M636,2429l-5.1-4.8l-5.2-5l-0.3-0.3l0.3-0.3c1.6-1.7,3.3-3.4,4.9-5.1l5-5l0.4-0.4l0.4,0.4l5,5
+				c1.6,1.7,3.3,3.3,5,5l0.3,0.3l-0.3,0.3l-5.2,5L636,2429z M636,2429l4.9-5.2l4.8-5v0.5c-1.7-1.6-3.4-3.3-5-5l-5-5h0.7l-5,5
+				c-1.7,1.7-3.3,3.3-5.1,4.9v-0.5l4.8,5L636,2429z"/>
+		</g>
+	</g>
+</g>
+<g id="FOOTER">
+	<defs>
+		<rect id="SVGID_47_" x="248" y="3008" width="1365" height="500.5"/>
+	</defs>
+	<clipPath id="SVGID_48_">
+		<use xlink:href="#SVGID_47_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_48_);">
+		
+			<image style="overflow:visible;" width="1365" height="442" xlink:href="1682B9EB.jpg"  transform="matrix(1.0194 0 0 1.0194 249.0194 2994.7476)">
+		</image>
+	</g>
+	<g style="clip-path:url(#SVGID_48_);">
+		
+			<image style="overflow:visible;" width="1350" height="76" xlink:href="1682B9EC.jpg"  transform="matrix(1.0194 0 0 1.0194 248 3390.0583)">
+		</image>
+	</g>
+</g>
+<line class="st19" x1="248" y1="3395" x2="1614" y2="3395"/>
+<rect x="996" y="-471" style="fill:none;" width="382" height="38"/>
+<text transform="matrix(1 0 0 1 996 -460.1201)"><tspan x="0" y="0" class="st6" style="font-family:'Mitr-Light'; font-size:16px;">Lorem ipsum dolor sit amet, consectetuer </tspan><tspan x="0" y="20" class="st6" style="font-family:'Mitr-Light'; font-size:16px;">adipiscing elit, sed diam nonummy</tspan></text>
+<rect x="998" y="-393" style="fill:none;" width="268" height="15"/>
+<text transform="matrix(1 0 0 1 998 -382.1201)"><tspan x="0" y="0" class="st6" style="font-family:'Mitr-SemiBold'; font-size:16px;">01</tspan><tspan x="19.9" y="0" class="st6" style="font-family:'Mitr-ExtraLight'; font-size:16px;">/02</tspan><tspan x="47.9" y="0" style="fill:#081A5C; font-family:'Mitr-ExtraLight'; font-size:16px;"> </tspan><tspan x="55.1" y="0" style="fill:#F58026; font-family:'Mitr-Regular'; font-size:16px;">| “Look Sagrada Família”</tspan></text>
+<g>
+	<rect x="1547" y="-533" class="st20" width="67" height="67"/>
+	<g id="arrow_d_11_">
+		<g>
+			<g id="XMLID_61_">
+				<polygon id="XMLID_62_" class="st6" points="1590.1,-501 1571.9,-519 1570.3,-517.5 1587.6,-500.2 1570.3,-483 1571.9,-481.5 
+					1590.1,-499.5 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	<rect x="248" y="-534" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 563 -1001)" class="st20" width="67" height="67"/>
+	<g id="arrow_d_13_">
+		<g>
+			<g id="XMLID_57_">
+				<polygon id="XMLID_58_" class="st6" points="271.9,-499 290.1,-481 291.7,-482.5 274.4,-499.8 291.7,-517 290.1,-518.5 
+					271.9,-500.5 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<rect x="1642" y="-772" width="1366" height="768"/>
+<g id="SUGESTÕES" class="st0">
+	
+		<linearGradient id="degrade_branco_1_" gradientUnits="userSpaceOnUse" x1="931" y1="-250" x2="931" y2="-114" gradientTransform="matrix(-1 0 0 -1 1862 -367)">
+		<stop  offset="0" style="stop-color:#000000;stop-opacity:0.75"/>
+		<stop  offset="0.1464" style="stop-color:#000000;stop-opacity:0.6402"/>
+		<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+	</linearGradient>
+	<polygon id="degrade_branco" class="st21" points="1614,-117 248,-117 248,-253 1614,-253 	"/>
+	<g id="ver_sugestoes" class="st8">
+		<g class="st22">
+			
+				<image style="overflow:visible;opacity:0.5;" width="341" height="86" xlink:href="1682B9EC.png"  transform="matrix(1 0 0 1 761 -212)">
+			</image>
+			<g>
+				<linearGradient id="SVGID_49_" gradientUnits="userSpaceOnUse" x1="980.3779" y1="-85.3411" x2="882.6221" y2="-254.6589">
+					<stop  offset="0" style="stop-color:#FAA05C"/>
+					<stop  offset="1" style="stop-color:#F58026"/>
+				</linearGradient>
+				<path class="st23" d="M1059-136H804c-18.8,0-34-15.2-34-34v0c0-18.8,15.2-34,34-34h255c18.8,0,34,15.2,34,34v0
+					C1093-151.2,1077.8-136,1059-136z"/>
+			</g>
+		</g>
+		<rect x="903" y="-186" style="fill:none;" width="115" height="32"/>
+		<text transform="matrix(1 0 0 1 903 -175.1201)"><tspan x="0" y="0" class="st6" style="font-family:'Mitr-Regular'; font-size:16px;">Ver sugestões</tspan><tspan x="0" y="20" class="st6" style="font-family:'Mitr-Regular'; font-size:16px;">de presentes</tspan></text>
+		<g>
+			<g>
+				<path class="st6" d="M861.6-155.8c0.2,0.2,0.4,0.3,0.7,0.3c0.2,0,0.5-0.1,0.7-0.3l10-10c0.4-0.4,0.4-1,0-1.3
+					c-0.4-0.4-1-0.4-1.3,0l-8.4,8.4v-25.8c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9v25.8l-8.4-8.4c-0.4-0.4-1-0.4-1.3,0
+					c-0.4,0.4-0.4,1,0,1.3L861.6-155.8L861.6-155.8z"/>
+			</g>
+			<circle class="st24" cx="862" cy="-170" r="26"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st9" d="M98,17l-12,0.1c-4,0-8,0-12,0c-8,0-16-0.1-24,0l-24,0.1c-8,0-16-0.1-24-0.1v0c8,0,16-0.1,24-0.1l24,0.1
+			c8,0.1,16,0,24,0c4,0,8,0,12,0L98,17L98,17z"/>
+	</g>
+	<g>
+		<rect x="72.5" y="6.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 12.2893 63.669)" class="st6" width="21" height="21"/>
+		<path class="st9" d="M83,31.8l-7.5-7.2l-7.6-7.4L67.6,17l0.3-0.3c2.4-2.5,4.9-5,7.4-7.5l7.4-7.5L83,1.4l0.4,0.4l7.4,7.5
+			c2.5,2.5,4.9,5,7.4,7.5l0.3,0.3l-0.3,0.3l-7.6,7.4L83,31.8z M83,31.8l7.3-7.7l7.2-7.5v0.5c-2.5-2.4-5-4.9-7.5-7.4l-7.5-7.4h0.7
+			l-7.5,7.4c-2.5,2.5-5,4.9-7.5,7.4v-0.5l7.2,7.5L83,31.8z"/>
+	</g>
+	<g>
+		<rect x="46.9" y="9.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 3.7954 43.163)" class="st6" width="14.1" height="14.1"/>
+		<path class="st9" d="M54,27l-5.1-4.8l-5.2-5L43.5,17l0.3-0.3c1.6-1.7,3.3-3.4,4.9-5.1l5-5L54,6.3l0.4,0.4l5,5c1.6,1.7,3.3,3.3,5,5
+			l0.3,0.3l-0.3,0.3l-5.2,5L54,27z M54,27l4.9-5.2l4.8-5v0.5c-1.7-1.6-3.4-3.3-5-5l-5-5h0.7l-5,5c-1.7,1.7-3.3,3.3-5.1,4.9v-0.5
+			l4.8,5L54,27z"/>
+	</g>
+</g>
+</svg>
