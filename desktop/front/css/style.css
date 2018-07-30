@@ -6016,10 +6016,6 @@ body.busca-vazia .error-message h2 {
 	color: #18318e;
 }
 
-body.busca-vazia .prateleira li {
-	max-width: 320px;
-}
-
 body.busca-vazia .shelf-title {
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;

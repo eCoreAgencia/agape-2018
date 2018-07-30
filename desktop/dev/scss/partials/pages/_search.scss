@@ -393,14 +393,10 @@ body.busca-vazia {
 		text-align: center;
 		h2 {
 			@include font-size(2.2);
-			color: #18318e;
+			color: #18318e; 
 		}
 	}
-	.prateleira {
-		li {
-			max-width: 320px;
-		}
-	}
+
 	.shelf-title {
 		flex-wrap: wrap;
 		align-items: center;
