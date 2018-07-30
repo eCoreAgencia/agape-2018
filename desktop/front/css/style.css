@@ -278,7 +278,8 @@ footer .metodos-pagamento h3,
 .bread-crumb strong,
 header .menu-header .submenu h3,
 body.home main .shelf-title h2,
-body.dep-cat-bus .mainShelf .pager ul li {
+body.dep-cat-bus .mainShelf .pager ul li,
+body.busca-vazia .shelf-title h2 {
 	font-weight: 400;
 }
 
@@ -409,7 +410,8 @@ footer .compra-segura h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
 .search-single-navigator h5,
-body.home main .shelf-title h2 {
+body.home main .shelf-title h2,
+body.busca-vazia .shelf-title h2 {
 	color: #333333;
 }
 
@@ -515,7 +517,8 @@ body.orders footer h3,
 }
 
 .txt-sz-30,
-body.home main .shelf-title h2 {
+body.home main .shelf-title h2,
+body.busca-vazia .shelf-title h2 {
 	font-size: 30px;
 	line-height: 34px;
 }
@@ -859,6 +862,7 @@ footer .poweredBy,
 .col-sm-12,
 .col-md-12,
 body.home main .shelf-title h2,
+body.busca-vazia .shelf-title h2,
 .col-lg-12 {
 	position: relative;
 	min-height: 1px;
@@ -1136,7 +1140,8 @@ footer .metodos-pagamento h3,
 .bread-crumb strong,
 header .menu-header .submenu h3,
 body.home main .shelf-title h2,
-body.dep-cat-bus .mainShelf .pager ul li {
+body.dep-cat-bus .mainShelf .pager ul li,
+body.busca-vazia .shelf-title h2 {
 	font-weight: 400;
 }
 
@@ -1267,7 +1272,8 @@ footer .compra-segura h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
 .search-single-navigator h5,
-body.home main .shelf-title h2 {
+body.home main .shelf-title h2,
+body.busca-vazia .shelf-title h2 {
 	color: #333333;
 }
 
@@ -1373,7 +1379,8 @@ body.orders footer h3,
 }
 
 .txt-sz-30,
-body.home main .shelf-title h2 {
+body.home main .shelf-title h2,
+body.busca-vazia .shelf-title h2 {
 	font-size: 30px;
 	line-height: 34px;
 }
@@ -5988,6 +5995,17 @@ body.resultado-busca .search-single-navigator {
 	display: block !important;
 }
 
+body.busca-vazia .novidades .container,
+body.busca-vazia .em-promocao .container {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	margin-bottom: 90px;
+}
+
 body.busca-vazia .error-message {
 	padding: 40px 0;
 	text-align: center;
@@ -6002,25 +6020,68 @@ body.busca-vazia .prateleira li {
 	max-width: 320px;
 }
 
-body.busca-vazia .prateleira-title {
-	text-align: center;
-	margin-bottom: 10px;
+body.busca-vazia .shelf-title {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-align: center;
+	    align-items: center;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
 }
 
-body.busca-vazia .prateleira-title i {
-	margin-right: 10px;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-body.busca-vazia .prateleira-title i svg {
+body.busca-vazia .shelf-title svg {
 	width: 40px;
-	height: 40px;
+	height: auto;
+	display: inline-block;
 }
 
-body.busca-vazia .prateleira-title h2 {
-	font-size: 18px;
-	color: #f68026;
+body.busca-vazia .shelf-title h2 {
+	padding: 15px 20px;
+	display: inline-block;
+}
+
+body.busca-vazia .slick-slider .slick-arrow svg {
+	display: none;
+}
+
+body.busca-vazia .slick-slider .slick-arrow.slick-prev:after {
+	content: '<';
+	color: #a9a9a9;
+	display: block;
+	font-weight: 700;
+	-ms-transform: rotate(180deg);
+	    transform: rotate(180deg);
+}
+
+body.busca-vazia .slick-slider .slick-arrow.slick-next:after {
+	content: '>';
+	color: #a9a9a9;
+	display: block;
+	font-weight: 700;
+}
+
+body.busca-vazia .slick-slider:hover .slick-arrow {
+	opacity: 1;
+}
+
+body.busca-vazia .slick-slider .slick-arrow {
+	font-size: 17px;
+	top: 150px;
+	padding: 0;
+	z-index: 9;
+	width: 31px;
+	right: -5px;
+	height: 71px;
+	border-radius: 5px;
+	background-color: #ccc;
+	display: block !important;
+	opacity: .3;
+}
+
+body.busca-vazia .shelfItem {
+	max-height: 520px;
 }
 
 /* ==========================================================================
@@ -8165,7 +8226,8 @@ footer .metodos-pagamento,
 .col-md-10,
 .col-md-11,
 .col-md-12,
-body.home main .shelf-title h2 {
+body.home main .shelf-title h2,
+body.busca-vazia .shelf-title h2 {
 	float: left;
 }
 
@@ -8223,7 +8285,8 @@ footer .metodos-pagamento {
 }
 
 .col-md-12,
-body.home main .shelf-title h2 {
+body.home main .shelf-title h2,
+body.busca-vazia .shelf-title h2 {
 	width: 100%;
 }
 
@@ -8772,6 +8835,15 @@ body.dep-cat-bus #nav-dep .right {
 
 body.dep-cat-bus .mainShelf {
 	position: initial;
+}
+
+body.busca-vazia .shelf-title svg {
+	width: 75px;
+}
+
+body.busca-vazia .shelf-title h2 {
+	width: 100%;
+	text-align: center;
 }
 
 body.account .profile-detail-display,
