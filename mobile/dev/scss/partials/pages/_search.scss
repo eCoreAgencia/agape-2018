@@ -430,7 +430,30 @@ body.resultado-busca {
 }
 
 body.busca-vazia{
-
+	.shelf-title {
+		flex-wrap: wrap;
+    	align-items: center;
+    	display: inline-flex;
+   		justify-content: center;
+		   svg {
+				width: 40px;
+				height: auto;
+				display: inline-block;
+		   }
+		   
+		   h2 {
+				font-size: 30px;
+    			line-height: 34px;
+				padding: 15px 20px;
+   			 	display: inline-block;
+				font-weight: 400;
+				
+		   }
+	}
+	.slick-dots {
+		margin-top: 30px;
+    	position: inherit;
+	}
 	.error-message {
 		padding: 40px 0;
 		text-align: center;

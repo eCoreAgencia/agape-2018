@@ -439,6 +439,18 @@
 				slidesToScroll: 1,
 				adaptiveHeight: true
 			});
+			
+			$('body.busca-vazia .slider').find('.prateleira ul').slick({
+				arrows: false,
+				dots: true,
+				draggable: true,
+				touchMove: true,
+				autoplay: false,
+				slidesToShow: 2,
+				mobileFirst: true,
+				slidesToScroll: 1,
+				adaptiveHeight: true
+			});
 
 			$('body.home .slider-escolha-por-santos').find('ul').slick({
 				arrows: false,

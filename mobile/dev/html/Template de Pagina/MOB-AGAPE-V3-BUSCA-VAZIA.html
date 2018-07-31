@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
-    <head>
-        <title><vtex.cmc:searchTitle /> | Ágape Moda</title>
-        <vtex:metaTags/>
-        <vtex:template id="MOB-AGAPE-V3-COMMONSTYLES" />
-    </head>
-    <body>
-        <vtex:template id="MOB-AGAPE-V3-HEADER" />
-        <main class="container">
-            <section class="error-message">
-                <h2>Nenhum produto foi encontrado</h2>
-                <p>Para melhorar sua busca, verifique se o termo foi digitado corretamente ou utilize palavras similares.</p>
-            </section>
-            <section>
-                <div class="prateleira-title">
-                    <i>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487.334 487.334"><g fill="#edae49"><path d="M243.667 0C143.106 0 61.27 81.835 61.27 182.397c0 58.793 28.576 114.302 76.485 148.501l2.25 1.49c11.126 6.536 12.221 27.572 11.977 31.433l-.061 1.915v59.857c0 11.43 6.384 21.857 16.568 27.086l61.346 31.311a30.422 30.422 0 0 0 13.832 3.344c4.682 0 9.393-1.094 13.71-3.253l62.076-31.342a30.374 30.374 0 0 0 16.689-27.147V366.07c0-30.004 18.331-39.915 18.483-39.975l6.749-4.347c41.13-34.807 64.69-85.544 64.69-139.351C426.064 81.835 344.259 0 243.667 0zm0 456.934l-61.316-31.342h123.391l-62.075 31.342zm62.045-90.864v29.123H182.321v-29.457l.03-.942h123.483l-.122 1.276zm36.054-67.547s-20.368 9.515-30.46 35.871H177.457c-3.77-10.518-10.305-21.34-22.04-28.272-38.577-27.511-63.747-72.684-63.747-123.725C91.67 98.464 159.734 30.4 243.667 30.4c83.963 0 151.997 68.064 151.997 151.997 0 46.572-20.945 88.219-53.898 116.126z"/><path d="M258.867 60.799c-8.36 0-15.2 6.809-15.2 15.2s6.84 15.2 15.2 15.2c34.199 0 75.999 31.099 75.999 77.427 0 8.39 6.84 15.2 15.2 15.2s15.2-6.809 15.2-15.2c-.001-69.341-54.143-107.827-106.399-107.827z"/></g></svg>
-                    </i>
-                    <h2>Confira Nossas Novidades</h2>
+
+<head>
+    <title>
+        <vtex.cmc:searchTitle /> | Ágape Moda</title>
+    <vtex:metaTags/>
+    <vtex:template id="MOB-AGAPE-V3-TEST-COMMONSTYLES" />
+</head>
+
+<body>
+    <vtex:template id="MOB-AGAPE-V3-HEADER" />
+    <main class="container">
+        <section class="error-message">
+            <h2>Nenhum produto foi encontrado</h2>
+            <p>Para melhorar sua busca, verifique se o termo foi digitado corretamente ou utilize palavras similares.</p>
+        </section>
+        <section class="row lancamentos">
+            <div class="container">
+                <div class="shelf-title col-xs-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M496.64 232.96c-28.16-74.24-102.4-112.64-184.32-97.28C232.96 56.32 122.88 2.56 12.8 0 5.12 0 0 5.12 0 12.8c2.56 110.08 56.32 220.16 133.12 299.52-12.8 79.36 23.04 156.16 97.28 184.32-12.8-33.28-15.36-71.68-5.12-110.08 12.8 7.68 25.6 15.36 38.4 20.48 5.12 2.56 10.24 2.56 15.36-2.56l128-128c2.56-2.56 2.56-7.68 0-12.8-5.12-12.8-12.8-25.6-20.48-35.84 38.4-10.24 76.8-7.68 110.08 5.12zm-281.6-17.92c-20.48 20.48-51.2 20.48-71.68 0-20.48-20.48-20.48-51.2 0-71.68 20.48-20.48 51.2-20.48 71.68 0 20.48 20.48 20.48 51.2 0 71.68zM504.32 368.64l-53.76-53.76c-10.24-10.24-25.6-10.24-35.84 0s-10.24 25.6 0 35.84l53.76 53.76c10.24 10.24 25.6 10.24 35.84 0s10.24-25.6 0-35.84zM404.48 468.48l-53.76-53.76c-10.24-10.24-25.6-10.24-35.84 0s-10.24 25.6 0 35.84l53.76 53.76c10.24 10.24 25.6 10.24 35.84 0s10.24-25.6 0-35.84zM473.6 440.32l-74.24-74.24c-10.24-10.24-25.6-10.24-35.84 0s-10.24 25.6 0 35.84l74.24 74.24c10.24 10.24 25.6 10.24 35.84 0s10.24-25.6 0-35.84z" fill="#f68026"/></svg>
+                    <h2>Nossas
+                        <strong>Novidades</strong>
+                    </h2>
                 </div>
-                <div class="prateleira-lancamentos">
-                    <vtex:contentPlaceHolder id="lancamentos" />
+                <div class="shelf col-xs-12 col-md-10 slider">
+                    <vtex:contentPlaceHolder id="produtosDestaque" />
                 </div>
-            </section>
-        </main>
-        <vtex:template id="MOB-AGAPE-V3-FOOTER" />
-        <vtex:template id="MOB-AGAPE-V3-COMMONSCRIPTS" />
-    </body>
+
+            </div>
+        </section>
+
+        <section class="row em-promocao">
+            <div class="container">
+                <div class="shelf-title col-xs-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999" width="512" height="512">
+                        <path d="M467.069 212.578L267.381 12.861c-11.777-11.748-30.828-11.609-42.451-.015-11.689 11.719-11.689 30.747 0 42.451L424.647 255c11.7 11.7 30.721 11.7 42.422 0 11.732-11.732 11.732-30.692 0-42.422zM210.115 82.905l-1.503 7.534c-10.587 52.958-36.317 103.269-71.118 144.046l108.647 108.647c40.772-34.794 90.39-61.215 143.35-71.815l7.548-1.503L210.115 82.905zM117.575 256.989l-74.253 74.238c-17.545 17.545-17.618 46.029 0 63.647l42.422 42.422c17.545 17.545 46.029 17.617 63.647 0l74.246-74.246-106.062-106.061zm10.606 116.675c-5.859 5.859-15.352 5.859-21.211 0-5.859-5.859-5.859-15.352 0-21.211l21.211-21.211c5.859-5.859 15.352-5.859 21.211 0 5.859 5.859 5.859 15.352 0 21.211l-21.211 21.211zM286.266 445.278l20.405-20.405c17.619-17.616 17.561-46.1.001-63.631l-15.156-15.167c-8.377 5.627-16.377 11.741-24.155 18.265l18.1 18.127c5.845 5.815 5.886 15.279 0 21.196l-20.742 20.742-30.482-29.533-42.424 42.424 68.057 65.947c11.614 11.644 30.683 11.71 42.407-.015 11.704-11.704 11.704-30.732 0-42.437l-16.011-15.513zM346.864 0c-8.291 0-15 6.709-15 15v30c0 8.291 6.709 15 15 15s15-6.709 15-15V15c0-8.291-6.709-15-15-15zM466.864 120h-30c-8.291 0-15 6.709-15 15s6.709 15 15 15h30c8.291 0 15-6.709 15-15s-6.709-15-15-15zM447.469 34.394c-5.859-5.859-15.352-5.859-21.211 0l-30 30c-5.859 5.859-5.859 15.352 0 21.211s15.352 5.86 21.211 0l30-30c5.859-5.859 5.859-15.352 0-21.211z"
+                            fill="#f68026" />
+                    </svg>
+                    <h2>O Preço
+                        <strong>Abaixou</strong>
+                    </h2>
+                </div>
+                <div class="shelf col-xs-12 slider">
+                    <vtex.cmc:MobshelfEmPromocao />
+                </div>
+            </div>
+        </section>
+    </main>
+    <vtex:template id="MOB-AGAPE-V3-FOOTER" />
+    <vtex:template id="MOB-AGAPE-V3-TEST-COMMONSCRIPTS" />
+</body>
+
 </html>

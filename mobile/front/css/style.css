@@ -6218,6 +6218,36 @@ body.resultado-busca .navigation {
 	margin-top: 10px;
 }
 
+body.busca-vazia .shelf-title {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-align: center;
+	    align-items: center;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+}
+
+body.busca-vazia .shelf-title svg {
+	width: 40px;
+	height: auto;
+	display: inline-block;
+}
+
+body.busca-vazia .shelf-title h2 {
+	font-size: 30px;
+	line-height: 34px;
+	padding: 15px 20px;
+	display: inline-block;
+	font-weight: 400;
+}
+
+body.busca-vazia .slick-dots {
+	margin-top: 30px;
+	position: inherit;
+}
+
 body.busca-vazia .error-message {
 	padding: 40px 0;
 	text-align: center;

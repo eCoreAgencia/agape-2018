@@ -6006,6 +6006,10 @@ body.busca-vazia .em-promocao .container {
 	margin-bottom: 90px;
 }
 
+body.busca-vazia .slick-track .shelfItem .drop {
+	margin-top: 0;
+}
+
 body.busca-vazia .error-message {
 	padding: 40px 0;
 	text-align: center;
