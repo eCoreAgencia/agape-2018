@@ -4616,21 +4616,7 @@ body.home main .escolha-por-santos nav ul li {
 	width: 100%;
 	max-width: 275px;
 	display: inline-table;
-	margin: 0 70px 40px 0;
-}
-
-body.home main .escolha-por-santos nav ul li:nth-child(2),
-body.home main .escolha-por-santos nav ul li:nth-child(4),
-body.home main .escolha-por-santos nav ul li:nth-child(6) {
-	margin-right: 0;
-}
-
-body.home main .escolha-por-santos nav ul li:nth-child(5) {
-	margin-bottom: 40px;
-}
-
-body.home main .escolha-por-santos nav ul li:nth-child(6) {
-	margin-bottom: 0;
+	margin: 20px;
 }
 
 body.home main .escolha-por-santos nav ul li a {
