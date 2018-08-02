@@ -2240,6 +2240,20 @@ body.home footer .textoLegal {
 	text-decoration: none;
 }
 
+.prateleira .slick-slider {
+	min-height: 450px;
+	overflow-y: visible;
+}
+
+.prateleira .slick-list {
+	overflow: visible;
+	overflow-x: hidden;
+}
+
+.slider .prateleira {
+	height: 425px;
+}
+
 .shelfItem {
 	width: 100%;
 	padding: 7px;
@@ -4363,6 +4377,18 @@ body.produto .item-dimension-Cor label.skuespec_Rosa {
 /* ==========================================================================
    Home
    ========================================================================== */
+
+.slider .prateleira {
+	height: 375px;
+	-ms-transform: scale(0.9);
+	    transform: scale(0.9);
+	-ms-transform-origin: top;
+	    transform-origin: top;
+}
+
+.prateleira .slick-slider {
+	min-height: 340px;
+}
 
 body.home main .box-banner {
 	cursor: pointer;
@@ -8471,20 +8497,6 @@ footer .copyright-notice {
 	line-height: 20px;
 }
 
-.prateleira .slick-slider {
-	min-height: 450px;
-	overflow-y: visible;
-}
-
-.prateleira .slick-list {
-	overflow: visible;
-	overflow-x: hidden;
-}
-
-.slider .prateleira {
-	height: 425px;
-}
-
 .shelfItem .buttons {
 	top: 100%;
 	opacity: 0;
@@ -9107,14 +9119,6 @@ body.home main .escolha-por-santos .img-box img {
 body.home main .em-promocao,
 body.home main .mais-vendidos {
 	padding-bottom: 0;
-}
-
-.slider .prateleira {
-	height: 375px;
-}
-
-.prateleira .slick-slider {
-	min-height: 340px;
 }
 
 body.produto main .ProductImage .easyzoom {

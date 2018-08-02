@@ -31,10 +31,12 @@
 	}
 }
 
-@media (max-width: 1024px) {
+
 	.slider {
 		.prateleira {
 			height: 375px;
+			transform: scale(.9);
+			transform-origin: top;
 		}
 	}
 	.prateleira {
@@ -42,7 +44,7 @@
 			min-height: 340px;
 		}
 	}
-}
+
 
 body.home {
 	main {
