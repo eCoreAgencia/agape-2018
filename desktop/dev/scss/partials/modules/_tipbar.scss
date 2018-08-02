@@ -2,16 +2,15 @@
    Tipbar
    ========================================================================== */
 
-.top-box{
-	.container{
+.top-box {
+	.container {
 		overflow: visible !important;
 	}
 }
 
-.TipBar{
+.TipBar {
 	display: inline-block;
-
-	li{
+	li {
 		@extend .txt-up;
 		@extend .transition;
 		@include font-size(1.1);
@@ -20,13 +19,11 @@
 		display: inline-block;
 		position: relative;
 		cursor: pointer;
-
-		svg{
+		svg {
 			vertical-align: middle;
 			margin: 2px 9px 5px 5px;
 		}
-
-		.tooltip{
+		.tooltip {
 			@extend .transition;
 			display: none;
 			position: absolute;
@@ -36,37 +33,34 @@
 			padding: 10px;
 			z-index: 9999999999999999999999999999999999;
 			overflow: visible;
-			height: 128px;
+			height: 140px;
 			width: 310px;
-
-			h3, p{
+			font-size: 1.1em;
+			h3,
+			p {
 				color: #fff;
 				font-weight: bold;
 			}
-
-			p{
+			p {
 				text-transform: none;
 				font-weight: normal;
 			}
-
-			&:before{
+			&:before {
 				content: "";
 				display: block;
 				margin-right: 10px;
-				width: 0; 
+				width: 0;
 				height: 0;
 				position: absolute;
 				top: -5px;
 				left: 20%;
-
 				border-left: 5px solid transparent;
 				border-right: 5px solid transparent;
 				border-bottom: 5px solid #18318f;
 			}
 		}
-
-		&:hover{
-			.tooltip{
+		&:hover {
+			.tooltip {
 				display: block;
 			}
 		}

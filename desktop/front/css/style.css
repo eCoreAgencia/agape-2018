@@ -715,7 +715,7 @@ main {
 
 main {
 	z-index: 1;
-	padding-top: 190px;
+	padding-top: 189px;
 	position: relative;
 }
 
@@ -3887,8 +3887,9 @@ header.ha-hide {
 	padding: 10px;
 	z-index: 9999999999999999999999999999999999;
 	overflow: visible;
-	height: 128px;
+	height: 140px;
 	width: 310px;
+	font-size: 1.1em;
 }
 
 .TipBar li .tooltip h3,
