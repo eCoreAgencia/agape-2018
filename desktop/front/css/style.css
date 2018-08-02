@@ -4545,7 +4545,17 @@ body.home main .escolha-por-santos {
 	width: 100%;
 	float: left;
 	margin-bottom: 40px;
+}
+
+body.home main .escolha-por-santos .container {
 	background: url(/arquivos/bg-escolha-santo.jpg) no-repeat center center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: space-evenly;
+	    justify-content: space-evenly;
+	-ms-flex-align: center;
+	    align-items: center;
+	border: 7px solid white;
 }
 
 body.home main .escolha-por-santos h2,
@@ -4583,9 +4593,23 @@ body.home main .escolha-por-santos h2 span {
 }
 
 body.home main .escolha-por-santos nav {
+	width: 100%;
 	max-width: 55%;
 	padding: 0 0 0;
 	margin-right: 0;
+}
+
+body.home main .escolha-por-santos nav ul {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex: 1;
+	    flex: 1;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	max-height: 337px;
+	width: 100%;
 }
 
 body.home main .escolha-por-santos nav ul li {
@@ -4601,7 +4625,10 @@ body.home main .escolha-por-santos nav ul li:nth-child(6) {
 	margin-right: 0;
 }
 
-body.home main .escolha-por-santos nav ul li:nth-child(5),
+body.home main .escolha-por-santos nav ul li:nth-child(5) {
+	margin-bottom: 40px;
+}
+
 body.home main .escolha-por-santos nav ul li:nth-child(6) {
 	margin-bottom: 0;
 }
