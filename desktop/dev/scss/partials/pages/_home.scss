@@ -171,6 +171,7 @@ body.home {
 			.banner-destaque {
 				@include mq($screen-md) {
 					width: 45%;
+					margin-bottom: 20px;
 				}
 				img {
 					max-width: 100%;
