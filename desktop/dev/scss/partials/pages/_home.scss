@@ -23,53 +23,49 @@
 					}
 				}
 			}
-			.em-promocao, 
+			.em-promocao,
 			.mais-vendidos {
 				padding-bottom: 0;
 			}
-		} 
+		}
 	}
 }
 
-@media (max-width: 1024px) {
+
 	.slider {
 		.prateleira {
 			height: 375px;
+			transform: scale(.9);
+			transform-origin: top;
 		}
 	}
-
 	.prateleira {
 		.slick-slider {
 			min-height: 340px;
 		}
 	}
-}
 
-body.home{
-	main{
 
-		.box-banner{
+body.home {
+	main {
+		.box-banner {
 			cursor: pointer;
 		}
-
-		.banners-orange{
-    		width: 100%;
-		    float: left;
-		    padding: 10px 7px;
-		    margin-bottom: 20px;
-
-			.box-banner{
+		.banners-orange {
+			width: 100%;
+			float: left;
+			padding: 10px 7px;
+			margin-bottom: 20px;
+			.box-banner {
 				@extend .col-md-3;
 				cursor: pointer;
 				overflow: hidden;
-
 				img {
 					max-width: 100%;
 					-moz-transition: all 0.3s;
 					-webkit-transition: all 0.3s;
 					transition: all 0.3s;
 				}
-	
 				&:hover {
 					img {
 						-moz-transform: scale(1.05);
@@ -79,14 +75,12 @@ body.home{
 				}
 			}
 		}
-
 		.slick-slider {
 			.shelfItem {
 				.drop {
 					margin-top: 0;
 				}
 			}
-			
 			.slick-arrow {
 				@include font-size(1.7);
 				top: 150px;
@@ -99,11 +93,9 @@ body.home{
 				background-color: #ccc;
 				display: block !important;
 				opacity: 0.3;
-
 				svg {
 					display: none;
 				}
-
 				&.slick-next {
 					&:after {
 						content: '>';
@@ -112,10 +104,8 @@ body.home{
 						font-weight: bold;
 					}
 				}
-
 				&.slick-prev {
 					transform: rotate(0deg);
-
 					&:after {
 						content: '<';
 						color: #a9a9a9;
@@ -124,31 +114,26 @@ body.home{
 					}
 				}
 			}
-
-			&:hover{
-				.slick-arrow{
+			&:hover {
+				.slick-arrow {
 					opacity: 1;
 				}
 			}
 		}
-
 		.bottom-banners {
 			width: 100%;
 			float: left;
 			margin-top: -30px;
 			margin-bottom: 20px;
-
-			.box-banner{
+			.box-banner {
 				cursor: pointer;
 				overflow: hidden;
-
 				img {
 					max-width: 100%;
 					-moz-transition: all 0.3s;
 					-webkit-transition: all 0.3s;
 					transition: all 0.3s;
 				}
-	
 				&:hover {
 					img {
 						-moz-transform: scale(1.05);
@@ -158,13 +143,11 @@ body.home{
 				}
 			}
 		}
-
 		.slider-dois {
 			.shelfItem {
 				.shelfBestPrice {
 					display: none;
 				}
-
 				&:hover {
 					.shelfBestPrice {
 						display: block;
@@ -172,35 +155,30 @@ body.home{
 				}
 			}
 		}
-
-		.destaque{
+		.destaque {
 			clear: both;
 			margin: 20px 0;
-
 			.banner-destaque,
-			.slider-dois{
+			.slider-dois {
 				display: block;
 				width: 100%;
 				padding: 0 7px;
-
 				@include mq($screen-md) {
 					display: inline-block;
 					vertical-align: top;
 				}
 			}
-
-			.banner-destaque{
+			.banner-destaque {
 				@include mq($screen-md) {
 					width: 45%;
+					margin-bottom: 20px;
 				}
-
 				img {
 					max-width: 100%;
 					-moz-transition: all 0.3s;
 					-webkit-transition: all 0.3s;
 					transition: all 0.3s;
 				}
-	
 				&:hover {
 					img {
 						-moz-transform: scale(1.05);
@@ -209,55 +187,57 @@ body.home{
 					}
 				}
 			}
-
-			.slider-dois{
+			.slider-dois {
 				@include mq($screen-md) {
 					width: 55%;
 				}
-
 				.slick-initialized {
 					margin-top: -12px;
 				}
 			}
 		}
-		.mais-vendidos{
+		.mais-vendidos {
 			z-index: 3;
 			border-bottom: 1px solid #888;
 		}
-		.em-promocao{
+		.em-promocao {
 			z-index: 2;
 			padding-top: 40px;
 			margin-bottom: 50px;
 		}
-		.mais-vendidos, .em-promocao{
+		.mais-vendidos,
+		.em-promocao {
 			float: left;
 			width: 100%;
 			position: relative;
 			padding-bottom: 50px;
-			.container{
+			.container {
 				display: flex;
 				flex-wrap: wrap;
 				align-items: center;
 			}
 		}
-		.shelf-title{
+		.shelf-title {
 			flex-wrap: wrap;
 			align-items: center;
 			display: inline-flex;
 			justify-content: center;
-			svg{
+			svg {
 				width: 40px;
 				height: auto;
 				display: inline-block;
-				@include mq($screen-md){
+				@include mq($screen-md) {
 					width: 75px;
 				}
 			}
-			h2{
-				@extend .regular, .txt-darkerGray, .col-md-12,.txt-sz-30;
+			h2 {
+				@extend .regular,
+				.txt-darkerGray,
+				.col-md-12,
+				.txt-sz-30;
 				padding: 15px 20px;
 				display: inline-block;
-				@include mq($screen-md){
+				@include mq($screen-md) {
 					width: 100%;
 					text-align: center;
 				}
@@ -267,8 +247,13 @@ body.home{
 			width: 100%;
 			float: left;
 			margin-bottom: 40px;
-			background: url(/arquivos/bg-escolha-santo.jpg) no-repeat center center;
-
+			.container {
+				background: url(/arquivos/bg-escolha-santo.jpg) no-repeat center center;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				border: 7px solid white;
+			}
 			h2,
 			li,
 			img,
@@ -276,56 +261,52 @@ body.home{
 				display: inline-block;
 				vertical-align: middle;
 			}
-
 			.img-box {
 				margin: 0 85px 0 0;
 				display: inline-block;
-				
 				img {
 					display: none;
-					
 					&:first-of-type {
 						display: inline-block;
 					}
 				}
 			}
-
 			h2 {
 				@include font-size(3.4);
 				color: #505050;
 				font-weight: normal;
 				text-transform: uppercase;
-
 				span {
 					@include font-size(3.2);
 					display: block;
 					font-weight: bold;
 				}
 			}
-
 			nav {
+				width: 100%;
 				max-width: 55%;
 				padding: 0 0 0;
 				margin-right: 0;
-
 				ul {
+					display: flex;
+					flex-direction: column;
+					flex: 1;
+					flex-wrap: wrap;
+					max-height: 337px;
+					width: 100%;
 					li {
 						width: 100%;
 						max-width: 275px;
 						display: inline-table;
-						margin: 0 70px 40px 0;
-
+						margin: 20px;
 						&:nth-child(2),
 						&:nth-child(4),
 						&:nth-child(6) {
-							margin-right: 0;
 						}
-
-						&:nth-child(5),
+						&:nth-child(5) {
+						}
 						&:nth-child(6) {
-							margin-bottom: 0;
 						}
-
 						a {
 							@extend .transition;
 							color: #505050;
@@ -338,7 +319,6 @@ body.home{
 							text-decoration: none;
 							background-color: #fff;
 							text-transform: uppercase;
-
 							&:after {
 								@extend .transition;
 								content: '';
@@ -349,12 +329,10 @@ body.home{
 								width: 16px;
 								height: 16px;
 							}
-
 							&:hover {
 								@extend .transition;
 								color: #fff;
 								background-color: #f68026;
-
 								&:after {
 									@extend .transition;
 									background: url(/arquivos/right-arrow-santo-branco.png) no-repeat scroll 0 0 transparent;
