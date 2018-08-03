@@ -2,404 +2,377 @@
    Minha Conta
    ========================================================================== */
 
-body.account {
-
-	.menu-header {
-		.menu-item {
-			&:hover {
-				.submenu {
-					z-index: 2;
-				}
-			}
-		}
-	}
-
-	header {
-		z-index: 1;
-		position: relative;
-	}
-
-	.delete {
-		display: none !important;
-	}
-
-	.modal-backdrop {
-		display: none;
-	}
-
-	&.top-height-active {
-		.modal {
-			form {
-				@extend .transition;
-				top: 70px;
-			}
-		}
-	}
-
-	#box-bread-brumb {
-		width: 100%;
-		margin: 10px 0;
-
-		li {
-			display: inline-block;
-
-			a {
-				display: inline-block;
-				vertical-align: middle;
-
-				&:after {
-					margin-left: 5px;
-					display: inline-block;
-					content: '> Minha Conta';
-				}
-			}
-		}
-	}
-
-    #form-submit,
-    #profile-submit {
-        @include font-size(1.4);
-        float: right;
-        height: 30px;
-        margin-top: 5px;
-        line-height: 10px;
-        padding: 10px 20px;
-        color: #000 !important;
-		background-color: #eaeaea;
-		
-		&:hover {
-			@extend .transition;
-			color: #fff !important;
-			background-color: #f68026;
-		}
-    }
-
-	main{
-		z-index: 0;
-	    padding-top: 0;
-	    overflow: hidden;
-	    background-color: #fff;
-
-		.container{
-			display: flex;
-			padding: 0 10px;
-			flex-wrap: wrap;
-			align-items: stretch;
-
-			h3{
-				width: 100%;
-				margin: 20px 0;
-				padding: 10px 0;
-				border-color: #9e9ea6;
-			}
-
-			h3#myModalLabel {
-				margin: 0;
-				padding: 10px 0;
-			}
-		}
-	}
-
-	.profile-detail-display,
-	.address-display-block{
-		@include font-size(1.3);
-		margin-top: 20px;
-		padding: 20px 40px;
-		border: 1px solid #9e9ea6;
-
-		@include mq($screen-md) {
-			margin-top: 0;
-			width: 48%;
-			margin-right: 2%;
-			min-height: 370px;
-			margin-bottom: 60px;
-		}
-
-		h5{
-			display: none;
-		}
-
-		h4 {
-			@include font-size(3);
-			clear: both;
-			color: #f68026;
-			margin: 20px 0;
-			min-width: 225px;
-			padding: 10px 40px;
-			display: inline-block;
-			transform: translateX(-40px);
-		}
-
-		.profile-detail-display-email {
-			padding: 5px 0;
-		}
-
-
-		.new-address-link{
-			margin-top: 0;
-		}
-	}
-
-	.profile-detail-display-info{
-		br{display: none}
-		& > span{
-			width: 100%;
-			padding: 5px 0;
-			display: block;
-		}
-	}
-
-	.profile-detail-display-info,
-	.address-display-unit-info { 
-		line-height: 1.5;
-		& > span{
-		}
-	}
-
-	.edit-profile-link,
-	.new-address-link,
-	.edit-address-link{
-		margin: 15px 0;
-		overflow: hidden;
-	}
-
-	#edit-data-link, .new-address-link a{
-		@include font-size(1.8);
-		color: #fff;
-		line-height: 30px;
-		padding: 4px 20px;
-		text-align: center;
-		background: #18318F;
-		border: 0 !important;
-		display: inline-block;
-		text-decoration: none;
-		background-image: none;
-		text-transform: lowercase;
-		&:hover{
-			color: #18318F;
-			border: 0 !important;
-			background: #e6e6e6 !important;
-		}
-	}
-
-	.edit-address-link{
-		a{
-			text-decoration: none;
+  body.account {
+  	.menu-header {
+  		.menu-item {
+  			&:hover {
+  				.submenu {
+  					z-index: 2;
+  				}
+  			}
+  		}
+  	}
+  	header {
+  		z-index: 1;
+  		position: relative;
+  	}
+  	.delete {
+  		display: none !important;
+  	}
+  	.modal-backdrop {
+  		display: none;
+  	}
+  	&.top-height-active {
+  		.modal {
+  			form {
+  				@extend .transition;
+  				top: 70px;
+  			}
+  		}
+  	}
+  	#box-bread-brumb {
+  		width: 100%;
+  		margin: 10px 0;
+  		li {
+  			display: inline-block;
+  			a {
+  				display: inline-block;
+  				vertical-align: middle;
+  				&:after {
+  					margin-left: 5px;
+  					display: inline-block;
+  					content: '> Minha Conta';
+  				}
+  			}
+  		}
+  	}
+  	#form-submit,
+  	#profile-submit {
+  		@include font-size(1.4);
+  		float: right;
+  		height: 30px;
+  		margin-top: 5px;
+  		line-height: 10px;
+  		padding: 10px 20px;
+  		color: #000 !important;
+  		background-color: #eaeaea;
+  		&:hover {
+  			@extend .transition;
+  			color: #fff !important;
+  			background-color: #f68026;
+  		}
+  	}
+  	main {
+  		z-index: 0;
+  		padding-top: 0;
+  		overflow: hidden;
+  		background-color: #fff;
+  		.container {
+  			display: flex;
+  			padding: 0 10px;
+  			flex-wrap: wrap;
+  			align-items: stretch;
+  			h3 {
+  				width: 100%;
+  				margin: 20px 0;
+  				padding: 10px 0;
+  				border-color: #9e9ea6;
+  			}
+  			h3#myModalLabel {
+  				margin: 0;
+  				padding: 10px 0;
+  			}
+  		}
+  	}
+  	.profile-detail-display,
+  	.address-display-block {
+  		@include font-size(1.3);
+  		margin-top: 20px;
+  		padding: 20px 40px;
+  		border: 1px solid #9e9ea6;
+  		@include mq($screen-md) {
+  			margin-top: 0;
+  			width: 48%;
+  			margin-right: 2%;
+  			min-height: 370px;
+  			margin-bottom: 60px;
+  		}
+  		h5 {
+  			display: none;
+  		}
+  		h4 {
+  			@include font-size(3);
+  			clear: both;
+  			color: #f68026;
+  			margin: 20px 0;
+  			min-width: 225px;
+  			padding: 10px 40px;
+  			display: inline-block;
+  			transform: translateX(-40px);
+  		}
+  		.profile-detail-display-email {
+  			padding: 5px 0;
+  		}
+  		.new-address-link {
+  			margin-top: 0;
+  		}
+  	}
+  	.profile-detail-display-info {
+  		br {
+  			display: none
+  		}
+  		&>span {
+  			width: 100%;
+  			padding: 5px 0;
+  			display: block;
+  		}
+  	}
+  	.profile-detail-display-info,
+  	.address-display-unit-info {
+  		line-height: 1.5;
+  		&>span {}
+  	}
+  	.edit-profile-link {
+  		display: inline-flex;
+  		margin-right: 36px !important;
+  	}
+  	.logout-button {
+  		a {
+  			font-size: 18px;
+  			color: #fff;
+  			line-height: 30px;
+  			padding: 4px 20px;
+  			text-align: center;
+  			background: #8E8E8E;
+  			border: 0 !important;
+  			display: inline-block;
+  			text-decoration: none;
+  			text-transform: lowercase;
+			padding: 4px 47px;
 			&:hover{
-				text-decoration: underline;
-			}
-		}
-	}
-
-	.data { font-weight: 300; }
-
-	.modal {
-		@include font-size(1.2);
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 999;
-		width: 100%;
-		height: 100%;
-		display: none;
-		background: rgba(#000, .6);
-
-		form {
-			@extend .transition;
-			left: 50%;
-			top: 70px;
-		    width: 100%;
-		    max-width: 600px;
-			position: absolute;
-		    margin-left: -300px;
-		}
-
-		&-header {
-			height: 38px;
-			padding: 0 15px;
-			align-items: center;
-			background-color: #fff;
-			flex-direction: row-reverse;
-
-			h3 {
-				color: #000;
-				flex: 1;
-				margin: 0;
-				padding-top: 15px;
-				display: block;
-				font: {
-					size: 1.6em;
-				}
-			}
-
-			.close {
-				@include font-size(4);
-				border: 0;
-				padding: 0;
-				width: 28px;
-				float: right;
-				height: 35px;
-				color: #000;
-				line-height: 0;
-				margin-top: 0px;
-				cursor: pointer;
-				background: {
-					color: transparent;
-					repeat: no-repeat;
-					position: center;
-				}
-			}
-		}
-
-		&-body {
-			background-color: #e6e6e6;
-			padding: 15px;
-			overflow: auto;
-			-webkit-overflow-scrolling: touch;
-
-			.dropdown-icon{
-				display: none;
-			}
-
-			@include mq($screen-xs - 1, true) {
-				height: calc(100vh - 90px - 70px);
-			}
-
-			.profile-detail-form-personal-data h5 { margin-top: 10px; }
-
-			h5 {
-				display: none;
-			}
-
-			.control-group {
-				@include font-size(1.3);
-				width: 49%;
-				margin-right: 5px;
-				margin-bottom: 8px;
-				display: inline-block;
-
-				label { display: block; }
-
-				select{
-					margin-top: 5px;
-				}
-
-				input {
-					&:not([type="radio"]) {
-						font-size: 12px;
-						display: block;
-						width: 100%;
-						height: 30px;
-						padding: 0 10px;
-						border: none;
-						border-radius: 0;
-						margin-top: 5px;
-						transition-duration: .2s;
-						transition-timing-function: ease;
-						transition-property: padding, border-color;
-						appearance: none;
-
-						&:focus { border-color: #000; }
-
-						@include mq($screen-sm) {
-							height: 35px;
-						}
-					}
-				}
-			}
-
-			.form-personal-data-gender .controls label {
-				position: relative;
-				margin-top: .5em;
-				padding-right: 20px;
-			}
-
-			#business-toggle {
-				display: none;
-			}
-		}
-
-		&-footer {
-			flex-direction: row-reverse;
-			height: 58px;
-			padding: 15px;
-			border: 0;
-			color: #000;
-			background-color: #fff;
-
-			.btn {
-				font-size: 13px;
-				padding: 8px 30px;
-				border: none;
-				appearance: none;
-				cursor: pointer;
-				text-align: center;
-				text-transform: lowercase;
-				background-color: #e6e6e6;
-				color: #000;
-			}
-
-			.btn-link {
-				font-size: 13px;
-				display: inline-block;
-				margin: 0 15px;
-				padding: 7px 20px;
-				color: #000;
-				border: 1px solid #e6e6e6;
-				background: transparent;
-				text-transform: lowercase;
-				appearance: none;
-				cursor: pointer;
-			}
-		}
-
-		#form-address {
-			top: 80px;
-
-			.address-form {
-				
-				.row {
-					width: 100%;
-	
-					div {
-						width: 49%;
-						display: inline-block;
-						vertical-align: middle;
-					}
-				}
-
-				div {
-					float: left;
-				}
-
-				.control-group {
-					width: 49%;
-					float: none;
-
-					&.address-form-number,
-					&.address-form-reference,
-					&.address-form-complement,
-					&.address-form-street-name,
-					&.address-form-neighborhood {
-						width: 98.5%;
-					}
-
-					select {
-						width: 100%;
-						height: 35px;
-						border: 1px solid #eaeaea;
-					}
-
-					label {
-						display: block;
-					}
-
-					.controls {
-						width: 100%;
-					}
-				}
-			}
-		}
-
-	}
-}
+				background: rgb(255, 92, 92);
+			}  
+  		}
+  	}
+  	.edit-profile-link,
+  	.logout-button,
+  	.new-address-link,
+  	.edit-address-link {
+  		margin: 15px 0;
+  		overflow: hidden;
+  	}
+  	#edit-data-link,
+  	.new-address-link a {
+  		@include font-size(1.8);
+  		color: #fff;
+  		line-height: 30px;
+  		padding: 4px 20px;
+  		text-align: center;
+  		background: #18318F;
+  		border: 0 !important;
+  		display: inline-block;
+  		text-decoration: none;
+  		background-image: none;
+  		text-transform: lowercase;
+  		&:hover {
+  			color: #18318F;
+  			border: 0 !important;
+  			background: #e6e6e6 !important;
+  		}
+  	}
+  	.edit-address-link {
+  		a {
+  			text-decoration: none;
+  			&:hover {
+  				text-decoration: underline;
+  			}
+  		}
+  	}
+  	.data {
+  		font-weight: 300;
+  	}
+  	.modal {
+  		@include font-size(1.2);
+  		position: fixed;
+  		top: 0;
+  		left: 0;
+  		z-index: 999;
+  		width: 100%;
+  		height: 100%;
+  		display: none;
+  		background: rgba(#000, .6);
+  		form {
+  			@extend .transition;
+  			left: 50%;
+  			top: 70px;
+  			width: 100%;
+  			max-width: 600px;
+  			position: absolute;
+  			margin-left: -300px;
+  		}
+  		&-header {
+  			height: 38px;
+  			padding: 0 15px;
+  			align-items: center;
+  			background-color: #fff;
+  			flex-direction: row-reverse;
+  			h3 {
+  				color: #000;
+  				flex: 1;
+  				margin: 0;
+  				padding-top: 15px;
+  				display: block;
+  				font: {
+  					size: 1.6em;
+  				}
+  			}
+  			.close {
+  				@include font-size(4);
+  				border: 0;
+  				padding: 0;
+  				width: 28px;
+  				float: right;
+  				height: 35px;
+  				color: #000;
+  				line-height: 0;
+  				margin-top: 0px;
+  				cursor: pointer;
+  				background: {
+  					color: transparent;
+  					repeat: no-repeat;
+  					position: center;
+  				}
+  			}
+  		}
+  		&-body {
+  			background-color: #e6e6e6;
+  			padding: 15px;
+  			overflow: auto;
+  			-webkit-overflow-scrolling: touch;
+  			.dropdown-icon {
+  				display: none;
+  			}
+  			@include mq($screen-xs - 1, true) {
+  				height: calc(100vh - 90px - 70px);
+  			}
+  			.profile-detail-form-personal-data h5 {
+  				margin-top: 10px;
+  			}
+  			h5 {
+  				display: none;
+  			}
+  			.control-group {
+  				@include font-size(1.3);
+  				width: 49%;
+  				margin-right: 5px;
+  				margin-bottom: 8px;
+  				display: inline-block;
+  				label {
+  					display: block;
+  				}
+  				select {
+  					margin-top: 5px;
+  				}
+  				input {
+  					&:not([type="radio"]) {
+  						font-size: 12px;
+  						display: block;
+  						width: 100%;
+  						height: 30px;
+  						padding: 0 10px;
+  						border: none;
+  						border-radius: 0;
+  						margin-top: 5px;
+  						transition-duration: .2s;
+  						transition-timing-function: ease;
+  						transition-property: padding, border-color;
+  						appearance: none;
+  						&:focus {
+  							border-color: #000;
+  						}
+  						@include mq($screen-sm) {
+  							height: 35px;
+  						}
+  					}
+  				}
+  			}
+  			.form-personal-data-gender .controls label {
+  				position: relative;
+  				margin-top: .5em;
+  				padding-right: 20px;
+  			}
+  			#business-toggle {
+  				display: none;
+  			}
+  		}
+  		&-footer {
+  			flex-direction: row-reverse;
+  			height: 58px;
+  			padding: 15px;
+  			border: 0;
+  			color: #000;
+  			background-color: #fff;
+  			.btn {
+  				font-size: 13px;
+  				padding: 8px 30px;
+  				border: none;
+  				appearance: none;
+  				cursor: pointer;
+  				text-align: center;
+  				text-transform: lowercase;
+  				background-color: #e6e6e6;
+  				color: #000;
+  			}
+  			.btn-link {
+  				font-size: 13px;
+  				display: inline-block;
+  				margin: 0 15px;
+  				padding: 7px 20px;
+  				color: #000;
+  				border: 1px solid #e6e6e6;
+  				background: transparent;
+  				text-transform: lowercase;
+  				appearance: none;
+  				cursor: pointer;
+  			}
+  		}
+  		#form-address {
+  			top: 80px;
+  			.address-form {
+  				.row {
+  					width: 100%;
+  					div {
+  						width: 49%;
+  						display: inline-block;
+  						vertical-align: middle;
+  					}
+  				}
+  				div {
+  					float: left;
+  				}
+  				.control-group {
+  					width: 49%;
+  					float: none;
+  					&.address-form-number,
+  					&.address-form-reference,
+  					&.address-form-complement,
+  					&.address-form-street-name,
+  					&.address-form-neighborhood {
+  						width: 98.5%;
+  					}
+  					select {
+  						width: 100%;
+  						height: 35px;
+  						border: 1px solid #eaeaea;
+  					}
+  					label {
+  						display: block;
+  					}
+  					.controls {
+  						width: 100%;
+  					}
+  				}
+  			}
+  		}
+  	}
+  }

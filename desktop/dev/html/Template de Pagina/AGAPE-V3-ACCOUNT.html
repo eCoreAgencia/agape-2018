@@ -19,5 +19,10 @@
         <vtex:template id="AGAPE-V3-FOOTER" />
         <vtex:template id="AGAPE-V3-COMMONSCRIPTS" />
         <script type="text/javascript" src="/arquivos/account.js"></script>
+        <script>
+                $(document).ready(function() {
+                    $('<span class="logout-button"><a href="/logout">Logout</a></span>').insertAfter(".edit-profile-link");
+                })
+            </script>
     </body>
 </html>

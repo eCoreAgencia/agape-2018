@@ -35,8 +35,6 @@
 	.slider {
 		.prateleira {
 			height: 375px;
-			transform: scale(.9);
-			transform-origin: top;
 		}
 	}
 	.prateleira {
@@ -48,6 +46,16 @@
 
 body.home {
 	main {
+		.slider .prateleira {
+			height: 425px;
+		}
+		
+		.slider-dois {
+			.prateleira {
+				transform: scale(.9);
+				transform-origin: top;
+			}
+		}
 		.box-banner {
 			cursor: pointer;
 		}
