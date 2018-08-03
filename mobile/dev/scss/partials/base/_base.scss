@@ -5,6 +5,7 @@
 @import "fonts";
 
 body{
+	width: 100vw;
 	@extend .ff-signikaNegative;
 	-webkit-overflow-scrolling: touch;
 }

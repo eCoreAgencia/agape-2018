@@ -195,6 +195,9 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
 .txt-cap, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li {
   text-transform: capitalize; }
 
+body {
+  width: 100vw; }
+
 .clearfix {
   *zoom: 1; }
   .clearfix:before, .clearfix:after {

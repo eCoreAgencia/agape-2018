@@ -14,12 +14,12 @@ body.active-menu {
 header .menu-header{
 	@extend .transition;
 	left: 0;
-	top: 66px;
+	top: 65px;
 	margin: 0;
     padding: 0;
     z-index: 99;
 	width: 100%;
-	height: 88%;
+	height: 100%;
 	position: fixed;
 	list-style: none;
 	background: #fff;

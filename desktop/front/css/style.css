@@ -588,6 +588,10 @@ footer .compra-segura ul li {
 	text-transform: capitalize;
 }
 
+body {
+	width: 100vw;
+}
+
 .clearfix {
 	*zoom: 1;
 }
@@ -3911,6 +3915,11 @@ header.ha-hide {
 	height: 140px;
 	width: 310px;
 	font-size: 1.1em;
+}
+
+.TipBar li .tooltip a {
+	color: #F57422;
+	text-decoration: none;
 }
 
 .TipBar li .tooltip h3,
