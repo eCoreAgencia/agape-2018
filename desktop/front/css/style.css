@@ -6051,6 +6051,10 @@ body.resultado-busca .search-single-navigator {
 	display: block !important;
 }
 
+body.busca-vazia .resultItemsWrapper .prateleira {
+	height: auto;
+}
+
 body.busca-vazia .novidades .container,
 body.busca-vazia .em-promocao .container {
 	display: -ms-flexbox;

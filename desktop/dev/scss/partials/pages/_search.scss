@@ -379,6 +379,11 @@ body.resultado-busca {
 }
 
 body.busca-vazia {
+	.resultItemsWrapper {
+		.prateleira {
+			height: auto;
+		}
+	}
 	.novidades,
 	.em-promocao {
 		.container {
