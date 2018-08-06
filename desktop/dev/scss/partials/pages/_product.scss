@@ -807,8 +807,52 @@ body.produto main #prod-info {
 body.produto main .produtos-similares {
     width: 100%;
     float: left;
-    clear: both
+    clear: both;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .slick-slider {
+		.slick-arrow svg {
+			display: none;
+		}
+		.slick-arrow.slick-prev:after {
+			content: '<';
+			color: #a9a9a9;
+			display: block;
+			font-weight: 700;
+			transform: rotate(180deg);
+		}
+		.slick-arrow.slick-next:after {
+			content: '>';
+			color: #a9a9a9;
+			display: block;
+			font-weight: 700;
+
+		}
+
+		&:hover{
+			.slick-arrow{
+				opacity: 1;
+			}
+		}
+		.slick-arrow {
+			font-size: 17px;
+			top: 150px;
+			padding: 0;
+			z-index: 9;
+			width: 31px;
+			right: -5px;
+			height: 71px;
+			border-radius: 5px;
+			background-color: #ccc;
+			display: block!important;
+			opacity: .3;
+		}
+
+	} 
 }
+
 
 body.produto main .produtos-similares ul {
     -ms-flex-pack: center;
