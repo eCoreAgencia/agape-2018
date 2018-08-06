@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
-    <head>
-        <vtex:metaTags/>
-        <title>Minha Conta | Ágape Moda</title>
-        <vtex:template id="AGAPE-V3-COMMONSTYLES" />
-    </head>
-    <body>
-        <vtex:template id="AGAPE-V3-HEADER" />
-        <main>
-            <div class="container">
-                <div id="box-bread-brumb">
-                    <vtex.cmc:breadCrumb />
-                </div>
-                <vtex.cmc:accountUserProfile />
-                <vtex.cmc:accountAddress/>
+
+<head>
+    <vtex:metaTags/>
+    <title>Minha Conta | Ágape Moda</title>
+    <vtex:template id="AGAPE-V3-MOD-COMMONSTYLES" />
+</head>
+
+<body>
+    <vtex:template id="AGAPE-V3-HEADER" />
+    <main>
+        <div class="container">
+            <div id="box-bread-brumb">
+                <vtex.cmc:breadCrumb />
             </div>
-        </main>
-        <vtex:template id="AGAPE-V3-FOOTER" />
-        <vtex:template id="AGAPE-V3-COMMONSCRIPTS" />
-        <script type="text/javascript" src="/arquivos/account.js"></script>
-    </body>
+            <vtex.cmc:accountUserProfile />
+            <vtex.cmc:accountAddress/>
+        </div>
+    </main>
+    <vtex:template id="AGAPE-V3-FOOTER" />
+    <vtex:template id="AGAPE-V3-COMMONSCRIPTS" />
+    <script type="text/javascript" src="/arquivos/account.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('<span class="logout-button"><a href="/logout">Logout</a></span>').insertAfter(
+                ".edit-profile-link");
+        })
+    </script>
+</body>
+
 </html>

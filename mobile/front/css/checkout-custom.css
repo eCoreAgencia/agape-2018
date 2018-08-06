@@ -251,6 +251,7 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
   text-transform: capitalize; }
 
 body {
+  width: 100vw;
   -webkit-overflow-scrolling: touch; }
 
 .clearfix {

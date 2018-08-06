@@ -588,6 +588,10 @@ footer .compra-segura ul li {
 	text-transform: capitalize;
 }
 
+body {
+	width: 100vw;
+}
+
 .clearfix {
 	*zoom: 1;
 }
@@ -3913,6 +3917,11 @@ header.ha-hide {
 	font-size: 1.1em;
 }
 
+.TipBar li .tooltip a {
+	color: #F57422;
+	text-decoration: none;
+}
+
 .TipBar li .tooltip h3,
 .TipBar li .tooltip p {
 	color: #fff;
@@ -4387,14 +4396,21 @@ body.produto .item-dimension-Cor label.skuespec_Rosa {
 
 .slider .prateleira {
 	height: 375px;
-	-ms-transform: scale(0.9);
-	    transform: scale(0.9);
-	-ms-transform-origin: top;
-	    transform-origin: top;
 }
 
 .prateleira .slick-slider {
 	min-height: 340px;
+}
+
+body.home main .slider .prateleira {
+	height: 425px;
+}
+
+body.home main .slider-dois .prateleira {
+	-ms-transform: scale(0.9);
+	    transform: scale(0.9);
+	-ms-transform-origin: top;
+	    transform-origin: top;
 }
 
 body.home main .box-banner {
@@ -6050,6 +6066,10 @@ body.busca-vazia .em-promocao .container {
 	margin-bottom: 90px;
 }
 
+body.busca-vazia .prateleira {
+	height: 475px;
+}
+
 body.busca-vazia .slick-track .shelfItem .drop {
 	margin-top: 0;
 }
@@ -6271,7 +6291,32 @@ body.account .address-display-unit-info {
 	line-height: 1.5;
 }
 
+body.account .edit-profile-link {
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	margin-right: 36px !important;
+}
+
+body.account .logout-button a {
+	font-size: 18px;
+	color: #fff;
+	line-height: 30px;
+	padding: 4px 20px;
+	text-align: center;
+	background: #8E8E8E;
+	border: 0 !important;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: lowercase;
+	padding: 4px 47px;
+}
+
+body.account .logout-button a:hover {
+	background: #ff5c5c;
+}
+
 body.account .edit-profile-link,
+body.account .logout-button,
 body.account .new-address-link,
 body.account .edit-address-link {
 	margin: 15px 0;

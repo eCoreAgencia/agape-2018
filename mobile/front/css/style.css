@@ -634,6 +634,7 @@ footer .portal-do-revendedor ul li {
 }
 
 body {
+	width: 100vw;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -4103,12 +4104,12 @@ body.active-menu main {
 
 header .menu-header {
 	left: 0;
-	top: 66px;
+	top: 65px;
 	margin: 0;
 	padding: 0;
 	z-index: 99;
 	width: 100%;
-	height: 88%;
+	height: 100%;
 	position: fixed;
 	list-style: none;
 	background: #fff;

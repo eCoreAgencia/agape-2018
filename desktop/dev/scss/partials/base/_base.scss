@@ -4,7 +4,12 @@
 
 @import "fonts";
 
-body{@extend .ff-signikaNegative }
+body{
+	width: 100vw;
+	@extend .ff-signikaNegative 
+
+
+}
 .clearfix {
 	*zoom: 1;
 
