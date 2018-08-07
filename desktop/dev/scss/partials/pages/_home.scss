@@ -46,15 +46,11 @@
 
 body.home {
 	main {
+		.banners-top button.slick-next.slick-arrow {
+			right: 15px;
+		}
 		.slider .prateleira {
 			height: 425px;
-		}
-		
-		.slider-dois {
-			.prateleira {
-				transform: scale(.9);
-				transform-origin: top;
-			}
 		}
 		.box-banner {
 			cursor: pointer;
@@ -83,12 +79,15 @@ body.home {
 				}
 			}
 		}
+		
 		.slick-slider {
 			.shelfItem {
 				.drop {
 					margin-top: 0;
 				}
 			}
+
+			
 			.slick-arrow {
 				@include font-size(1.7);
 				top: 150px;
@@ -165,7 +164,7 @@ body.home {
 		}
 		.destaque {
 			clear: both;
-			margin: 20px 0;
+			margin: 45px 0;
 			.banner-destaque,
 			.slider-dois {
 				display: block;

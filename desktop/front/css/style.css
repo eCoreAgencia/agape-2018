@@ -4436,15 +4436,12 @@ body.produto .item-dimension-Cor label.skuespec_Rosa {
 	min-height: 340px;
 }
 
-body.home main .slider .prateleira {
-	height: 425px;
+body.home main .banners-top button.slick-next.slick-arrow {
+	right: 15px;
 }
 
-body.home main .slider-dois .prateleira {
-	-ms-transform: scale(0.9);
-	    transform: scale(0.9);
-	-ms-transform-origin: top;
-	    transform-origin: top;
+body.home main .slider .prateleira {
+	height: 425px;
 }
 
 body.home main .box-banner {
@@ -4550,7 +4547,7 @@ body.home main .slider-dois .shelfItem:hover .shelfBestPrice {
 
 body.home main .destaque {
 	clear: both;
-	margin: 20px 0;
+	margin: 45px 0;
 }
 
 body.home main .destaque .banner-destaque,
