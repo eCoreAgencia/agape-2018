@@ -624,7 +624,7 @@ footer .socialLinks li:hover,
 .js-open-mobile-menu .menu-toggle span,
 .shelfItem,
 .shelfItem .buttons,
-.shelfItem .shelfBestPrice,
+.shelfItem .shelfInstallment ~ .shelfBestPrice,
 .shelfItem .skus-selection,
 .shelfItem .drop,
 .shelfItem:hover .shelfBestPrice,
@@ -2336,7 +2336,7 @@ body.home footer .textoLegal {
 	display: inline-block;
 }
 
-.shelfItem .shelfBestPrice {
+.shelfItem .shelfInstallment ~ .shelfBestPrice {
 	opacity: 0;
 }
 
@@ -6840,7 +6840,8 @@ body.orders h2.page-title {
    Institucional
    ========================================================================== */
 
-body.institucional.entrega main .container {
+body.institucional.entrega main .container,
+body.institucional.pagamento main .container {
 	margin: 20px auto 50px auto;
 	display: -ms-grid;
 	display: grid;
@@ -6849,28 +6850,33 @@ body.institucional.entrega main .container {
 	    grid-template-columns: 2fr .5fr 5fr 1fr;
 	-ms-grid-rows: .1fr 5fr;
 	    grid-template-rows: .1fr 5fr;
-	grid-template-areas: "title title title title"  "aside . content  content";
+	grid-template-areas: "title title title title" "aside . content  content";
 }
 
-body.institucional.entrega .title-page {
+body.institucional.entrega .title-page,
+body.institucional.pagamento .title-page {
 	grid-area: title;
 }
 
-body.institucional.entrega .main-institucional__sidebar {
+body.institucional.entrega .main-institucional__sidebar,
+body.institucional.pagamento .main-institucional__sidebar {
 	grid-area: aside;
 	width: auto;
 	margin-top: 0;
 }
 
-body.institucional.entrega .main-institucional__sidebar nav {
+body.institucional.entrega .main-institucional__sidebar nav,
+body.institucional.pagamento .main-institucional__sidebar nav {
 	margin-top: 0;
 }
 
-body.institucional.entrega .main-institucional__content {
+body.institucional.entrega .main-institucional__content,
+body.institucional.pagamento .main-institucional__content {
 	grid-area: content;
 }
 
-body.institucional.entrega .main-institucional__content ul {
+body.institucional.entrega .main-institucional__content ul,
+body.institucional.pagamento .main-institucional__content ul {
 	margin-top: 0;
 }
 
@@ -8769,7 +8775,7 @@ footer .copyright-notice {
 	padding: 0;
 	-ms-transform: none;
 	    transform: none;
-	margin-top: -39px;
+	margin-top: -25px;
 	position: relative;
 }
 

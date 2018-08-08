@@ -68,7 +68,7 @@
 		display: inline-block;
 	}
 
-	.shelfBestPrice {
+	.shelfInstallment ~ .shelfBestPrice {
 		@extend .transition;
 		opacity: 0;
 	}
@@ -190,7 +190,7 @@
 				border: 0;
 				padding: 0;
 				transform: none;
-				margin-top: -39px;
+				margin-top: -25px;
 				position: relative;
 			} 
 			.buttons{
