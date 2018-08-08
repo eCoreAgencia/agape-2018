@@ -3,7 +3,34 @@
    ========================================================================== */
 
 body.institucional {
-
+	&.entrega {
+		main .container {
+			margin: 20px auto 50px auto;
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-columns: 2fr .5fr 5fr 1fr;
+			grid-template-rows: .1fr 5fr;
+			grid-template-areas: "title title title title" 
+											"aside . content  content";
+		}
+		.title-page{
+			grid-area: title;
+		}
+		.main-institucional__sidebar {
+			grid-area: aside;
+			width: auto;
+			margin-top: 0;
+			nav {
+				margin-top: 0;
+			}	
+		}
+		.main-institucional__content {
+			grid-area: content;
+			ul {
+				margin-top: 0;
+			}
+		}
+	}
 	&.como-comprar,
 	&.politica-de-troca {
 		
