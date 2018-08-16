@@ -94,6 +94,12 @@ footer{
 		}
 
 	}
+
+	.atendimento {
+		ul li {
+			font-size: 17px;
+		}
+	}
 	.institucional, .dados, .atendimento, .compra-segura{
 		@include mq($screen-md){
 			padding: 10px 7px;
@@ -132,6 +138,7 @@ footer{
 					color: inherit;
 					weight: inherit;
 					text-decoration: inherit;
+					font-size: 17px;
 				}
 			}
 		}

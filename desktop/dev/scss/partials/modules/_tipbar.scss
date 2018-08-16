@@ -37,8 +37,11 @@
 			width: 310px;
 			font-size: 1.1em;
 			a {
-				color: #F57422;
+				color: #cecece;
 				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 			h3,
 			p {

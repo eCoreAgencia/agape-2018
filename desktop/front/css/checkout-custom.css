@@ -1100,6 +1100,8 @@ footer {
     footer .xs-collapsable.active h3:after {
       -ms-transform: scaleX(2) rotate(90deg);
           transform: scaleX(2) rotate(90deg); } }
+  footer .atendimento ul li {
+    font-size: 17px; }
   @media (min-width: 1024px) {
     footer .institucional, footer .dados, footer .atendimento, footer .compra-segura {
       padding: 10px 7px; } }
@@ -1126,7 +1128,8 @@ footer {
     footer .institucional ul li a, footer .dados ul li a, footer .atendimento ul li a, footer .compra-segura ul li a {
       color: inherit;
       weight: inherit;
-      text-decoration: inherit; }
+      text-decoration: inherit;
+      font-size: 17px; }
   footer .compra-segura {
     padding: 10px 7px 0 !important; }
   footer .selos-seguranca {

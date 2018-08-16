@@ -1814,6 +1814,10 @@ footer .footer-bottom .container {
 	    align-items: center;
 }
 
+footer .atendimento ul li {
+	font-size: 17px;
+}
+
 footer .institucional h3 svg,
 footer .dados h3 svg,
 footer .atendimento h3 svg,
@@ -1855,6 +1859,7 @@ footer .compra-segura ul li a {
 	color: inherit;
 	weight: inherit;
 	text-decoration: inherit;
+	font-size: 17px;
 }
 
 footer .compra-segura {
@@ -3918,8 +3923,12 @@ header.ha-hide {
 }
 
 .TipBar li .tooltip a {
-	color: #F57422;
+	color: #cecece;
 	text-decoration: none;
+}
+
+.TipBar li .tooltip a:hover {
+	text-decoration: underline;
 }
 
 .TipBar li .tooltip h3,
@@ -5814,6 +5823,10 @@ body.dep-cat-bus main .mainShelf .shearchTitle {
 
 body.dep-cat-bus main .mainShelf .prateleira {
 	overflow: visible !important;
+}
+
+body.dep-cat-bus main .mainShelf .prateleira li {
+	height: 422px;
 }
 
 body.dep-cat-bus .title-category,
