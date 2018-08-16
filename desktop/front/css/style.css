@@ -5901,10 +5901,6 @@ body.dep-cat-bus main .mainShelf .prateleira {
 	overflow: visible !important;
 }
 
-body.dep-cat-bus main .mainShelf .prateleira li {
-	height: 422px;
-}
-
 body.dep-cat-bus .title-category,
 body.dep-cat-bus .didyoumean {
 	display: none;
