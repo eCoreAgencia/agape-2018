@@ -34,7 +34,9 @@ body.institucional {
 		}
 	}
 	&.como-comprar,
-	&.politica-de-troca {
+	&.politica-de-troca,
+	&.pagamento,
+	&.entrega {
 		.title-page {
 			&:before {
 				@include font-size(1.6);
