@@ -624,7 +624,7 @@ footer .socialLinks li:hover,
 .js-open-mobile-menu .menu-toggle span,
 .shelfItem,
 .shelfItem .buttons,
-.shelfItem .shelfBestPrice,
+.shelfItem .shelfInstallment ~ .shelfBestPrice,
 .shelfItem .skus-selection,
 .shelfItem .drop,
 .shelfItem:hover .shelfBestPrice,
@@ -2341,7 +2341,7 @@ body.home footer .textoLegal {
 	display: inline-block;
 }
 
-.shelfItem .shelfBestPrice {
+.shelfItem .shelfInstallment ~ .shelfBestPrice {
 	opacity: 0;
 }
 
@@ -2445,8 +2445,42 @@ body.dep-cat-bus .box-item:hover {
 	height: 328px;
 }
 
+body.produto .produtos-similares .shelf-title {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	margin-bottom: 90px;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+}
+
+body.produto .produtos-similares .shelf-title svg {
+	width: 75px;
+	height: auto;
+}
+
+body.produto .produtos-similares h2 {
+	display: inline-block;
+	font-size: 30px;
+	line-height: 34px;
+	color: #333;
+	text-align: center;
+}
+
+body.produto .produtos-similares .prateleira {
+	height: 475px;
+	margin-bottom: 40px;
+}
+
+body.produto .produtos-similares .prateleira h2 {
+	display: none;
+}
+
 body.produto .shelfItem:hover {
-	max-height: 395px;
+	max-height: auto;
 }
 
 body.produto .shelfItem .shelfProductName {
@@ -4411,15 +4445,12 @@ body.produto .item-dimension-Cor label.skuespec_Rosa {
 	min-height: 340px;
 }
 
-body.home main .slider .prateleira {
-	height: 425px;
+body.home main .banners-top button.slick-next.slick-arrow {
+	right: 15px;
 }
 
-body.home main .slider-dois .prateleira {
-	-ms-transform: scale(0.9);
-	    transform: scale(0.9);
-	-ms-transform-origin: top;
-	    transform-origin: top;
+body.home main .slider .prateleira {
+	height: 425px;
 }
 
 body.home main .box-banner {
@@ -4525,7 +4556,7 @@ body.home main .slider-dois .shelfItem:hover .shelfBestPrice {
 
 body.home main .destaque {
 	clear: both;
-	margin: 20px 0;
+	margin: 45px 0;
 }
 
 body.home main .destaque .banner-destaque,
@@ -5503,6 +5534,51 @@ body.produto main .produtos-similares {
 	width: 100%;
 	float: left;
 	clear: both;
+}
+
+body.produto main .produtos-similares .container {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+}
+
+body.produto main .produtos-similares .slick-slider .slick-arrow svg {
+	display: none;
+}
+
+body.produto main .produtos-similares .slick-slider .slick-arrow.slick-prev:after {
+	content: '<';
+	color: #a9a9a9;
+	display: block;
+	font-weight: 700;
+	-ms-transform: rotate(180deg);
+	    transform: rotate(180deg);
+}
+
+body.produto main .produtos-similares .slick-slider .slick-arrow.slick-next:after {
+	content: '>';
+	color: #a9a9a9;
+	display: block;
+	font-weight: 700;
+}
+
+body.produto main .produtos-similares .slick-slider:hover .slick-arrow {
+	opacity: 1;
+}
+
+body.produto main .produtos-similares .slick-slider .slick-arrow {
+	font-size: 17px;
+	top: 150px;
+	padding: 0;
+	z-index: 9;
+	width: 31px;
+	right: -5px;
+	height: 71px;
+	border-radius: 5px;
+	background-color: #ccc;
+	display: block !important;
+	opacity: .3;
 }
 
 body.produto main .produtos-similares ul {
@@ -6776,6 +6852,46 @@ body.orders h2.page-title {
 /* ==========================================================================
    Institucional
    ========================================================================== */
+
+body.institucional.entrega main .container,
+body.institucional.pagamento main .container {
+	margin: 20px auto 50px auto;
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 1rem;
+	-ms-grid-columns: 2fr .5fr 5fr 1fr;
+	    grid-template-columns: 2fr .5fr 5fr 1fr;
+	-ms-grid-rows: .1fr 5fr;
+	    grid-template-rows: .1fr 5fr;
+	grid-template-areas: "title title title title" "aside . content  content";
+}
+
+body.institucional.entrega .title-page,
+body.institucional.pagamento .title-page {
+	grid-area: title;
+}
+
+body.institucional.entrega .main-institucional__sidebar,
+body.institucional.pagamento .main-institucional__sidebar {
+	grid-area: aside;
+	width: auto;
+	margin-top: 0;
+}
+
+body.institucional.entrega .main-institucional__sidebar nav,
+body.institucional.pagamento .main-institucional__sidebar nav {
+	margin-top: 0;
+}
+
+body.institucional.entrega .main-institucional__content,
+body.institucional.pagamento .main-institucional__content {
+	grid-area: content;
+}
+
+body.institucional.entrega .main-institucional__content ul,
+body.institucional.pagamento .main-institucional__content ul {
+	margin-top: 0;
+}
 
 body.institucional.como-comprar .title-page:before,
 body.institucional.politica-de-troca .title-page:before {
@@ -8672,7 +8788,7 @@ footer .copyright-notice {
 	padding: 0;
 	-ms-transform: none;
 	    transform: none;
-	margin-top: -39px;
+	margin-top: -25px;
 	position: relative;
 }
 

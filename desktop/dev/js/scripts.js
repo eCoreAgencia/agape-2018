@@ -167,6 +167,11 @@ var body = $('body'),
 	santos = $('.escolha-por-santos li');
 
 $(function() {
+
+	// MUDANDO POR:  / POR APENAS:
+	$(".shelfBestPrice").text(function () {
+		return $(this).text().replace("Por:", "Por Apenas: ");
+	});
 	
 	setFlags();
 
