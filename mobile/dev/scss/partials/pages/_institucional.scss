@@ -5,7 +5,9 @@
 body.institucional {
 
 	&.como-comprar,
-	&.politica-de-troca {
+	&.politica-de-troca,
+	&.entrega,
+	&.pagamento {
 		
 		.title-page {
 			&:before{

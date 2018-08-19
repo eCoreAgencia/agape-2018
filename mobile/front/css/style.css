@@ -6881,7 +6881,9 @@ body.orders a.myo-collapsed-order {
    ========================================================================== */
 
 body.institucional.como-comprar .title-page:before,
-body.institucional.politica-de-troca .title-page:before {
+body.institucional.politica-de-troca .title-page:before,
+body.institucional.entrega .title-page:before,
+body.institucional.pagamento .title-page:before {
 	font-size: 16px;
 	width: 30px;
 	color: #fff;
@@ -6898,23 +6900,31 @@ body.institucional.politica-de-troca .title-page:before {
 }
 
 body.institucional.como-comprar main .main-institucional__content ul,
-body.institucional.politica-de-troca main .main-institucional__content ul {
+body.institucional.politica-de-troca main .main-institucional__content ul,
+body.institucional.entrega main .main-institucional__content ul,
+body.institucional.pagamento main .main-institucional__content ul {
 	margin-top: 25px;
 	list-style-type: none;
 }
 
 body.institucional.como-comprar main .main-institucional__content ul li,
-body.institucional.politica-de-troca main .main-institucional__content ul li {
+body.institucional.politica-de-troca main .main-institucional__content ul li,
+body.institucional.entrega main .main-institucional__content ul li,
+body.institucional.pagamento main .main-institucional__content ul li {
 	line-height: 40px;
 }
 
 body.institucional.como-comprar main .main-institucional__content ul li details,
-body.institucional.politica-de-troca main .main-institucional__content ul li details {
+body.institucional.politica-de-troca main .main-institucional__content ul li details,
+body.institucional.entrega main .main-institucional__content ul li details,
+body.institucional.pagamento main .main-institucional__content ul li details {
 	padding-left: 10px;
 }
 
 body.institucional.como-comprar main .main-institucional__content ul li details summary,
-body.institucional.politica-de-troca main .main-institucional__content ul li details summary {
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary,
+body.institucional.entrega main .main-institucional__content ul li details summary,
+body.institucional.pagamento main .main-institucional__content ul li details summary {
 	color: #585858;
 	cursor: pointer;
 	font-weight: 600;
@@ -6923,29 +6933,41 @@ body.institucional.politica-de-troca main .main-institucional__content ul li det
 body.institucional.como-comprar main .main-institucional__content ul li details summary::-moz-details-marker,
 body.institucional.como-comprar main .main-institucional__content ul li details summary::-webkit-details-marker,
 body.institucional.politica-de-troca main .main-institucional__content ul li details summary::-moz-details-marker,
-body.institucional.politica-de-troca main .main-institucional__content ul li details summary::-webkit-details-marker {
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary::-webkit-details-marker,
+body.institucional.entrega main .main-institucional__content ul li details summary::-moz-details-marker,
+body.institucional.entrega main .main-institucional__content ul li details summary::-webkit-details-marker,
+body.institucional.pagamento main .main-institucional__content ul li details summary::-moz-details-marker,
+body.institucional.pagamento main .main-institucional__content ul li details summary::-webkit-details-marker {
 	display: none;
 }
 
 body.institucional.como-comprar main .main-institucional__content ul li details summary:hover,
-body.institucional.politica-de-troca main .main-institucional__content ul li details summary:hover {
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary:hover,
+body.institucional.entrega main .main-institucional__content ul li details summary:hover,
+body.institucional.pagamento main .main-institucional__content ul li details summary:hover {
 	color: #03378d;
 }
 
 body.institucional.como-comprar main .main-institucional__content ul li details summary span,
-body.institucional.politica-de-troca main .main-institucional__content ul li details summary span {
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary span,
+body.institucional.entrega main .main-institucional__content ul li details summary span,
+body.institucional.pagamento main .main-institucional__content ul li details summary span {
 	font-size: 24px;
 	color: #808080;
 	display: inline !important;
 }
 
 body.institucional.como-comprar main .main-institucional__content ul li details summary span:hover,
-body.institucional.politica-de-troca main .main-institucional__content ul li details summary span:hover {
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary span:hover,
+body.institucional.entrega main .main-institucional__content ul li details summary span:hover,
+body.institucional.pagamento main .main-institucional__content ul li details summary span:hover {
 	color: #f68026;
 }
 
 body.institucional.como-comprar main .main-institucional__content ul li details summary p,
-body.institucional.politica-de-troca main .main-institucional__content ul li details summary p {
+body.institucional.politica-de-troca main .main-institucional__content ul li details summary p,
+body.institucional.entrega main .main-institucional__content ul li details summary p,
+body.institucional.pagamento main .main-institucional__content ul li details summary p {
 	margin: 12px 0;
 	line-height: 25px;
 	padding-left: 30px;
