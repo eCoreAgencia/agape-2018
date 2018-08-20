@@ -3120,6 +3120,10 @@ span.resultado-busca-numero {
 	    transform: translateX(0);
 }
 
+.search-box fieldset.busca {
+	padding: 0;
+}
+
 .search-box .busca {
 	position: relative;
 }
@@ -3610,6 +3614,7 @@ span.resultado-busca-numero {
 
 .Newsletter .spinner {
 	top: 0;
+	overflow: hidden;
 	left: 0;
 	z-index: 1;
 	width: 100%;

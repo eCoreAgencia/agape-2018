@@ -3177,7 +3177,7 @@ span.resultado-busca-numero {
 
 .search-box {
 	left: 0;
-	top: 64px;
+	top: 58px;
 	z-index: 1;
 	width: 100%;
 	display: none;
@@ -3189,6 +3189,10 @@ span.resultado-busca-numero {
 
 .search-box.active {
 	display: block;
+}
+
+.search-box fieldset.busca {
+	padding: 0;
 }
 
 .search-box .busca {
@@ -3680,6 +3684,7 @@ span.resultado-busca-numero {
 .Newsletter {
 	overflow: hidden;
 	padding: 20px 7px;
+	position: relative;
 }
 
 .Newsletter .container {
@@ -3708,10 +3713,11 @@ span.resultado-busca-numero {
 
 .Newsletter .spinner {
 	top: 0;
+	overflow: hidden;
 	left: 0;
 	z-index: 1;
 	width: 100%;
-	height: 100%;
+	height: 230px;
 	display: none;
 	padding: 140px 0;
 	text-align: center;
@@ -3728,10 +3734,28 @@ span.resultado-busca-numero {
 	margin: 0 auto;
 	max-width: 680px;
 	overflow: hidden;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	text-align: center;
+}
+
+.Newsletter .success-msg span {
+	display: block;
+	margin: 10px auto;
+	background: #19348A;
+	padding: 12px;
+	color: #d6d6d6;
+}
+
+.Newsletter .success-msg span strong {
+	color: #EE702E;
 }
 
 .Newsletter .success-msg img {
 	max-width: 90px;
+	margin: 0 auto;
 }
 
 .Newsletter .success-msg .col-md-9,
@@ -4104,7 +4128,7 @@ body.active-menu main {
 
 header .menu-header {
 	left: 0;
-	top: 65px;
+	top: 59px;
 	margin: 0;
 	padding: 0;
 	z-index: 99;

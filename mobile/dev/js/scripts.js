@@ -171,11 +171,6 @@ var body = $('body'),
 	santos = $('.escolha-por-santos li');
 
 $(function () {
-	var cartinho = $('.sta-cart-resume a');
-	var conteudocart = $('.sta-cart-items ul li');
-	((conteudocart.length == 0) ? (cartinho.css('background', '#c4c4c4'), cartinho.removeAttr('href')) : cartinho.css('background', '#f68026'));
-
-
 	setFlags();
 
 	if ($('.search-multiple-navigator').length > 0) {
@@ -889,3 +884,15 @@ $(function () {
 	}
 
 });
+
+$( document ).ready(function() {
+	
+	$('.search-toggle').click(function() {
+		var searchbox = $('.fulltext-search-box');
+		 if ( $('.search-box').hasClass('active') ) {
+		 searchbox.focus();
+		 } else{
+		  return false;
+		}});
+	});
+	

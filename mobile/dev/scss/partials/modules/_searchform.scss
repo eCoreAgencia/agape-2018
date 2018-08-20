@@ -55,7 +55,7 @@ span.resultado-busca-numero {
 .search-box{
 	@extend .transition;
 	left: 0;
-	top: 64px;
+	top: 58px;
 	z-index: 1;
 	width: 100%;
 	display: none;
@@ -69,7 +69,12 @@ span.resultado-busca-numero {
 		display: block;
 	}
 
+	fieldset.busca {
+		padding: 0;
+	}
+
 	.busca{
+
 		position: relative;
 
 		legend,
