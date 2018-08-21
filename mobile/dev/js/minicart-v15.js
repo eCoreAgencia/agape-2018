@@ -1,11 +1,11 @@
-// Minicart 
+// Minicart
 	(function($) {
 		'use strict';
 
 		var settings = {
 			effect: 'overlay'
 		};
-		
+
 		var cart = null;
 
 		var helper = {
@@ -178,7 +178,7 @@
 					if($qty <= 1) {
 						$(this).parent().parent().find('.result input').attr('value', '1');
 					}else{
-						$(this).parent().parent().find('.result input').attr('value', $qty - 1);	
+						$(this).parent().parent().find('.result input').attr('value', $qty - 1);
 					}
 				});
 
@@ -191,7 +191,7 @@
 				$('.content-select-sku > ul > li').on('click', function(event) {
 					$('.content-select-sku > ul > li').removeClass('active');
 					$(this).addClass('active');
-				});	
+				});
 			}
 		};
 
@@ -235,8 +235,8 @@
 
 			$('.sta-cart-container').on('click','.remove-item', function(){
 				var me = $(this);
-				$('<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>').insertBefore(me);		
-				
+				$('<div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>').insertBefore(me);
+
 				var index = $(this).data('index');
 				helper.removeItem(index);
 			});
@@ -244,7 +244,7 @@
 			$('.sta-cart-resume a').on('click', function(){
 				if($(this).hasClass('disabled')){
 					return false;
-				} else { 
+				} else {
 					return true;
 				}
 			});
@@ -278,10 +278,10 @@
 	    $('header #mini-cart').click(function(){
 	    	$('.sta-cart-overlay').show();
             $('.sta-cart-container').animate({right: 0},300);
-            var cartinho = $('.sta-cart-resume a');
-            var conteudocart = $('.sta-cart-items ul li');
-		    (conteudocart.length == 0) ? (cartinho.css('background', '#c4c4c4'), cartinho.removeAttr('href')) : cartinho.css('background', '#f68026');
+            // var cartinho = $('.sta-cart-resume a');
+            // var conteudocart = $('.sta-cart-items ul li');
+		    // (conteudocart.length == 0) ? (cartinho.css('background', '#c4c4c4'), cartinho.removeAttr('href')) : cartinho.css('background', '#f68026');
         });
 	});
 
-// Minicart 
+// Minicart

@@ -883,10 +883,12 @@ $(function () {
 		});
 	}
 
+	$('.compra-segura h3').simulateClick('click');
+
 });
 
 $( document ).ready(function() {
-	
+
 	$('.search-toggle').click(function() {
 		var searchbox = $('.fulltext-search-box');
 		 if ( $('.search-box').hasClass('active') ) {
@@ -895,4 +897,3 @@ $( document ).ready(function() {
 		  return false;
 		}});
 	});
-	
