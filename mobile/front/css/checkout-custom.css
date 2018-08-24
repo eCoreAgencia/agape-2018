@@ -137,13 +137,25 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
 .light {
   font-weight: 300; }
 
-.regular, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li, footer .metodos-pagamento h3, .accordion-heading > span {
+.regular, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li, footer .metodos-pagamento h3, .accordion-heading > span {
   font-weight: 400; }
 
 .medium {
   font-weight: 500; }
 
-.semi-bold, footer .institucional h3, footer .dados h3, footer .atendimento h3, footer .compra-segura h3, footer .portal-do-revendedor h3, .client-pre-email .client-pre-email-h small, .body-payment #client-profile-data .accordion-heading > span, .body-payment #shipping-data .accordion-heading > span, .body-payment #payment-data .accordion-heading > span {
+.semi-bold, footer .institucional h3, footer .institucional .static,
+footer .dados h3,
+footer .dados .static,
+footer .atendimento h3,
+footer .atendimento .static,
+footer .compra-segura h3,
+footer .compra-segura .static,
+footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static, .client-pre-email .client-pre-email-h small, .body-payment #client-profile-data .accordion-heading > span, .body-payment #shipping-data .accordion-heading > span, .body-payment #payment-data .accordion-heading > span {
   font-weight: 600; }
 
 .bold, .i-dropBtn:after, .body-payment .cart-template.mini-cart tbody tr td, .body-payment .cart-template.mini-cart tbody tr span, .body-payment .cart-template.mini-cart tfoot tr td, .body-payment .cart-template.mini-cart tfoot tr span {
@@ -153,7 +165,11 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
   font-weight: 800; }
 
 /* Decorations */
-.txt-dc-none, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li, #progrecao a {
+.txt-dc-none, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li, #progrecao a {
   text-decoration: none; }
 
 .txt-underline {
@@ -169,7 +185,11 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
 .txt-black {
   color: #201e1e; }
 
-.txt-gray, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li, footer .textoLegal, footer .metodos-pagamento h3, footer .copyright-notice, .client-pre-email .client-pre-email-h span, .client-pre-email .client-pre-email-h small, .client-pre-email .emailInfo h3, .client-pre-email .emailInfo li, .body-payment .cart-template.mini-cart tbody tr td, .body-payment .cart-template.mini-cart tbody tr span, .body-payment .cart-template.mini-cart tfoot tr td, .body-payment .cart-template.mini-cart tfoot tr span {
+.txt-gray, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li, footer .textoLegal, footer .metodos-pagamento h3, footer .copyright-notice, .client-pre-email .client-pre-email-h span, .client-pre-email .client-pre-email-h small, .client-pre-email .emailInfo h3, .client-pre-email .emailInfo li, .body-payment .cart-template.mini-cart tbody tr td, .body-payment .cart-template.mini-cart tbody tr span, .body-payment .cart-template.mini-cart tfoot tr td, .body-payment .cart-template.mini-cart tfoot tr span {
   color: #666666; }
 
 .txt-lightGray {
@@ -178,7 +198,15 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
 .txt-lighterGray {
   color: #cccccc; }
 
-.txt-darkerGray, footer .institucional h3, footer .dados h3, footer .atendimento h3, footer .compra-segura h3, footer .portal-do-revendedor h3 {
+.txt-darkerGray, footer .institucional h3, footer .institucional .static,
+footer .dados h3,
+footer .dados .static,
+footer .atendimento h3,
+footer .atendimento .static,
+footer .compra-segura h3,
+footer .compra-segura .static,
+footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static {
   color: #333333; }
 
 .txt-orange {
@@ -216,7 +244,15 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
   font-size: 22px;
   line-height: 26px; }
 
-.txt-sz-24, footer .institucional h3, footer .dados h3, footer .atendimento h3, footer .compra-segura h3, footer .portal-do-revendedor h3 {
+.txt-sz-24, footer .institucional h3, footer .institucional .static,
+footer .dados h3,
+footer .dados .static,
+footer .atendimento h3,
+footer .atendimento .static,
+footer .compra-segura h3,
+footer .compra-segura .static,
+footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static {
   font-size: 24px;
   line-height: 28px; }
 
@@ -229,7 +265,19 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
   line-height: 34px; }
 
 /* Alignment */
-.txt-left, footer .institucional h3, footer .dados h3, footer .atendimento h3, footer .compra-segura h3, footer .portal-do-revendedor h3, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li {
+.txt-left, footer .institucional h3, footer .institucional .static,
+footer .dados h3,
+footer .dados .static,
+footer .atendimento h3,
+footer .atendimento .static,
+footer .compra-segura h3,
+footer .compra-segura .static,
+footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li {
   text-align: left; }
 
 .txt-right {
@@ -247,7 +295,11 @@ header ul, header ol, header div, header h1, header h2, header h3, header h4, he
 .txt-lo {
   text-transform: lowercase; }
 
-.txt-cap, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li {
+.txt-cap, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li {
   text-transform: capitalize; }
 
 body {
@@ -262,7 +314,27 @@ body {
   .clearfix:after {
     clear: both; }
 
-.transition, footer input[type="radio"] + .checkbox:before, footer .institucional h3:after, footer .dados h3:after, footer .atendimento h3:after, footer .compra-segura h3:after, footer .portal-do-revendedor h3:after, footer .institucional h3.active:after, footer .dados h3.active:after, footer .atendimento h3.active:after, footer .compra-segura h3.active:after, footer .portal-do-revendedor h3.active:after, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li, footer .socialLinks li:hover, .accordion-heading > span {
+.transition, footer input[type="radio"] + .checkbox:before, footer .institucional h3:after, footer .institucional .static:after,
+footer .dados h3:after,
+footer .dados .static:after,
+footer .atendimento h3:after,
+footer .atendimento .static:after,
+footer .compra-segura h3:after,
+footer .compra-segura .static:after,
+footer .portal-do-revendedor h3:after,
+footer .portal-do-revendedor .static:after, footer .institucional h3.active:after, footer .institucional .static.active:after,
+footer .dados h3.active:after,
+footer .dados .static.active:after,
+footer .atendimento h3.active:after,
+footer .atendimento .static.active:after,
+footer .compra-segura h3.active:after,
+footer .compra-segura .static.active:after,
+footer .portal-do-revendedor h3.active:after,
+footer .portal-do-revendedor .static.active:after, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li, footer .socialLinks li:hover, .accordion-heading > span {
   transition-duration: .3s;
   transition-timing-function: ease; }
 
@@ -961,13 +1033,25 @@ body {
 .light {
   font-weight: 300; }
 
-.regular, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li, footer .metodos-pagamento h3, .accordion-heading > span {
+.regular, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li, footer .metodos-pagamento h3, .accordion-heading > span {
   font-weight: 400; }
 
 .medium {
   font-weight: 500; }
 
-.semi-bold, footer .institucional h3, footer .dados h3, footer .atendimento h3, footer .compra-segura h3, footer .portal-do-revendedor h3, .client-pre-email .client-pre-email-h small, .body-payment #client-profile-data .accordion-heading > span, .body-payment #shipping-data .accordion-heading > span, .body-payment #payment-data .accordion-heading > span {
+.semi-bold, footer .institucional h3, footer .institucional .static,
+footer .dados h3,
+footer .dados .static,
+footer .atendimento h3,
+footer .atendimento .static,
+footer .compra-segura h3,
+footer .compra-segura .static,
+footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static, .client-pre-email .client-pre-email-h small, .body-payment #client-profile-data .accordion-heading > span, .body-payment #shipping-data .accordion-heading > span, .body-payment #payment-data .accordion-heading > span {
   font-weight: 600; }
 
 .bold, .i-dropBtn:after, .body-payment .cart-template.mini-cart tbody tr td, .body-payment .cart-template.mini-cart tbody tr span, .body-payment .cart-template.mini-cart tfoot tr td, .body-payment .cart-template.mini-cart tfoot tr span {
@@ -977,7 +1061,11 @@ body {
   font-weight: 800; }
 
 /* Decorations */
-.txt-dc-none, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li, #progrecao a {
+.txt-dc-none, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li, #progrecao a {
   text-decoration: none; }
 
 .txt-underline {
@@ -993,7 +1081,11 @@ body {
 .txt-black {
   color: #201e1e; }
 
-.txt-gray, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li, footer .textoLegal, footer .metodos-pagamento h3, footer .copyright-notice, .client-pre-email .client-pre-email-h span, .client-pre-email .client-pre-email-h small, .client-pre-email .emailInfo h3, .client-pre-email .emailInfo li, .body-payment .cart-template.mini-cart tbody tr td, .body-payment .cart-template.mini-cart tbody tr span, .body-payment .cart-template.mini-cart tfoot tr td, .body-payment .cart-template.mini-cart tfoot tr span {
+.txt-gray, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li, footer .textoLegal, footer .metodos-pagamento h3, footer .copyright-notice, .client-pre-email .client-pre-email-h span, .client-pre-email .client-pre-email-h small, .client-pre-email .emailInfo h3, .client-pre-email .emailInfo li, .body-payment .cart-template.mini-cart tbody tr td, .body-payment .cart-template.mini-cart tbody tr span, .body-payment .cart-template.mini-cart tfoot tr td, .body-payment .cart-template.mini-cart tfoot tr span {
   color: #666666; }
 
 .txt-lightGray {
@@ -1002,7 +1094,15 @@ body {
 .txt-lighterGray {
   color: #cccccc; }
 
-.txt-darkerGray, footer .institucional h3, footer .dados h3, footer .atendimento h3, footer .compra-segura h3, footer .portal-do-revendedor h3 {
+.txt-darkerGray, footer .institucional h3, footer .institucional .static,
+footer .dados h3,
+footer .dados .static,
+footer .atendimento h3,
+footer .atendimento .static,
+footer .compra-segura h3,
+footer .compra-segura .static,
+footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static {
   color: #333333; }
 
 .txt-orange {
@@ -1040,7 +1140,15 @@ body {
   font-size: 22px;
   line-height: 26px; }
 
-.txt-sz-24, footer .institucional h3, footer .dados h3, footer .atendimento h3, footer .compra-segura h3, footer .portal-do-revendedor h3 {
+.txt-sz-24, footer .institucional h3, footer .institucional .static,
+footer .dados h3,
+footer .dados .static,
+footer .atendimento h3,
+footer .atendimento .static,
+footer .compra-segura h3,
+footer .compra-segura .static,
+footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static {
   font-size: 24px;
   line-height: 28px; }
 
@@ -1053,7 +1161,19 @@ body {
   line-height: 34px; }
 
 /* Alignment */
-.txt-left, footer .institucional h3, footer .dados h3, footer .atendimento h3, footer .compra-segura h3, footer .portal-do-revendedor h3, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li {
+.txt-left, footer .institucional h3, footer .institucional .static,
+footer .dados h3,
+footer .dados .static,
+footer .atendimento h3,
+footer .atendimento .static,
+footer .compra-segura h3,
+footer .compra-segura .static,
+footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li {
   text-align: left; }
 
 .txt-right {
@@ -1071,7 +1191,11 @@ body {
 .txt-lo {
   text-transform: lowercase; }
 
-.txt-cap, footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li {
+.txt-cap, footer .institucional ul li,
+footer .dados ul li,
+footer .atendimento ul li,
+footer .compra-segura ul li,
+footer .portal-do-revendedor ul li {
   text-transform: capitalize; }
 
 .bg-white, footer input[type="radio"] + .checkbox {
@@ -1157,41 +1281,95 @@ footer {
           flex-wrap: wrap;
       -ms-flex-align: center;
           align-items: center; }
-  footer .institucional, footer .dados, footer .atendimento, footer .compra-segura, footer .portal-do-revendedor {
+  footer .institucional,
+  footer .dados,
+  footer .atendimento,
+  footer .compra-segura,
+  footer .portal-do-revendedor {
     padding: 12px 0 0;
     border-bottom: 1px solid #ccc; }
-    footer .institucional h3, footer .dados h3, footer .atendimento h3, footer .compra-segura h3, footer .portal-do-revendedor h3 {
+    footer .institucional h3, footer .institucional .static,
+    footer .dados h3,
+    footer .dados .static,
+    footer .atendimento h3,
+    footer .atendimento .static,
+    footer .compra-segura h3,
+    footer .compra-segura .static,
+    footer .portal-do-revendedor h3,
+    footer .portal-do-revendedor .static {
       font-size: 22px;
       margin-left: 10px;
       position: relative;
       font-weight: normal; }
-      footer .institucional h3:after, footer .dados h3:after, footer .atendimento h3:after, footer .compra-segura h3:after, footer .portal-do-revendedor h3:after {
+      footer .institucional h3:after, footer .institucional .static:after,
+      footer .dados h3:after,
+      footer .dados .static:after,
+      footer .atendimento h3:after,
+      footer .atendimento .static:after,
+      footer .compra-segura h3:after,
+      footer .compra-segura .static:after,
+      footer .portal-do-revendedor h3:after,
+      footer .portal-do-revendedor .static:after {
         top: 0;
         right: 10px;
         color: #333;
         content: '>';
         display: block;
         position: absolute; }
-      footer .institucional h3.active:after, footer .dados h3.active:after, footer .atendimento h3.active:after, footer .compra-segura h3.active:after, footer .portal-do-revendedor h3.active:after {
+      footer .institucional h3.active:after, footer .institucional .static.active:after,
+      footer .dados h3.active:after,
+      footer .dados .static.active:after,
+      footer .atendimento h3.active:after,
+      footer .atendimento .static.active:after,
+      footer .compra-segura h3.active:after,
+      footer .compra-segura .static.active:after,
+      footer .portal-do-revendedor h3.active:after,
+      footer .portal-do-revendedor .static.active:after {
         content: 'v';
         color: #ff9933;
         display: block; }
-      footer .institucional h3 svg, footer .dados h3 svg, footer .atendimento h3 svg, footer .compra-segura h3 svg, footer .portal-do-revendedor h3 svg {
+      footer .institucional h3 svg, footer .institucional .static svg,
+      footer .dados h3 svg,
+      footer .dados .static svg,
+      footer .atendimento h3 svg,
+      footer .atendimento .static svg,
+      footer .compra-segura h3 svg,
+      footer .compra-segura .static svg,
+      footer .portal-do-revendedor h3 svg,
+      footer .portal-do-revendedor .static svg {
         width: 30px;
         margin: 5px;
         height: auto;
         vertical-align: middle; }
-      footer .institucional h3 span, footer .dados h3 span, footer .atendimento h3 span, footer .compra-segura h3 span, footer .portal-do-revendedor h3 span {
+      footer .institucional h3 span, footer .institucional .static span,
+      footer .dados h3 span,
+      footer .dados .static span,
+      footer .atendimento h3 span,
+      footer .atendimento .static span,
+      footer .compra-segura h3 span,
+      footer .compra-segura .static span,
+      footer .portal-do-revendedor h3 span,
+      footer .portal-do-revendedor .static span {
         padding: 5px;
         vertical-align: middle; }
-    footer .institucional ul li, footer .dados ul li, footer .atendimento ul li, footer .compra-segura ul li, footer .portal-do-revendedor ul li {
+    footer .institucional ul li,
+    footer .dados ul li,
+    footer .atendimento ul li,
+    footer .compra-segura ul li,
+    footer .portal-do-revendedor ul li {
       list-style: none; }
-      footer .institucional ul li a, footer .dados ul li a, footer .atendimento ul li a, footer .compra-segura ul li a, footer .portal-do-revendedor ul li a {
+      footer .institucional ul li a,
+      footer .dados ul li a,
+      footer .atendimento ul li a,
+      footer .compra-segura ul li a,
+      footer .portal-do-revendedor ul li a {
         font-size: 18px;
         display: block;
         color: inherit;
         text-decoration: none;
         padding: 16px 0 16px 45px; }
+  footer .compra-segura .static:after {
+    content: "" !important; }
   footer .atendimento ul li a {
     width: 100%;
     display: inline-block;
@@ -1201,10 +1379,14 @@ footer {
     footer .atendimento ul li a:first-of-type {
       padding-left: 45px; }
   footer .selos-seguranca {
-    width: 200px;
     display: none;
     column-count: 2;
-    margin-left: 42px; }
+    display: -ms-grid !important;
+    display: grid !important;
+    grid-template: "a a a";
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 24px 0; }
     footer .selos-seguranca.active {
       display: block; }
     footer .selos-seguranca a {

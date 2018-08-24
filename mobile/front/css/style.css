@@ -336,10 +336,15 @@ body.dep-cat-bus .mainShelf .pager ul li {
 
 .semi-bold,
 footer .institucional h3,
+footer .institucional .static,
 footer .dados h3,
+footer .dados .static,
 footer .atendimento h3,
+footer .atendimento .static,
 footer .compra-segura h3,
+footer .compra-segura .static,
 footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static,
 .search-multiple-navigator h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
@@ -454,10 +459,15 @@ body.dep-cat-bus .mainShelf .pager ul li {
 .txt-darkerGray,
 header .ambientes .ambiente,
 footer .institucional h3,
+footer .institucional .static,
 footer .dados h3,
+footer .dados .static,
 footer .atendimento h3,
+footer .atendimento .static,
 footer .compra-segura h3,
+footer .compra-segura .static,
 footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static,
 .search-multiple-navigator h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
@@ -544,10 +554,15 @@ body.institucional main h3 {
 
 .txt-sz-24,
 footer .institucional h3,
+footer .institucional .static,
 footer .dados h3,
+footer .dados .static,
 footer .atendimento h3,
+footer .atendimento .static,
 footer .compra-segura h3,
+footer .compra-segura .static,
 footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static,
 body.orders footer h3,
 .vtex-bootstrap footer h3 {
 	font-size: 24px;
@@ -569,10 +584,15 @@ body.home main .shelf-title h2 {
 
 .txt-left,
 footer .institucional h3,
+footer .institucional .static,
 footer .dados h3,
+footer .dados .static,
 footer .atendimento h3,
+footer .atendimento .static,
 footer .compra-segura h3,
+footer .compra-segura .static,
 footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static,
 footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
@@ -657,15 +677,25 @@ header .mid-box,
 header .ambientes .ambiente,
 footer input[type="radio"] + .checkbox:before,
 footer .institucional h3:after,
+footer .institucional .static:after,
 footer .dados h3:after,
+footer .dados .static:after,
 footer .atendimento h3:after,
+footer .atendimento .static:after,
 footer .compra-segura h3:after,
+footer .compra-segura .static:after,
 footer .portal-do-revendedor h3:after,
+footer .portal-do-revendedor .static:after,
 footer .institucional h3.active:after,
+footer .institucional .static.active:after,
 footer .dados h3.active:after,
+footer .dados .static.active:after,
 footer .atendimento h3.active:after,
+footer .atendimento .static.active:after,
 footer .compra-segura h3.active:after,
+footer .compra-segura .static.active:after,
 footer .portal-do-revendedor h3.active:after,
+footer .portal-do-revendedor .static.active:after,
 footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
@@ -1228,10 +1258,15 @@ body.dep-cat-bus .mainShelf .pager ul li {
 
 .semi-bold,
 footer .institucional h3,
+footer .institucional .static,
 footer .dados h3,
+footer .dados .static,
 footer .atendimento h3,
+footer .atendimento .static,
 footer .compra-segura h3,
+footer .compra-segura .static,
 footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static,
 .search-multiple-navigator h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
@@ -1346,10 +1381,15 @@ body.dep-cat-bus .mainShelf .pager ul li {
 .txt-darkerGray,
 header .ambientes .ambiente,
 footer .institucional h3,
+footer .institucional .static,
 footer .dados h3,
+footer .dados .static,
 footer .atendimento h3,
+footer .atendimento .static,
 footer .compra-segura h3,
+footer .compra-segura .static,
 footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static,
 .search-multiple-navigator h3,
 .search-multiple-navigator h5,
 .search-single-navigator h3,
@@ -1436,10 +1476,15 @@ body.institucional main h3 {
 
 .txt-sz-24,
 footer .institucional h3,
+footer .institucional .static,
 footer .dados h3,
+footer .dados .static,
 footer .atendimento h3,
+footer .atendimento .static,
 footer .compra-segura h3,
+footer .compra-segura .static,
 footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static,
 body.orders footer h3,
 .vtex-bootstrap footer h3 {
 	font-size: 24px;
@@ -1461,10 +1506,15 @@ body.home main .shelf-title h2 {
 
 .txt-left,
 footer .institucional h3,
+footer .institucional .static,
 footer .dados h3,
+footer .dados .static,
 footer .atendimento h3,
+footer .atendimento .static,
 footer .compra-segura h3,
+footer .compra-segura .static,
 footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static,
 footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
@@ -1907,10 +1957,15 @@ footer .portal-do-revendedor {
 }
 
 footer .institucional h3,
+footer .institucional .static,
 footer .dados h3,
+footer .dados .static,
 footer .atendimento h3,
+footer .atendimento .static,
 footer .compra-segura h3,
-footer .portal-do-revendedor h3 {
+footer .compra-segura .static,
+footer .portal-do-revendedor h3,
+footer .portal-do-revendedor .static {
 	font-size: 22px;
 	margin-left: 10px;
 	position: relative;
@@ -1918,10 +1973,15 @@ footer .portal-do-revendedor h3 {
 }
 
 footer .institucional h3:after,
+footer .institucional .static:after,
 footer .dados h3:after,
+footer .dados .static:after,
 footer .atendimento h3:after,
+footer .atendimento .static:after,
 footer .compra-segura h3:after,
-footer .portal-do-revendedor h3:after {
+footer .compra-segura .static:after,
+footer .portal-do-revendedor h3:after,
+footer .portal-do-revendedor .static:after {
 	top: 0;
 	right: 10px;
 	color: #333;
@@ -1931,20 +1991,30 @@ footer .portal-do-revendedor h3:after {
 }
 
 footer .institucional h3.active:after,
+footer .institucional .static.active:after,
 footer .dados h3.active:after,
+footer .dados .static.active:after,
 footer .atendimento h3.active:after,
+footer .atendimento .static.active:after,
 footer .compra-segura h3.active:after,
-footer .portal-do-revendedor h3.active:after {
+footer .compra-segura .static.active:after,
+footer .portal-do-revendedor h3.active:after,
+footer .portal-do-revendedor .static.active:after {
 	content: 'v';
 	color: #ff9933;
 	display: block;
 }
 
 footer .institucional h3 svg,
+footer .institucional .static svg,
 footer .dados h3 svg,
+footer .dados .static svg,
 footer .atendimento h3 svg,
+footer .atendimento .static svg,
 footer .compra-segura h3 svg,
-footer .portal-do-revendedor h3 svg {
+footer .compra-segura .static svg,
+footer .portal-do-revendedor h3 svg,
+footer .portal-do-revendedor .static svg {
 	width: 30px;
 	margin: 5px;
 	height: auto;
@@ -1952,10 +2022,15 @@ footer .portal-do-revendedor h3 svg {
 }
 
 footer .institucional h3 span,
+footer .institucional .static span,
 footer .dados h3 span,
+footer .dados .static span,
 footer .atendimento h3 span,
+footer .atendimento .static span,
 footer .compra-segura h3 span,
-footer .portal-do-revendedor h3 span {
+footer .compra-segura .static span,
+footer .portal-do-revendedor h3 span,
+footer .portal-do-revendedor .static span {
 	padding: 5px;
 	vertical-align: middle;
 }
@@ -1980,6 +2055,10 @@ footer .portal-do-revendedor ul li a {
 	padding: 16px 0 16px 45px;
 }
 
+footer .compra-segura .static:after {
+	content: "" !important;
+}
+
 footer .atendimento ul li a {
 	width: 100%;
 	display: inline-block;
@@ -1995,10 +2074,14 @@ footer .atendimento ul li a:first-of-type {
 }
 
 footer .selos-seguranca {
-	width: 200px;
 	display: none;
 	column-count: 2;
-	margin-left: 42px;
+	display: -ms-grid !important;
+	display: grid !important;
+	grid-template: "a a a";
+	-ms-flex-align: center;
+	    align-items: center;
+	margin: 24px 0;
 }
 
 footer .selos-seguranca.active {

@@ -1,14 +1,12 @@
-
 /* ==========================================================================
    Footer
    ========================================================================== */
 
-footer{
-  	clear: both;
+footer {
+	clear: both;
 	display: block;
 	margin-top: 20px;
-  	flex-direction: column;
-
+	flex-direction: column;
 	.obs-news {
 		@include font-size(1.2);
 		width: 100%;
@@ -16,33 +14,27 @@ footer{
 		margin-top: 10px;
 		text-align: center;
 	}
-
-  	.footer-middle{
-  		width: 100%;
-  		float: left;
-  		display: block;
-  		text-align: center;
-
-  		ul {
-  			display: none;
-  			background-color: #f6f4f4;
-
-  			li {
-  				border-bottom: 1px solid #eaeaea;
-
-  				&:last-child {
-  					border-bottom: none;
-  				}
-  			}
-
-  			&.active {
-  				display: block;
-  			}
-  		}
-  	}
-
-	input[type="radio"]{
-		& + .checkbox{
+	.footer-middle {
+		width: 100%;
+		float: left;
+		display: block;
+		text-align: center;
+		ul {
+			display: none;
+			background-color: #f6f4f4;
+			li {
+				border-bottom: 1px solid #eaeaea;
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+			&.active {
+				display: block;
+			}
+		}
+	}
+	input[type="radio"] {
+		&+.checkbox {
 			@extend .bg-white;
 			padding: 5px;
 			user-select: none;
@@ -51,8 +43,7 @@ footer{
 			display: inline-block;
 			vertical-align: bottom;
 			border: 1px solid #c0c0c0;
-
-			&:before{
+			&:before {
 				@extend .transition;
 				content: '';
 				width: 10px;
@@ -62,37 +53,39 @@ footer{
 				background-color: transparent;
 			}
 		}
-		&:checked + .checkbox{
-			&:before{
+		&:checked+.checkbox {
+			&:before {
 				@extend .bg-darkBlue;
 			}
 		}
 	}
-
-  	.footer-bottom{
+	.footer-bottom {
 		float: left;
 		width: 100%;
 		overflow: hidden;
 		background-color: transparent;
-
-		.container{
+		.container {
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
 		}
 	}
-	
-	.institucional, .dados, .atendimento, .compra-segura, .portal-do-revendedor{
+	.institucional,
+	.dados,
+	.atendimento,
+	.compra-segura,
+	.portal-do-revendedor {
 		padding: 12px 0 0;
 		border-bottom: 1px solid #ccc;
-
-		h3{
-			@extend .txt-darkerGray, .txt-sz-24, .semi-bold, .txt-left;
+		h3 , .static {
+			@extend .txt-darkerGray,
+			.txt-sz-24,
+			.semi-bold,
+			.txt-left;
 			@include font-size(2.2);
 			margin-left: 10px;
 			position: relative;
 			font-weight: normal;
-
 			&:after {
 				@extend .transition;
 				top: 0;
@@ -102,7 +95,6 @@ footer{
 				display: block;
 				position: absolute;
 			}
-
 			&.active {
 				&:after {
 					@extend .transition;
@@ -111,25 +103,26 @@ footer{
 					display: block;
 				}
 			}
-
-			svg{
+			svg {
 				width: 30px;
 				margin: 5px;
 				height: auto;
 				vertical-align: middle;
 			}
-
-			span{
+			span {
 				padding: 5px;
 				vertical-align: middle;
 			}
 		}
-
-		ul{
-			li{
-				@extend .txt-gray, .regular, .txt-dc-none, .txt-cap, .txt-left, .transition;
+		ul {
+			li {
+				@extend .txt-gray,
+				.regular,
+				.txt-dc-none,
+				.txt-cap,
+				.txt-left,
+				.transition;
 				list-style: none;
-
 				a {
 					@include font-size(1.8);
 					display: block;
@@ -140,7 +133,11 @@ footer{
 			}
 		}
 	}
-
+	.compra-segura{
+		.static:after{
+			content: "" !important;
+		}
+	}
 	.atendimento {
 		ul {
 			li {
@@ -148,11 +145,9 @@ footer{
 					width: 100%;
 					display: inline-block;
 					vertical-align: middle;
-
 					&:last-of-type {
 						padding-left: 0;
 					}
-
 					&:first-of-type {
 						padding-left: 45px;
 					}
@@ -160,36 +155,32 @@ footer{
 			}
 		}
 	}
-
 	.selos-seguranca {
-	    width: 200px;
 		display: none;
-	    column-count: 2;
-	    margin-left: 42px;
-
-	    &.active {
-	    	display: block;
-	    }
-
+		column-count: 2;
+		display: grid !important;
+		grid-template: "a a a";
+		align-items: center;
+		margin: 24px 0;
+		&.active {
+			display: block;
+		}
 		a {
 			display: inline-block;
-
-			&:nth-of-type(4){
+			&:nth-of-type(4) {
 				margin-top: 3px;
 			}
-			img{
+			img {
 				width: 90px;
 				height: auto;
 			}
 		}
 	}
-
-	.portal-do-revendedor{
+	.portal-do-revendedor {
 		h3 {
 			&:after {
 				display: none !important;
 			}
-			
 			a {
 				width: 100%;
 				color: #333;
@@ -198,54 +189,45 @@ footer{
 			}
 		}
 	}
-
-	.logo-social{
+	.logo-social {
 		text-aling: center;
 		padding: 40px 7px 20px;
-
-		a{
+		a {
 			display: inline-block;
 		}
 	}
-
-	.socialLinks{
+	.socialLinks {
 		width: 100%;
 		padding: 10px 7px;
 		text-align: center;
 		display: inline-block;
-
-		li{
+		li {
 			margin: 7px;
 			padding: 10px;
 			list-style: none;
 			border-radius: 100%;
 			display: inline-block;
 			border: 1px solid #18318e;
-
-			a{
+			a {
 				display: block;
 			}
-
-			svg{
+			svg {
 				width: 20px;
 				height: auto;
 				display: block;
-			} 
-
+			}
 			&:hover {
 				@extend .transition;
 				border: 1px solid #f68026;
-
-				#hover-social-blue{
+				#hover-social-blue {
 					fill: #f68026 !important;
-				}	
+				}
 			}
-
 		}
 	}
-
-	.textoLegal{
-		@extend .txt-gray, .txt-sz-14;
+	.textoLegal {
+		@extend .txt-gray,
+		.txt-sz-14;
 		width: 100%;
 		float: left;
 		padding: 20px 7px;
@@ -254,59 +236,59 @@ footer{
 		border-right: 0;
 		display: none;
 	}
-
-	.metodos-pagamento{
-		@extend .bg-lightGray, .col-xs-12, .col-md-9;
+	.metodos-pagamento {
+		@extend .bg-lightGray,
+		.col-xs-12,
+		.col-md-9;
 		padding: 10px 7px;
 		display: inline-flex;
 		justify-content: center;
-
-		h3{
-			@extend .txt-gray, .regular;
+		h3 {
+			@extend .txt-gray,
+			.regular;
 			@include font-size(1.2);
 			display: none;
 			padding: 0 10px;
 			line-height: 16px;
 		}
-
-		.icones-pagamento{
+		.icones-pagamento {
 			text-align: center;
 			display: inline-block;
-			i{
+			i {
 				margin: 5px;
 			}
 		}
 	}
-	.poweredBy{
-		@extend .col-xs-12, .col-md-3;
+	.poweredBy {
+		@extend .col-xs-12,
+		.col-md-3;
 		padding: 10px 7px;
 		align-items: center;
 		display: inline-flex;
 		justify-content: center;
-
-		li{
+		li {
 			display: inline-block;
 		}
-
-		.lg-vtex{
-			svg{
+		.lg-vtex {
+			svg {
 				width: 100px;
 			}
 		}
 	}
-
-  	.copyright-notice{
-  		@extend .txt-gray, .txt-center, .txt-sz-10;
-  		float: left;
-  		width: 100%;
-  		padding: 10px;
-  		display: block;
-  	}
+	.copyright-notice {
+		@extend .txt-gray,
+		.txt-center,
+		.txt-sz-10;
+		float: left;
+		width: 100%;
+		padding: 10px;
+		display: block;
+	}
 }
 
-body.home{
-	footer{
-		.textoLegal{
+body.home {
+	footer {
+		.textoLegal {
 			display: block;
 		}
 	}
