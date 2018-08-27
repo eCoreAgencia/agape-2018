@@ -2321,7 +2321,7 @@ body.home footer .textoLegal {
 .shelfItem .skus-selection {
 	width: 100%;
 	height: 31px;
-	padding: 5px 0;
+	padding: 0;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -2332,6 +2332,14 @@ body.home footer .textoLegal {
 	content: 'De: ';
 	display: inline-block;
 	text-decoration: line-through;
+}
+
+.shelfItem .precoCash:before {
+	color: #201e1e;
+	content: 'Por Apenas: ';
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
 }
 
 .shelfItem .shelfBestPrice,
@@ -2444,6 +2452,10 @@ body.dep-cat-bus .box-item {
 
 body.dep-cat-bus .box-item:hover {
 	height: 328px;
+}
+
+body.dep-cat-bus .box-item:hover .drop {
+	padding-top: 0px;
 }
 
 body.produto .produtos-similares .shelf-title {
@@ -5896,7 +5908,6 @@ body.dep-cat-bus main .shelfItem .drop {
 
 body.dep-cat-bus main .shelfItem .drop .price {
 	display: block;
-	padding-top: 10px;
 }
 
 body.dep-cat-bus main .mainShelf .shearchTitle {
@@ -7833,6 +7844,7 @@ footer .slider .poweredBy,
 	left: 0;
 	top: 0;
 	display: block;
+	overflow: hidden;
 }
 
 .slick-track:before,
@@ -8766,7 +8778,7 @@ footer .copyright-notice {
 	top: 100%;
 	opacity: 0;
 	margin-left: -7px;
-	margin-top: -56px;
+	margin-top: -72px;
 }
 
 .shelfItem .skus-selection {

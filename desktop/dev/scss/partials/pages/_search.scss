@@ -110,7 +110,6 @@ body.dep-cat-bus {
 				margin-top: 0;
 				.price {
 					display: block;
-					padding-top: 10px;
 				}
 			}
 		}
@@ -404,7 +403,7 @@ body.busca-vazia {
 		text-align: center;
 		h2 {
 			@include font-size(2.2);
-			color: #18318e; 
+			color: #18318e;
 		}
 	}
 
@@ -472,11 +471,11 @@ body.busca-vazia {
 			opacity: .3;
 		}
 
-	} 
+	}
 	.shelfItem {
 		max-height: 520px;
 	}
-	
+
 }
 
 @media (max-width: 1024px) {

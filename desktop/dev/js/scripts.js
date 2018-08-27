@@ -133,7 +133,8 @@ function priceStatus() {
 		var myInstallments = $(this).find('.shelfInstallment');
 
 		if($(myBest).length == 0){
-			myOldBox.hide();
+			$('.drop .shelfOldPrice.txt-sz-22').addClass( "precoCash" );
+			$('.precoCash').css({ "display": "block", "color": "#201e1e"});
 			myDrop.css('margin-top', '-4px');
 			myNew.insertAfter(myInstallments);
 			myInstallments.css('border', 'none');
@@ -172,7 +173,7 @@ $(function() {
 	$(".shelfBestPrice").text(function () {
 		return $(this).text().replace("Por:", "Por Apenas: ");
 	});
-	
+
 	setFlags();
 
 	if($('.search-multiple-navigator').length > 0){
@@ -182,11 +183,11 @@ $(function() {
 	$('.prateleira li').each(function(event){
 		var me = $(this);
 		var bestPrice = me.find('.shelfBestPrice');
-		
+
 		priceStatus();
-		
+
 		if($(bestPrice).length == 0){
-			me.find('.shelfOldPrice').removeClass('ln-through');		
+			me.find('.shelfOldPrice').removeClass('ln-through');
 		}
 	});
 
@@ -231,7 +232,7 @@ $(function() {
 		body.on('click', '.add-to-cart', function(event){
 			var myBt = $('.buy-box .buy-button');
 			if($(myBt).attr('href') == "javascript:alert('Por favor, selecione o modelo desejado.');" ) {
-				
+
 				if($('ul.Tamanho label.checked').length == 0){
 					$('body.produto ul.Tamanho .skuList label').addClass('error');
 					$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.specification');
@@ -241,14 +242,14 @@ $(function() {
 					$('body.produto ul.Cor .skuList label').addClass('error');
 					$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
 				}
-				
-				document.querySelector('#id3').scrollIntoView({ 
-					behavior: 'smooth' 
+
+				document.querySelector('#id3').scrollIntoView({
+					behavior: 'smooth'
 				});
 			} else {
 				var myBtLink = $('.buy-box .buy-button').attr('href');
 				$('#mini-cart').simulateClick('click');
-				
+
 				$.get(myBtLink, function(data) {
 					vtexjs.checkout.getOrderForm().done(function(orderForm) {
 						console.log(orderForm);
@@ -278,9 +279,9 @@ $(function() {
 					$('body.produto ul.Cor .skuList label').addClass('error');
 					$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
 				}
-				
-				document.querySelector('#id3').scrollIntoView({ 
-					behavior: 'smooth' 
+
+				document.querySelector('#id3').scrollIntoView({
+					behavior: 'smooth'
 				});
 			} else {
 				$(myBt).simulateClick('click');
@@ -436,8 +437,13 @@ $(function() {
 			nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 46.02 46.02"><path d="M14.757 46.02a5.688 5.688 0 0 1-3.929-1.569 5.705 5.705 0 0 1-.204-8.063L23.382 22.97 10.637 9.645a5.703 5.703 0 0 1 8.242-7.884l16.505 17.253a5.707 5.707 0 0 1 .013 7.872L18.893 44.247a5.699 5.699 0 0 1-4.136 1.773z" fill="#FFF"/></svg></button>',
 			adaptiveHeight: true,
 		});
-		
-	// Slider 
+		var hasTwoInTheSlider = $('.slick-track li');
+		if ( hasTwoInTheSlider.length <= 2 ) {
+			$('.slick-track').css('width', 'auto');
+			hasTwoInTheSlider.css('width', 'auto');
+		}
+
+	// Slider
 
 	//
 	$('.js-open-mobile-menu').click(function(){
@@ -505,7 +511,7 @@ $(function() {
 
 				$('label.prefixo input').insertAfter('label.prefixo');
 				$('label.prefixo').text('Calcule o frete');
-		        
+
 		        // Frete Gratis //
 		        	$('.shipping-value').simulateClick('click');
 		        // Frete Gratis //
