@@ -2251,6 +2251,7 @@ body.home footer .textoLegal {
 	height: 100%;
 	padding: 4px;
 	position: relative;
+	overflow: hidden;
 }
 
 .prateleira li a {

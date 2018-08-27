@@ -2518,7 +2518,6 @@ button {
 .prateleira li .price .shelfOldPrice {
 	font-size: 11px;
 	margin: 0;
-	bottom: 110px;
 	line-height: 0;
 	position: absolute;
 }
@@ -2536,8 +2535,20 @@ button {
 	vertical-align: middle;
 }
 
+.prateleira li .price .precoCash:before {
+	color: #201e1e;
+	content: 'Por Apenas: ';
+	display: inline-block;
+	text-decoration: none;
+	font-size: 14px;
+}
+
 .prateleira li .price .shelfInstallment {
 	font-size: 14px;
+}
+
+div#ResultItems_52636434 {
+	padding-bottom: 40px;
 }
 
 .box-item .product-image {

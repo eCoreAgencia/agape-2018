@@ -23,7 +23,7 @@
 	li {
 		padding: 4px;
 		position: relative;
-		
+
 		a {
 			text-decoration: none;
 		}
@@ -48,7 +48,6 @@
 			.shelfOldPrice {
 				@include font-size(1.1);
 				margin: 0;
-				bottom: 110px;
 				line-height: 0;
 				position: absolute;
 
@@ -65,10 +64,22 @@
 					vertical-align: middle;
 				}
 			}
-
+			.precoCash {
+				&:before {
+					color: #201e1e;
+					content: 'Por Apenas: ';
+					display: inline-block;
+					text-decoration: none;
+					font-size: 14px;
+				}
+			}
 			.shelfInstallment {
 				@include font-size(1.4);
 			}
+
 		}
 	}
+}
+div#ResultItems_52636434{
+	padding-bottom: 40px;
 }
