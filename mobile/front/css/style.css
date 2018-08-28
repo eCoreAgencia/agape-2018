@@ -2535,6 +2535,10 @@ button {
 	vertical-align: middle;
 }
 
+.prateleira li .price .precoCash {
+	font-size: 14px;
+}
+
 .prateleira li .price .precoCash:before {
 	color: #201e1e;
 	content: 'Por Apenas: ';
@@ -6327,6 +6331,7 @@ body.dep-cat-bus .mainShelf .pager.top {
 
 body.dep-cat-bus .mainShelf .pager.bottom {
 	text-align: center;
+	margin-top: 50px;
 }
 
 body.resultado-busca .search-single-navigator {
