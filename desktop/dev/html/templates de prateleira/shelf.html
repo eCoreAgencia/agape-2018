@@ -1,7 +1,6 @@
 #set($id = $product.Id) 
 #set($idSku = $product.productVariantId) 
 #set($uri = $product.Uri) #set($escapedName = $product.HtmlEscapedName)
-#if ($product.IsInStock)
 
 <div class="product-shelf" data-prodId="$product.Id">
 	<input type="hidden" class="shelf-prod-id" id="shelf-pord-id-$product.Id" value="$product.Id" />
@@ -19,7 +18,7 @@
 						<div class="price">
 							#if ($product.HasBestPrice)
 								#if($product.NumbersOfInstallment > 1)
-									<span class="price--list">
+									<span class="price--list price--list-line">
 											De: $product.ListPrice
 									</span>
 									<span class="price--installment">Por apenas:  <strong>${product.NumbersOfInstallment}x $product.InstallmentValue</strong> </span>
