@@ -125,31 +125,31 @@ function setFlags() {
 	});
 }
 
-function priceStatus() {
-	$('.prateleira .shelfItem').each(function () {
-		var me = $(this);
+// function priceStatus() {
+// 	$('.prateleira .shelfItem').each(function () {
+// 		var me = $(this);
 
-		var myDrop = $(this).find('.drop');
-		var myOldBox = $(this).find('.shelfOldPrice');
-		var myOld = $(this).find('.shelfOldPrice').text();
-		var myNew = $('<span style="display: block;" class="txt-sz-16 shelfBestPrice txt-gray">ou ' + myOld + ' à vista</span>');
-		var myBest = $(this).find('.shelfBestPrice');
-		var myInstallments = $(this).find('.shelfInstallment');
+// 		var myDrop = $(this).find('.drop');
+// 		var myOldBox = $(this).find('.shelfOldPrice');
+// 		var myOld = $(this).find('.shelfOldPrice').text();
+// 		var myNew = $('<span style="display: block;" class="txt-sz-16 shelfBestPrice txt-gray">ou ' + myOld + ' à vista</span>');
+// 		var myBest = $(this).find('.shelfBestPrice');
+// 		var myInstallments = $(this).find('.shelfInstallment');
 
-		if ($(myBest).length == 0) {
-			// COLOCA PRECO A VISTA A MOSTRA SE NAO TEM BEST PRICE
-			$('.drop .shelfOldPrice.txt-sz-22').addClass("precoCash");
-			$('.precoCash').css({
-				"display": "block",
-				"color": "#201e1e"
-			});
-			myDrop.css('margin-top', '-4px');
-			myNew.insertAfter(myInstallments);
-			myInstallments.css('border', 'none');
-			myInstallments.css('padding-left', '0');
-		}
-	});
-}
+// 		if ($(myBest).length == 0) {
+// 			// COLOCA PRECO A VISTA A MOSTRA SE NAO TEM BEST PRICE
+// 			$('.drop .shelfOldPrice.txt-sz-22').addClass("precoCash");
+// 			$('.precoCash').css({
+// 				"display": "block",
+// 				"color": "#201e1e"
+// 			});
+// 			myDrop.css('margin-top', '-4px');
+// 			myNew.insertAfter(myInstallments);
+// 			myInstallments.css('border', 'none');
+// 			myInstallments.css('padding-left', '0');
+// 		}
+// 	});
+// }
 
 var body = $('body'),
 	htmlBody = $('html, body'),
@@ -187,7 +187,7 @@ $(function () {
 		var me = $(this);
 		var bestPrice = me.find('.shelfBestPrice');
 
-		priceStatus();
+		// priceStatus();
 
 		if ($(bestPrice).length == 0) {
 			me.find('.shelfOldPrice').removeClass('ln-through');
@@ -407,7 +407,7 @@ $(function () {
 		draggable: true,
 		touchMove: true,
 		autoplay: false,
-		slidesToShow: 2,
+		slidesToShow: 3,
 		mobileFirst: true,
 		slidesToScroll: 3,
 		prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 46.02 46.02"><path d="M14.757 46.02a5.688 5.688 0 0 1-3.929-1.569 5.705 5.705 0 0 1-.204-8.063L23.382 22.97 10.637 9.645a5.703 5.703 0 0 1 8.242-7.884l16.505 17.253a5.707 5.707 0 0 1 .013 7.872L18.893 44.247a5.699 5.699 0 0 1-4.136 1.773z" fill="#FFF"/></svg></button>',
@@ -683,7 +683,7 @@ $(function () {
 		$('.resultado-busca-filtro .orderBy').first().insertBefore('.navigation-tabs');
 		$('.resultado-busca-filtro .orderBy').last().hide();
 
-		priceStatus();
+		// priceStatus();
 	}
 
 	if ($('body.busca-vazia').length > 0) {
@@ -757,18 +757,14 @@ $(function () {
 	// CORRECOES 
 
 	// SE TEM 2 ITEMS NO SLIDER WIDTH AUTO
-	var hasTwoInTheSlider = $('.slick-track li');
-	$(hasTwoInTheSlider).each(function (e) {
-		if (e <= 2) {
-			$('.shelf.slider ul').slick('unslick');
-			$('shelfItem .buttons').css('paddin'')
-		}
-	});
+	// var hasTwoInTheSlider = $('.slick-track li');
+	// $(hasTwoInTheSlider).each(function (e) {
+	// 	if (e <= 2) {
+	// 		$(this).parents('ul').slick('unslick');
+	// 	}
+	// });
 
-	// MUDANDO POR:  / POR APENAS:
-	$(".shelfBestPrice").text(function () {
-		return $(this).text().replace("Por:", "Por Apenas: ");
-	});
+
 
 
 });

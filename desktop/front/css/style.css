@@ -272,7 +272,6 @@ footer .atendimento ul li,
 footer .compra-segura ul li,
 footer .metodos-pagamento h3,
 .btn-add-buy-button-asynchronous,
-.shelfItem .buy-button,
 #mini-cart .portal-totalizers-ref .cart-info .amount-items strong,
 .sta-cart-items .sta-cart-pdt-info p,
 .bread-crumb strong,
@@ -350,7 +349,6 @@ header .ambientes .ambiente,
 
 .txt-white,
 .btn-add-buy-button-asynchronous,
-.shelfItem .buy-button,
 .menuClose,
 .shelfTitle .mark,
 .sta-cart-resume a,
@@ -492,8 +490,7 @@ body.institucional main h3 {
 }
 
 .txt-sz-22,
-.btn-add-buy-button-asynchronous,
-.shelfItem .buy-button {
+.btn-add-buy-button-asynchronous {
 	font-size: 22px;
 	line-height: 26px;
 }
@@ -545,7 +542,6 @@ footer .compra-segura ul li {
 header .ambientes .ambiente,
 footer .copyright-notice,
 .btn-add-buy-button-asynchronous,
-.shelfItem .buy-button,
 .sta-cart-resume a {
 	text-align: center;
 }
@@ -570,7 +566,6 @@ header .menu-header .menu-item a,
 .txt-lo,
 header .ambientes .ambiente,
 .btn-add-buy-button-asynchronous,
-.shelfItem .buy-button,
 .sta-cart-resume a,
 .Newsletter .form-newsletter input#cl_email,
 .bread-crumb ul li a,
@@ -618,16 +613,9 @@ footer .atendimento ul li,
 footer .compra-segura ul li,
 footer .socialLinks li:hover,
 .btn-add-buy-button-asynchronous,
-.shelfItem .buy-button,
 .btn-plus-minus .cross .hor,
 .btn-plus-minus .cross .ver,
 .js-open-mobile-menu .menu-toggle span,
-.shelfItem,
-.shelfItem .buttons,
-.shelfItem .shelfInstallment ~ .shelfBestPrice,
-.shelfItem .skus-selection,
-.shelfItem .drop,
-.shelfItem:hover .shelfBestPrice,
 .search-multiple-navigator fieldset.filtro_cor label:hover .sr_box2,
 .search-single-navigator fieldset.filtro_cor label:hover .sr_box2,
 .search-multiple-navigator fieldset.filtro_cor label .sr_box2,
@@ -1138,7 +1126,6 @@ footer .atendimento ul li,
 footer .compra-segura ul li,
 footer .metodos-pagamento h3,
 .btn-add-buy-button-asynchronous,
-.shelfItem .buy-button,
 #mini-cart .portal-totalizers-ref .cart-info .amount-items strong,
 .sta-cart-items .sta-cart-pdt-info p,
 .bread-crumb strong,
@@ -1216,7 +1203,6 @@ header .ambientes .ambiente,
 
 .txt-white,
 .btn-add-buy-button-asynchronous,
-.shelfItem .buy-button,
 .menuClose,
 .shelfTitle .mark,
 .sta-cart-resume a,
@@ -1358,8 +1344,7 @@ body.institucional main h3 {
 }
 
 .txt-sz-22,
-.btn-add-buy-button-asynchronous,
-.shelfItem .buy-button {
+.btn-add-buy-button-asynchronous {
 	font-size: 22px;
 	line-height: 26px;
 }
@@ -1411,7 +1396,6 @@ footer .compra-segura ul li {
 header .ambientes .ambiente,
 footer .copyright-notice,
 .btn-add-buy-button-asynchronous,
-.shelfItem .buy-button,
 .sta-cart-resume a {
 	text-align: center;
 }
@@ -1436,7 +1420,6 @@ header .menu-header .menu-item a,
 .txt-lo,
 header .ambientes .ambiente,
 .btn-add-buy-button-asynchronous,
-.shelfItem .buy-button,
 .sta-cart-resume a,
 .Newsletter .form-newsletter input#cl_email,
 .bread-crumb ul li a,
@@ -1457,20 +1440,17 @@ footer .compra-segura ul li {
 .bg-white,
 header .ambientes .ambiente.active,
 header .ambientes .ambiente:hover,
-footer input[type="radio"] + .checkbox,
-.shelfItem {
+footer input[type="radio"] + .checkbox {
 	background-color: #ffffff;
 }
 
 .bg-green,
-.btn-add-buy-button-asynchronous,
-.shelfItem .buy-button {
+.btn-add-buy-button-asynchronous {
 	background-color: #00bb50;
 }
 
 .bg-darkGreen,
-.btn-add-buy-button-asynchronous:hover,
-.shelfItem .buy-button:hover {
+.btn-add-buy-button-asynchronous:hover {
 	background-color: #009A42;
 }
 
@@ -1991,8 +1971,7 @@ body.home footer .textoLegal {
 	display: block;
 }
 
-.btn-add-buy-button-asynchronous,
-.shelfItem .buy-button {
+.btn-add-buy-button-asynchronous {
 	border: 0;
 	outline: 0;
 	padding: 10px;
@@ -2218,289 +2197,6 @@ body.home footer .textoLegal {
 	background-image: linear-gradient(to bottom, #62c462, #51a351) !important;
 }
 
-/* ==========================================================================
-   Shelf
-   ========================================================================== */
-
-.prateleira {
-	margin: 0 auto;
-}
-
-.prateleira h2 {
-	display: none;
-}
-
-.prateleira ul,
-.prateleira .slick-track {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: stretch;
-	    align-items: stretch;
-	list-style-type: none;
-	-ms-flex-pack: start;
-	    justify-content: flex-start;
-}
-
-.prateleira ul:not(.slick-slider),
-.prateleira .slick-track:not(.slick-slider) {
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-}
-
-.prateleira li {
-	height: 100%;
-	padding: 4px;
-	position: relative;
-	overflow: hidden;
-}
-
-.prateleira li a {
-	text-decoration: none;
-}
-
-.prateleira .slick-slider {
-	min-height: 450px;
-	overflow-y: visible;
-}
-
-.prateleira .slick-list {
-	overflow: visible;
-	overflow-x: hidden;
-}
-
-.slider .prateleira {
-	height: 425px;
-}
-
-.shelfItem {
-	width: 100%;
-	padding: 7px;
-	height: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	margin: 0 auto;
-	max-width: 365px;
-	position: relative;
-	-ms-flex-align: center;
-	    align-items: center;
-	box-sizing: border-box;
-	-ms-flex-direction: column;
-	    flex-direction: column;
-	-ms-flex-pack: start;
-	    justify-content: flex-start;
-	border: 1px solid transparent;
-	border-bottom: 0;
-}
-
-.shelfItem .product-image img {
-	width: 100%;
-	height: auto;
-}
-
-.shelfItem .buttons {
-	display: -ms-flexbox;
-	display: flex;
-	padding-top: 10px;
-	pointer-events: none;
-	-ms-flex-align: stretch;
-	    align-items: stretch;
-	width: calc(100% + 14px);
-}
-
-.shelfItem .buttons .btn-favorite {
-	border: 0;
-	display: -ms-flexbox;
-	display: flex;
-}
-
-.shelfItem .buy-button {
-	-ms-flex: 1;
-	    flex: 1;
-}
-
-.shelfItem .shelfProductName,
-.shelfItem .skus-selection {
-	width: 100%;
-	height: 31px;
-	padding: 0;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-
-.shelfItem .shelfOldPrice:before {
-	color: #f68026;
-	content: 'De: ';
-	display: inline-block;
-	text-decoration: line-through;
-}
-
-.shelfItem .precoCash:before {
-	color: #201e1e;
-	content: 'Por Apenas: ';
-	display: inline-block;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-.shelfItem .shelfBestPrice,
-.shelfItem .shelfInstallment,
-.shelfItem .shelfOldPrice {
-	margin-top: 2px;
-	margin-bottom: 2px;
-	display: inline-block;
-}
-
-.shelfItem .shelfInstallment ~ .shelfBestPrice {
-	opacity: 0;
-}
-
-.shelfItem .select {
-	float: left;
-	color: #999999;
-	margin-right: 2%;
-	position: relative;
-	display: inline-block;
-}
-
-.shelfItem .select:after {
-	top: 50%;
-	right: 10px;
-	content: '>';
-	position: absolute;
-	pointer-events: none;
-	-ms-transform: scaleX(1.5) translateY(-50%) rotate(90deg);
-	    transform: scaleX(1.5) translateY(-50%) rotate(90deg);
-}
-
-.shelfItem .select select {
-	color: inherit;
-	cursor: pointer;
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-	        appearance: none;
-	border-radius: 5px;
-	border: 1px solid #999999;
-	padding: 5px 25px 5px 15px;
-}
-
-.shelfItem .select.Cor select {
-	width: 150px;
-}
-
-.shelfItem .select.Tamanho select {
-	width: 100px;
-}
-
-.shelfItem .price .shelfOldPrice {
-	padding-right: 5px;
-}
-
-.shelfItem .price .shelfOldPrice.ln-through {
-	text-decoration: line-through;
-}
-
-.shelfItem .price .shelfInstallment {
-	padding-left: 5px;
-	border-left: 2px solid #201e1e;
-}
-
-.shelfItem .wrapper-buy-button-asynchronous {
-	-ms-flex: 1;
-	    flex: 1;
-	height: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: stretch;
-	    align-items: stretch;
-}
-
-.shelfItem .wrapper-buy-button-asynchronous .add {
-	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: stretch;
-	    align-items: stretch;
-}
-
-.shelfItem .wrapper-buy-button-asynchronous a {
-	width: 100%;
-}
-
-.shelfItem .drop {
-	top: 100%;
-	left: -1px;
-	z-index: 99999;
-	background: #fff;
-	width: calc(100% + 2px);
-}
-
-.shelfItem:hover .shelfBestPrice {
-	opacity: 1;
-}
-
-body.home .shelfItem {
-	max-height: 520px;
-}
-
-body.dep-cat-bus .skus-selection {
-	display: none;
-}
-
-body.dep-cat-bus .box-item {
-	height: 410px;
-}
-
-body.dep-cat-bus .box-item:hover {
-	height: 328px;
-}
-
-body.dep-cat-bus .box-item:hover .drop {
-	padding-top: 0px;
-}
-
-body.produto .produtos-similares .shelf-title {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: center;
-	    align-items: center;
-	-ms-flex-wrap: nowrap;
-	    flex-wrap: nowrap;
-	margin-bottom: 90px;
-	-ms-flex-direction: column;
-	    flex-direction: column;
-}
-
-body.produto .produtos-similares .shelf-title svg {
-	width: 75px;
-	height: auto;
-}
-
-body.produto .produtos-similares h2 {
-	display: inline-block;
-	font-size: 30px;
-	line-height: 34px;
-	color: #333;
-	text-align: center;
-}
-
-body.produto .produtos-similares .prateleira {
-	height: 475px;
-	margin-bottom: 40px;
-}
-
-body.produto .produtos-similares .prateleira h2 {
-	display: none;
-}
-
-body.produto .shelfItem:hover {
-	max-height: auto;
-}
-
-body.produto .shelfItem .shelfProductName {
-	height: 60px;
-}
-
 .no-title h2 {
 	display: none;
 }
@@ -2520,9 +2216,35 @@ body.produto .shelfItem .shelfProductName {
 	text-align: center;
 }
 
+a {
+	text-decoration: none;
+}
+
+body.home .slider .prateleira {
+	height: 425px;
+}
+
+.resultItemsWrapper .prateleira ul {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.prateleira li {
+	padding: 4px;
+	height: 100%;
+	position: relative;
+	list-style: none;
+}
+
+.prateleira h2 {
+	display: none;
+}
+
 .product-shelf {
 	border: 1px solid transparent;
-	transition: all 300ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
 .product-shelf:hover {
@@ -2626,7 +2348,6 @@ body.produto .shelfItem .shelfProductName {
 }
 
 .product-shelf__actions {
-	height: 0;
 	margin-top: 10px;
 	-ms-transform: translateY(-2.8em);
 	    transform: translateY(-2.8em);
@@ -4575,20 +4296,8 @@ body.produto .item-dimension-Cor label.skuespec_Rosa {
    Home
    ========================================================================== */
 
-.slider .prateleira {
-	height: 375px;
-}
-
-.prateleira .slick-slider {
-	min-height: 340px;
-}
-
 body.home main .banners-top button.slick-next.slick-arrow {
 	right: 0;
-}
-
-body.home main .slider .prateleira {
-	height: 425px;
 }
 
 body.home main .box-banner {
@@ -4759,7 +4468,7 @@ body.home main .shelf-title {
 }
 
 body.home main .shelf-title svg {
-	width: 40px;
+	width: 75px;
 	height: auto;
 	display: inline-block;
 }
@@ -6038,6 +5747,11 @@ body.dep-cat-bus main .mainShelf .prateleira {
 	overflow: visible !important;
 }
 
+body.dep-cat-bus main .mainShelf .prateleira li {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
 body.dep-cat-bus .title-category,
 body.dep-cat-bus .didyoumean {
 	display: none;
@@ -6201,6 +5915,7 @@ body.dep-cat-bus .mainShelf .pager {
 	display: block;
 	overflow: hidden;
 	margin-top: 30px;
+	width: 100%;
 }
 
 body.dep-cat-bus .mainShelf .pager ul li {
@@ -8894,73 +8609,6 @@ footer .copyright-notice {
 	line-height: 20px;
 }
 
-.shelfItem .buttons {
-	top: 100%;
-	opacity: 0;
-	margin-left: -7px;
-	margin-top: -72px;
-}
-
-.shelfItem .skus-selection {
-	opacity: 0;
-}
-
-.shelfItem .drop {
-	padding: 0 7px;
-	position: absolute;
-	-ms-transform: translateY(-100%);
-	    transform: translateY(-100%);
-	border: 1px solid transparent;
-	border-top: 0;
-}
-
-.shelfItem:hover {
-	border-color: #888888;
-}
-
-.shelfItem:hover .skus-selection {
-	display: none;
-}
-
-.shelfItem:hover .drop {
-	border-color: #888888;
-	-ms-transform: translateY(0);
-	    transform: translateY(0);
-}
-
-.shelfItem:hover .buttons {
-	opacity: 1;
-	margin-top: 0;
-	pointer-events: all;
-}
-
-.slick-track .shelfItem {
-	padding-bottom: 0;
-	border-bottom: 1px solid transparent;
-}
-
-.slick-track .shelfItem .drop {
-	border: 0;
-	padding: 0;
-	-ms-transform: none;
-	    transform: none;
-	margin-top: -25px;
-	position: relative;
-}
-
-.slick-track .shelfItem .buttons {
-	margin-left: -5px;
-	width: calc(100% + 12px);
-}
-
-.slick-track .shelfItem:hover {
-	border-bottom: 1px solid #888;
-}
-
-.slick-track .shelfItem:hover .drop {
-	margin-top: 0;
-}
-
 .search-multiple-navigator,
 .search-single-navigator {
 	margin-top: 10px;
@@ -9149,10 +8797,6 @@ body.home main .destaque .banner-destaque {
 
 body.home main .destaque .slider-dois {
 	width: 55%;
-}
-
-body.home main .shelf-title svg {
-	width: 75px;
 }
 
 body.home main .shelf-title h2 {

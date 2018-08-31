@@ -12,9 +12,40 @@ $padding: 3px;
     transition: $property $duration $ease;
 }
 
+//GLOBAL FIXES TO PRATELEIRA CLASS
+a {
+    text-decoration: none;
+}
+
+// PRATELEIRA SECTION DA HOME ONDE FICA O SLICK
+body.home{
+    .slider .prateleira {
+        height: 425px;
+    }
+}
+// QUANDO TEM SMART RESEARCH 
+.resultItemsWrapper .prateleira ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// GLOBAL PRATELEIRA
+.prateleira {
+    li {
+        padding: 4px;
+        height: 100%;
+        position: relative;
+        list-style: none;;
+    }
+    h2 {
+        display: none;
+    }
+}
+
+//START SHELF STYLE
 .product-shelf {
     border: 1px solid transparent;
-    @include shift(all, 300ms, ease-in-out);
+    @include shift(all, 200ms, ease-in-out);
 
     &:hover {
         border: 1px solid $soft-grey;
@@ -73,7 +104,8 @@ $padding: 3px;
             opacity: 0;
             display: block;
             margin: 5px 0;
-            &:only-child{
+
+            &:only-child {
                 opacity: 1;
                 font-size: 1.2em;
                 color: $dark-grey;
@@ -115,7 +147,6 @@ $padding: 3px;
     }
 
     &__actions {
-        height: 0;
         margin-top: 10px;
         transform: translateY(-2.8em);
         opacity: 0;

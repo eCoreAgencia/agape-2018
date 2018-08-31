@@ -122,6 +122,8 @@ body.dep-cat-bus {
 				li {
 					@extend .col-xs-6,
 					.col-md-4;
+					padding-left: 4px;
+					padding-right: 4px;
 				}
 			}
 		}
@@ -297,6 +299,7 @@ body.dep-cat-bus {
 			display: block;
 			overflow: hidden;
 			margin-top: 30px;
+			width: 100%;
 			ul {
 				li {
 					@extend .txt-sz-20,
