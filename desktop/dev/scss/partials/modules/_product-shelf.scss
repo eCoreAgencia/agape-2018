@@ -35,8 +35,8 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
- // DIMINUI A FONTE DO PRICE INSTALLMENTE PARA CABER NA MSM LINHA EM DEPCATBUS ONDE LI = 33.333%
-      
+
+ // DIMINUI A FONTE DO PRICE INSTALLMENT PARA CABER NA MSM LINHA EM SMARTRESEARCH ONDE LI = 33.333%
 .resultItemsWrapper{
     .price--installment {
         font-size: 1.1em;
@@ -81,6 +81,7 @@ body{
         }
     }
 
+    //MUDAR IMAGEM ON HOVER
     &__media {
         padding: $padding;
         img{
