@@ -1718,10 +1718,18 @@ footer .footer-bottom .container {
     padding-top: 10px
 }
 
-@media (min-width:768px) {
+/*  MOBILE  */
+@media (max-width:768px) {
     #progrecao span {
-        font-size: 16px;
+        font-size: 11px;
         padding-top: 15px
+    }
+    .client-pre-email .client-pre-email-h small, .client-pre-email .client-pre-email-h span {
+        font-size: 26px !important;
+    }
+    .client-pre-email .emailInfo li {
+        font-size: 16px !important;
+        text-align: justify;
     }
 }
 
