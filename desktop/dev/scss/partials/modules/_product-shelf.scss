@@ -43,6 +43,7 @@ body{
     }
 }
 
+
 // GLOBAL PRATELEIRA
 .prateleira {
     li {
@@ -82,7 +83,55 @@ body{
 
     &__media {
         padding: $padding;
+        img{
+            opacity: 1;
+            @include shift(opacity, 800ms, ease-in-out);
+        }
+        img+img {
+            opacity: 0;
+            height: 0;
+            @include shift(opacity, 800ms, ease-in-out);
+        }
+        &:hover{
+            img:only-child{
+                opacity: 1;
+                display: block;
+                height: auto;
+            }
+            img {
+                opacity: 0;
+                height: 0;
+            }
+            img+img {
+                opacity: 1;
+                height: auto;
+            }
+        
+        }
+        // img+img {
+        //     display: none;
+        //     opacity: 0;
+        //     @include shift(opacity, 800ms, ease-in-out);
+        // }
+
     }
+    // &__media:hover {
+    //     img:only-child{
+    //         display: block;
+    //         opacity: 1;
+    //         @include shift(opacity, 800ms, ease-in-out);
+    //     }
+    //     img+img {
+    //         display: block;
+    //         opacity: 1;
+    //         @include shift(opacity, 800ms, ease-in-out);
+    //     }
+    //     img{
+    //         display: none;
+    //         opacity: 0;
+    //         @include shift(opacity, 800ms, ease-in-out);
+    //     }
+    // }
 
     &__name {
         font-size: 18px;

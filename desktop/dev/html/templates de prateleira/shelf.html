@@ -6,7 +6,8 @@
 	<input type="hidden" class="shelf-prod-id" id="shelf-pord-id-$product.Id" value="$product.Id" />
 	<div class="product-shelf__media">
 			<a class="product-image" title="$escapedName" href="$uri">
-				$product.GetImageTag(2)
+				$product.GetImageTag(2) 
+				$product.GetImageTag(2, 'Costa') 
 			</a>
 	</div>
 	<div class="product-shelf__info">
@@ -27,7 +28,7 @@
 									<span class="price--list price--list-line">
 											De:  $product.ListPrice
 									</span>
-									<span class="price--best">Por apenas: $product.BestPrice</span> 
+									<span class="price--best">Por apenas: <strong>$product.BestPrice</strong></span> 
 								#end		
 							#else
 								#if($product.NumbersOfInstallment > 1)
@@ -36,7 +37,7 @@
 											ou  $product.ListPrice à vista
 									</span>
 								#else
-									<span class="price--list">Por apenas: $product.ListPrice</span>
+									<span class="price--list">Por apenas: <strong>$product.ListPrice</strong></span>
 								#end	
 							#end
 						</div>

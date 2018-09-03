@@ -2278,6 +2278,33 @@ body.home .slider .prateleira {
 	padding: 3px;
 }
 
+.product-shelf__media img {
+	opacity: 1;
+	transition: opacity 800ms ease-in-out;
+}
+
+.product-shelf__media img + img {
+	opacity: 0;
+	height: 0;
+	transition: opacity 800ms ease-in-out;
+}
+
+.product-shelf__media:hover img:only-child {
+	opacity: 1;
+	display: block;
+	height: auto;
+}
+
+.product-shelf__media:hover img {
+	opacity: 0;
+	height: 0;
+}
+
+.product-shelf__media:hover img + img {
+	opacity: 1;
+	height: auto;
+}
+
 .product-shelf__name {
 	font-size: 18px;
 	padding: 5px 0;
