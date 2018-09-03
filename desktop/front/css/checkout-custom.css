@@ -1144,7 +1144,7 @@ footer {
         width: 90px;
         height: auto; }
   footer .logo-social {
-    text-aling: center; }
+    text-align: center; }
     @media (min-width: 1024px) {
       footer .logo-social {
         padding: 0; } }
@@ -1591,7 +1591,7 @@ footer .footer-bottom .container {
   height: 0;
   border: 0;
   padding: 0;
-  opaicity: 0;
+  opacity: 0;
   overflow: hidden; }
 
 .body-payment #payment-data .form-step {
