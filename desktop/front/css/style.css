@@ -306,7 +306,6 @@ body.institucional main a {
 .i-dropBtn:after,
 .menuClose,
 .btn-plus-minus,
-.shelfTitle .mark,
 #mini-cart .portal-totalizers-ref .cart-info .total-cart,
 .Newsletter .form-newsletter .submit,
 .clusterHighLight .flag,
@@ -350,7 +349,6 @@ header .ambientes .ambiente,
 .txt-white,
 .btn-add-buy-button-asynchronous,
 .menuClose,
-.shelfTitle .mark,
 .sta-cart-resume a,
 .Newsletter .form-newsletter .submit,
 .clusterHighLight .flag,
@@ -479,7 +477,6 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
-.shelfTitle .mark,
 .sta-cart-resume a,
 .clusterHighLight .flag,
 .discountHighLight .flag,
@@ -722,8 +719,7 @@ button {
 	font-size: inherit;
 }
 
-.bg-lightBlue,
-.shelfTitle {
+.bg-lightBlue {
 	background-color: #0099cc;
 }
 
@@ -1160,7 +1156,6 @@ body.institucional main a {
 .i-dropBtn:after,
 .menuClose,
 .btn-plus-minus,
-.shelfTitle .mark,
 #mini-cart .portal-totalizers-ref .cart-info .total-cart,
 .Newsletter .form-newsletter .submit,
 .clusterHighLight .flag,
@@ -1204,7 +1199,6 @@ header .ambientes .ambiente,
 .txt-white,
 .btn-add-buy-button-asynchronous,
 .menuClose,
-.shelfTitle .mark,
 .sta-cart-resume a,
 .Newsletter .form-newsletter .submit,
 .clusterHighLight .flag,
@@ -1333,7 +1327,6 @@ footer .institucional ul li,
 footer .dados ul li,
 footer .atendimento ul li,
 footer .compra-segura ul li,
-.shelfTitle .mark,
 .sta-cart-resume a,
 .clusterHighLight .flag,
 .discountHighLight .flag,
@@ -2197,27 +2190,37 @@ body.home footer .textoLegal {
 	background-image: linear-gradient(to bottom, #62c462, #51a351) !important;
 }
 
-.no-title h2 {
-	display: none;
-}
-
-.shelfTitle {
-	width: 100%;
+.shelf-title {
 	display: -ms-flexbox;
 	display: flex;
-	padding: 10px;
-	min-width: 320px;
-	margin: 20px 0px;
-	text-align: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	margin-bottom: 90px;
+	-ms-flex-direction: column;
+	    flex-direction: column;
 }
 
-.shelfTitle .mark {
-	width: 100%;
+.shelf-title svg {
+	width: 75px;
+	height: auto;
+}
+
+h2 {
+	display: inline-block;
+	font-size: 30px;
+	line-height: 34px;
+	color: #333 !important;
 	text-align: center;
 }
 
 a {
 	text-decoration: none;
+}
+
+li {
+	list-style: none;
 }
 
 body.home .slider .prateleira {
@@ -2231,11 +2234,14 @@ body.home .slider .prateleira {
 	    flex-wrap: wrap;
 }
 
+.resultItemsWrapper .price--installment {
+	font-size: 1.1em;
+}
+
 .prateleira li {
 	padding: 4px;
 	height: 100%;
 	position: relative;
-	list-style: none;
 }
 
 .prateleira h2 {
@@ -2297,7 +2303,7 @@ body.home .slider .prateleira {
 
 .product-shelf .price--installment {
 	margin: 5px 0;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #201e1e;
 }
 
@@ -2310,15 +2316,24 @@ body.home .slider .prateleira {
 
 .product-shelf .price--list:only-child {
 	opacity: 1;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #201e1e;
 }
 
-.product-shelf .price--list + .price--installment {
+.product-shelf .price--list + .price--installment,
+.product-shelf .price--list + .price--best {
 	margin-left: 5px;
 	padding-left: 5px;
 	margin-right: auto;
 	border-left: 1px solid #201e1e;
+	color: #201e1e;
+	font-size: 1.1em;
+}
+
+.product-shelf .price--list + .price--best {
+	font-size: 1.1em;
+	display: inline-block;
+	opacity: 1;
 }
 
 .product-shelf .price--list-line {
@@ -8184,16 +8199,6 @@ footer .metodos-pagamento h3 {
 	font-size: 28px;
 	line-height: 32px;
 	display: inline-block;
-}
-
-.shelfTitle {
-	width: 32%;
-	-ms-flex-pack: end;
-	    justify-content: flex-end;
-}
-
-.shelfTitle .mark {
-	width: 370px;
 }
 
 .search-box {
