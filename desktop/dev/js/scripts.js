@@ -555,7 +555,7 @@ $(function () {
 		$("#___rc-p-id").each(function (index) {
 			var id = $(this).attr("value");
 			var data = "/api/catalog_system/pub/products/search/?fq=productId:" + id + "";
-
+			$('<div class="lds-heart active"><div></div></div>').insertBefore('.thumbnails');
 			$.getJSON(data, function (data) {
 				$.each(data, function (key, val) {
 					var elements = val.items[0].images;

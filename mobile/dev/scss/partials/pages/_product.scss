@@ -244,6 +244,7 @@ body.produto .skuList label.error {
 }
 
 body.produto main span.error-picked {
+    @include font-size(1.4);
     font-weight: bold;
     margin-bottom: 20px;
     color: red !important;

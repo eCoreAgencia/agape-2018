@@ -727,6 +727,53 @@ body {
 	overflow-x: hidden;
 }
 
+.lds-heart {
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	opacity: 0.9;
+	display: none;
+	margin-left: -110%;
+	position: absolute;
+	background-color: #fff;
+	-ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+}
+
+.lds-heart.active {
+	display: inline-block;
+}
+
+.lds-heart div {
+	top: 86px;
+	left: 111px;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	background: #f68026;
+	animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 26px;
+	height: 26px;
+	background: #f68026;
+}
+
+.lds-heart div:before {
+	left: -17px;
+	border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+	top: -17px;
+	border-radius: 50% 50% 0 0;
+}
+
 /*
    Breakpoints
    ========================================================================== */
@@ -4609,6 +4656,36 @@ body.produto .bread-crumb {
 	padding: 15px 0;
 }
 
+body.produto .lds-heart {
+	left: 50%;
+	top: 180px;
+	width: 100%;
+	height: 100%;
+	margin-left: -70%;
+}
+
+body.produto .lds-heart div {
+	top: -100px;
+	left: 241px;
+}
+
+body.produto .lds-heart div,
+body.produto .lds-heart div:after,
+body.produto .lds-heart div:before {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: #fabf92;
+}
+
+body.produto .lds-heart div:after {
+	top: -57px;
+}
+
+body.produto .lds-heart div:before {
+	left: -57px;
+}
+
 body.produto .skuList li {
 	padding-right: 30px;
 }
@@ -4699,7 +4776,7 @@ body.produto .valor-de:after {
 	font-size: 22px;
 	color: #000;
 	content: '|';
-	margin-left: 10px;
+	margin-left: 5px;
 	vertical-align: top;
 	display: inline-block;
 }
@@ -4718,6 +4795,7 @@ body.produto #szb_size_chart {
 }
 
 body.produto .thumbnails {
+	position: relative;
 	margin-right: 10px;
 	vertical-align: top;
 	display: inline-block;
@@ -4748,8 +4826,8 @@ body.produto main .skuListPrice {
 body.produto main .sizebay-embedded-recommendation-button {
 	width: 370px;
 	border-radius: 0;
-	margin: 25px 16px 0 0 !important;
 	border: 1px solid #d2d2d2;
+	margin: 5px 16px 0 0 !important;
 	background-color: #1F358A !important;
 }
 
@@ -4820,8 +4898,8 @@ body.produto main .plugin-preco .descricao-preco {
 }
 
 body.produto main .plugin-preco .descricao-preco em {
+	margin-right: 5px;
 	font-style: normal;
-	margin-right: 10px;
 	vertical-align: text-top;
 	display: inline-block !important;
 }
@@ -4922,6 +5000,7 @@ body.produto main .plugin-preco .preco-a-vista strong:after {
 
 body.produto main .ProductImage {
 	padding: 0;
+	min-height: 560px;
 	position: relative;
 }
 
@@ -4992,8 +5071,9 @@ body.produto .skuList label.error {
 }
 
 body.produto main span.error-picked {
+	font-size: 14px;
+	margin-top: 5px;
 	font-weight: bold;
-	margin-bottom: 20px;
 	color: red !important;
 	display: none !important;
 	text-transform: uppercase;
@@ -5204,7 +5284,7 @@ body.produto .sku-section {
 }
 
 body.produto .buy-box {
-	padding-top: 20px;
+	padding-top: 10px;
 	border-top: 1px solid #d1d1d1;
 }
 
@@ -9286,6 +9366,34 @@ td.visible-xs {
 
 .hidden-xs {
 	display: none !important;
+}
+
+}
+
+@keyframes lds-heart {
+
+0% {
+	transform: scale(0.95);
+}
+
+5% {
+	transform: scale(1.1);
+}
+
+39% {
+	transform: scale(0.85);
+}
+
+45% {
+	transform: scale(1);
+}
+
+60% {
+	transform: scale(0.95);
+}
+
+100% {
+	transform: scale(0.9);
 }
 
 }
