@@ -1,0 +1,231 @@
+$dark-grey: #201e1e;
+$soft-grey: #666;
+$vivid-green: #00bb50;
+$white: #fff;
+$orange: #f68026;
+$padding: 3px;
+
+@mixin shift($property: all, $duration: .3s, $ease: linear) {
+    -webkit-transition: $property $duration $ease;
+    -moz-transition: $property $duration $ease;
+    -o-transition: $property $duration $ease;
+    transition: $property $duration $ease;
+}
+
+//GLOBAL FIXES TO PRATELEIRA CLASS
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+// PRATELEIRA SECTION DA HOME ONDE FICA O SLICK
+body{
+    &.home{
+        .slider .prateleira {
+            height: 425px;
+        }
+    }
+}
+
+// QUANDO TEM SMART RESEARCH ? MAKE A GRID
+.resultItemsWrapper .prateleira ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ // DIMINUI A FONTE DO PRICE INSTALLMENT PARA CABER NA MSM LINHA EM SMARTRESEARCH ONDE LI = 33.333%
+.resultItemsWrapper{
+    .price--installment {
+        font-size: 1.1em;
+    }
+}
+
+
+// GLOBAL PRATELEIRA
+.prateleira {
+    li {
+        padding: 4px;
+        height: 100%;
+        position: relative;
+    }
+    h2 {
+        display: none;
+    }
+}
+
+//START SHELF STYLE
+.product-shelf {
+    border: 1px solid transparent;
+    @include shift(all, 200ms, ease-in-out);
+
+    &:hover {
+        border: 1px solid $soft-grey;
+        @include shift(all, 100ms, ease-in-out);
+
+        .product-shelf__actions {
+            height: auto;
+            transform: translateY(0);
+            opacity: 1;
+            @include shift(all, 200ms, ease-in-out);
+        }
+
+        .price--list {
+            opacity: 1;
+        }
+
+        .price--best {
+            opacity: 1;
+        }
+    }
+
+    //MUDAR IMAGEM ON HOVER
+    &__media {
+        padding: $padding;
+        img{
+            opacity: 1;
+            @include shift(opacity, 800ms, ease-in-out);
+        }
+        img+img {
+            opacity: 0;
+            height: 0;
+            @include shift(opacity, 800ms, ease-in-out);
+        }
+        &:hover{
+            img:only-child{
+                opacity: 1;
+                display: block;
+                height: auto;
+            }
+            img {
+                opacity: 0;
+                height: 0;
+            }
+            img+img {
+                opacity: 1;
+                height: auto;
+            }
+        
+        }
+        // img+img {
+        //     display: none;
+        //     opacity: 0;
+        //     @include shift(opacity, 800ms, ease-in-out);
+        // }
+
+    }
+    // &__media:hover {
+    //     img:only-child{
+    //         display: block;
+    //         opacity: 1;
+    //         @include shift(opacity, 800ms, ease-in-out);
+    //     }
+    //     img+img {
+    //         display: block;
+    //         opacity: 1;
+    //         @include shift(opacity, 800ms, ease-in-out);
+    //     }
+    //     img{
+    //         display: none;
+    //         opacity: 0;
+    //         @include shift(opacity, 800ms, ease-in-out);
+    //     }
+    // }
+
+    &__name {
+        font-size: 18px;
+        padding: 5px 0;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: $padding;
+
+        a {
+            color: $soft-grey;
+        }
+    }
+
+    &__price {
+        margin: 5px 0;
+    }
+
+    .price {
+        padding: $padding;
+
+        &--installment {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: $dark-grey;
+        }
+
+        &--list {
+            color: $soft-grey;
+            opacity: 0;
+            display: block;
+            margin: 5px 0;
+
+            &:only-child {
+                opacity: 1;
+                font-size: 1.1em;
+                color: $dark-grey;
+            }
+
+            &+.price--installment, &+.price--best {
+                margin-left: 5px;
+                padding-left: 5px;
+                margin-right: auto;
+                border-left: 1px solid $dark-grey;
+                color: $dark-grey;
+                font-size: 1.1em;
+            }
+            &+.price--best{
+                font-size: 1.1em;
+                display: inline-block;
+                opacity: 1;
+            }
+        }
+
+        &--list-line {
+            text-decoration: line-through;
+            color: $orange;
+            opacity: 1;
+            margin: 5px 0;
+            display: inline-block;
+        }
+
+        &--best {
+            color: $soft-grey;
+            display: block;
+            margin: 5px 0;
+            opacity: 0;
+        }
+    }
+
+    &__buy {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        background-color: $vivid-green;
+        color: $white;
+        font-size: 1.3em;
+        text-transform: lowercase;
+    }
+
+    &__actions {
+        margin-top: 10px;
+        transform: translateY(-2.8em);
+        opacity: 0;
+        // @include transitionShelf(300ms);
+        @include shift(all, 300ms, ease-in-out);
+    }
+
+    .yv-review-quickreview {
+        height: 20px;
+        padding: 0 $padding;
+    }
+}

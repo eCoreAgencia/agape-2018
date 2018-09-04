@@ -110,7 +110,6 @@ body.dep-cat-bus {
 				margin-top: 0;
 				.price {
 					display: block;
-					padding-top: 10px;
 				}
 			}
 		}
@@ -123,6 +122,8 @@ body.dep-cat-bus {
 				li {
 					@extend .col-xs-6,
 					.col-md-4;
+					padding-left: 4px;
+					padding-right: 4px;
 				}
 			}
 		}
@@ -298,6 +299,7 @@ body.dep-cat-bus {
 			display: block;
 			overflow: hidden;
 			margin-top: 30px;
+			width: 100%;
 			ul {
 				li {
 					@extend .txt-sz-20,
@@ -404,7 +406,7 @@ body.busca-vazia {
 		text-align: center;
 		h2 {
 			@include font-size(2.2);
-			color: #18318e; 
+			color: #18318e;
 		}
 	}
 
@@ -472,11 +474,11 @@ body.busca-vazia {
 			opacity: .3;
 		}
 
-	} 
+	}
 	.shelfItem {
 		max-height: 520px;
 	}
-	
+
 }
 
 @media (max-width: 1024px) {
