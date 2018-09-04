@@ -125,26 +125,26 @@ function setFlags() {
 	});
 }
 
-function priceStatus() {
-	$('.prateleira .shelfItem').each(function () {
-		var me = $(this);
+// function priceStatus() {
+// 	$('.prateleira .shelfItem').each(function () {
+// 		var me = $(this);
 
-		var myDrop = $(this).find('.drop');
-		var myOldBox = $(this).find('.shelfOldPrice');
-		var myOld = $(this).find('.shelfOldPrice').text();
-		var myNew = $('<span class="txt-sz-16 shelfBestPrice txt-gray">ou ' + myOld + ' à vista</span>');
-		var myBest = $(this).find('.shelfBestPrice');
-		var myInstallments = $(this).find('.shelfInstallment');
+// 		var myDrop = $(this).find('.drop');
+// 		var myOldBox = $(this).find('.shelfOldPrice');
+// 		var myOld = $(this).find('.shelfOldPrice').text();
+// 		var myNew = $('<span class="txt-sz-16 shelfBestPrice txt-gray">ou ' + myOld + ' à vista</span>');
+// 		var myBest = $(this).find('.shelfBestPrice');
+// 		var myInstallments = $(this).find('.shelfInstallment');
 
-		if ($(myBest).length == 0) {
-			myOldBox.hide();
-			myDrop.css('margin-top', '-4px');
-			myNew.insertAfter(myInstallments);
-			myInstallments.css('border', 'none');
-			myInstallments.css('padding-left', '0');
-		}
-	});
-}
+// 		if ($(myBest).length == 0) {
+// 			myOldBox.hide();
+// 			myDrop.css('margin-top', '-4px');
+// 			myNew.insertAfter(myInstallments);
+// 			myInstallments.css('border', 'none');
+// 			myInstallments.css('padding-left', '0');
+// 		}
+// 	});
+// }
 
 var body = $('body'),
 	htmlBody = $('html, body'),
@@ -197,7 +197,7 @@ $(function () {
 	$('.prateleira li').each(function (event) {
 		var me = $(this);
 		var bestPrice = me.find('.shelfBestPrice');
-		priceStatus();
+		// priceStatus();
 		if ($(bestPrice).length == 0) {
 			me.find('.shelfOldPrice').removeClass('ln-through');
 		}
@@ -770,7 +770,7 @@ $(function () {
 		}
 		// Adicionando classe nos elementos do Ordernar Por quando ativos
 
-		priceStatus();
+		// priceStatus();
 
 		var showFilters = __element({
 			type: 'button',

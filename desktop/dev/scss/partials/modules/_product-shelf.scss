@@ -107,32 +107,8 @@ body{
                 opacity: 1;
                 height: auto;
             }
-        
         }
-        // img+img {
-        //     display: none;
-        //     opacity: 0;
-        //     @include shift(opacity, 800ms, ease-in-out);
-        // }
-
     }
-    // &__media:hover {
-    //     img:only-child{
-    //         display: block;
-    //         opacity: 1;
-    //         @include shift(opacity, 800ms, ease-in-out);
-    //     }
-    //     img+img {
-    //         display: block;
-    //         opacity: 1;
-    //         @include shift(opacity, 800ms, ease-in-out);
-    //     }
-    //     img{
-    //         display: none;
-    //         opacity: 0;
-    //         @include shift(opacity, 800ms, ease-in-out);
-    //     }
-    // }
 
     &__name {
         font-size: 18px;
