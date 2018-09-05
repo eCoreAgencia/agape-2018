@@ -6752,7 +6752,9 @@ body.orders h2.page-title {
    ========================================================================== */
 
 body.institucional.entrega main .container,
-body.institucional.pagamento main .container {
+body.institucional.pagamento main .container,
+body.institucional.como-comprar main .container,
+body.institucional.politica-de-troca main .container {
 	margin: 20px auto 50px auto;
 	display: -ms-grid;
 	display: grid;
@@ -6765,29 +6767,39 @@ body.institucional.pagamento main .container {
 }
 
 body.institucional.entrega .title-page,
-body.institucional.pagamento .title-page {
+body.institucional.pagamento .title-page,
+body.institucional.como-comprar .title-page,
+body.institucional.politica-de-troca .title-page {
 	grid-area: title;
 }
 
 body.institucional.entrega .main-institucional__sidebar,
-body.institucional.pagamento .main-institucional__sidebar {
+body.institucional.pagamento .main-institucional__sidebar,
+body.institucional.como-comprar .main-institucional__sidebar,
+body.institucional.politica-de-troca .main-institucional__sidebar {
 	grid-area: aside;
 	width: auto;
 	margin-top: 0;
 }
 
 body.institucional.entrega .main-institucional__sidebar nav,
-body.institucional.pagamento .main-institucional__sidebar nav {
+body.institucional.pagamento .main-institucional__sidebar nav,
+body.institucional.como-comprar .main-institucional__sidebar nav,
+body.institucional.politica-de-troca .main-institucional__sidebar nav {
 	margin-top: 0;
 }
 
 body.institucional.entrega .main-institucional__content,
-body.institucional.pagamento .main-institucional__content {
+body.institucional.pagamento .main-institucional__content,
+body.institucional.como-comprar .main-institucional__content,
+body.institucional.politica-de-troca .main-institucional__content {
 	grid-area: content;
 }
 
 body.institucional.entrega .main-institucional__content ul,
-body.institucional.pagamento .main-institucional__content ul {
+body.institucional.pagamento .main-institucional__content ul,
+body.institucional.como-comprar .main-institucional__content ul,
+body.institucional.politica-de-troca .main-institucional__content ul {
 	margin-top: 0;
 }
 

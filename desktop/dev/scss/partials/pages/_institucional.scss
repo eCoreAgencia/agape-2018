@@ -4,7 +4,9 @@
 
 body.institucional {
 	&.entrega,
-	&.pagamento {
+	&.pagamento,
+	&.como-comprar,
+	&.politica-de-troca {
 		main {
 			.container {
 				margin: 20px auto 50px auto;
