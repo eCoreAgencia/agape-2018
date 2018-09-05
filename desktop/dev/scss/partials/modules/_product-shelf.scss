@@ -62,8 +62,10 @@ body{
 .product-shelf {
     border: 1px solid transparent;
     @include shift(all, 200ms, ease-in-out);
+    background: transparent;
 
     &:hover {
+        background: #fff;
         border: 1px solid $soft-grey;
         @include shift(all, 100ms, ease-in-out);
 

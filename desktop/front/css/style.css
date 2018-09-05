@@ -2255,9 +2255,11 @@ body.home .product-image {
 .product-shelf {
 	border: 1px solid transparent;
 	transition: all 200ms ease-in-out;
+	background: transparent;
 }
 
 .product-shelf:hover {
+	background: #fff;
 	border: 1px solid #666;
 	transition: all 100ms ease-in-out;
 }
