@@ -4347,7 +4347,7 @@ body.produto .item-dimension-Cor label.skuespec_Rosa {
    ========================================================================== */
 
 body.home main .banners-top button.slick-next.slick-arrow {
-	right: 0;
+	right: 15px;
 }
 
 body.home main .box-banner {
