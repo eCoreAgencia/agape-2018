@@ -2227,6 +2227,10 @@ body.home .slider .prateleira {
 	height: 425px;
 }
 
+body.home .product-image {
+	min-height: 340px;
+}
+
 .resultItemsWrapper .prateleira ul {
 	display: -ms-flexbox;
 	display: flex;
@@ -2274,35 +2278,37 @@ body.home .slider .prateleira {
 	opacity: 1;
 }
 
+.product-shelf .product-image {
+	display: block;
+	position: relative;
+	min-height: 302px;
+}
+
 .product-shelf__media {
 	padding: 3px;
 }
 
 .product-shelf__media img {
 	opacity: 1;
+	position: absolute;
 	transition: opacity 800ms ease-in-out;
 }
 
 .product-shelf__media img + img {
 	opacity: 0;
-	height: 0;
 	transition: opacity 800ms ease-in-out;
 }
 
 .product-shelf__media:hover img:only-child {
 	opacity: 1;
-	display: block;
-	height: auto;
 }
 
 .product-shelf__media:hover img {
 	opacity: 0;
-	height: 0;
 }
 
 .product-shelf__media:hover img + img {
 	opacity: 1;
-	height: auto;
 }
 
 .product-shelf__name {
@@ -5953,10 +5959,10 @@ body.dep-cat-bus .mainShelf .sub:last-child {
 }
 
 body.dep-cat-bus .mainShelf .pager {
-	padding: 6% 0;
+	padding: 0 0 6% 0;
 	display: block;
 	overflow: hidden;
-	margin-top: 30px;
+	margin-top: 20px;
 	width: 100%;
 }
 
