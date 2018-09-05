@@ -1,74 +1,86 @@
-/* ==========================================================================
-   Shelf
-   ========================================================================== */
+// /* ==========================================================================
+//    Shelf
+//    ========================================================================== */
 
-.prateleira {
-	width: 100%;
-	float: left;
-	margin: 0 auto;
+// .prateleira {
+// 	width: 100%;
+// 	float: left;
+// 	margin: 0 auto;
 
-	h2 {display: none;}
+// 	h2 {display: none;}
 
-	ul,
-	.slick-track{
-    	align-items: stretch;
-		list-style-type: none;
-    	justify-content: flex-start;
+// 	ul,
+// 	.slick-track{
+//     	align-items: stretch;
+// 		list-style-type: none;
+//     	justify-content: flex-start;
 
-    	&:not(.slick-slider){
-    		flex-wrap: wrap;
-    	}
-	}
+//     	&:not(.slick-slider){
+//     		flex-wrap: wrap;
+//     	}
+// 	}
 
-	li {
-		padding: 4px;
-		position: relative;
-		
-		a {
-			text-decoration: none;
-		}
+// 	li {
+// 		padding: 4px;
+// 		position: relative;
 
-		.shelfBestPrice {
-			display: block;
-		}
+// 		a {
+// 			text-decoration: none;
+// 		}
 
-		.shelfProductName {
-			@include font-size(1.5);
-			height: 45px;
-			display: block;
-			overflow: hidden;
-			margin-bottom: 10px;
-			font-weight: lighter;
-			text-overflow: ellipsis;
-		}
+// 		.shelfBestPrice {
+// 			display: block;
+// 		}
 
-		.price {
-			display: block;
+// 		.shelfProductName {
+// 			@include font-size(1.5);
+// 			height: 45px;
+// 			display: block;
+// 			overflow: hidden;
+// 			margin-bottom: 10px;
+// 			font-weight: lighter;
+// 			text-overflow: ellipsis;
+// 		}
 
-			.shelfOldPrice {
-				@include font-size(1.1);
-				margin: 0;
-				bottom: 110px;
-				line-height: 0;
-				position: absolute;
+// 		.price {
+// 			display: block;
 
-				&.ln-through {
-					text-decoration: line-through;
-				}
+// 			.shelfOldPrice {
+// 				@include font-size(1.1);
+// 				margin: 0;
+// 				line-height: 0;
+// 				position: absolute;
 
-				&:before {
-					@include font-size(1.1);
-					color: #f68026;
-					content: 'De: ';
-					margin-right: 5px;
-					display: inline-block;
-					vertical-align: middle;
-				}
-			}
+// 				&.ln-through {
+// 					text-decoration: line-through;
+// 				}
 
-			.shelfInstallment {
-				@include font-size(1.4);
-			}
-		}
-	}
-}
+// 				&:before {
+// 					@include font-size(1.1);
+// 					color: #f68026;
+// 					content: 'De: ';
+// 					margin-right: 5px;
+// 					display: inline-block;
+// 					vertical-align: middle;
+// 				}
+// 			}
+// 			.precoCash {
+// 				font-size: 14px;
+// 				&:before {
+// 					color: #201e1e;
+// 					content: 'Por Apenas: ';
+// 					display: inline-block;
+// 					text-decoration: none;
+// 					font-size: 14px;
+// 				}
+// 			}
+// 			.shelfInstallment {
+// 				@include font-size(1.4);
+// 			}
+
+// 		}
+// 	}
+// }
+// div#ResultItems_52636434{
+// 	padding-bottom: 40px;
+// }

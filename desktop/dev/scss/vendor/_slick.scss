@@ -107,6 +107,7 @@ $slick-opacity-not-active: .25 !default;
   left: 0;
   top: 0;
   display: block;
+  overflow: hidden;
 
   &:before,
   &:after {
@@ -126,7 +127,7 @@ $slick-opacity-not-active: .25 !default;
 
   [dir="rtl"] & { float: right; }
 
-  img { 
+  img {
     display: block;
     width: 100%;
     height: auto;
@@ -218,7 +219,7 @@ $slick-opacity-not-active: .25 !default;
       background-color: #ccc;
 
       &:hover,
-      &:focus { 
+      &:focus {
         background-color: #fff;
       }
     }
