@@ -112,6 +112,7 @@ body.institucional {
 			}
 		}
 		.form-area {
+	
 			h2.title-page {
 				color: #f68026;
 				text-align: center;
@@ -141,7 +142,20 @@ body.institucional {
 			color: #f68026;
 			text-align: center;
 		}
+
+		// IMPLEMENTING GRID CSS3 SYSTEM
 		#co_form {
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: .2fr .2fr .2fr 3fr;
+			grid-template-areas:
+				   "name name email email"
+					"tel  dep subject subject"
+					"msg msg msg msg  "
+					". . . submit  ";
+			background-color: #fff;
+			color: #444;
 			margin-top: 20px;
 			overflow: hidden;
 			margin-bottom: 20px;
@@ -151,29 +165,42 @@ body.institucional {
 				margin-bottom: 10px;
 			}
 			.form-field {
-				width: 48%;
-				margin-right: 15px;
-				margin-bottom: 10px;
-				vertical-align: top;
 				display: inline-block;
 				&.cl_first_name {
-					margin-right: 23px;
+					grid-area: name;
 				}
+				&.cl_home_phone {
+					grid-area: tel;
+				}
+				&.co_type {
+					grid-area: dep;
+				}
+				&.co_description {
+					grid-area: msg;
+				}
+				&.cl_assunto {
+					grid-area: subject;
+				}
+				&.cl_email {
+					grid-area: email;
+				}
+				&.submit{
+					grid-area: submit;
+				}
+
 				&.cl_email,
 				&.cl_assunto {
 					margin-right: 0;
 				}
-				&.cl_email {
-					width: 50%;
-				}
-				&.co_type,
-				&.cl_assunto,
-				&.cl_home_phone {
-					width: 32.5%;
-				}
-				&.co_description {
-					width: 100%;
-				}
+			
+				// &.co_type,
+				// &.cl_assunto,
+				// &.cl_home_phone {
+				// 	width: 32.5%;
+				// }
+				// &.co_description {
+				// 	width: 100%;
+				// }
 				label {
 					display: block;
 					margin-bottom: 10px;

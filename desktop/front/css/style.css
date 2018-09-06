@@ -6950,6 +6950,16 @@ body.institucional.fale-conosco .alert {
 }
 
 body.institucional.fale-conosco #co_form {
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 10px;
+	-ms-grid-columns: (1fr)[4];
+	    grid-template-columns: repeat(4, 1fr);
+	-ms-grid-rows: .2fr .2fr .2fr 3fr;
+	    grid-template-rows: .2fr .2fr .2fr 3fr;
+	grid-template-areas: "name name email email" "tel  dep subject subject" "msg msg msg msg  " ". . . submit  ";
+	background-color: #fff;
+	color: #444;
 	margin-top: 20px;
 	overflow: hidden;
 	margin-bottom: 20px;
@@ -6962,34 +6972,40 @@ body.institucional.fale-conosco #co_form span.error-msg {
 }
 
 body.institucional.fale-conosco #co_form .form-field {
-	width: 48%;
-	margin-right: 15px;
-	margin-bottom: 10px;
-	vertical-align: top;
 	display: inline-block;
 }
 
 body.institucional.fale-conosco #co_form .form-field.cl_first_name {
-	margin-right: 23px;
+	grid-area: name;
+}
+
+body.institucional.fale-conosco #co_form .form-field.cl_home_phone {
+	grid-area: tel;
+}
+
+body.institucional.fale-conosco #co_form .form-field.co_type {
+	grid-area: dep;
+}
+
+body.institucional.fale-conosco #co_form .form-field.co_description {
+	grid-area: msg;
+}
+
+body.institucional.fale-conosco #co_form .form-field.cl_assunto {
+	grid-area: subject;
+}
+
+body.institucional.fale-conosco #co_form .form-field.cl_email {
+	grid-area: email;
+}
+
+body.institucional.fale-conosco #co_form .form-field.submit {
+	grid-area: submit;
 }
 
 body.institucional.fale-conosco #co_form .form-field.cl_email,
 body.institucional.fale-conosco #co_form .form-field.cl_assunto {
 	margin-right: 0;
-}
-
-body.institucional.fale-conosco #co_form .form-field.cl_email {
-	width: 50%;
-}
-
-body.institucional.fale-conosco #co_form .form-field.co_type,
-body.institucional.fale-conosco #co_form .form-field.cl_assunto,
-body.institucional.fale-conosco #co_form .form-field.cl_home_phone {
-	width: 32.5%;
-}
-
-body.institucional.fale-conosco #co_form .form-field.co_description {
-	width: 100%;
 }
 
 body.institucional.fale-conosco #co_form .form-field label {
