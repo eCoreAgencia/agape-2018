@@ -198,7 +198,7 @@ function FormCreate(storeName, dataEntity, htmlElementId, messageLoading, messag
 	htmlContent += '<div class="form-field string required co_type">';
 	htmlContent += 		'<label for="co_type">Departamento</label>';
 	htmlContent += 		'<select name="co_type" id="co_type">'
-	htmlContent += 			'<option value="">-</option>'
+	htmlContent += 			'<option value="">Departamento</option>'
 	htmlContent += 			'<option value="Dúvidas de entrega">Dúvidas de entrega</option>'
 	htmlContent +=          '<option value="Dúvidas sobre produtos">Dúvidas sobre produtos</option>'
 	htmlContent +=          '<option value="Dúvidas sobre o site">Dúvidas sobre o site</option>'
@@ -223,3 +223,21 @@ function FormCreate(storeName, dataEntity, htmlElementId, messageLoading, messag
 
 	$("#"+htmlElementId).html(htmlContent);
 }
+$(document).ready(function(){ 
+    $("input#cl_first_name").attr("placeholder", "Nome");
+    $("input#cl_email").attr("placeholder", "E-mail");
+    $("input#cl_home_phone").attr("placeholder", "Telefone");
+    $("select#co_type").attr("placeholder", "Departamento");
+    $("input#cl_assunto").attr("placeholder", "Assunto");
+    $("textarea#co_description").attr("placeholder", "Escreva aqui sua mensagem");
+  });
+
+
+$(document).ready(function(){ 
+  $('form').find("label").each(function(ev)
+  {
+      if(!$(this).val()) { 
+     $(this).remove();
+  }
+  });
+});
