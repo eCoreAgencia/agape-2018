@@ -6949,14 +6949,19 @@ body.institucional.fale-conosco .alert {
 	text-align: center;
 }
 
+body.institucional.fale-conosco #contactForm {
+	width: 75%;
+	margin: 0 auto;
+}
+
 body.institucional.fale-conosco #co_form {
 	display: -ms-grid;
 	display: grid;
 	grid-gap: 10px;
 	-ms-grid-columns: (1fr)[4];
 	    grid-template-columns: repeat(4, 1fr);
-	-ms-grid-rows: .2fr .2fr .2fr 3fr;
-	    grid-template-rows: .2fr .2fr .2fr 3fr;
+	-ms-grid-rows: .2fr .2fr 3fr .3fr;
+	    grid-template-rows: .2fr .2fr 3fr .3fr;
 	grid-template-areas: "name name email email" "tel  dep subject subject" "msg msg msg msg  " ". . . submit  ";
 	background-color: #fff;
 	color: #444;

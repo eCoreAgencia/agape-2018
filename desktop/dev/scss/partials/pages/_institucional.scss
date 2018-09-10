@@ -144,11 +144,15 @@ body.institucional {
 		}
 
 		// IMPLEMENTING GRID CSS3 SYSTEM
+		#contactForm {
+			width: 75%;
+			margin: 0 auto;
+		}
 		#co_form {
 			display: grid;
 			grid-gap: 10px;
 			grid-template-columns: repeat(4, 1fr);
-			grid-template-rows: .2fr .2fr .2fr 3fr;
+			grid-template-rows: .2fr .2fr 3fr .3fr;
 			grid-template-areas:
 				   "name name email email"
 					"tel  dep subject subject"
