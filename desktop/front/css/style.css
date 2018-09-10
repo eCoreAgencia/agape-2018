@@ -2278,6 +2278,10 @@ body.home .product-image {
 	min-height: 340px;
 }
 
+body.produto .product-image {
+	min-height: 340px;
+}
+
 .resultItemsWrapper .prateleira ul {
 	display: -ms-flexbox;
 	display: flex;
