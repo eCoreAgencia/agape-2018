@@ -186,6 +186,7 @@ body.institucional {
 				}
 				&.submit{
 					grid-area: submit;
+					justify-self: end;
 				}
 
 				&.cl_email,

@@ -7001,6 +7001,7 @@ body.institucional.fale-conosco #co_form .form-field.cl_email {
 
 body.institucional.fale-conosco #co_form .form-field.submit {
 	grid-area: submit;
+	justify-self: end;
 }
 
 body.institucional.fale-conosco #co_form .form-field.cl_email,
