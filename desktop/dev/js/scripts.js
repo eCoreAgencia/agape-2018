@@ -238,12 +238,12 @@ $(function () {
 
 			if ($('ul.Tamanho label.checked').length == 0) {
 				$('body.produto ul.Tamanho .skuList label').addClass('error');
-				$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.specification');
+				$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.item-dimension-Tamanho');
 			}
 
 			if ($('ul.Cor label.checked').length == 0) {
 				$('body.produto ul.Cor .skuList label').addClass('error');
-				$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
+				$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.item-dimension-Cor');
 			}
 
 			document.querySelector('#id3').scrollIntoView({
@@ -251,16 +251,17 @@ $(function () {
 			});
 		} else {
 			var myBtLink = $('.buy-box .buy-button').attr('href');
-			$('#mini-cart').simulateClick('click');
-
+			$('.buy-box .add-to-cart').addClass('loading');
 			$.get(myBtLink, function (data) {
 				vtexjs.checkout.getOrderForm().done(function (orderForm) {
 					console.log(orderForm);
+					$('#mini-cart').simulateClick('click');
 					$("body").vtexcart({
 						wrapper: $(".container"),
 						effect: "overlay",
 						cartButton: $(".sta-cart")
 					})
+					$('.buy-box .add-to-cart').removeClass('loading');
 				});
 			});
 		}
@@ -275,12 +276,12 @@ $(function () {
 		if ($(myBt).attr('href') == "javascript:alert('Por favor, selecione o modelo desejado.');") {
 			if ($('ul.Tamanho label.checked').length == 0) {
 				$('body.produto ul.Tamanho .skuList label').addClass('error');
-				$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.specification');
+				$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.item-dimension-Tamanho');
 			}
 
 			if ($('ul.Cor label.checked').length == 0) {
 				$('body.produto ul.Cor .skuList label').addClass('error');
-				$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
+				$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.item-dimension-Cor');
 			}
 
 			document.querySelector('#id3').scrollIntoView({
@@ -555,7 +556,7 @@ $(function () {
 		$("#___rc-p-id").each(function (index) {
 			var id = $(this).attr("value");
 			var data = "/api/catalog_system/pub/products/search/?fq=productId:" + id + "";
-
+			$('<div class="lds-heart active"><div></div></div>').insertBefore('.thumbnails');
 			$.getJSON(data, function (data) {
 				$.each(data, function (key, val) {
 					var elements = val.items[0].images;

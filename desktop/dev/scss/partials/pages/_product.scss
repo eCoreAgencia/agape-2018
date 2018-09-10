@@ -5,6 +5,57 @@ body.produto .bread-crumb {
 }
 
 body.produto {
+
+    main {
+        .product-box {
+            .ProductInfo {
+                .sizebay-embedded-recommendation-button > .sizebay_box {
+                    background-color: #223787 !important;
+                }
+
+                .sizebay_icon-loading {
+                    display: none !important;
+                }
+            
+                .sizebay-embedded-recommendation-button.state-loading .sizebay_box,
+                .sizebay-embedded-recommendation-button.state-initial-loading .sizebay_box {
+                    border: none !important;
+                    background-color: #223787 !important;
+                }
+            }
+        }
+    }
+
+    .lds-heart {
+        left: 50%;
+        top: 180px;
+        width: 100%;
+        height: 100%;
+        margin-left: -70%;
+    }
+
+    .lds-heart div {
+        top: -100px;
+        left: 241px;
+    }
+
+    .lds-heart div,
+    .lds-heart div:after,
+    .lds-heart div:before {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-color: #fabf92;
+    }
+
+    .lds-heart div:after {
+        top: -57px;
+    }
+
+    .lds-heart div:before {
+        left: -57px;
+    }
+
     .skuList {
         li {
             padding-right: 30px;
@@ -106,7 +157,7 @@ body.produto {
             @include font-size(2.2);
             color: #000;
             content: '|';
-            margin-left: 10px;
+            margin-left: 5px;
             vertical-align: top;
             display: inline-block;
         }
@@ -126,6 +177,7 @@ body.produto {
     }
 
     .thumbnails {
+        position: relative;
         margin-right: 10px;
         vertical-align: top;
         display: inline-block;
@@ -157,8 +209,8 @@ body.produto main .skuListPrice {
 body.produto main .sizebay-embedded-recommendation-button {
     width: 370px;
     border-radius: 0;
-    margin: 25px 16px 0 0 !important;
     border: 1px solid #d2d2d2;
+    margin: 5px 16px 0 0 !important;
     background-color: #1F358A!important
 }
 
@@ -229,8 +281,8 @@ body.produto main .plugin-preco .descricao-preco {
 }
 
 body.produto main .plugin-preco .descricao-preco em {
+    margin-right: 5px;
     font-style: normal;
-    margin-right: 10px;
     vertical-align: text-top;
     display: inline-block!important
 }
@@ -331,7 +383,8 @@ body.produto main .plugin-preco .preco-a-vista strong:after {
 
 body.produto main .ProductImage {
     padding: 0;
-    position: relative
+    min-height: 560px;
+    position: relative;
 }
 
 body.produto main .buy-box .buy-area {
@@ -401,8 +454,9 @@ body.produto .skuList label.error {
 }
 
 body.produto main span.error-picked {
+    @include font-size(1.4);
+    margin-top: 5px;
     font-weight: bold;
-    margin-bottom: 20px;
     color: red !important;
     display: none !important;
     text-transform: uppercase;
@@ -613,7 +667,7 @@ body.produto .sku-section {
 }
 
 body.produto .buy-box {
-    padding-top: 20px;
+    padding-top: 10px;
     border-top: 1px solid #d1d1d1
 }
 
@@ -648,7 +702,32 @@ body.produto .buy-box button.add-to-cart {
     cursor: pointer;
     padding: 0 28px;
     line-height: 30px;
-    background-color: #00bb4f
+    position: relative;
+    background-color: #00bb4f;
+
+    &.loading {
+        &:after {
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 60px;
+            opacity: 0.7;
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            background-color: #fff;
+            background-size: 80px 80px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(/arquivos/loading-add-cart.gif);
+        }
+    }
+}
+
+body.produto .sizebay-embedded-recommendation-button.state-initial-loading {
+    border: none !important;
+    background: #223787!important;
 }
 
 body.produto .buy-box .buy-area .bt-comprar:hover {

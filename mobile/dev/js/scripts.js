@@ -257,13 +257,13 @@ $(function () {
 			if ($('ul.Tamanho label.checked').length == 0) {
 				$('body.produto ul.Tamanho .skuList label').addClass('error');
 				$('ul.Tamanho .error-picked').remove();
-				$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.specification');
+				$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.item-dimension-Tamanho');
 			}
 
 			if ($('ul.Cor label.checked').length == 0) {
 				$('body.produto ul.Cor .skuList label').addClass('error');
 				$('ul.Cor .error-picked').remove();
-				$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
+				$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.item-dimension-Cor');
 			}
 
 			document.querySelector('#id3').scrollIntoView({
