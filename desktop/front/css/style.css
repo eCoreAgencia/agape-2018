@@ -4656,6 +4656,20 @@ body.produto .bread-crumb {
 	padding: 15px 0;
 }
 
+body.produto main .product-box .ProductInfo .sizebay-embedded-recommendation-button > .sizebay_box {
+	background-color: #223787 !important;
+}
+
+body.produto main .product-box .ProductInfo .sizebay_icon-loading {
+	display: none !important;
+}
+
+body.produto main .product-box .ProductInfo .sizebay-embedded-recommendation-button.state-loading .sizebay_box,
+body.produto main .product-box .ProductInfo .sizebay-embedded-recommendation-button.state-initial-loading .sizebay_box {
+	border: none !important;
+	background-color: #223787 !important;
+}
+
 body.produto .lds-heart {
 	left: 50%;
 	top: 180px;
@@ -5317,7 +5331,30 @@ body.produto .buy-box button.add-to-cart {
 	cursor: pointer;
 	padding: 0 28px;
 	line-height: 30px;
+	position: relative;
 	background-color: #00bb4f;
+}
+
+body.produto .buy-box button.add-to-cart.loading:after {
+	top: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 60px;
+	opacity: 0.7;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	background-color: #fff;
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(/arquivos/loading-add-cart.gif);
+}
+
+body.produto .sizebay-embedded-recommendation-button.state-initial-loading {
+	border: none !important;
+	background: #223787 !important;
 }
 
 body.produto .buy-box .buy-area .bt-comprar:hover {
