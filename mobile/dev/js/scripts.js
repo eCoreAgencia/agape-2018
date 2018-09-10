@@ -125,26 +125,26 @@ function setFlags() {
 	});
 }
 
-function priceStatus() {
-	$('.prateleira .shelfItem').each(function () {
-		var me = $(this);
+// function priceStatus() {
+// 	$('.prateleira .shelfItem').each(function () {
+// 		var me = $(this);
 
-		var myDrop = $(this).find('.drop');
-		var myOldBox = $(this).find('.shelfOldPrice');
-		var myOld = $(this).find('.shelfOldPrice').text();
-		var myNew = $('<span class="txt-sz-16 shelfBestPrice txt-gray">ou ' + myOld + ' à vista</span>');
-		var myBest = $(this).find('.shelfBestPrice');
-		var myInstallments = $(this).find('.shelfInstallment');
+// 		var myDrop = $(this).find('.drop');
+// 		var myOldBox = $(this).find('.shelfOldPrice');
+// 		var myOld = $(this).find('.shelfOldPrice').text();
+// 		var myNew = $('<span class="txt-sz-16 shelfBestPrice txt-gray">ou ' + myOld + ' à vista</span>');
+// 		var myBest = $(this).find('.shelfBestPrice');
+// 		var myInstallments = $(this).find('.shelfInstallment');
 
-		if ($(myBest).length == 0) {
-			myOldBox.hide();
-			myDrop.css('margin-top', '-4px');
-			myNew.insertAfter(myInstallments);
-			myInstallments.css('border', 'none');
-			myInstallments.css('padding-left', '0');
-		}
-	});
-}
+// 		if ($(myBest).length == 0) {
+// 			myOldBox.hide();
+// 			myDrop.css('margin-top', '-4px');
+// 			myNew.insertAfter(myInstallments);
+// 			myInstallments.css('border', 'none');
+// 			myInstallments.css('padding-left', '0');
+// 		}
+// 	});
+// }
 
 var body = $('body'),
 	htmlBody = $('html, body'),
@@ -194,14 +194,14 @@ $(function () {
 	$('<svg class="ico-vert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258.75 258.75" width="35" height="35"><g fill="#fff"><circle cx="129.375" cy="60" r="60"></circle><path d="M129.375 150c-60.061 0-108.75 48.689-108.75 108.75h217.5c0-60.061-48.689-108.75-108.75-108.75z"></path></g></svg>').insertBefore('.profile-detail-display h4');
 	$('<svg class="ico-vert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.053 512.053" width="35" height="35"><path d="M365.027 44.5c-30-29.667-66.333-44.5-109-44.5s-79 14.833-109 44.5-45 65.5-45 107.5c0 25.333 12.833 67.667 38.5 127 25.667 59.334 51.333 113.334 77 162s38.5 72.334 38.5 71c4-7.334 9.5-17.334 16.5-30s19.333-36.5 37-71.5 33.167-67.166 46.5-96.5c13.334-29.332 25.667-59.667 37-91s17-55 17-71c0-42-15-77.833-45-107.5zm-76 139.5c-9.333 9.333-20.5 14-33.5 14s-24.167-4.667-33.5-14-14-20.5-14-33.5 4.667-24 14-33 20.5-13.5 33.5-13.5 24.167 4.5 33.5 13.5 14 20 14 33-4.667 24.167-14 33.5z" fill="#f68026"/></svg>').insertBefore('.address-display-block h4');
 
-	$('.prateleira li').each(function (event) {
-		var me = $(this);
-		var bestPrice = me.find('.shelfBestPrice');
-		priceStatus();
-		if ($(bestPrice).length == 0) {
-			me.find('.shelfOldPrice').removeClass('ln-through');
-		}
-	});
+	// $('.prateleira li').each(function (event) {
+	// 	var me = $(this);
+	// 	var bestPrice = me.find('.shelfBestPrice');
+	// 	// priceStatus();
+	// 	if ($(bestPrice).length == 0) {
+	// 		me.find('.shelfOldPrice').removeClass('ln-through');
+	// 	}
+	// });
 
 	$('.img-box img.element-1').addClass('active');
 	$('.escolha-por-santos li').each(function () {
@@ -770,7 +770,7 @@ $(function () {
 		}
 		// Adicionando classe nos elementos do Ordernar Por quando ativos
 
-		priceStatus();
+		// priceStatus();
 
 		var showFilters = __element({
 			type: 'button',

@@ -183,16 +183,16 @@ $(function () {
 		$('.search-multiple-navigator').next().remove();
 	}
 
-	$('.prateleira li').each(function (event) {
-		var me = $(this);
-		var bestPrice = me.find('.shelfBestPrice');
+	// $('.prateleira li').each(function (event) {
+	// 	var me = $(this);
+	// 	var bestPrice = me.find('.shelfBestPrice');
 
-		// priceStatus();
+	// 	// priceStatus();
 
-		if ($(bestPrice).length == 0) {
-			me.find('.shelfOldPrice').removeClass('ln-through');
-		}
-	});
+	// 	if ($(bestPrice).length == 0) {
+	// 		me.find('.shelfOldPrice').removeClass('ln-through');
+	// 	}
+	// });
 
 	$('.img-box img.element-1').addClass('active');
 	$('.escolha-por-santos li').each(function () {

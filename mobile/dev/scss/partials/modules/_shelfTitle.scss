@@ -3,24 +3,24 @@
 		display: none;
 	}
 }
-.shelfTitle{
-	@extend .bg-lightBlue;
-	width:100%;
- 	display:flex;
-	padding:10px;
-	min-width:320px;
-	margin:20px 0px;
-	text-align:center;
-	@include mq($screen-sm) {
-	 width:32%;
-	 justify-content: flex-end;
-	}
-	.mark{
-		@extend .txt-sz-20, .bold, .txt-white;
-		width:100%;
-		text-align:center;
-		@include mq($screen-sm) {
-		 width:370px;
-		}
-	}
-}
+// .shelfTitle{
+// 	@extend .bg-lightBlue;
+// 	width:100%;
+//  	display:flex;
+// 	padding:10px;
+// 	min-width:320px;
+// 	margin:20px 0px;
+// 	text-align:center;
+// 	@include mq($screen-sm) {
+// 	 width:32%;
+// 	 justify-content: flex-end;
+// 	}
+// 	.mark{
+// 		@extend .txt-sz-20, .bold, .txt-white;
+// 		width:100%;
+// 		text-align:center;
+// 		@include mq($screen-sm) {
+// 		 width:370px;
+// 		}
+// 	}
+// }

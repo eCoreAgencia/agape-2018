@@ -20,12 +20,14 @@ li{
     list-style: none;
 }
 
-
 // PRATELEIRA SECTION DA HOME ONDE FICA O SLICK
 body{
     &.home{
         .slider .prateleira {
             height: 425px;
+        }
+        .product-image{
+            min-height: 340px;
         }
     }
 }
@@ -35,13 +37,14 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
- // DIMINUI A FONTE DO PRICE INSTALLMENTE PARA CABER NA MSM LINHA EM DEPCATBUS ONDE LI = 33.333%
-      
+
+ // DIMINUI A FONTE DO PRICE INSTALLMENT PARA CABER NA MSM LINHA EM SMARTRESEARCH ONDE LI = 33.333%
 .resultItemsWrapper{
     .price--installment {
         font-size: 1.1em;
     }
 }
+
 
 // GLOBAL PRATELEIRA
 .prateleira {
@@ -59,8 +62,10 @@ body{
 .product-shelf {
     border: 1px solid transparent;
     @include shift(all, 200ms, ease-in-out);
+    background: transparent;
 
     &:hover {
+        background: #fff;
         border: 1px solid $soft-grey;
         @include shift(all, 100ms, ease-in-out);
 
@@ -80,8 +85,35 @@ body{
         }
     }
 
+    //MUDAR IMAGEM ON HOVER
+   
+    .product-image {
+        display: block;
+        position: relative;
+        min-height: 302px;
+     }
     &__media {
         padding: $padding;
+        img{
+            opacity: 1;
+            position: absolute;
+            @include shift(opacity, 800ms, ease-in-out);
+        }
+        img+img {
+            opacity: 0;
+            @include shift(opacity, 800ms, ease-in-out);
+        }
+        &:hover{
+            img:only-child{
+                opacity: 1;
+            }
+            img {
+                opacity: 0;
+            }
+            img+img {
+                opacity: 1;
+            }
+        }
     }
 
     &__name {
