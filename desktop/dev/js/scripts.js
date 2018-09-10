@@ -13,7 +13,6 @@
 
 // </script>
 
-
 (function () {
 	var method;
 	var noop = function () {};
@@ -34,7 +33,6 @@
 		}
 	}
 });
-
 
 // element //
 (function (window, document, $) {
