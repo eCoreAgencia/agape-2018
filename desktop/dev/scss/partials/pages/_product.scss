@@ -4,6 +4,19 @@ body.produto .bread-crumb {
     padding: 15px 0
 }
 
+// body.produto .portal-notify-me-ref h3{
+//     font-size: 0 !important;
+// }
+  
+// body.produto .portal-notify-me-ref h3::after{
+// 	font-size: 18px;
+//     content: 'PRODUTO INDISPONÍVEL';
+// }
+
+// body.produto .portal-notify-me-ref form input.btn-ok {
+//     max-width: 100%;
+// }
+
 body.produto {
     main {
         .product-box {
@@ -91,7 +104,11 @@ body.produto {
         background-color: #fff;
 
         h3 {
-            @include font-size(1.8);
+            font-size: 0;
+            &::after{
+                @include font-size(1.8);
+                content: 'PRODUTO INDISPONÍVEL';
+            }
         }
 
         .sku-notifyme-success {
@@ -120,7 +137,7 @@ body.produto {
                     @extend .transition;
                     color: #fff;
                     cursor: pointer;
-                    max-width: 90px;
+                    max-width: 100%;
                     margin-bottom: 0;
                     text-transform: uppercase;
                     background-color: #00338E;

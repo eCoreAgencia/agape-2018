@@ -736,7 +736,7 @@ $(function () {
 				fadeInOut(item.next());
 			} else {
 				fadeInOut(item.siblings(':first'));
-			}
+				}
 		});
 
 	}
@@ -767,3 +767,10 @@ $(function () {
 
 
 });
+
+/* PÁGINA DE PRODUTO */
+/* ALTERA O TEXTO DO BOTÃO DA PGINA DE PRODUTO*/ 
+$(window).ready(function(){
+	$('input#notifymeButtonOK').val('AVISE-ME QUANDO DISPONÍVEL');
+});
+/* PÁGINA DE PRODUTO */

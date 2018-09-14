@@ -2229,7 +2229,7 @@ body.home footer .textoLegal {
 }
 
 .vtexIdUI #vtexIdUI-facebook {
-	background: transparent linear-gradient(to bottom, #e1e1ea 0%, #5874b3 1%, #405689 66%, #405689 98%, #5874b3 100%) repeat scroll 0 0 !important;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #e1e1ea 0%, #5874b3 1%, #405689 66%, #405689 98%, #5874b3 100%) repeat scroll 0 0 !important;
 }
 
 .vtexIdUI .btn-success.vtexIdUI-send-email {
@@ -3272,7 +3272,8 @@ span.resultado-busca-numero {
 	text-transform: uppercase;
 }
 
-/* ------------------------------------------------------------ *  #Resumo do carrinho
+/* ------------------------------------------------------------ *\
+  #Resumo do carrinho
 \* ------------------------------------------------------------ */
 
 .sta-cart-overlay {
@@ -4772,7 +4773,12 @@ body.produto .portal-notify-me-ref {
 }
 
 body.produto .portal-notify-me-ref h3 {
+	font-size: 0;
+}
+
+body.produto .portal-notify-me-ref h3::after {
 	font-size: 18px;
+	content: 'PRODUTO INDISPONÍVEL';
 }
 
 body.produto .portal-notify-me-ref .sku-notifyme-success {
@@ -4800,7 +4806,7 @@ body.produto .portal-notify-me-ref form input.btn-ok {
 	font-size: 16px;
 	color: #fff;
 	cursor: pointer;
-	max-width: 90px;
+	max-width: 100%;
 	margin-bottom: 0;
 	text-transform: uppercase;
 	background-color: #00338E;
@@ -7083,7 +7089,7 @@ body.institucional.fale-conosco #co_form {
 	    grid-template-columns: repeat(4, 1fr);
 	-ms-grid-rows: .2fr .2fr 3fr .3fr;
 	    grid-template-rows: .2fr .2fr 3fr .3fr;
-	grid-template-areas: "name name email email" "tel  dep subject subject" "msg msg msg msg  " ". . . submit  ";
+	grid-template-areas: "name name email email" "tel  dep subject subject" "msg msg msg msg  " ". . . submit  ";
 	background-color: #fff;
 	color: #444;
 	margin-top: 20px;
