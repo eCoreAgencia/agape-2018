@@ -897,3 +897,11 @@ $( document ).ready(function() {
 		  return false;
 		}});
 	});
+
+	/* REMOVER PAGINAÇÃO SE TIVER SOMENTE UMA PÁGINA*/ 
+
+$(document).ready(function(){
+    if($('.bottom li.page-number').length <= 1){
+        $('ul.pages').css('display', 'none');
+    }
+});
