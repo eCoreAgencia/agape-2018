@@ -13,7 +13,7 @@ body.dep-cat-bus{
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		opacity: 0.8;
 		min-height: 365px;
 		position: absolute;
@@ -137,6 +137,20 @@ body.dep-cat-bus{
 		}
 	}
 
+	div.mainButton {
+        display: -webkit-box;
+        display: -ms-flexbox;
+		display: flex;
+		.menuFilter {
+			background-color: #18318F;
+			width: 140px;
+			text-align: center;
+			border-radius: 5px;
+			padding: 5px 0 3px;
+			position: absolute;
+			right: 12px;
+		}
+    }
 	.sidebar {
 		@extend .transition;
 		left: 0;
