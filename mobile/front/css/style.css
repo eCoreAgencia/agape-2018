@@ -5806,7 +5806,7 @@ body.dep-cat-bus #ajaxBusy {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	opacity: 0.9;
+	opacity: 0.8;
 	min-height: 365px;
 	position: absolute;
 	z-index: 9999999999;
@@ -6151,7 +6151,7 @@ body.dep-cat-bus .mainShelf .sub .filterBy {
 }
 
 body.dep-cat-bus .mainShelf .sub:last-child {
-	display: none;
+	display: block;
 }
 
 body.dep-cat-bus .mainShelf .pager {
