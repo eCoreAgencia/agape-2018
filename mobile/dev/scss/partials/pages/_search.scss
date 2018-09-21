@@ -3,7 +3,8 @@ Página de Busca, Categorias e Departamentos
 ========================================================================== */
 
 body.dep-cat-bus{
-
+	width: 100vw !important;
+	overflow-x: hidden ;
 	.products-actions {
 		display: none;
 	}
@@ -154,7 +155,7 @@ body.dep-cat-bus{
 	.sidebar {
 		@extend .transition;
 		left: 0;
-		top: 70px;
+		top: 60px;
 		opacity: 0;
 		padding: 0;
 		height: 100%;
@@ -313,7 +314,7 @@ body.dep-cat-bus{
 
 		.sub{
 			display: flex;
-			margin: 7px 0;
+			margin: 7px;
 
 			.filtrarProdutos{
 				width: 50%;
@@ -333,7 +334,7 @@ body.dep-cat-bus{
 				position: relative;
 				display: inline-block;
 				width: 50%;
-				margin-left: 7px;
+				margin: 5px 0 0 7px;
 				label{
 					@include font-size(1);
 					@extend .txt-orange;
@@ -349,8 +350,9 @@ body.dep-cat-bus{
 					padding: 5px 20px 5px 5px;
 					border: 1px solid #B6B6B6;
 					&#O{
+						background-color: #fff;
 						color: #B6B6B6;
-						margin: 4px 0;
+						border: solid 1px #b6b6b6;
 					}
 				}
 

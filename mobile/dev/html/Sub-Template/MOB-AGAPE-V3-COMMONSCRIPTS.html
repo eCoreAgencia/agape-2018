@@ -1,4 +1,23 @@
 <script type="text/javascript" src="/arquivos/slick.js"></script>
-<script type="text/javascript" src="/arquivos/agape-mob-v89.js"></script>
-<script type="text/javascript" src="/arquivos/minicart-v14.js"></script>
+<script type="text/javascript" src="/arquivos/agape-mob-v90.js"></script>
+<script type="text/javascript" src="/arquivos/minicart-v15.js"></script>
 <script type="text/javascript" src="/arquivos/newsletter-v32.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.sidebar .orderBy').first().insertAfter('.filtrarProdutos');
+    });
+</script>
+<style type="text/css">
+    body.dep-cat-bus .resultItemsWrapper {
+        margin: 0;
+    }
+    body.dep-cat-bus .mainShelf .sub .orderBy:first-of-type {
+        display: block;
+    }
+    body.dep-cat-bus .mainShelf .sub .orderBy:last-of-type {
+        display: none;
+    }
+    body.dep-cat-bus .mainShelf .sub:last-of-type {
+        display: none;
+    }
+</style>

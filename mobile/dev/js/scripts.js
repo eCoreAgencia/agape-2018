@@ -905,3 +905,12 @@ $(document).ready(function(){
         $('ul.pages').css('display', 'none');
     }
 });
+
+
+/* Limpar Filtro*/
+
+$('#clearFilter').click(function(){
+	$('.sr_selected.active').removeClass('sr_selected active');
+});
+
+/* Limpar Filtro*/

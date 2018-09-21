@@ -5796,6 +5796,11 @@ body.produto .Cor .skuList label.skuespec_Preto {
 Página de Busca, Categorias e Departamentos
 ========================================================================== */
 
+body.dep-cat-bus {
+	width: 100vw !important;
+	overflow-x: hidden;
+}
+
 body.dep-cat-bus .products-actions {
 	display: none;
 }
@@ -5939,7 +5944,7 @@ body.dep-cat-bus div.mainButton .menuFilter {
 
 body.dep-cat-bus .sidebar {
 	left: 0;
-	top: 70px;
+	top: 60px;
 	opacity: 0;
 	padding: 0;
 	height: 100%;
@@ -6099,7 +6104,7 @@ body.dep-cat-bus .mainShelf .filtrarProdutos {
 body.dep-cat-bus .mainShelf .sub {
 	display: -ms-flexbox;
 	display: flex;
-	margin: 7px 0;
+	margin: 7px;
 }
 
 body.dep-cat-bus .mainShelf .sub .filtrarProdutos {
@@ -6124,7 +6129,7 @@ body.dep-cat-bus .mainShelf .sub .orderBy {
 	position: relative;
 	display: inline-block;
 	width: 50%;
-	margin-left: 7px;
+	margin: 5px 0 0 7px;
 }
 
 body.dep-cat-bus .mainShelf .sub .orderBy label {
@@ -6145,8 +6150,9 @@ body.dep-cat-bus .mainShelf .sub .orderBy select {
 }
 
 body.dep-cat-bus .mainShelf .sub .orderBy select#O {
+	background-color: #fff;
 	color: #B6B6B6;
-	margin: 4px 0;
+	border: solid 1px #b6b6b6;
 }
 
 body.dep-cat-bus .mainShelf .sub .orderBy:after {
