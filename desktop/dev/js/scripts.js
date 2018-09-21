@@ -771,12 +771,10 @@ $(document).ready(function(){
     }
 });
 
-
-
 });
 
 /* PÁGINA DE PRODUTO */
-/* ALTERA O TEXTO DO BOTÃO DA PGINA DE PRODUTO*/ 
+/* ALTERA O TEXTO DO BOTÃO DA PÁGINA DE PRODUTO*/ 
 $(window).ready(function(){
 	$('input#notifymeButtonOK').val('AVISE-ME QUANDO DISPONÍVEL');
 });
