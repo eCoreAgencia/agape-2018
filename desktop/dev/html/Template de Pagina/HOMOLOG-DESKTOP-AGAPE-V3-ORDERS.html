@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+    <head>
+        <vtex:metaTags/>
+        <title>Meus Pedidos |Ágape Moda</title>
+        <meta name="yAccount" content="agape"/>
+        <script src="https://meuspedidos.yami.com.br/ted-1.1.2.min.js" type="text/javascript"></script>
+        <vtex:template id="AGAPE-V3-COMMONSTYLES" />
+    </head>
+    <body id="orders-page">
+        <vtex:template id="AGAPE-V3-HEADER" />
+        <main class="container">
+            <h2 class="page-title">
+                <span class="mark txt-center">Meus Pedidos</span>
+            </h2>
+            <vtex.cmc:orderList/>
+        </main>
+        <vtex:template id="AGAPE-V3-FOOTER" />
+        <vtex:template id="AGAPE-V3-COMMONSCRIPTS" />
+        <script type="text/javascript" src="/arquivos/account.js"></script>
+        <script type="text/javascript" src="/arquivos/file-remove.js"></script>
+    </body>
+</html>
