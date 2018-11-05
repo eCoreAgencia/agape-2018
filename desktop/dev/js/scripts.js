@@ -269,13 +269,63 @@ $(function () {
 		$('.bt-comprar').next().show();
 	});
 
+	function addCart() {
+		var href = $('.buy-button.buy-button-ref').attr('href');
+		console.log(href)
+		window.location = href;
+	}
+
+	function removeLight() {
+		$('.ligthBoxProduct__content--clouse').on('click', function(e) {
+			e.preventDefault();
+
+			$('.ligthBoxProduct').remove();
+		});
+	}
+
+	var skuList = $('.sku-section').html();
+	var htmlLigthBox = '\
+		<div class="ligthBoxProduct" style="display: none;">\
+			<div class="ligthBoxProduct__content">\
+				<div class="ligthBoxProduct__content--clouse" onClick="removeLight();">X</div>\
+				<div class="ligthBoxProduct__content--all">\
+					<h2>Ótima escolha! Agora falta pouco para você finalizar a</h2>\
+					<p>Para adicionar o produto ao seu carrinho de compras, selecione o modelo desejado:</p>\
+					<div class="ligthBoxProduct__content--list">'+skuList+'</div>\
+					<div class="btn-buyLigth"><p onClick="addCart();">Adicionar ao carrinho</p>\
+				</div>\
+			</div>\
+		</div>\
+	';
+
+	$('body').append(htmlLigthBox);
+
+
 	body.on('click', '.bt-comprar', function (event) {
 		var myBt = $('.buy-box .buy-button');
+
 		if ($(myBt).attr('href') == "javascript:alert('Por favor, selecione o modelo desejado.');") {
 			if ($('ul.Tamanho label.checked').length == 0) {
 				$('body.produto ul.Tamanho .skuList label').addClass('error');
 				$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.item-dimension-Tamanho');
 			}
+
+			$('.ligthBoxProduct').fadeIn();
+
+			setTimeout(function(){ 
+				$('.ligthBoxProduct__content--clouse').on('click', function(e) {
+					e.preventDefault();
+			
+					$('.ligthBoxProduct').fadeOut();
+				});
+		
+				$('btn-buyLigth').on('click', function(e) {
+					e.preventDefault();
+			
+					var href = $('.buy-button.buy-button-ref').attr('href');
+					window.location = href;
+				});
+			}, 1000);
 
 			if ($('ul.Cor label.checked').length == 0) {
 				$('body.produto ul.Cor .skuList label').addClass('error');

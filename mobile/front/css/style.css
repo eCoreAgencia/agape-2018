@@ -2463,6 +2463,10 @@ li {
 	display: none;
 }
 
+.product-image {
+	display: block;
+}
+
 .product-shelf__info {
 	height: 100%;
 	display: -ms-grid;
@@ -4393,38 +4397,33 @@ body.product-popup .modal-container .news-element.error-add h3 {
 	height: 38px;
 	font-size: 0;
 	display: block;
-	background: url("bt-prod-novo-mob.png") no-repeat scroll 0 0 transparent;
+	background: url("bt-prod-novo-mob2.png") no-repeat scroll 0 0 transparent;
 }
 
-.clusterHighLight .flag.lancamentos:after,
 .clusterHighLight .flag.lancamentos:before {
-	display: none;
+	top: 3px;
+	left: 3px;
+	z-index: 1;
+	color: #fff;
+	display: block;
+	font-size: 7px;
+	background: none;
+	content: 'PRODUTO';
+	position: relative;
+	font-weight: normal;
 }
 
-.clusterHighLight .flag:before {
-	top: 0;
-	left: 0;
-	content: '';
-	z-index: -1;
-	width: 100%;
-	height: 100%;
+.clusterHighLight .flag.lancamentos:after {
+	left: 3px;
+	top: -34px;
+	z-index: 1;
+	color: #fff;
 	display: block;
-	position: absolute;
-	background-color: #f68026;
-	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-}
-
-.clusterHighLight .flag:after {
-	top: 0;
-	width: 0;
-	height: 0;
-	left: 100%;
-	content: '';
-	display: block;
-	position: absolute;
-	border-bottom: 10px solid #b85910;
-	border-right: 10px solid transparent;
+	content: 'NOVO';
+	font-size: 10px;
+	background: none;
+	position: relative;
+	font-weight: normal;
 }
 
 .the-flags {
@@ -4681,7 +4680,41 @@ body.produto.item_unavaliable .compra-persistente-bt {
 	display: none !important;
 }
 
-body.produto .lds-heart {
+body.produto .product-image {
+	display: block;
+}
+
+body.produto .ProductImage .lds-heart {
+	left: 50%;
+	top: 50px;
+	width: 60%;
+	height: 100%;
+	margin-left: -105%;
+}
+
+body.produto .ProductImage .lds-heart div {
+	top: -100px;
+	left: 241px;
+}
+
+body.produto .ProductImage .lds-heart div,
+body.produto .ProductImage .lds-heart div:after,
+body.produto .ProductImage .lds-heart div:before {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: #fabf92;
+}
+
+body.produto .ProductImage .lds-heart div:after {
+	top: -57px;
+}
+
+body.produto .ProductImage .lds-heart div:before {
+	left: -57px;
+}
+
+body.produto .prateleira .lds-heart {
 	z-index: 2;
 	left: 85px;
 	width: 130%;
@@ -4903,8 +4936,8 @@ body.produto .skuList label.error {
 
 body.produto main span.error-picked {
 	font-size: 14px;
+	margin-top: 10px;
 	font-weight: bold;
-	margin-bottom: 20px;
 	color: red !important;
 	display: none !important;
 	text-transform: uppercase;
@@ -5107,6 +5140,7 @@ body.produto main .plugin-preco .preco-a-vista strong:after {
 
 body.produto main .ProductImage {
 	padding: 0;
+	min-height: 405px;
 	position: relative;
 }
 
@@ -5398,6 +5432,23 @@ body.produto .buy-box .bt-comprar {
 	text-decoration: none;
 	text-transform: lowercase;
 	background-color: #00bb4f;
+}
+
+body.produto .buy-box .bt-comprar.loading:after {
+	top: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 60px;
+	opacity: 0.7;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	background-color: #fff;
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(/arquivos/loading-add-cart.gif);
 }
 
 body.produto .buy-box .buy-area .buy-button {
@@ -9148,6 +9199,16 @@ td.visible-xs {
 
 body.home main .slider-escolha-por-santos h2 {
 	font-size: 14px;
+}
+
+}
+
+@media (max-width: 321px) {
+
+body.produto main .ProductImage {
+	padding: 0;
+	min-height: 305px;
+	position: relative;
 }
 
 }

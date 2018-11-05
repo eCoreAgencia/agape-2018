@@ -115,7 +115,7 @@ jQuery.fn.simulateClick = function () {
 }
 
 function setFlags() {
-	$('.the-flags').each(function () {
+	$('.the-flags a').each(function () {
 		var qtdDesconto = $(this).text().replace('%', '');
 		qtdDesconto = parseInt(qtdDesconto);
 		if (qtdDesconto == 0) {
@@ -296,19 +296,20 @@ $(function () {
 			if ($('ul.Tamanho label.checked').length == 0) {
 				$('body.produto ul.Tamanho .skuList label').addClass('error');
 				$('ul.Tamanho .error-picked').remove();
-				$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.specification');
+				$('<span class="error-picked">Selecione o tamanho</span>').insertAfter('ul.Tamanho li.item-dimension-Tamanho');
 			}
 
 			if ($('ul.Cor label.checked').length == 0) {
 				$('body.produto ul.Cor .skuList label').addClass('error');
 				$('ul.Cor .error-picked').remove();
-				$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.specification');
+				$('<span class="error-picked">Selecione a cor</span>').insertAfter('ul.Cor li.item-dimension-Cor');
 			}
 
 			document.querySelector('#id3').scrollIntoView({
 				behavior: 'smooth'
 			});
 		} else {
+			$('.buy-box .buy-button').addClass('loading');
 			var myBtLink = $('.buy-box .buy-button').attr('href');
 
 			$.get(myBtLink, function (data) {
@@ -641,7 +642,7 @@ $(function () {
 					$('#szb_size_chart').simulateClick();
 				});
 
-				$('.freight-btn').val('Ok');
+				$('.freight-btn').val('Calcular');
 
 				$('.freight-btn').on('click', function (event) {
 					// Mounting Loader //
@@ -671,6 +672,7 @@ $(function () {
 		// Controller Image Thumbs, Featured //
 		$("#___rc-p-id").each(function (index) {
 			var id = $(this).attr("value");
+			$('<div class="lds-heart active"><div></div></div>').insertBefore('.thumbnails');
 			var data = "/api/catalog_system/pub/products/search/?fq=productId:" + id + "";
 
 			$.getJSON(data, function (data) {
@@ -905,12 +907,3 @@ $(document).ready(function(){
         $('ul.pages').css('display', 'none');
     }
 });
-
-
-/* Limpar Filtro*/
-
-$('#clearFilter').click(function(){
-	$('.sr_selected.active').removeClass('sr_selected active');
-});
-
-/* Limpar Filtro*/

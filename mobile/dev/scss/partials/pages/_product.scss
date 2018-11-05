@@ -6,15 +6,53 @@ body.produto {
         }
     }
 
-    .lds-heart {
-        z-index: 2;
-        left: 85px;
-        width: 130%;
-        height: 310%;
-        background: none;
-        position: absolute;
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
+    .product-image {
+        display: block;
+    }
+
+    .ProductImage {
+        .lds-heart {
+            left: 50%;
+            top: 50px;
+            width: 60%;
+            height: 100%;
+            margin-left: -105%;
+        }
+    
+        .lds-heart div {
+            top: -100px;
+            left: 241px;
+        }
+    
+        .lds-heart div,
+        .lds-heart div:after,
+        .lds-heart div:before {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: #fabf92;
+        }
+    
+        .lds-heart div:after {
+            top: -57px;
+        }
+    
+        .lds-heart div:before {
+            left: -57px;
+        }
+    }
+
+    .prateleira {
+        .lds-heart {
+            z-index: 2;
+            left: 85px;
+            width: 130%;
+            height: 310%;
+            background: none;
+            position: absolute;
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
     }
 
     .close-bt-opacity {
@@ -245,8 +283,8 @@ body.produto .skuList label.error {
 
 body.produto main span.error-picked {
     @include font-size(1.4);
+    margin-top: 10px;
     font-weight: bold;
-    margin-bottom: 20px;
     color: red !important;
     display: none !important;
     text-transform: uppercase;
@@ -449,7 +487,8 @@ body.produto main .plugin-preco .preco-a-vista strong:after {
 
 body.produto main .ProductImage {
     padding: 0;
-    position: relative
+    min-height: 405px;
+    position: relative;
 }
 
 body.produto main .ProductImage .prateleira .slider {
@@ -743,6 +782,25 @@ body.produto .buy-box .bt-comprar {
     text-decoration: none;
     text-transform: lowercase;
     background-color: #00bb4f;
+
+    &.loading {
+        &:after {
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 60px;
+            opacity: 0.7;
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            background-color: #fff;
+            background-size: 80px 80px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(/arquivos/loading-add-cart.gif);
+        }
+    }
 }
 
 body.produto .buy-box .buy-area .buy-button {
@@ -1168,4 +1226,11 @@ body.produto .Cor .skuList label.skuespec_Preto {
     40% {
         transform: scale(1.0);
     }
+}
+@media (max-width: 321px) {
+    body.produto main .ProductImage {
+        padding: 0;
+        min-height: 305px;
+        position: relative;
+   }
 }
