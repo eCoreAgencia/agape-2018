@@ -1,0 +1,70 @@
+.ligthBoxProduct {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000087;
+    z-index: 999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ligthBoxProduct .ligthBoxProduct__content {
+    width: 480px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #ff6020;
+    padding: 20px;
+}
+
+.ligthBoxProduct .ligthBoxProduct__content .ligthBoxProduct__content--clouse {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    background: #ff7cad;
+    color: #0b0507;
+    padding: 6px 8px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.ligthBoxProduct .ligthBoxProduct__content .ligthBoxProduct__content--all h2 {
+    font-size: 26px;
+    font-family: 'Signika Negative',sans-serif;
+    font-weight: 400;
+    color: #4e4e4e !important;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.ligthBoxProduct .ligthBoxProduct__content .ligthBoxProduct__content--all p {
+    text-align: center;
+    color: #878787;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ligthBoxProduct .ligthBoxProduct__content .ligthBoxProduct__content--all .btn-buyLigth p {
+    width: 220px;
+    background: #00bb4f;
+    margin: 20px 0 0 0;
+    float: right;
+    padding: 12px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.ligthBoxProduct .error-picked {
+    display: none;
+}
+
+.ligthBoxProduct .error-picked:first-of-type {
+    display: block;
+}

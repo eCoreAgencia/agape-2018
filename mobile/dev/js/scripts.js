@@ -125,27 +125,6 @@ function setFlags() {
 	});
 }
 
-// function priceStatus() {
-// 	$('.prateleira .shelfItem').each(function () {
-// 		var me = $(this);
-
-// 		var myDrop = $(this).find('.drop');
-// 		var myOldBox = $(this).find('.shelfOldPrice');
-// 		var myOld = $(this).find('.shelfOldPrice').text();
-// 		var myNew = $('<span class="txt-sz-16 shelfBestPrice txt-gray">ou ' + myOld + ' à vista</span>');
-// 		var myBest = $(this).find('.shelfBestPrice');
-// 		var myInstallments = $(this).find('.shelfInstallment');
-
-// 		if ($(myBest).length == 0) {
-// 			myOldBox.hide();
-// 			myDrop.css('margin-top', '-4px');
-// 			myNew.insertAfter(myInstallments);
-// 			myInstallments.css('border', 'none');
-// 			myInstallments.css('padding-left', '0');
-// 		}
-// 	});
-// }
-
 var body = $('body'),
 	htmlBody = $('html, body'),
 	$document = $(document),
@@ -900,7 +879,7 @@ $( document ).ready(function() {
 		}});
 	});
 
-	/* REMOVER PAGINAÇÃO SE TIVER SOMENTE UMA PÁGINA*/ 
+	/* REMOVER PAGINAÇÃO SE TIVER SOMENTE UMA PÁGINA*/
 
 $(document).ready(function(){
     if($('.bottom li.page-number').length <= 1){
