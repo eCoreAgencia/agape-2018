@@ -2,12 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-BR">
    <head>
       	<vtex:metaTags />
-      	<vtex:template id="HOMOLOG-AGAPE-V3-COMMONSTYLES" />
+      	<vtex:template id="AGAPE-V3-COMMONSTYLES" />
         <meta property="og:image" content="/arquivos/logo-agape.png" />
         <meta property="og:image:type" content="image/png"/>
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
+        <link rel="stylesheet" type="text/css" href="/arquivos/produto-quaresma.css" />
         <style>.zoomWrapperImage{width:60%!important}</style>
+        <link rel="stylesheet" type="text/css" href="/arquivos/lightBox-product.css" />
    </head>
    <body>
       	<vtex:template id="AGAPE-V3-HEADER" />
@@ -67,19 +69,19 @@
 	                		</div>
 	                		<div class="col-xs-12">
 	                			<vtex.cmc:shippingValue/>
-	                		</div>	
+	                		</div>
 	                	</div>
 	                </div>
             	</div>
             </section>
-
+            <div id="rh_prod1"></div>
             <section class="troca col-xs-12">
             	<div class="container">
                     <h2 class="section-title troca-title txt-sz-20 txt-darkerGray">Não serviu? <strong>A Ágape troca de graça!</strong></h2>
-					<span class="mobile-info-troca txt-gray"><vtex:contentPlaceHolder id="texto-troca" /></span>	
+					<span class="mobile-info-troca txt-gray"><vtex:contentPlaceHolder id="texto-troca" /></span>
 	            </div>
             </section>
-
+            <div id="rh_prod2"></div>
             <div id="prod-info" class="container">
             	<section class="descricao col-xs-12 col-md-7">
             		<h2 class="section-title txt-darkBlue">Descrição</h2>
@@ -90,7 +92,7 @@
             		<vtex.cmc:productSpecification/>
             	</section>
             </div>
-
+            <div id="rh_prod3"></div>
             <section class="row produtos-similares">
 				<div class="container">
 					<div class="shelf-title col-xs-12 col-md-2">
@@ -102,7 +104,7 @@
 					</div>
 				</div>
 			</section>
-
+            <div id="rh_prod4"></div>
 			<!-- Inicio Yourviews -->
 			<article class="box-yourviews-container">
 				<div class="yv-box yv-box-review" style="display: none;">
@@ -112,12 +114,13 @@
 					<div class="yv-qa"></div>
 				</div>
 			</article>
+			<div id="rh_prod5"></div>
 			<!-- Final Yourviews -->
 
 		</main>
 
 	    <vtex:template id="AGAPE-V3-FOOTER" />
 	    <script type="text/javascript" src="/arquivos/easyzoom-v1.js"></script>
-	    <vtex:template id="HOMOLOG-AGAPE-V3-COMMONSCRIPTS" />
+	    <vtex:template id="AGAPE-V3-COMMONSCRIPTS-HOMOLOG" />
    </body>
 </html>
